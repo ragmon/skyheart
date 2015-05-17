@@ -1,0 +1,396 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Template</title>
+	<meta name="viewport" content="initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <meta name="viewport" content="width=1200"> -->
+	<!-- <meta name="viewport" content="initial-scale=1, user-scalable=no"> -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" media="all" href="css/inner.css" >
+	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
+</head>
+<body>
+<!-- BEGIN  out-->
+<div class="out">
+	
+	<!-- begin header  -->
+	<header class="header">
+		<div class="header__inner">	
+			<div class="header__menu">
+				<div class="header__left">
+					<a href="#" class="logo"><img src="img/svg/logo.svg" alt=""></a>
+					<div class="lang">
+						<a href="#" class="is-active">rus</a>
+						<div class="lang__drop">
+							<a href="#">eng</a>
+						</div>
+					</div>
+				</div>	
+				<button class="nav-btn js-nav-btn"><span></span></button>
+				<div class="header__nav js-nav">
+					<nav class="nav">
+						<ul>
+							<li><a href="#">Новости</a></li>
+							<li><a href="#">Объявления</a></li>
+							<li><a href="#">Работа</a></li>
+							<li><a href="#">Блоги</a></li>
+							<li><a href="#">Чат</a></li>
+						</ul>
+					</nav>
+					<div class="enter">
+						<p><a href="#">Вход</a> / <a href="#">Регистрация</a></p>
+					</div>
+				</div>				
+			</div>	
+		</div>
+		<!-- begin slider  -->
+		<div class="slider cycle-slideshow"
+			data-cycle-fx="fade" 
+			data-cycle-timeout="4000"
+			data-cycle-slides=".slider__item"
+			data-cycle-prev=".slider__prev"
+			data-cycle-next=".slider__next"
+			data-cycle-pager=".slider__pager">
+			<div class="slider__btns">
+				<div class="slider__btns-in">
+					<a href="#" class="slider__prev"></a>
+					<a href="#" class="slider__next"></a>
+				</div>			
+			</div>
+			<div class="slider__item" style="background-image: url(img/slide.jpg);">
+				<div class="slider__inner">
+					<div class="slider__info">
+						<div class="slider__title">Здесь может быть <small>ваша реклама</small></div>
+						<span>80960000000</span>
+						<span>company@mail.com</span>
+					</div>
+				</div>
+			</div>
+			<div class="slider__item" style="background-image: url(img/slide.jpg);">
+				<div class="slider__inner">
+					<div class="slider__info">
+						<div class="slider__title">Здесь может быть <small>ваша реклама</small></div>
+						<span>80960000000</span>
+						<span>company@mail.com</span>
+					</div>
+				</div>
+			</div>
+			<div class="slider__item" style="background-image: url(img/slide.jpg);">
+				<div class="slider__inner">
+					<div class="slider__info">
+						<div class="slider__title">Здесь может быть <small>ваша реклама</small></div>
+						<span>80960000000</span>
+						<span>company@mail.com</span>
+					</div>
+				</div>
+			</div>
+			<div class="slider__item" style="background-image: url(img/slide.jpg);">
+				<div class="slider__inner">
+					<div class="slider__info">
+						<div class="slider__title">Здесь может быть <small>ваша реклама</small></div>
+						<span>80960000000</span>
+						<span>company@mail.com</span>
+					</div>
+				</div>
+			</div>
+			<div class="slider__pager"></div>
+		</div>
+		<!-- end slider -->
+		<div class="search">
+			<form action="">
+				<div class="search__field">
+					<div class="s-select js-select">
+					    <span class="s-select__text js-select-text">Раздел</span>
+					    <ul class="s-select__list js-select-list">
+					        <li data-val="Главная">Главная</li>
+					        <li data-val="Новости">Новости</li>
+					        <li data-val="Объявления">Объявления</li>
+					        <li data-val="Работа">Работа</li>
+					        <li data-val="Блог">Блог</li>
+					    </ul>
+					    <select>
+					          <option value="Главная">Главная</option>
+					          <option value="Новости">Новости</option>
+					          <option value="Объявления">Объявления</option>
+					          <option value="Работа">Работа</option>
+					          <option value="Блог">Блог</option>
+					    </select>
+					</div>
+					<label>
+						<input type="text" class="search__input" placeholder="Что будем искать?">
+					</label>					
+				</div>				
+				<button class="search__btn"><span>Поиск</span></button>
+			</form>
+		</div>	
+	</header>
+	<!-- end header -->
+	
+	<!-- begin main  -->
+	<main class="main">
+		<div class="main__inner">
+			<!-- begin content  -->
+			<section class="content">
+				<div class="heading">Регистрация</div>
+				<div class="content__box">
+					<div class="form">
+						<form action="">
+							<div class="form__title">Все поля обязательны для заполнения</div>
+							<div class="field field_radio">
+								<span class="form__label dl-mb"></span>
+								<div class="field__radio">
+									<label class="radio">
+										<input type="radio" name="radio1">
+										<span>Частное лицо</span>
+									</label>
+								</div>
+								<div class="field__radio">
+									<label class="radio">
+										<input type="radio" name="radio1">
+										<span>Компания</span>
+									</label>
+								</div>
+							</div>
+							<div class="form__row">
+								<div class="form__box">
+									<span class="form__label">Ваше имя</span>
+									<label>
+										<input type="text" class="input">
+									</label>
+								</div>
+								<div class="form__box">
+									<span class="form__label">Фамилия</span>
+									<label>
+										<input type="text" class="input">
+									</label>
+								</div>
+								<div class="form__box">
+									<span class="form__label">Логин</span>
+									<label>
+										<input type="text" class="input">
+										<span class="form__status is-bad">Занят</span>
+									</label>
+								</div>
+							</div>
+							<div class="field field_radio field_radio_mod">
+								<span class="form__label">Пол</span>
+								<div class="field__radio">
+									<label class="radio">
+										<input type="radio" name="radio2">
+										<span>Мужской</span>
+									</label>
+								</div>
+								<div class="field__radio">
+									<label class="radio">
+										<input type="radio" name="radio2">
+										<span>Женский</span>
+									</label>
+								</div>
+							</div>
+							<div class="form__selects">
+								<span class="form__label">Дата рождения</span>
+								<div class="form__select is-big">
+									<div class="select js-select">
+									    <span class="select__text js-select-text">Month</span>
+									    <ul class="select__list js-select-list">
+									        <li data-val="Month1">Month1</li>
+									        <li data-val="Month2">Month2</li>
+									    </ul>
+									    <select>
+									          <option value="Month1">Month1</option>
+									          <option value="Month2">Month2</option>
+									    </select>
+									</div>
+								</div>
+								<div class="form__select is-small">
+									<div class="select js-select">
+									    <span class="select__text js-select-text">Day</span>
+									    <ul class="select__list js-select-list">
+									        <li data-val="Day1">Day1</li>
+									        <li data-val="Day2">Day2</li>
+									    </ul>
+									    <select>
+									          <option value="Day1">Day1</option>
+									          <option value="Day2">Day2</option>
+									    </select>
+									</div>
+								</div>
+								<div class="form__select is-small">
+									<div class="select js-select">
+									    <span class="select__text js-select-text">Year</span>
+									    <ul class="select__list js-select-list">
+									        <li data-val="Year1">Year1</li>
+									        <li data-val="Year2">Year2</li>
+									    </ul>
+									    <select>
+									          <option value="Year1">Year1</option>
+									          <option value="Year2">Year2</option>
+									    </select>
+									</div>
+								</div>
+							</div>
+							<div class="form__row">
+								<div class="form__box">	
+									<span class="form__label">Страна</span>								
+									<div class="select js-select">
+									    <span class="select__text js-select-text"></span>
+									    <ul class="select__list js-select-list">
+									        <li data-val="Страна1">Страна1</li>
+									        <li data-val="Страна2">Страна2</li>
+									    </ul>
+									    <select>
+									          <option value="Страна1">Страна1</option>
+									          <option value="Страна2">Страна2</option>
+									    </select>
+									</div>
+								</div>
+								<div class="form__box">	
+									<span class="form__label">Город</span>								
+									<div class="select js-select">
+									    <span class="select__text js-select-text"></span>
+									    <ul class="select__list js-select-list">
+									        <li data-val="Город1">Город1</li>
+									        <li data-val="Город2">Город2</li>
+									    </ul>
+									    <select>
+									          <option value="Город1">Город1</option>
+									          <option value="Город2">Город2</option>
+									    </select>
+									</div>
+								</div>
+							</div>
+							<div class="form__row">
+								<div class="form__box">
+									<span class="form__label">E-mail</span>
+									<label>
+										<input type="text" class="input">
+										<span class="form__status is-good">Свободен</span>
+									</label>
+								</div>
+							</div>
+							<div class="form__row">
+								<div class="form__box">
+									<span class="form__label">Пароль</span>
+									<label>
+										<input type="text" class="input">
+										<span class="form__status is-bad">Пароль не надёжный</span>
+									</label>
+								</div>
+								<div class="form__box">
+									<span class="form__label">Повторите пароль</span>
+									<label>
+										<input type="text" class="input">
+										<span class="form__status is-good">Пароли совпадают</span>
+									</label>
+								</div>
+							</div>
+							<div class="form__code">
+								<span class="form__label">Введите указанный ниже код</span>
+								<button class="btn-repeat"></button>
+								<div class="form__img">
+									<img src="img/kapcha.png" alt="">
+								</div>
+								<input type="text" class="input">
+							</div>
+							<p>Нажимая кнопку «зарегистрироваться», вы соглашаетесь с <a href="#">правилами сайта</a> и подтверждаете, что ознакомились с <a href="#">политикой использования данных</a>.</p>
+							<button class="btn">Регистрация</button>
+						</form>
+					</div>
+				</div>
+			</section>
+			<!-- end content -->
+
+			<!-- begin sidebar  -->
+			<aside class="sidebar">
+				<div class="sidebar__inner">
+					<div class="sidebar__banners">
+						<div class="sidebar__slider cycle-slideshow"
+							data-cycle-fx="fade" 
+							data-cycle-timeout="4000"
+							data-cycle-slides=".banner">
+							<a href="#" class="banner">
+								<img src="img/sidebar-banner.png" alt="">
+							</a>
+							<a href="#" class="banner">
+								<img src="img/sidebar-banner.png" alt="">
+							</a>
+							<a href="#" class="banner">
+								<img src="img/sidebar-banner.png" alt="">
+							</a>
+						</div>	
+					</div>					
+					<div class="interesting">
+						<div class="interesting__inner">
+							<div class="interesting__heading">ЭТО МОЖЕТ БЫТЬ ИНТИРЕСНО</div>
+							<div class="interesting__item js-accordion">
+								<a href="#" class="interesting__title js-accordion-open">Технические инновации</a>
+								<div class="interesting__info js-accordion-block">
+									<p>В конце прошлой недели в Киеве прошел первый форум инновационных технологий Innotech.....</p>
+								</div>
+							</div>
+							<div class="interesting__item js-accordion">
+								<a href="#" class="interesting__title js-accordion-open">Технические инновации</a>
+								<div class="interesting__info js-accordion-block">
+									<p>В конце прошлой недели в Киеве прошел первый форум инновационных технологий Innotech.....</p>
+								</div>
+							</div>
+							<div class="interesting__item js-accordion">
+								<a href="#" class="interesting__title js-accordion-open">Технические инновации</a>
+								<div class="interesting__info js-accordion-block">
+									<p>В конце прошлой недели в Киеве прошел первый форум инновационных технологий Innotech.....</p>
+								</div>
+							</div>
+							<div class="interesting__item js-accordion">
+								<a href="#" class="interesting__title js-accordion-open">Технические инновации</a>
+								<div class="interesting__info js-accordion-block">
+									<p>В конце прошлой недели в Киеве прошел первый форум инновационных технологий Innotech.....</p>
+								</div>
+							</div>
+							<div class="interesting__item js-accordion">
+								<a href="#" class="interesting__title js-accordion-open">Технические инновации</a>
+								<div class="interesting__info js-accordion-block">
+									<p>В конце прошлой недели в Киеве прошел первый форум инновационных технологий Innotech.....</p>
+								</div>
+							</div>
+						</div>
+					</div>				
+				</div>
+			</aside>
+			<!-- end sidebar -->
+		</div>
+	</main>
+	<!-- end main -->
+
+	<!-- begin footer  -->
+	<footer class="footer">
+		<div class="footer__top">
+			<button class="btn-up"><span></span></button>
+			<ul class="footer__nav">
+				<li><a href="#">ГЛАВНАЯ</a></li>
+				<li><a href="#">НОВОСТИ</a></li>
+				<li><a href="#">РОБОТА</a></li>
+				<li><a href="#">ОБЯВЛЕНИЯ</a></li>
+			</ul>
+		</div>
+		<div class="footer__bottom">
+			<div class="footer__social">
+				<ul>
+					<li><a href="#" class="is-tw"></a></li>
+					<li><a href="#" class="is-fb"></a></li>
+					<li><a href="#" class="is-gp"></a></li>
+					<li><a href="#" class="is-b"></a></li>
+				</ul>
+			</div>
+			<a href="#" class="footer__logo"><img src="img/f-logo.png" alt=""></a>
+			<p>© 2013-2015 www.sky-heart.com</p>
+		</div>
+	</footer>
+	<!-- end footer -->
+</div>
+<!-- END out-->
+<!-- load scripts -->
+<script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
+</body>
+</html>
