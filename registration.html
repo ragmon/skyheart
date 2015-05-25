@@ -14,7 +14,10 @@
 <body>
 <!-- BEGIN  out-->
 <div class="out">
-	
+	<div class="beta js-beta">
+		<i class="js-beta-close beta__close"></i>
+		<p>Сайт находится в режиме Beta-тестирования. Он может содержать ошибки, сообщения о которых мы ждем от вас <a href="#">здесь</a>.</p>
+	</div>
 	<!-- begin header  -->
 	<header class="header">
 		<div class="header__inner">	
@@ -40,11 +43,45 @@
 						</ul>
 					</nav>
 					<div class="enter">
-						<p><a href="#">Вход</a> / <a href="#">Регистрация</a></p>
+						<p><a href="#" class="js-enter-btn">Вход</a> / <a href="#">Регистрация</a></p>
+						<div class="enter__popup js-enter-popup">
+							<form action="">
+								<span class="enter__title">Авторизация:</span>
+								<div class="enter__field">
+									<label>
+										<span class="enter__label">Логин</span>
+										<input type="text" class="input input_white">
+										<i>!</i>
+									</label>
+								</div>
+								<div class="enter__field">
+									<label>
+										<span class="enter__label">Пароль</span>
+										<input type="text" class="input input_white">
+										<i>!</i>
+									</label>
+								</div>
+								<div class="enter__checkbox is-tooltip">
+									<label class="checkbox"><input type="checkbox"><span>Запомнить пароль</span></label>
+									<div class="tooltip">
+										<p>Внимание! Запоминание E-mail и пароля сделает ваш аккаунт более уязвимым. Не применяйте этот параметр, если ваш компьютер доступен посторонним.</p>
+										<p>уже есть аккаунт.</p>
+									</div>
+								</div>
+								<div class="enter__links">
+									<p><a href="#">Забыли пароль?</a></p>
+									<p><a href="#">Регистрация</a></p>
+								</div>
+								<div class="enter__btn">
+									<button class="btn">Вход</button>
+								</div>
+							</form>
+						</div>
 					</div>
 				</div>				
 			</div>	
 		</div>
+		<div class="js-scroll-top"></div>
 		<!-- begin slider  -->
 		<div class="slider cycle-slideshow"
 			data-cycle-fx="fade" 
@@ -176,18 +213,20 @@
 							</div>
 							<div class="field field_radio field_radio_mod">
 								<span class="form__label">Пол</span>
-								<div class="field__radio">
-									<label class="radio">
-										<input type="radio" name="radio2">
-										<span>Мужской</span>
-									</label>
-								</div>
-								<div class="field__radio">
-									<label class="radio">
-										<input type="radio" name="radio2">
-										<span>Женский</span>
-									</label>
-								</div>
+								<div class="field__radios">
+									<div class="field__radio">
+										<label class="radio">
+											<input type="radio" name="radio2">
+											<span>Мужской</span>
+										</label>
+									</div>
+									<div class="field__radio">
+										<label class="radio">
+											<input type="radio" name="radio2">
+											<span>Женский</span>
+										</label>
+									</div>
+								</div>								
 							</div>
 							<div class="form__selects">
 								<span class="form__label">Дата рождения</span>
@@ -367,15 +406,6 @@
 
 	<!-- begin footer  -->
 	<footer class="footer">
-		<div class="footer__top">
-			<button class="btn-up"><span></span></button>
-			<ul class="footer__nav">
-				<li><a href="#">ГЛАВНАЯ</a></li>
-				<li><a href="#">НОВОСТИ</a></li>
-				<li><a href="#">РОБОТА</a></li>
-				<li><a href="#">ОБЯВЛЕНИЯ</a></li>
-			</ul>
-		</div>
 		<div class="footer__bottom">
 			<div class="footer__social">
 				<ul>
@@ -385,11 +415,14 @@
 					<li><a href="#" class="is-b"></a></li>
 				</ul>
 			</div>
-			<a href="#" class="footer__logo"><img src="img/f-logo.png" alt=""></a>
-			<p>© 2013-2015 www.sky-heart.com</p>
+			<div class="footer__text">
+				<p>© 2013-2015 www.sky-heart.com</p>
+				<a href="#" class="footer__feedback">Обратная связь</a>
+			</div>			
 		</div>
 	</footer>
 	<!-- end footer -->
+	<button class="btn-up js-btn-up"></button>
 </div>
 <!-- END out-->
 <!-- load scripts -->

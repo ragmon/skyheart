@@ -65,5 +65,72 @@ head.ready(function() {
        };
        return false;
     });
+
+    //btn up
+    $(window).scroll(function() {    
+        var scroll = $(window).scrollTop();
+        if ($('.js-scroll-top').length>0) {
+            if (scroll >= $('.js-scroll-top').offset().top) {
+                $(".js-btn-up").addClass("is-active");
+            } else {
+                $(".js-btn-up").removeClass("is-active");
+            };
+        };
+    });
+    $(window).load(function() {    
+        var scroll = $(window).scrollTop();
+        if ($('.js-scroll-top').length>0) {
+            if (scroll >= $('.js-wrap').offset().top) {
+                $(".js-btn-up").addClass("is-active");
+            } else {
+                $(".js-btn-up").removeClass("is-active");
+            };
+        };
+    });
+    $('.js-btn-up').click(function(event) {
+         $("html, body").animate({ scrollTop: 0 }, 1000);
+            return false;
+    });
+
+    //enter
+    $('.enter').each(function() {
+        $('.js-enter-btn').on('click', function () {
+            $('.js-enter-popup').toggleClass('is-active');
+            return false;
+        });
+        $('body').on('click', function() {
+            $('.js-enter-popup').removeClass('is-active');
+        });
+        $('.js-enter-popup').on('click', function(event) {
+            event.stopPropagation();
+        });
+    });
+    $('.js-beta-close').on('click', function() {
+        $('.js-beta').addClass('is-hidden');
+        return false;
+    });
+    //header
+
+    //btn up
+    $(window).scroll(function() {    
+        var scroll = $(window).scrollTop();
+        if ($('.search').length>0) {
+            if (scroll >= $('.search').offset().top) {
+                $("body").addClass("is-fixed");
+            } else {
+                $("body").removeClass("is-fixed");
+            };
+        };
+    });
+    $(window).load(function() {    
+        var scroll = $(window).scrollTop();
+        if ($('.search').length>0) {
+            if (scroll >= $('.search').offset().top) {
+                $("body").addClass("is-fixed");
+            } else {
+                $("body").removeClass("is-fixed");
+            };
+        };
+    });
 });
 
