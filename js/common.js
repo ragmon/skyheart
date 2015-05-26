@@ -80,7 +80,7 @@ head.ready(function() {
     $(window).load(function() {    
         var scroll = $(window).scrollTop();
         if ($('.js-scroll-top').length>0) {
-            if (scroll >= $('.js-wrap').offset().top) {
+            if (scroll >= $('.js-scroll-top').offset().top) {
                 $(".js-btn-up").addClass("is-active");
             } else {
                 $(".js-btn-up").removeClass("is-active");
@@ -105,13 +105,26 @@ head.ready(function() {
             event.stopPropagation();
         });
     });
+    //cabinet
+    $('.profile').each(function() {
+        $('.js-cabinet-btn').on('click', function () {
+            $('.js-cabinet-popup').toggleClass('is-active');
+            return false;
+        });
+        $('body').on('click', function() {
+            $('.js-cabinet-popup').removeClass('is-active');
+        });
+        $('.js-cabinet-popup').on('click', function(event) {
+            event.stopPropagation();
+        });
+    });
     $('.js-beta-close').on('click', function() {
         $('.js-beta').addClass('is-hidden');
         return false;
     });
     //header
 
-    //btn up
+    //nav scroll
     $(window).scroll(function() {    
         var scroll = $(window).scrollTop();
         if ($('.search').length>0) {
@@ -131,6 +144,40 @@ head.ready(function() {
                 $("body").removeClass("is-fixed");
             };
         };
+    });
+
+    $(window).scroll(function() {    
+        var scroll = $(window).scrollTop();
+        if ($('.slider').length>0) {
+            if (scroll >= $('.slider').offset().top) {
+                $("body").addClass("is-transition");
+            } else {
+                $("body").removeClass("is-transition");
+            };
+        };
+    });
+    $(window).load(function() {    
+        var scroll = $(window).scrollTop();
+        if ($('.slider').length>0) {
+            if (scroll >= $('.slider').offset().top) {
+                $("body").addClass("is-transition");
+            } else {
+                $("body").removeClass("is-transition");
+            };
+        };
+    });
+    //theme
+    $('.js-theme-btn').on('click', function() {
+        $('.js-theme-block').toggleClass('is-active');
+        return false;
+    });
+    $('.js-theme').each(function() {
+        $('body').on('click', function () {
+            $('.js-theme-block').removeClass('is-active');            
+        });
+        $(this).on('click', function (event) {
+            event.stopPropagation();        
+        });
     });
 });
 

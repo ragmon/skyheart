@@ -1,0 +1,303 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Template</title>
+	<meta name="viewport" content="initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <meta name="viewport" content="width=1200"> -->
+	<!-- <meta name="viewport" content="initial-scale=1, user-scalable=no"> -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" media="all" href="css/inner.css" >
+	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
+</head>
+<body>
+<!-- BEGIN  out-->
+<div class="out">
+	<div class="beta js-beta">
+		<i class="js-beta-close beta__close"></i>
+		<p>Сайт находится в режиме Beta-тестирования. Он может содержать ошибки, сообщения о которых мы ждем от вас <a href="#">здесь</a>.</p>
+	</div>
+	
+	<!-- begin header  -->
+	<header class="header">
+		<div class="header__inner">	
+			<div class="header__menu">
+				<div class="header__left">
+					<a href="#" class="logo"><img src="img/svg/logo.svg" alt=""></a>
+					<div class="lang">
+						<a href="#" class="is-active">rus</a>
+						<div class="lang__drop">
+							<a href="#">eng</a>
+						</div>
+					</div>
+				</div>	
+				<button class="nav-btn js-nav-btn"><span></span></button>
+				<div class="header__nav js-nav">
+					<nav class="nav">
+						<ul>
+							<li><a href="#">Новости</a></li>
+							<li><a href="#">Объявления</a></li>
+							<li><a href="#">Работа</a></li>
+							<li><a href="#">Блоги</a></li>
+							<li><a href="#">Чат</a></li>
+						</ul>
+					</nav>
+					<div class="profile">
+						<div class="profile__inner">
+							<a href="#" class="profile__link js-cabinet-btn">
+								<div class="profile__img">
+									<img src="img/profile.png" alt="">
+								</div>
+								<span class="profile__name">Имя Фамилия</span>
+							</a>
+							<div class="profile__message">
+								<a href="#">
+									<i></i>
+									<span>1</span>
+								</a>
+							</div>
+						</div>
+						<div class="cabinet js-cabinet-popup">
+							<div class="cabinet__title">Мой кабинет</div>
+							<div class="cabinet__img">
+								<img src="img/cabinet.png" alt="">
+							</div>
+							<div class="cabinet__name">Имя Фамилия</div>
+							<ul class="cabinet__list">
+								<li><a href="#">Мои сообщения <small>+37</small></a></li>
+								<li><a href="#">Мои обьявления <span>16|4</span></a></li>
+								<li><a href="#">Моё резюме</a></li>
+								<li><a href="#">Мой блог</a></li>
+								<li><a href="#">Чат</a></li>
+							</ul>
+							<div class="cabinet__links">
+								<a href="#" class="cabinet__settings"></a>
+								<a href="#" class="cabinet__out">выйти</a>
+							</div>
+						</div>
+					</div>
+				</div>				
+			</div>	
+		</div>
+		<div class="js-scroll-top"></div>
+		<!-- begin slider  -->
+		<div class="slider cycle-slideshow"
+			data-cycle-fx="fade" 
+			data-cycle-timeout="4000"
+			data-cycle-slides=".slider__item"
+			data-cycle-prev=".slider__prev"
+			data-cycle-next=".slider__next"
+			data-cycle-pager=".slider__pager">
+			<div class="slider__btns">
+				<div class="slider__btns-in">
+					<a href="#" class="slider__prev"></a>
+					<a href="#" class="slider__next"></a>
+				</div>			
+			</div>
+			<div class="slider__item" style="background-image: url(img/slide.jpg);">
+				<div class="slider__inner">
+					<div class="slider__info">
+						<div class="slider__title">Здесь может быть <small>ваша реклама</small></div>
+						<span>80960000000</span>
+						<span>company@mail.com</span>
+					</div>
+				</div>
+			</div>
+			<div class="slider__item" style="background-image: url(img/slide.jpg);">
+				<div class="slider__inner">
+					<div class="slider__info">
+						<div class="slider__title">Здесь может быть <small>ваша реклама</small></div>
+						<span>80960000000</span>
+						<span>company@mail.com</span>
+					</div>
+				</div>
+			</div>
+			<div class="slider__item" style="background-image: url(img/slide.jpg);">
+				<div class="slider__inner">
+					<div class="slider__info">
+						<div class="slider__title">Здесь может быть <small>ваша реклама</small></div>
+						<span>80960000000</span>
+						<span>company@mail.com</span>
+					</div>
+				</div>
+			</div>
+			<div class="slider__item" style="background-image: url(img/slide.jpg);">
+				<div class="slider__inner">
+					<div class="slider__info">
+						<div class="slider__title">Здесь может быть <small>ваша реклама</small></div>
+						<span>80960000000</span>
+						<span>company@mail.com</span>
+					</div>
+				</div>
+			</div>
+			<div class="slider__pager"></div>
+		</div>
+		<!-- end slider -->
+		<div class="search">
+			<form action="">
+				<div class="search__field">
+					<div class="s-select js-select">
+					    <span class="s-select__text js-select-text">Раздел</span>
+					    <ul class="s-select__list js-select-list">
+					        <li data-val="Главная">Главная</li>
+					        <li data-val="Новости">Новости</li>
+					        <li data-val="Объявления">Объявления</li>
+					        <li data-val="Работа">Работа</li>
+					        <li data-val="Блог">Блог</li>
+					    </ul>
+					    <select>
+					          <option value="Главная">Главная</option>
+					          <option value="Новости">Новости</option>
+					          <option value="Объявления">Объявления</option>
+					          <option value="Работа">Работа</option>
+					          <option value="Блог">Блог</option>
+					    </select>
+					</div>
+					<label>
+						<input type="text" class="search__input" placeholder="Что будем искать?">
+					</label>					
+				</div>				
+				<button class="search__btn"><span>Поиск</span></button>
+			</form>
+		</div>	
+	</header>
+	<!-- end header -->
+	
+	<!-- begin main  -->
+	<main class="main">
+		<div class="main__inner">
+			<div class="feedback">
+				<div class="heading">Обратная связь</div>
+				<div class="feedback__theme js-theme">					
+					<div class="theme js-theme-btn">Тема письма</div>
+					<ul class="feedback__sidebar js-theme-block">
+						<li><a href="#">Предложение</a></li>
+						<li><a href="#">Вопрос</a></li>
+						<li><a href="#">Проблема с сайтом</a></li>
+						<li><a href="#" class="is-active">Оценка проекта</a></li>
+					</ul>
+				</div>
+				<div class="feedback__content">
+					<div class="rating">
+						<div class="rating__row">
+							<div class="stars">
+								<a href="#"></a>
+								<a href="#"></a>
+								<a href="#"></a>
+								<a href="#"></a>
+								<a href="#"></a>
+							</div>
+							<span>Полезность</span>
+						</div>
+						<div class="rating__row">
+							<div class="stars">
+								<a href="#"></a>
+								<a href="#"></a>
+								<a href="#"></a>
+								<a href="#"></a>
+								<a href="#"></a>
+							</div>
+							<span>Удобство</span>
+						</div>
+						<div class="rating__row">
+							<div class="stars">
+								<a href="#"></a>
+								<a href="#"></a>
+								<a href="#"></a>
+								<a href="#"></a>
+								<a href="#"></a>
+							</div>
+							<span>Актуальность</span>
+						</div>
+						<div class="rating__row">
+							<div class="stars">
+								<a href="#"></a>
+								<a href="#"></a>
+								<a href="#"></a>
+								<a href="#"></a>
+								<a href="#"></a>
+							</div>
+							<span>Наполнение</span>
+						</div>
+						<div class="rating__row">
+							<div class="stars">
+								<a href="#"></a>
+								<a href="#"></a>
+								<a href="#"></a>
+								<a href="#"></a>
+								<a href="#"></a>
+							</div>
+							<span>Дизайн</span>
+						</div>
+						<div class="rating__row">
+							<div class="stars">
+								<a href="#"></a>
+								<a href="#"></a>
+								<a href="#"></a>
+								<a href="#"></a>
+								<a href="#"></a>
+							</div>
+							<span>Обратная связь</span>
+						</div>
+					</div>
+					<div class="feedback__form">
+						<form action="">
+							<div class="feedback__field">
+								<label>
+									<span class="feedback__label">Прокомментируйте вашу оценку</span>
+									<textarea name="" id="" cols="30" rows="10" class="textarea textarea_black" placeholder="Ваш коментарий"></textarea>
+								</label>
+							</div>
+							<div class="feedback__row">
+								<div class="feedback__col">
+									<input type="text" class="input input_black" placeholder="Ваше имя">
+								</div>
+								<div class="feedback__col">
+									<input type="text" class="input input_black" placeholder="E-mail">
+								</div>
+							</div>
+							<div class="form__code">
+								<span class="form__label">Введите указанный ниже код</span>
+								<button class="btn-repeat"></button>
+								<div class="form__img">
+									<img src="img/kapcha.png" alt="">
+								</div>
+								<input type="text" class="input input_black">
+							</div>
+							<div class="form__btn">
+								<button class="btn">Отправить</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<!-- end main -->
+
+	<!-- begin footer  -->
+	<footer class="footer">
+		<div class="footer__bottom">
+			<div class="footer__social">
+				<ul>
+					<li><a href="#" class="is-tw"></a></li>
+					<li><a href="#" class="is-fb"></a></li>
+					<li><a href="#" class="is-gp"></a></li>
+					<li><a href="#" class="is-b"></a></li>
+				</ul>
+			</div>
+			<div class="footer__text">
+				<p>© 2013-2015 www.sky-heart.com</p>
+				<a href="#" class="footer__feedback">Обратная связь</a>
+			</div>			
+		</div>
+	</footer>
+	<!-- end footer -->
+	<button class="btn-up js-btn-up"></button>
+</div>
+<!-- END out-->
+<!-- load scripts -->
+<script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
+</body>
+</html>

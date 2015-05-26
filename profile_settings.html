@@ -43,8 +43,39 @@
 							<li><a href="#">Чат</a></li>
 						</ul>
 					</nav>
-					<div class="enter">
-						<p><a href="#">Вход</a> / <a href="#">Регистрация</a></p>
+					<div class="profile">
+						<div class="profile__inner">
+							<a href="#" class="profile__link js-cabinet-btn">
+								<div class="profile__img">
+									<img src="img/profile.png" alt="">
+								</div>
+								<span class="profile__name">Имя Фамилия</span>
+							</a>
+							<div class="profile__message">
+								<a href="#">
+									<i></i>
+									<span>1</span>
+								</a>
+							</div>
+						</div>
+						<div class="cabinet js-cabinet-popup">
+							<div class="cabinet__title">Мой кабинет</div>
+							<div class="cabinet__img">
+								<img src="img/cabinet.png" alt="">
+							</div>
+							<div class="cabinet__name">Имя Фамилия</div>
+							<ul class="cabinet__list">
+								<li><a href="#">Мои сообщения <small>+37</small></a></li>
+								<li><a href="#">Мои обьявления <span>16|4</span></a></li>
+								<li><a href="#">Моё резюме</a></li>
+								<li><a href="#">Мой блог</a></li>
+								<li><a href="#">Чат</a></li>
+							</ul>
+							<div class="cabinet__links">
+								<a href="#" class="cabinet__settings"></a>
+								<a href="#" class="cabinet__out">выйти</a>
+							</div>
+						</div>
 					</div>
 				</div>				
 			</div>	
@@ -142,23 +173,106 @@
 				<div class="content__box">
 					<div class="form">
 						<form action="">
-							<div class="form__password">
-								<span class="form__label">Новый пароль</span>
-								<label>
-									<input type="text" class="input">
-									<span class="form__status is-bad">Пароль не надёжный</span>
-								</label>
+							<table class="table">
+								<tr>
+									<td>Ваше имя</td>
+									<td>Дмитрий</td>
+								</tr>
+								<tr>
+									<td>Фамилия</td>
+									<td>Гормаш</td>
+								</tr>
+								<tr>
+									<td>Логин</td>
+									<td>kanonir</td>
+								</tr>
+								<tr>
+									<td>Пол</td>
+									<td>Мужской</td>
+								</tr>
+							</table>
+							<span class="form__label">Дата рождения</span>
+							<table class="table table_mod">
+								<tr>
+									<td>Июнь</td>
+									<td>14</td>
+									<td>1985</td>
+								</tr>
+							</table>
+							<div class="form__row">
+								<div class="form__box">
+									<span class="form__label">Страна</span>
+									<div class="select js-select">
+									    <span class="select__text js-select-text"></span>
+									    <ul class="select__list js-select-list">
+									        <li data-val="Страна1">Страна1</li>
+									        <li data-val="Страна2">Страна2</li>
+									    </ul>
+									    <select>
+									          <option value="Страна1">Страна1</option>
+									          <option value="Страна2">Страна2</option>
+									    </select>
+									</div>
+								</div>
 							</div>
-							<div class="form__password">
-								<span class="form__label">Повторите пароль</span>
-								<label>
-									<input type="text" class="input">
-									<span class="form__status is-good">Пароли совпадают</span>
-								</label>
+							<div class="form__row">
+								<div class="form__box">
+									<span class="form__label">Город</span>
+									<div class="select js-select">
+									    <span class="select__text js-select-text"></span>
+									    <ul class="select__list js-select-list">
+									        <li data-val="Город1">Город1</li>
+									        <li data-val="Город2">Город2</li>
+									    </ul>
+									    <select>
+									          <option value="Город1">Город1</option>
+									          <option value="Город2">Город2</option>
+									    </select>
+									</div>
+								</div>
 							</div>
-							<div class="form__btn">
-								<button class="btn">Восстановить</button>
-							</div>							
+							<div class="form__row">
+								<div class="form__box">
+									<span class="form__label">E-mail</span>
+									<label>
+										<input type="text" class="input">
+										<span class="form__status is-good">Свободен</span>
+									</label>
+								</div>
+								<div class="form__confirm">
+									<button class="btn">подтвердить</button>
+								</div>
+							</div>
+							<div class="form__row">
+								<div class="form__box">
+									<span class="form__label">Пароль</span>
+									<label>
+										<input type="text" class="input">
+										<span class="form__status is-bad">Пароль не надёжный</span>
+									</label>
+								</div>
+							</div>
+							<div class="form__row">
+								<div class="form__box">
+									<span class="form__label">Повторите пароль</span>
+									<label>
+										<input type="text" class="input">
+										<span class="form__status is-good">Пароли совпадают</span>
+									</label>
+								</div>
+							</div>
+							<div class="form__row">
+								<div class="form__box">
+									<div class="form__btns">
+										<div>
+											<button class="btn">Изменить</button>
+										</div>
+										<div>
+											<button class="btn">Отмена</button>
+										</div>
+									</div>		
+								</div>
+							</div>												
 						</form>
 					</div>
 				</div>

@@ -300,14 +300,33 @@ a
 input.input
 	background-color: #CBD6D3
 	width: 100%
-	padding: 10px 10px 
+	padding: 11px 
 	color: #6587AF
 	+light
 	font-size: 14px
 	+box 
 	+border-radius(5px)
 	&_white
+		background: #fff
+	&_black
+		color: #555
+		+placeholder-color(#555)
+textarea.textarea
+	background-color: #CBD6D3
+	width: 100%
+	padding: 11px 
+	color: #6587AF
+	+light
+	font-size: 14px
+	+box 
+	border: none
+	resize: none
+	height: 225px
+	&_white
 		background: #fff 
+	&_black
+		color: #555
+		+placeholder-color(#555)
 .btn-repeat
 	+s(btn-repeat)
 	display: inline-block
@@ -355,3 +374,13 @@ input.input
 		.tooltip
 			+opacity(1)
 			visibility: visible
+
+.stars
+	font-size: 0
+	a
+		+s(star) 
+		display: inline-block
+		vertical-align: top
+		margin: 0 2px
+		+r(700)
+			margin: 0 0 0 1px 
