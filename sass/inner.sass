@@ -1295,13 +1295,37 @@ body
 			position: relative
 			z-index: 2 
 	&__item
-		padding: 15px
+		padding: 10px 15px 7px
 		+transition(background 0.3s)
+		position: relative
 		&:hover
 			background: #ceebef 
+	&__body
+		&:hover
+			.advertisement__img
+				+opacity(1)
+				visibility: visible
+				margin-top: 0
+				top: 0
+	&__img
+		background: #46778D 
+		position: absolute
+		top: 50%
+		width: 300px
+		margin-top: -150px
+		height: 300px
+		right: 100%
+		+opacity(0)
+		visibility: hidden
+		+transition(all 0.3s)
+		+r1
+			display: none
+		img
+			width: 100%
+			height: 100%
 	&__top
 		+clr
-		margin-bottom: 7px
+		margin-bottom: 4px
 		.trade
 			float: left
 	&__price
@@ -1314,6 +1338,8 @@ body
 		+bold
 		color: #46778D
 		margin-bottom: 5px
+		a
+			color: #46778D
 	p
 		font-size: 12px
 		+light
