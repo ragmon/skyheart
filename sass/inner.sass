@@ -179,6 +179,8 @@ body
 	margin: 0 auto
 	text-align: center
 	position: relative
+	+r1
+		padding: 27px 18px 
 	&__input
 		border: 2px solid #fff
 		border-right: none
@@ -191,6 +193,8 @@ body
 		+box 
 		margin-bottom: 16px
 		+placeholder-color(rgba(255, 255, 255, 0.49)) 
+		+box
+		height: 41px
 	&__btn
 		+light
 		font-size: 17px
@@ -920,6 +924,7 @@ body
 .profile
 	float: right
 	position: relative
+	width: 175px
 	+r1
 		float: none
 		display: inline-block
@@ -1261,3 +1266,262 @@ body
 		color: #577DAA
 		+r(700)
 			font-size: 14px
+			
+
+//news
+.advertisement
+	margin-bottom: 10px
+	+box-shadow(0 3px 6px rgba(20, 45, 96, 0.75))
+	&__heading
+		background: url(../img/s-advertisement.jpg) no-repeat right top 
+		position: relative
+		+reg
+		font-size: 20px
+		color: #fff
+		text-transform: uppercase
+		height: 55px
+		line-height: 55px
+		padding: 0 20px  
+		text-align: center 
+		&:before
+			content: "" 
+			position: absolute
+			top: 0
+			bottom: 0
+			left: 0
+			right: 0
+			background: rgba(15, 43, 113, 0.46) 
+		span
+			position: relative
+			z-index: 2 
+	&__item
+		padding: 15px
+		+transition(background 0.3s)
+		&:hover
+			background: #ceebef 
+	&__top
+		+clr
+		margin-bottom: 7px
+		.trade
+			float: left
+	&__price
+		float: right
+		font-size: 12px
+		color: #555
+		+reg
+	h5
+		font-size: 15px
+		+bold
+		color: #46778D
+		margin-bottom: 5px
+	p
+		font-size: 12px
+		+light
+		color: #555
+		margin-bottom: 5px
+		line-height: 1.3
+	&__footer
+		+clr
+		span
+			+semi
+			color: #555
+			font-size: 12px
+	&__name
+		float: left
+	&__category
+		float: right
+
+.item
+	position: relative
+	padding: 0 0 0 33% 
+	min-height: 200px 
+	background: #fff
+	+box-shadow(0 3px 6px rgba(20, 45, 96, 0.75)) 
+	+transition(background 0.3s)
+	margin-bottom: 10px
+	+r1
+		padding: 0 
+	&:hover
+		background: #d7f0f3 
+		.item__img
+			&:after
+				+arr(13, 18, #d7f0f3, l) 
+	&__img
+		position: absolute
+		top: 0
+		left: 0
+		bottom: 0
+		width: 33%
+		font-size: 0
+		overflow: hidden
+		background: #417ab5 
+		+r1
+			display: none
+		&:after
+			position: absolute
+			top: 15px
+			right: 0
+			+arr(13, 18, #fff, l) 
+			content: "" 
+			+transition(all 0.3s)
+		img
+			min-width: 100%
+			min-height: 100% 
+	&__info
+		padding: 15px
+		h4
+			+reg
+			font-size: 18px
+			line-height: 1.3
+			color: #44709c
+			margin-bottom: 20px
+			+r1
+				margin-bottom: 10px
+			a
+				color: #44709c
+		p
+			color: #555 
+			+light
+			font-size: 12px
+			line-height: 1.3
+	&__bottom
+		+clr
+		font-size: 0
+		padding: 15px 0 0 
+	&__date
+		color: #555 
+		+reg
+		font-size: 12px
+		line-height: 1.3
+		float: left
+		margin-right: 15px
+	&__viewed
+		float: left
+		+r(500)
+			float: right
+		li
+			display: inline-block
+			vertical-align: middle
+			margin-right: 15px
+		a			
+			color: #555 
+			+reg
+			font-size: 12px
+			line-height: 16px
+			display: inline-block
+			position: relative
+			&:hover
+				i
+					+opacity(0.7)
+			i
+				display: inline-block
+				vertical-align: top
+				+opacity(0.46)
+				+transition(all 0.3s)
+				margin: 0 5px 0 0 
+			&.is-view
+				i
+					+s(view)
+			&.is-comment
+				i
+					+s(comment)
+	&__social
+		float: right
+		padding: 10px 0 0 
+		+r(500)
+			float: none
+			text-align: center
+			clear: both
+		li
+			display: inline-block
+			vertical-align: middle
+			margin-left: 15px
+			a
+				display: inline-block
+				+opacity(0.46)
+				+transition(all 0.3s)
+				&:hover
+					+opacity(0.7)
+				&.is-vk
+					+s(c-vk-dark)
+				&.is-fb
+					+s(c-fb-dark)
+				&.is-gp
+					+s(c-gp-dark)
+				&.is-tw
+					+s(c-tw-dark)
+		
+.filter
+	font-size: 0
+	text-align: center
+	clear: both
+	ul
+		+g(#FFF, #DBDBDB)
+		display: inline-block
+		border: 1px solid #C8C8C8
+		+border-radius(5px)
+		overflow: hidden
+	li
+		display: inline-block
+		padding: 6px 7px 4px
+		+r1
+			display: block
+			padding: 6px 14px 4px 
+		a
+			color: #4c8299
+			font-size: 12px
+			+semi
+			&.is-active, &:hover
+				text-decoration: underline
+
+.pages
+	text-align: center
+	font-size: 0
+	padding: 20px 0
+	clear: both 
+	&__text
+		+semi
+		font-size: 12px
+		color: #4C8299
+		display: inline-block
+		vertical-align: top
+		padding: 6px 15px 
+	ul
+		display: inline-block
+		vertical-align: top
+		+g(#FFF, #DBDBDB)
+		border: 1px solid #C8C8C8
+		+border-radius(5px)
+		overflow: hidden
+		margin: 0 15px 
+	li
+		display: inline-block
+		vertical-align: top
+		a
+			min-width: 28px
+			+semi
+			font-size: 13px
+			color: #4C8299
+			line-height: 25px
+			height: 25px
+			display: block
+			border-left: 1px solid #C8C8C8
+			padding: 0 3px
+			+box 
+			&:hover, &:active, &.is-active
+				background: #2f5c89
+				color: #fff
+				i
+					&.is-prev
+						+s(prev-hover)
+					&.is-next
+						+s(next-hover)
+			i
+				display: inline-block
+				&.is-prev
+					+s(prev)
+				&.is-next
+					+s(next)  
+		&:first-child
+			a
+				border: none

@@ -384,3 +384,38 @@ textarea.textarea
 		margin: 0 2px
 		+r(700)
 			margin: 0 0 0 1px 
+
+.trade
+	display: inline-block
+	vertical-align: top
+	+semi
+	font-size: 12px
+	padding: 5px 12px 5px 42px 
+	+border-radius(3px)
+	position: relative
+	&:before
+		content: "" 
+		position: absolute
+		top: 4px
+		+transition(all 0.2s)
+	&:active
+		top: 1px
+	&_sell
+		color: #581c2c 
+		border: 1px solid #581C2C
+		&:hover, &:active
+			&:before
+				left: 15px
+		&:before
+			+s(sell)
+			left: 10px
+	&_buy
+		color: #76A133
+		border: 1px solid #76A133
+		&:hover, &:active
+			&:before
+				left: 10px
+		&:before
+			+s(buy)
+			left: 15px
+		
