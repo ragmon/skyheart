@@ -128,7 +128,7 @@ head.ready(function() {
     $(window).scroll(function() {    
         var scroll = $(window).scrollTop();
         if ($('.js-scroll-top').length>0) {
-            if (scroll >= $('.js-scroll-top').offset().top) {
+            if (scroll > $('.header').offset().top+50) {
                 $("body").addClass("is-transition");
             } else {
                 $("body").removeClass("is-transition");
@@ -138,7 +138,7 @@ head.ready(function() {
     $(window).load(function() {    
         var scroll = $(window).scrollTop();
         if ($('.js-scroll-top').length>0) {
-            if (scroll >= $('.js-scroll-top').offset().top) {
+            if (scroll > $('.header').offset().top+50) {
                 $("body").addClass("is-transition");
             } else {
                 $("body").removeClass("is-transition");
