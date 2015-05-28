@@ -179,5 +179,10 @@ head.ready(function() {
             event.stopPropagation();        
         });
     });
+
+    //news
+    $('.news__img').on('click', function() {
+        $(this).toggleClass('is-active');
+    });
 });
 
