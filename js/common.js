@@ -127,6 +127,26 @@ head.ready(function() {
     //nav scroll
     $(window).scroll(function() {    
         var scroll = $(window).scrollTop();
+        if ($('.js-scroll-top').length>0) {
+            if (scroll >= $('.js-scroll-top').offset().top) {
+                $("body").addClass("is-transition");
+            } else {
+                $("body").removeClass("is-transition");
+            };
+        };
+    });
+    $(window).load(function() {    
+        var scroll = $(window).scrollTop();
+        if ($('.js-scroll-top').length>0) {
+            if (scroll >= $('.js-scroll-top').offset().top) {
+                $("body").addClass("is-transition");
+            } else {
+                $("body").removeClass("is-transition");
+            };
+        };
+    });
+    $(window).scroll(function() {    
+        var scroll = $(window).scrollTop();
         if ($('.search').length>0) {
             if (scroll >= $('.search').offset().top) {
                 $("body").addClass("is-fixed");
@@ -146,26 +166,6 @@ head.ready(function() {
         };
     });
 
-    $(window).scroll(function() {    
-        var scroll = $(window).scrollTop();
-        if ($('.slider').length>0) {
-            if (scroll >= $('.slider').offset().top) {
-                $("body").addClass("is-transition");
-            } else {
-                $("body").removeClass("is-transition");
-            };
-        };
-    });
-    $(window).load(function() {    
-        var scroll = $(window).scrollTop();
-        if ($('.slider').length>0) {
-            if (scroll >= $('.slider').offset().top) {
-                $("body").addClass("is-transition");
-            } else {
-                $("body").removeClass("is-transition");
-            };
-        };
-    });
     //theme
     $('.js-theme-btn').on('click', function() {
         $('.js-theme-block').toggleClass('is-active');
@@ -180,9 +180,10 @@ head.ready(function() {
         });
     });
 
-    //news
-    $('.news__img').on('click', function() {
-        $(this).toggleClass('is-active');
+    //slider
+    $('.js-slider-close').on('click', function() {
+        $('.js-slider').addClass('is-hidden');
+        return false;
     });
 });
 

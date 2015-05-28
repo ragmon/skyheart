@@ -76,7 +76,7 @@ a { text-decoration: none; }
 .checkbox span { font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 400; font-size: 12.54px; color: #555555; }
 .checkbox span:before, .checkbox span:after { content: ""; position: absolute; }
 .checkbox span:before { top: 0; left: 0; width: 16px; height: 16px; background-color: white; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; }
-.checkbox span:after { top: -2px; left: 4px; background: url('../img/icons-sfd195046ef.png') 0 -240px no-repeat; width: 14px; height: 13px; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; visibility: hidden; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; }
+.checkbox span:after { top: -2px; left: 4px; background: url('../img/icons-sb884e22337.png') 0 -333px no-repeat; width: 14px; height: 13px; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; visibility: hidden; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; }
 
 input.input { background-color: #cbd6d3; width: 100%; padding: 11px; color: #6587af; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 300; font-size: 14px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; }
 input.input_white { background: white; }
@@ -90,7 +90,7 @@ textarea.textarea_black { color: #555555; }
 textarea.textarea_black:-moz-placeholder, textarea.textarea_black::-moz-placeholder { color: #555555; opacity: 1; }
 textarea.textarea_black::-webkit-input-placeholder { color: #555555; }
 
-.btn-repeat { background: url('../img/icons-sfd195046ef.png') 0 0 no-repeat; width: 24px; height: 21px; display: inline-block; vertical-align: top; }
+.btn-repeat { background: url('../img/icons-sb884e22337.png') 0 0 no-repeat; width: 24px; height: 21px; display: inline-block; vertical-align: top; }
 
 .btn { font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 400; font-size: 13px; color: white; text-transform: uppercase; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; background-color: #2d4164; padding: 11px 15px; position: relative; -moz-transition: opacity 0.3s; -o-transition: opacity 0.3s; -webkit-transition: opacity 0.3s; transition: opacity 0.3s; }
 .btn:hover { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90); opacity: 0.9; }
@@ -103,7 +103,7 @@ textarea.textarea_black::-webkit-input-placeholder { color: #555555; }
 .is-tooltip:hover .tooltip { filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false); opacity: 1; visibility: visible; }
 
 .stars { font-size: 0; }
-.stars a { background: url('../img/icons-sfd195046ef.png') 0 -720px no-repeat; width: 19px; height: 18px; display: inline-block; vertical-align: top; margin: 0 2px; }
+.stars a { background: url('../img/icons-sb884e22337.png') 0 -915px no-repeat; width: 19px; height: 18px; display: inline-block; vertical-align: top; margin: 0 2px; }
 @media only screen and (max-width: 700px) { .stars a { margin: 0 0 0 1px; } }
 
 .trade { display: inline-block; vertical-align: top; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 600; font-size: 12px; padding: 5px 12px 5px 42px; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; position: relative; }
@@ -111,10 +111,12 @@ textarea.textarea_black::-webkit-input-placeholder { color: #555555; }
 .trade:active { top: 1px; }
 .trade_sell { color: #581c2c; border: 1px solid #581c2c; }
 .trade_sell:hover:before, .trade_sell:active:before { left: 15px; }
-.trade_sell:before { background: url('../img/icons-sfd195046ef.png') 0 -657px no-repeat; width: 20px; height: 19px; left: 10px; }
+.trade_sell:before { background: url('../img/icons-sb884e22337.png') 0 -852px no-repeat; width: 20px; height: 19px; left: 10px; }
 .trade_buy { color: #76a133; border: 1px solid #76a133; }
 .trade_buy:hover:before, .trade_buy:active:before { left: 10px; }
-.trade_buy:before { background: url('../img/icons-sfd195046ef.png') 0 -118px no-repeat; width: 20px; height: 19px; left: 15px; }
+.trade_buy:before { background: url('../img/icons-sb884e22337.png') 0 -118px no-repeat; width: 20px; height: 19px; left: 15px; }
+
+.btn-answer { font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 400; border: 1px solid #224271; color: #224271; width: 100px; font-size: 12px; text-transform: uppercase; padding: 10px; background: none; text-align: center; }
 
 .l { *zoom: 1; }
 .l:after { content: " "; display: table; clear: both; }
