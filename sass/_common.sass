@@ -423,9 +423,17 @@ textarea.textarea
 	+reg
 	border: 1px solid #224271
 	color: #224271 
-	width: 100px
 	font-size: 12px
 	text-transform: uppercase
-	padding: 10px
+	padding: 10px 20px
 	background: none 
 	text-align: center
+	+transition(all 0.3s)
+	position: relative
+	+box
+	&:hover, &:active
+		background: #224271 
+		color: #fff
+	&:active
+		top: 1px
+	
