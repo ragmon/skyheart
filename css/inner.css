@@ -505,10 +505,9 @@ body.is-fixed .header__menu { max-width: 1074px; margin: 0 auto; padding: 10px 1
 .item__img:after { position: absolute; top: 15px; right: 0; width: 0px; height: 0px; border-style: solid; border-width: 9px 13px 9px 0; border-color: transparent white transparent transparent; content: ""; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; }
 .item__img img { min-width: 100%; min-height: 100%; }
 .item__info { padding: 15px; }
-.item__info h4 { font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 400; font-size: 18px; line-height: 1.3; color: #44709c; margin-bottom: 20px; }
-@media only screen and (max-width: 980px) { .item__info h4 { margin-bottom: 10px; } }
+.item__info h4 { font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 400; font-size: 18px; line-height: 1.3; color: #44709c; margin-bottom: 10px; }
 .item__info h4 a { color: #44709c; }
-.item__info p { color: #555555; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 300; font-size: 12px; line-height: 1.3; }
+.item__info p { color: #555555; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 300; font-size: 12px; line-height: 1.3; margin-bottom: 10px; }
 .item__bottom { *zoom: 1; font-size: 0; padding: 15px 0 0; }
 .item__bottom:after { content: " "; display: table; clear: both; }
 .item__date { color: #555555; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 400; font-size: 12px; line-height: 1.3; float: left; margin-right: 15px; }
