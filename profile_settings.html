@@ -18,6 +18,7 @@
 		<i class="js-beta-close beta__close"></i>
 		<p>Сайт находится в режиме Beta-тестирования. Он может содержать ошибки, сообщения о которых мы ждем от вас <a href="#">здесь</a>.</p>
 	</div>
+	
 	<!-- begin header  -->
 	<header class="header">
 		<div class="header__inner">	
@@ -42,39 +43,38 @@
 							<li><a href="#">Чат</a></li>
 						</ul>
 					</nav>
-					<div class="enter">
-						<p><a href="#" class="js-enter-btn">Вход</a> / <a href="#">Регистрация</a></p>
-						<div class="enter__popup js-enter-popup">
-							<form action="">
-								<span class="enter__title">Авторизация:</span>
-								<div class="enter__field">
-									<label>
-										<span class="enter__label">Логин</span>
-										<input type="text" class="input input_white">
-										<i>!</i>
-									</label>
+					<div class="profile">
+						<div class="profile__inner">
+							<a href="#" class="profile__link js-cabinet-btn">
+								<div class="profile__img">
+									<img src="img/profile.png" alt="">
 								</div>
-								<div class="enter__field">
-									<label>
-										<span class="enter__label">Пароль</span>
-										<input type="text" class="input input_white">
-										<i>!</i>
-									</label>
-								</div>
-								<div class="enter__checkbox is-tooltip">
-									<label class="checkbox"><input type="checkbox"><span>Запомнить пароль</span></label>
-									<div class="tooltip">
-										<p>Внимание! Запоминание E-mail и пароля сделает ваш аккаунт более уязвимым. Не применяйте этот параметр, если ваш компьютер доступен посторонним.</p>
-									</div>
-								</div>
-								<div class="enter__links">
-									<p><a href="#">Забыли пароль?</a></p>
-									<p><a href="#">Регистрация</a></p>
-								</div>
-								<div class="enter__btn">
-									<button class="btn">Вход</button>
-								</div>
-							</form>
+								<span class="profile__name">Имя Фамилия</span>
+							</a>
+							<div class="profile__message">
+								<a href="#">
+									<i></i>
+									<span>1</span>
+								</a>
+							</div>
+						</div>
+						<div class="cabinet js-cabinet-popup">
+							<div class="cabinet__title">Мой кабинет</div>
+							<div class="cabinet__img">
+								<img src="img/cabinet.png" alt="">
+							</div>
+							<div class="cabinet__name">Имя Фамилия</div>
+							<ul class="cabinet__list">
+								<li><a href="#">Мои сообщения <small>+37</small></a></li>
+								<li><a href="#">Мои обьявления <span>16|4</span></a></li>
+								<li><a href="#">Моё резюме</a></li>
+								<li><a href="#">Мой блог</a></li>
+								<li><a href="#">Чат</a></li>
+							</ul>
+							<div class="cabinet__links">
+								<a href="#" class="cabinet__settings"></a>
+								<a href="#" class="cabinet__out">выйти</a>
+							</div>
 						</div>
 					</div>
 				</div>				
@@ -170,109 +170,39 @@
 		<div class="main__inner">
 			<!-- begin content  -->
 			<section class="content">
-				<div class="heading">Регистрация</div>
+				<div class="heading">Восстановленое доступа к аккаунту Sky Heart</div>
 				<div class="content__box">
 					<div class="form">
 						<form action="">
-							<div class="form__title">Все поля обязательны для заполнения</div>
-							<div class="field field_radio">
-								<span class="form__label dl-mb"></span>
-								<div class="field__radio">
-									<label class="radio">
-										<input type="radio" name="radio1">
-										<span>Частное лицо</span>
-									</label>
-								</div>
-								<div class="field__radio">
-									<label class="radio">
-										<input type="radio" name="radio1">
-										<span>Компания</span>
-									</label>
-								</div>
-							</div>
+							<table class="table">
+								<tr>
+									<td>Ваше имя</td>
+									<td>Дмитрий</td>
+								</tr>
+								<tr>
+									<td>Фамилия</td>
+									<td>Гормаш</td>
+								</tr>
+								<tr>
+									<td>Логин</td>
+									<td>kanonir</td>
+								</tr>
+								<tr>
+									<td>Пол</td>
+									<td>Мужской</td>
+								</tr>
+							</table>
+							<span class="form__label">Дата рождения</span>
+							<table class="table table_mod">
+								<tr>
+									<td>Июнь</td>
+									<td>14</td>
+									<td>1985</td>
+								</tr>
+							</table>
 							<div class="form__row">
 								<div class="form__box">
-									<span class="form__label">Ваше имя</span>
-									<label>
-										<input type="text" class="input">
-									</label>
-								</div>
-								<div class="form__box">
-									<span class="form__label">Фамилия</span>
-									<label>
-										<input type="text" class="input">
-									</label>
-								</div>
-								<div class="form__box">
-									<span class="form__label">Логин</span>
-									<label>
-										<input type="text" class="input">
-										<span class="form__status is-bad">Занят</span>
-									</label>
-								</div>
-							</div>
-							<div class="field field_radio field_radio_mod">
-								<span class="form__label">Пол</span>
-								<div class="field__radios">
-									<div class="field__radio">
-										<label class="radio">
-											<input type="radio" name="radio2">
-											<span>Мужской</span>
-										</label>
-									</div>
-									<div class="field__radio">
-										<label class="radio">
-											<input type="radio" name="radio2">
-											<span>Женский</span>
-										</label>
-									</div>
-								</div>								
-							</div>
-							<div class="form__selects">
-								<span class="form__label">Дата рождения</span>
-								<div class="form__select is-big">
-									<div class="select js-select">
-									    <span class="select__text js-select-text">Month</span>
-									    <ul class="select__list js-select-list">
-									        <li data-val="Month1">Month1</li>
-									        <li data-val="Month2">Month2</li>
-									    </ul>
-									    <select>
-									          <option value="Month1">Month1</option>
-									          <option value="Month2">Month2</option>
-									    </select>
-									</div>
-								</div>
-								<div class="form__select is-small">
-									<div class="select js-select">
-									    <span class="select__text js-select-text">Day</span>
-									    <ul class="select__list js-select-list">
-									        <li data-val="Day1">Day1</li>
-									        <li data-val="Day2">Day2</li>
-									    </ul>
-									    <select>
-									          <option value="Day1">Day1</option>
-									          <option value="Day2">Day2</option>
-									    </select>
-									</div>
-								</div>
-								<div class="form__select is-small">
-									<div class="select js-select">
-									    <span class="select__text js-select-text">Year</span>
-									    <ul class="select__list js-select-list">
-									        <li data-val="Year1">Year1</li>
-									        <li data-val="Year2">Year2</li>
-									    </ul>
-									    <select>
-									          <option value="Year1">Year1</option>
-									          <option value="Year2">Year2</option>
-									    </select>
-									</div>
-								</div>
-							</div>
-							<div class="form__row">
-								<div class="form__box">	
-									<span class="form__label">Страна</span>	
+									<span class="form__label">Страна</span>
 									<div class="select js-select">
 									    <span class="select__text js-select-text"></span>
 									    <ul class="select__list js-select-list">
@@ -285,7 +215,9 @@
 									    </select>
 									</div>
 								</div>
-								<div class="form__box">	
+							</div>
+							<div class="form__row">
+								<div class="form__box">
 									<span class="form__label">Город</span>
 									<div class="select js-select">
 									    <span class="select__text js-select-text"></span>
@@ -308,6 +240,9 @@
 										<span class="form__status is-good">Свободен</span>
 									</label>
 								</div>
+								<div class="form__confirm">
+									<button class="btn">подтвердить</button>
+								</div>
 							</div>
 							<div class="form__row">
 								<div class="form__box">
@@ -317,6 +252,8 @@
 										<span class="form__status is-bad">Пароль не надёжный</span>
 									</label>
 								</div>
+							</div>
+							<div class="form__row">
 								<div class="form__box">
 									<span class="form__label">Повторите пароль</span>
 									<label>
@@ -325,18 +262,18 @@
 									</label>
 								</div>
 							</div>
-							<div class="form__code">
-								<span class="form__label">Введите указанный ниже код</span>
-								<button class="btn-repeat"></button>
-								<div class="form__img">
-									<img src="img/kapcha.png" alt="">
+							<div class="form__row">
+								<div class="form__box">
+									<div class="form__btns">
+										<div>
+											<button class="btn">Изменить</button>
+										</div>
+										<div>
+											<button class="btn">Отмена</button>
+										</div>
+									</div>		
 								</div>
-								<input type="text" class="input">
-							</div>
-							<p>Нажимая кнопку «зарегистрироваться», вы соглашаетесь с <a href="#">правилами сайта</a> и подтверждаете, что ознакомились с <a href="#">политикой использования данных</a>.</p>
-							<div class="form__btn">
-								<button class="btn">Регистрация</button>
-							</div>						
+							</div>												
 						</form>
 					</div>
 				</div>
@@ -346,6 +283,79 @@
 			<!-- begin sidebar  -->
 			<aside class="sidebar">
 				<div class="sidebar__inner">
+					<div class="sidebar__banners">
+						<div class="sidebar__slider cycle-slideshow"
+							data-cycle-fx="fade" 
+							data-cycle-timeout="4000"
+							data-cycle-slides=".banner">
+							<a href="#" class="banner">
+								<img src="img/sidebar-banner.png" alt="">
+							</a>
+							<a href="#" class="banner">
+								<img src="img/sidebar-banner.png" alt="">
+							</a>
+							<a href="#" class="banner">
+								<img src="img/sidebar-banner.png" alt="">
+							</a>
+						</div>	
+					</div>		
+					<div class="hot">
+						<div class="hot__title"><i class="hot__icon"></i>Горячие вакансии</div>
+						<div class="hot__comment">
+							<div class="hot__author">
+								<div class="hot__img"></div>
+								<div class="hot__info">
+									<span class="hot__name">Надежда Жукова</span>
+									<p>Менеджер по работе с клиентами</p>
+									<div class="hot__time">
+										<span>Обновнено</span>
+										<time>21:34 PM</time>
+									</div>
+								</div>
+							</div>
+							<p> - кадровый учёт, кадровое делопроизводство в полном объеме - (приём, увольнение, переводы, оформление всех видовотпусков, .....</p>
+							<div class="hot__links">
+								<a href="#" class="hot__link">Написать</a>
+								<a href="#" class="hot__link">Подробнее</a>
+							</div>
+						</div>
+						<div class="hot__comment">
+							<div class="hot__author">
+								<div class="hot__img"></div>
+								<div class="hot__info">
+									<span class="hot__name">Надежда Жукова</span>
+									<p>Менеджер по работе с клиентами</p>
+									<div class="hot__time">
+										<span>Обновнено</span>
+										<time>21:34 PM</time>
+									</div>
+								</div>
+							</div>
+							<p> - кадровый учёт, кадровое делопроизводство в полном объеме - (приём, увольнение, переводы, оформление всех видовотпусков, .....</p>
+							<div class="hot__links">
+								<a href="#" class="hot__link">Написать</a>
+								<a href="#" class="hot__link">Подробнее</a>
+							</div>
+						</div>
+						<div class="hot__comment">
+							<div class="hot__author">
+								<div class="hot__img"></div>
+								<div class="hot__info">
+									<span class="hot__name">Надежда Жукова</span>
+									<p>Менеджер по работе с клиентами</p>
+									<div class="hot__time">
+										<span>Обновнено</span>
+										<time>21:34 PM</time>
+									</div>
+								</div>
+							</div>
+							<p> - кадровый учёт, кадровое делопроизводство в полном объеме - (приём, увольнение, переводы, оформление всех видовотпусков, .....</p>
+							<div class="hot__links">
+								<a href="#" class="hot__link">Написать</a>
+								<a href="#" class="hot__link">Подробнее</a>
+							</div>
+						</div>
+					</div>
 					<div class="sidebar__banners">
 						<div class="sidebar__slider cycle-slideshow"
 							data-cycle-fx="fade" 

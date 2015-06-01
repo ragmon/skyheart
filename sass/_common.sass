@@ -223,6 +223,7 @@ a
 .radio
 	padding: 0 0 0 28px
 	display: inline-block 
+	vertical-align: top
 	position: relative
 	cursor: pointer
 	input
@@ -263,6 +264,7 @@ a
 .checkbox
 	padding: 0 0 0 25px
 	display: inline-block 
+	vertical-align: top
 	position: relative
 	cursor: pointer
 	input
@@ -296,18 +298,41 @@ a
 			+opacity(0)
 			visibility: hidden
 			+transition(all 0.3s)
+	&_mod
+		span
+			&:before
+				background-color: #CBD6D3
 
 input.input
 	background-color: #CBD6D3
 	width: 100%
-	padding: 10px 10px 
+	padding: 10px 
 	color: #6587AF
 	+light
 	font-size: 14px
 	+box 
 	+border-radius(5px)
 	&_white
+		background: #fff
+	&_black
+		color: #555
+		+placeholder-color(#555)
+textarea.textarea
+	background-color: #CBD6D3
+	width: 100%
+	padding: 11px 
+	color: #6587AF
+	+light
+	font-size: 14px
+	+box 
+	border: none
+	resize: none
+	height: 225px
+	&_white
 		background: #fff 
+	&_black
+		color: #555
+		+placeholder-color(#555)
 .btn-repeat
 	+s(btn-repeat)
 	display: inline-block
@@ -355,3 +380,66 @@ input.input
 		.tooltip
 			+opacity(1)
 			visibility: visible
+
+.stars
+	font-size: 0
+	a
+		+s(star) 
+		display: inline-block
+		vertical-align: top
+		margin: 0 2px
+		+r(700)
+			margin: 0 0 0 1px 
+
+.trade
+	display: inline-block
+	vertical-align: top
+	+semi
+	font-size: 12px
+	padding: 5px 12px 5px 42px 
+	+border-radius(3px)
+	position: relative
+	&:before
+		content: "" 
+		position: absolute
+		top: 4px
+		+transition(all 0.2s)
+	&:active
+		top: 1px
+	&_sell
+		color: #581c2c 
+		border: 1px solid #581C2C
+		&:hover, &:active
+			&:before
+				left: 15px
+		&:before
+			+s(sell)
+			left: 10px
+	&_buy
+		color: #76A133
+		border: 1px solid #76A133
+		&:hover, &:active
+			&:before
+				left: 10px
+		&:before
+			+s(buy)
+			left: 15px
+		
+.btn-answer
+	+reg
+	border: 1px solid #224271
+	color: #224271 
+	font-size: 12px
+	text-transform: uppercase
+	padding: 10px 20px
+	background: none 
+	text-align: center
+	+transition(all 0.3s)
+	position: relative
+	+box
+	&:hover, &:active
+		background: #224271 
+		color: #fff
+	&:active
+		top: 1px
+	
