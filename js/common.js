@@ -111,7 +111,7 @@ head.ready(function() {
     });
     //header
 
-    //btn up
+    //nav scroll
     $(window).scroll(function() {    
         var scroll = $(window).scrollTop();
         if ($('.search').length>0) {
@@ -129,6 +129,27 @@ head.ready(function() {
                 $("body").addClass("is-fixed");
             } else {
                 $("body").removeClass("is-fixed");
+            };
+        };
+    });
+
+    $(window).scroll(function() {    
+        var scroll = $(window).scrollTop();
+        if ($('.slider').length>0) {
+            if (scroll >= $('.slider').offset().top) {
+                $("body").addClass("is-transition");
+            } else {
+                $("body").removeClass("is-transition");
+            };
+        };
+    });
+    $(window).load(function() {    
+        var scroll = $(window).scrollTop();
+        if ($('.slider').length>0) {
+            if (scroll >= $('.slider').offset().top) {
+                $("body").addClass("is-transition");
+            } else {
+                $("body").removeClass("is-transition");
             };
         };
     });

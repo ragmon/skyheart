@@ -4,6 +4,11 @@
 
 @import layouts
 body
+	&.is-transition
+		.header__inner
+			+opacity(0)
+			visibility: hidden
+			+transition(opacity 0.4s, visibility 0.4s)
 	&.is-fixed
 		padding: 97px 0 0
 		.header__inner
@@ -15,6 +20,8 @@ body
 			background: rgba(19, 40, 88, 0.83)  
 			max-width: 100%
 			padding: 0 
+			+opacity(1)
+			visibility: visible
 		.header__menu
 			max-width: 1074px
 			margin: 0 auto 
