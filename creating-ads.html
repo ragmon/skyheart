@@ -168,46 +168,349 @@
 	<!-- begin main  -->
 	<main class="main">
 		<div class="main__inner">
-			<!-- begin filter  -->
-			<div class="filter">
-				<ul>
-					<li><a href="#">Показать все</a></li>
-					<li><a href="#">Лёгкая авиация</a></li>
-					<li><a href="#">Гражданская авиация</a></li>
-					<li><a href="#">Военная авиация</a></li>
-					<li><a href="#">Авиастроение</a></li>
-					<li><a href="#">Другое</a></li>
-				</ul>
-			</div>
-			<!-- end filter -->
-			
-			<!-- begin back  -->
-			<div class="back">
-				<a href="#">Вернуться</a>
-			</div>
-			<!-- end back -->
 
 			<!-- begin content  -->
 			<section class="content">
-				<div class="heading heading_news">Новости</div>
+				<div class="heading heading_news">Создание обьявления<span>Этап 1 из 3</span></div>
 				
 				<!-- begin content__box  -->
 				<div class="content__box">
 					<div class="creating">
-						<div class="creating__heading">Проверьте Ваши контактные данные</div>
 						<div class="creating__form">
 							<form action="">
-								<div class="creating__name">
-									<div class="is-left">
-										<span class="creating__label">Ваше имя</span>
-										<span class="creating__label">Фамилия</span>
+								<div class="creating__section">
+									<div class="creating__heading">Проверьте Ваши контактные данные</div>
+									<div class="form__title">Пункты помечаные * обязательны для заполнения</div>
+									<div class="creating__name">
+										<div class="is-left">
+											<span class="creating__label">Ваше имя</span>
+											<span class="creating__label">Фамилия</span>
+										</div>
+										<div class="is-right">
+											<span class="creating__label">Отображать</span>
+											<label class="checkbox checkbox_mod">
+												<input type="checkbox">
+												<span>Имя Фамилию</span>
+											</label>
+											<label class="checkbox checkbox_mod">
+												<input type="checkbox">
+												<span>Ник</span>
+											</label>
+										</div>
 									</div>
-									<div class="is-right">
-										<span class="creating__label">Отображать</span>
-										<label class="checkbox">
-											<span></span>
-											<input type="checkbox">
+									<div class="creating__row">
+										<div class="creating__col">
+											<label>
+												<span class="creating__label">Контактный номер</span>
+												<input type="text" class="input">
+											</label>
+										</div>
+										<div class="creating__col">
+											<a href="#" class="add-link">Добавить номер</a>
+										</div>
+									</div>
+									<div class="creating__row">
+										<div class="creating__col">
+											<label>
+												<span class="creating__label">E-mail</span>
+												<input type="text" class="input">
+											</label>
+										</div>
+										<div class="creating__col">
+											<label>
+												<span class="creating__label">Skype</span>
+												<input type="text" class="input">
+											</label>
+										</div>
+									</div>
+									<div class="creating__row">
+										<div class="creating__col">
+											<span class="creating__label">Страна</span>
+											<div class="select js-select">
+											    <span class="select__text js-select-text"></span>
+											    <ul class="select__list js-select-list">
+											        <li data-val="Страна">Страна</li>
+											        <li data-val="Страна2">Страна2</li>
+											    </ul>
+											    <select>
+											          <option value="Страна">Страна</option>
+											          <option value="Страна2">Страна2</option>
+											    </select>
+											</div>
+										</div>
+										<div class="creating__col">
+											<span class="creating__label">Город</span>
+											<div class="select js-select">
+											    <span class="select__text js-select-text"></span>
+											    <ul class="select__list js-select-list">
+											        <li data-val="Город">Город</li>
+											        <li data-val="Город2">Город2</li>
+											    </ul>
+											    <select>
+											          <option value="Город">Город</option>
+											          <option value="Город2">Город2</option>
+											    </select>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="creating__section">
+									<div class="creating__heading">Выберите место размещения обьявления</div>
+									<div class="form__title">Пункты помечаные * обязательны для заполнения</div>
+									<div class="creating__center">
+										<span class="creating__label">Раздел:</span>
+										<i>*</i>
+										<div class="select js-select">
+										    <span class="select__text js-select-text">Транспорт</span>
+										    <ul class="select__list js-select-list">
+										        <li data-val="Транспорт">Транспорт</li>
+										        <li data-val="Транспорт2">Транспорт2</li>
+										    </ul>
+										    <select>
+										          <option value="Транспорт">Транспорт</option>
+										          <option value="Транспорт2">Транспорт2</option>
+										    </select>
+										</div>
+									</div>
+									<div class="creating__center">
+										<span class="creating__label">Категория:</span>
+										<i>*</i>
+										<div class="select js-select">
+										    <span class="select__text js-select-text">СЛА</span>
+										    <ul class="select__list js-select-list">
+										        <li data-val="СЛА">СЛА</li>
+										        <li data-val="СЛА2">СЛА2</li>
+										    </ul>
+										    <select>
+										          <option value="СЛА">СЛА</option>
+										          <option value="СЛА2">СЛА2</option>
+										    </select>
+										</div>
+									</div>
+									<div class="creating__center">
+										<span class="creating__label">Тип обьявления:</span>
+										<i>*</i>
+										<div class="select js-select">
+										    <span class="select__text js-select-text"></span>
+										    <ul class="select__list js-select-list">
+										        <li data-val="Тип обьявления">Тип обьявления</li>
+										        <li data-val="Тип обьявления2">Тип обьявления2</li>
+										    </ul>
+										    <select>
+										          <option value="Тип обьявления">Тип обьявления</option>
+										          <option value="Тип обьявления2">Тип обьявления2</option>
+										    </select>
+										</div>
+									</div>
+								</div>
+								<div class="creating__section">
+									<div class="creating__heading">Внесите основную информацию</div>
+									<div class="form__title">Пункты помечаные * обязательны для заполнения</div>
+									<div class="creating__large">
+										<label>
+											<span class="creating__label">Заголовок обьявления</span>
+											<i>*</i>
+											<input type="text" class="input">
 										</label>
+									</div>
+									<div class="creating__box">
+										<div class="creating__year">
+											<label>
+												<span class="creating__label">Год</span>
+												<input type="text" class="input">
+											</label>
+										</div>
+										<div class="creating__price">
+											<span class="creating__label">Цена</span>
+											<div class="creating__price-in">
+												<input type="text" class="input">
+												<div class="select js-select">
+												    <span class="select__text js-select-text">USD</span>
+												    <ul class="select__list js-select-list">
+												        <li data-val="USD">USD</li>
+												        <li data-val="RUB">RUB</li>
+												    </ul>
+												    <select>
+												          <option value="USD">USD</option>
+												          <option value="RUB">RUB</option>
+												    </select>
+												</div>
+											</div>											
+										</div>
+										<div class="creating__check">
+											<span class="creating__label">Торг</span>
+											<label class="checkbox checkbox_mod">
+												<input type="checkbox">
+												<span>Аренда</span>
+											</label>
+										</div>
+									</div>
+									<div class="creating__row">
+										<div class="creating__col">
+											<span class="creating__label">Состояние</span>
+											<div class="select js-select">
+											    <span class="select__text js-select-text"></span>
+											    <ul class="select__list js-select-list">
+											        <li data-val="Состояние">Состояние</li>
+											        <li data-val="Состояние2">Состояние2</li>
+											    </ul>
+											    <select>
+											          <option value="Состояние">Состояние</option>
+											          <option value="Состояние2">Состояние2</option>
+											    </select>
+											</div>
+										</div>
+									</div>
+									<div class="creating__field">
+										<label>
+											<span class="creating__label">Описание</span>
+											<textarea name="" id="" cols="30" rows="10" class="textarea"></textarea>
+										</label>
+									</div>
+								</div>
+								<div class="creating__section">
+									<div class="creating__heading">Добавьте фотографии </div>
+									<div class="creating__files">
+										<div class="creating__file">
+											<label class="file">
+												<input type="file">
+												<span><i></i></span>
+											</label>
+										</div>
+										<div class="creating__file">
+											<label class="file">
+												<input type="file">
+												<span><i></i></span>
+											</label>
+										</div>
+										<div class="creating__file">
+											<label class="file">
+												<input type="file">
+												<span><i></i></span>
+											</label>
+										</div>
+										<div class="creating__file">
+											<label class="file">
+												<input type="file">
+												<span><i></i></span>
+											</label>
+										</div>
+										<div class="creating__file">
+											<label class="file">
+												<input type="file">
+												<span><i></i></span>
+											</label>
+										</div>
+										<div class="creating__file">
+											<label class="file">
+												<input type="file">
+												<span><i></i></span>
+											</label>
+										</div>
+										<div class="creating__file">
+											<label class="file">
+												<input type="file">
+												<span><i></i></span>
+											</label>
+										</div>
+										<div class="creating__file">
+											<label class="file">
+												<input type="file">
+												<span><i></i></span>
+											</label>
+										</div>
+										<div class="creating__file">
+											<label class="file">
+												<input type="file">
+												<span><i></i></span>
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="creating__section">
+									<div class="creating__items">
+										<div class="creating__item">
+											<div class="creating__item-in item-color">
+												<div class="item-color__head">
+													<span class="item-color__title">Изменить цвет</span>
+													<div class="item-color__top"><span>объявления</span><i></i></div>
+												</div>												
+												<p>- Выделение объявление другим цветом, на весь период публикации – 50 грн.</p>
+												<div class="creating__checks">
+													<label class="checkbox">
+														<input type="checkbox">
+														<span>весь период публикации – 50 грн.;</span>
+													</label>
+												</div>
+											</div>											
+										</div>
+										<div class="creating__item">
+											<div class="creating__item-in item-top">
+												<div class="item-top__head">
+													<img src="img/item-top.png" alt="">
+												</div>												
+												<p>- Размещение объявления над списком обычных объявлений в выбранной рубрике.</p>
+												<div class="creating__checks">
+													<label class="checkbox">
+														<input type="checkbox">
+														<span>7 дней – 50 грн.;</span>
+													</label>
+													<label class="checkbox">
+														<input type="checkbox">
+														<span>14 дней – 95 грн. (5% экономия.);</span>
+													</label>
+													<label class="checkbox">
+														<input type="checkbox">
+														<span>1 месяц – 180 грн. (10% экономия );</span>
+													</label>
+													<label class="checkbox">
+														<input type="checkbox">
+														<span>3 месяца – 240 грн. (20% экономия).</span>
+													</label>
+												</div>
+											</div>											
+										</div>
+										<div class="creating__item">
+											<div class="creating__item-in item-ad">
+												<div class="item-ad__head">
+													<img src="img/item-ad.png" alt="">
+													<span class="item-ad__title">Срочное объявление</span>
+												</div>												
+												<p>- Объявление выделяется специальным ярким знаком «Срочно», на весь период публикации. Так же транслируется в отдельном блоке «Срочно» на всех страницах сайта.</p>
+												<div class="creating__checks">
+													<label class="checkbox">
+														<input type="checkbox">
+														<span>7 дней – 50 грн.;</span>
+													</label>
+													<label class="checkbox">
+														<input type="checkbox">
+														<span>14 дней – 95 грн. (5% экономия.);</span>
+													</label>
+													<label class="checkbox">
+														<input type="checkbox">
+														<span>1 месяц – 180 грн. (10% экономия );</span>
+													</label>
+													<label class="checkbox">
+														<input type="checkbox">
+														<span>3 месяца – 240 грн. (20% экономия).</span>
+													</label>
+												</div>
+											</div>											
+										</div>
+										<div class="creating__item">
+											<div class="creating__item-in item-free">
+												<div class="item-free__head">
+													<span class="item-free__title">Бесплатное <br>размещение</span>
+												</div>												
+												<p>- Объявление будет размещено в обычном порядке.</p>
+												<div class="creating__checks">
+													<label class="checkbox">
+														<input type="checkbox">
+														<span>FREE</span>
+													</label>
+												</div>
+											</div>											
+										</div>
 									</div>
 								</div>
 							</form>
@@ -427,19 +730,6 @@
 				</div>
 			</aside>
 			<!-- end sidebar -->
-			<!-- begin pages  -->
-			<div class="pages">
-				<div class="pages__text">Страница 1 из 16</div>
-				<ul>
-					<li><a href="#"><i class="is-prev"></i></a></li>
-					<li><a href="#">1</a></li>
-					<li><a href="#">2</a></li>
-					<li><a href="#">3</a></li>
-					<li><a href="#">4</a></li>
-					<li><a href="#"><i class="is-next"></i></a></li>
-				</ul>
-			</div>
-			<!-- end pages -->
 		</div>
 	</main>
 	<!-- end main -->
