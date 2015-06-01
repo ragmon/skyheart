@@ -22,12 +22,9 @@ body
 			padding: 0 
 			+opacity(1)
 			visibility: visible
-<<<<<<< HEAD
-=======
 		.profile__message
 			span
 				color: #fff 
->>>>>>> b4e7744069e117fb5453302dd9c80437839afb7c
 		.header__menu
 			max-width: 1074px
 			margin: 0 auto 
@@ -1989,11 +1986,14 @@ body
 		+box-shadow(0 3px 6px rgba(20, 45, 96, 0.75))
 		min-height: 260px 
 		position: relative
+		+r(700)
+			min-height: 100px 
 		p
 			+reg
 			font-size: 12px
 			color: #555
 			padding: 0 15px  
+			clear: both
 	&__checks
 		+border-radius(21px)
 		background-color: #44709C
@@ -2003,6 +2003,9 @@ body
 		left: -12px
 		+box
 		padding: 20px 11px 15px 
+		+r(700)
+			position: static
+			margin: 10px 5px -20px -15px 
 		.checkbox
 			padding: 0 0 2px 22px
 			margin-bottom: 5px
@@ -2150,9 +2153,13 @@ body
 			padding: 5px 20px 
 	.creating__checks
 		position: static
-		margin: 4px 5px -15px -12px
+		margin: 4px 5px -20px -12px
+		+r(700)
+			margin: 10px 5px -20px -15px 
 .item-free
 	min-height: 220px 
+	+r(700)
+		min-height: 100px 
 	&__head
 		text-align: center
 		margin-bottom: 30px
