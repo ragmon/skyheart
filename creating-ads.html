@@ -135,7 +135,7 @@
 			<div class="slider__pager"></div>
 		</div>
 		<!-- end slider -->
-		<div class="search">
+		<div class="search js-search">
 			<form action="">
 				<div class="search__field">
 					<div class="s-select js-select">
@@ -180,18 +180,17 @@
 							<form action="">
 								<div class="creating__section">
 									<div class="creating__heading">Проверьте Ваши контактные данные</div>
-									<div class="form__title">Пункты помечаные * обязательны для заполнения</div>
 									<div class="creating__name">
+										<span class="creating__label">Отображать:</span>
 										<div class="is-left">
-											<span class="creating__label">Ваше имя</span>
-											<span class="creating__label">Фамилия</span>
-										</div>
-										<div class="is-right">
-											<span class="creating__label">Отображать</span>
+											<span class="creating__nik">Иван Иванов</span>
 											<label class="checkbox checkbox_mod">
 												<input type="checkbox">
 												<span>Имя Фамилию</span>
 											</label>
+										</div>
+										<div class="is-right">
+											<span class="creating__nik">(Berkyt_422)</span>
 											<label class="checkbox checkbox_mod">
 												<input type="checkbox">
 												<span>Ник</span>
@@ -205,8 +204,14 @@
 												<input type="text" class="input">
 											</label>
 										</div>
-										<div class="creating__col">
-											<a href="#" class="add-link">Добавить номер</a>
+										<div class="creating__col js-add">
+											<a href="#" class="add-link js-add-link">Добавить номер</a>
+											<div class="js-add-phone">
+												<label>
+													<span class="creating__label">Контактный номер</span>
+													<input type="text" class="input">
+												</label>
+											</div>											
 										</div>
 									</div>
 									<div class="creating__row">
@@ -512,6 +517,7 @@
 											</div>											
 										</div>
 									</div>
+									<p>Нажимая кнопку «опубликовать», вы соглашаетесь с <a href="#">правилами сайта</a> и подтверждаете, что ознакомились с <a href="#">политикой использования данных</a>.</p>
 								</div>
 							</form>
 						</div>

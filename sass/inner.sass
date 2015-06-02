@@ -29,7 +29,10 @@ body
 			max-width: 1074px
 			margin: 0 auto 
 			padding: 10px 14px 10px 
-
+.index
+	.search
+		&__input
+			border-right: 2px solid #fff 
 .header
 	background: url(../img/header-in.jpg) no-repeat
 	+cover
@@ -240,6 +243,36 @@ body
 	label
 		display: block
 		overflow: hidden
+	&__list
+		font-size: 0
+		+opacity(0.68)
+		margin-bottom: 16px
+		li
+			display: inline-block
+			vertical-align: top
+			position: relative
+			padding: 0 10px 
+			&:last-child
+				&:after
+					display: none
+			&:after
+				content: "" 
+				width: 4px
+				height: 4px
+				background: #fff
+				position: absolute 
+				top: 50%
+				left: 100%
+				margin: -2px 0 0 -2px
+				+border-radius(50%)
+			a
+				+light
+				font-size: 12px
+				line-height: 1.7
+				color: #fff
+				text-transform: uppercase
+				&:hover
+					text-decoration: underline
 .logo
 	max-width: 140px
 	display: inline-block
@@ -1788,6 +1821,11 @@ body
 		background: #fff 
 		
 .creating
+	&__nik
+		display: block
+		font-size: 14px
+		color: #555
+		margin: 0 0 6px 0 
 	&__form
 		+r(700)
 			max-width: 360px
@@ -1810,24 +1848,23 @@ body
 		margin-bottom: 6px
 	&__name
 		+clr
+		.creating__label
+			display: block
 		div
+			width: 50%
+			+r1
+				width: 100%
 			&.is-left
 				float: left
 				+r1
 					float: none
 				span
 					min-width: 100px
-					margin: 0 10px 0 0 
 			&.is-right
 				float: right
 				+r1
 					float: none
 					padding: 10px 0 0 
-				label
-					margin-left: 20px 
-					+r(450)
-						margin: 10px
-						display: block
 	&__row
 		font-size: 0
 		margin: 0 -18px
@@ -1925,6 +1962,9 @@ body
 			position: absolute
 			top: 0
 			right: 0
+			&.is-active
+				.select__text
+					+border-radius(0 5px 0 0)
 			&__text
 				+border-radius(0 5px 5px 0)
 				border-left: 1px solid #2d4164
@@ -2014,6 +2054,21 @@ body
 				font-size: 10px 
 				&:before
 					+box-shadow(inset 0 2px 1px rgba(0, 1, 2, 0.44))
+	p
+		+light
+		font-size: 13px
+		color: #555
+		max-width: 480px
+		width: 90%
+		margin: 0 auto 
+		+r1
+			width: 100%
+		a
+			+reg
+			color: #2D4164
+			text-decoration: underline
+			&:hover
+				text-decoration: none
 .add-link
 	color: #577DAA
 	text-transform: uppercase
@@ -2178,4 +2233,40 @@ body
 				text-align: center
 				display: block
 				line-height: 1
-				
+		
+.js-add-phone
+	display: none
+.js-add
+	&.is-active
+		.js-add-phone
+			display: block
+		.js-add-link
+			display: none		
+//NEW INDEX
+.airplane
+	width: 89px
+	display: block
+	margin: 0 auto
+	+opacity(0.72)
+
+.index__menu
+	height: 100px
+	&.is-active
+		.header__inner
+			position: fixed
+			top: 0
+			left: 0
+			right: 0
+			z-index: 650
+			background: rgba(19, 40, 88, 0.83)  
+			max-width: 100%
+			padding: 0 
+			+opacity(1)
+			visibility: visible
+		.profile__message
+			span
+				color: #fff 
+		.header__menu
+			max-width: 1074px
+			margin: 0 auto 
+			padding: 10px 14px 10px 

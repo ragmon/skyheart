@@ -128,7 +128,7 @@ head.ready(function() {
     $(window).scroll(function() {    
         var scroll = $(window).scrollTop();
         if ($('.js-scroll-top').length>0) {
-            if (scroll > $('.header').offset().top+50) {
+            if (scroll > $('.js-scroll-top').offset().top) {
                 $("body").addClass("is-transition");
             } else {
                 $("body").removeClass("is-transition");
@@ -138,7 +138,7 @@ head.ready(function() {
     $(window).load(function() {    
         var scroll = $(window).scrollTop();
         if ($('.js-scroll-top').length>0) {
-            if (scroll > $('.header').offset().top+50) {
+            if (scroll > $('.js-scroll-top').offset().top) {
                 $("body").addClass("is-transition");
             } else {
                 $("body").removeClass("is-transition");
@@ -147,8 +147,8 @@ head.ready(function() {
     });
     $(window).scroll(function() {    
         var scroll = $(window).scrollTop();
-        if ($('.search').length>0) {
-            if (scroll >= $('.search').offset().top) {
+        if ($('.js-search').length>0) {
+            if (scroll >= $('.js-search').offset().top) {
                 $("body").addClass("is-fixed");
             } else {
                 $("body").removeClass("is-fixed");
@@ -157,11 +157,32 @@ head.ready(function() {
     });
     $(window).load(function() {    
         var scroll = $(window).scrollTop();
-        if ($('.search').length>0) {
-            if (scroll >= $('.search').offset().top) {
+        if ($('.js-search').length>0) {
+            if (scroll >= $('.js-search').offset().top) {
                 $("body").addClass("is-fixed");
             } else {
                 $("body").removeClass("is-fixed");
+            };
+        };
+    });
+    //index menu
+    $(window).scroll(function() {    
+        var scroll = $(window).scrollTop();
+        if ($('.index__menu').length>0) {
+            if (scroll >= $('.index__menu').offset().top) {
+                $(".index__menu").addClass("is-active");
+            } else {
+                $(".index__menu").removeClass("is-active");
+            };
+        };
+    });
+    $(window).load(function() {    
+        var scroll = $(window).scrollTop();
+        if ($('.index__menu').length>0) {
+            if (scroll >= $('.index__menu').offset().top) {
+                $(".index__menu").addClass("is-active");
+            } else {
+                $(".index__menu").removeClass("is-active");
             };
         };
     });
@@ -183,6 +204,11 @@ head.ready(function() {
     //slider
     $('.js-slider-close').on('click', function() {
         $('.js-slider').addClass('is-hidden');
+        return false;
+    });
+    //add phone
+    $('.js-add-link').on('click', function() {
+        $(this).parents('.js-add').addClass('is-active');
         return false;
     });
 });
