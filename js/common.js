@@ -169,7 +169,7 @@ head.ready(function() {
     $(window).scroll(function() {    
         var scroll = $(window).scrollTop();
         if ($('.index__menu').length>0) {
-            if (scroll >= $('.index__menu').offset().top) {
+            if (scroll >= $('.index__menu-in').offset().top) {
                 $(".index__menu").addClass("is-active");
             } else {
                 $(".index__menu").removeClass("is-active");
@@ -179,7 +179,7 @@ head.ready(function() {
     $(window).load(function() {    
         var scroll = $(window).scrollTop();
         if ($('.index__menu').length>0) {
-            if (scroll >= $('.index__menu').offset().top) {
+            if (scroll >= $('.index__menu-in').offset().top) {
                 $(".index__menu").addClass("is-active");
             } else {
                 $(".index__menu").removeClass("is-active");
