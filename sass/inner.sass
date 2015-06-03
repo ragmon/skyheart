@@ -246,12 +246,13 @@ body
 	&__list
 		font-size: 0
 		+opacity(0.68)
-		margin-bottom: 16px
 		li
 			display: inline-block
 			vertical-align: top
 			position: relative
-			padding: 0 10px 
+			padding: 0 10px 10px
+			+r(700)
+				display: block
 			&:last-child
 				&:after
 					display: none
@@ -261,10 +262,12 @@ body
 				height: 4px
 				background: #fff
 				position: absolute 
-				top: 50%
+				top: 7px
 				left: 100%
-				margin: -2px 0 0 -2px
+				margin: 0 0 0 -2px
 				+border-radius(50%)
+				+r(700)
+					display: none
 			a
 				+light
 				font-size: 12px
@@ -343,6 +346,7 @@ body
 	+r1
 		float: none
 		background: none
+		position: static
 		&:hover
 			background-color: #122759
 	p, a
@@ -365,12 +369,10 @@ body
 		visibility: hidden
 		+transition(all 0.4s)
 		+r1
-			bottom: 0
-			top: auto
+			top: 0
 			right: 100%
 			margin: 0 5px 
 		+r(600)
-			bottom: 0
 			right: 0
 		&.is-active
 			+opacity(1)
@@ -2282,3 +2284,259 @@ body
 			max-width: 1074px
 			margin: 0 auto 
 			padding: 10px 14px 10px 
+	.header__nav
+		+r1
+			margin-top: 5px
+.index__inner
+	padding: 140px 0 0 
+	
+//company
+.company
+	+clr
+	text-align: center
+	padding: 30px 0 
+	.title-h2
+		text-transform: uppercase
+		margin-bottom: 12px
+	hr
+		float: right
+		width: 52%
+		margin: 0 0 11px
+		border: none
+		border-bottom: 2px solid #1a3058
+	p
+		clear: both
+		+light
+		font-size: 14px
+		line-height: 1.2
+		color: #555 
+	&__list
+		font-size: 0
+		padding: 40px 0 0 
+		li
+			display: inline-block
+			vertical-align: middle
+			margin: 0 20px 20px
+			a
+				display: inline-block
+				font-size: 0
+			img
+				&.is-azal
+					max-width: 102px
+				&.is-armenia
+					max-width: 227px
+				&.is-armavia
+					max-width: 227px
+				&.is-india
+					max-width: 214px
+
+//info
+.info
+	&__heading
+		background: url(../img/news.jpg) no-repeat
+		+cover
+		padding: 40px 0  
+		position: relative
+		margin-bottom: 20px
+		&:before
+			content: "" 
+			position: absolute
+			top: 0
+			bottom: 0
+			left: 0
+			right: 0
+			background: rgba(12, 34, 87, 0.46)  
+	&__inner
+		position: relative
+		z-index: 2
+	.title-h3
+		color: #fff
+		text-transform: uppercase 
+		text-align: center
+	&__block
+		+clr
+		max-width: 954px
+		margin: 0 auto
+		padding: 25px 14px 25px
+		+r1
+			max-width: 600px
+		.pages
+			margin-bottom: 67px
+	&__item, &__comments
+		float: left
+	&__item
+		width: 49%
+		+r1
+			width: 100%
+			margin-bottom: 15px
+			display: none
+	&__comments
+		width: 51%
+		+r1
+			width: 100%
+	&__img
+		overflow: hidden
+		font-size: 0
+		position: relative
+		margin: 0 0 10px 
+		img
+			width: 100%
+	&__deco
+		position: absolute
+		bottom: 0
+		height: 10px
+		background: #fff 
+		&:after
+			content: "" 
+			position: absolute
+			top: 0
+		&.is-left
+			left: 0
+			width: 70px
+			&:after
+				left: 100%
+				+arr(10, 8, #fff, bl)
+		&.is-right
+			left: 87px
+			right: 0
+			&:after
+				right: 100%
+				+arr(14, 16, #fff, br)
+	&__text
+		h5
+			+bold
+		p
+			+light
+		h5, p
+			font-size: 13px
+			line-height: 1.33
+			color: #555555 
+			margin-bottom: 5px
+	&__comments
+		position: relative
+		padding: 0 20px 0 15px 
+		+r1
+			padding: 0 20px 0 0 
+	&__btns
+		position: absolute
+		top: 0
+		bottom: 0
+		right: 0
+		width: 20px
+	&__btn
+		position: absolute
+		left: 0
+		background: #4c8299 
+		width: 20px
+		height: 20px				
+		&:before
+			content: "" 
+			position: absolute
+			left: 50%
+			margin-left: -4px
+		&.is-up
+			top: 0
+			&:before
+				+arr(9, 7, #fff, t)
+				top: 6px
+			&:active
+				&:before
+					top: 7px
+		&.is-down
+			bottom: 0
+			&:before
+				+arr(9, 7, #fff, b)
+				bottom: 6px
+			&:active
+				&:before
+					bottom: 5px
+
+					.comment
+						padding: 12px 30px 10px
+						color: #555555 
+						display: block
+						&:hover
+							background: #d2eaf2 
+						p
+							+light
+							font-size: 18px
+							line-height: 1.33
+						&__bottom
+							+clr
+							padding: 6px 0 0 
+						&__cloud
+							padding: 2px 0 2px 33px
+							position: relative
+							font-size: 15px
+							+litalic
+							color: #555555 
+							float: left
+							&:before
+								content: ""
+								position: absolute
+								top: 0
+								left: 0
+								+svg(cloud, 24, 24) 
+						&__time
+							+reg
+							font-size: 18px
+							float: right
+
+.message
+	padding: 8px 10px 6px
+	color: #555555 
+	display: block
+	&:hover
+		background: #d2eaf2 
+	p
+		+light
+		font-size: 12px
+		line-height: 1.33
+	&__bottom
+		+clr
+		padding: 6px 0 0 
+	&__cloud
+		padding: 2px 0 2px 20px
+		position: relative
+		font-size: 11px
+		+litalic
+		color: #555555 
+		float: left
+		&:before
+			content: ""
+			position: absolute
+			top: 2px
+			left: 0
+			+s(comment) 
+			+opacity(0.48)
+	&__time
+		+reg
+		font-size: 13px
+		float: right
+
+.ads
+	&__heading
+		background: url(../img/advertisement.jpg) no-repeat
+		+cover
+		padding: 40px 0  
+		position: relative
+		&:before
+			content: "" 
+			position: absolute
+			top: 0
+			bottom: 0
+			left: 0
+			right: 0
+			background: rgba(15, 43, 113, 0.46) 
+	&__inner
+		position: relative
+		z-index: 2
+	.title-h3
+		color: #fff
+		text-transform: uppercase 
+		text-align: center
+	&__info
+		+clr
+		max-width: 954px
+		margin: 0 auto
+		padding: 5px 14px 25px
