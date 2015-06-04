@@ -965,8 +965,10 @@ a.is-star.is-active:after, a.is-star:hover:after { visibility: visible; filter: 
 .resume__center { text-align: center; }
 .resume__items { max-width: 954px; margin: 0 auto; padding: 5px 14px 25px; }
 @media only screen and (max-width: 980px) { .resume__items { padding: 20px 14px 25px; } }
-.resume__item { *zoom: 1; border-bottom: 1px solid #31608f; padding: 10px 0; }
+.resume__item { *zoom: 1; border-bottom: 1px solid #31608f; padding: 10px 0; margin: 0 auto; }
 .resume__item:after { content: " "; display: table; clear: both; }
+@media only screen and (max-width: 980px) { .resume__item { max-width: 600px; } }
+.resume__item:last-child { border: none; }
 .resume__img { width: 55px; height: 55px; background-color: #e3e6e8; border: 1px solid #31608f; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; float: left; margin: 5px 25px 10px 0; }
 .resume__text { padding: 0 0 0 80px; }
 @media only screen and (max-width: 700px) { .resume__text { padding: 0; } }
