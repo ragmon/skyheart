@@ -984,7 +984,7 @@ body
 		padding: 8px 0
 		max-width: 180px
 		margin: 0 auto 
-		font-size: 0
+		font-size: 0.1px
 		&:after
 			content: "" 
 			display: inline-block
@@ -2543,11 +2543,11 @@ body
 		text-transform: uppercase 
 		text-align: center
 	&__info
-		+clr
-		max-width: 954px
-		margin: 0 auto
-		padding: 5px 14px 25px
-
+		+clr		
+.products
+	max-width: 954px
+	margin: 0 auto
+	padding: 5px 14px 25px
 .product
 	border-bottom: 1px solid #688b9b
 	padding: 15px 0 0 
@@ -2583,6 +2583,10 @@ body
 		+bold
 		line-height: 1
 		margin-bottom: 10px
+		a
+			color: #46778D
+			&:hover
+				text-decoration: underline
 	hr
 		width: 50px
 		height: 1px
@@ -2618,31 +2622,6 @@ body
 		+r1
 			margin: 0 0 0 10px 
 			padding: 0 10px 0 0
-		a
-			&.is-star
-				width: 20px
-				height: 19px
-				display: inline-block
-				position: relative
-				&:before, &:after					
-					position: absolute
-					top: 0
-					left: 0
-					content: ""
-					+transition(all 0.3s)
-				&:before
-					+s(star-black)
-				&:after
-					+s(star-yellow)
-					visibility: hidden
-					+opacity(0)
-			&.is-active, &:hover
-				&:before
-					visibility: hidden
-					+opacity(0)
-				&:after
-					visibility: visible
-					+opacity(1)
 	&__social
 		float: left
 		font-size: 0
@@ -2728,6 +2707,31 @@ body
 					top: 5px
 					+s(settings-blue)
 
+a
+	&.is-star
+		width: 20px
+		height: 19px
+		display: inline-block
+		position: relative
+		&:before, &:after					
+			position: absolute
+			top: 0
+			left: 0
+			content: ""
+			+transition(all 0.3s)
+		&:before
+			+s(star-black)
+		&:after
+			+s(star-yellow)
+			visibility: hidden
+			+opacity(0)
+		&.is-active, &:hover
+			&:before
+				visibility: hidden
+				+opacity(0)
+			&:after
+				visibility: visible
+				+opacity(1)
 //vacancy
 .vacancy
 	&__heading
@@ -2736,6 +2740,7 @@ body
 		padding: 40px 0
 		position: relative
 		text-align: center
+		overflow: hidden
 		&:before
 			content: "" 
 			position: absolute
@@ -2772,10 +2777,12 @@ body
 		padding: 20px 0
 		+r1
 			display: block
+	.pages
+		+r1
+			padding-bottom: 15px
 	.filter
-		&__text
-			+r1
-				display: block
+		+r1
+			padding: 0 
 		ul
 			li
 				+r1
@@ -2784,3 +2791,264 @@ body
 					padding: 6px 7px 4px 
 	&__center
 		text-align: center
+	&__items
+		max-width: 954px
+		margin: 0 auto
+		padding: 5px 14px 25px
+		+r1
+			padding: 20px 14px 25px 
+.box
+	+clr
+	padding: 10px 0 0 
+	margin: 0 auto
+	+r1
+		padding: 10px 10px 0 
+		max-width: 600px
+	&:hover
+		background: #dbeff6 
+	&__img
+		width: 90px
+		height: 90px
+		float: left
+		margin: 0 25px 10px 0
+		background-color: #3E6372
+		+border-radius(6px) 
+		+r1
+			margin: 0 15px 5px 0 
+		img
+			width: 100%
+			height: 100%
+	h4
+		font-size: 16px
+		color: #46778D
+		+bold
+		line-height: 1
+		a
+			color: #46778D
+			&:hover
+				text-decoration: underline
+	&__head
+		padding-bottom: 10px
+	&__date
+		+semi
+		font-size: 12px
+		color: #555
+		display: block
+		float: right
+		padding: 5px 0 
+		+opacity(0.73)
+		+r(700)
+			float: none
+	&__info
+		padding: 0 0 10px 
+		p
+			+light
+			font-size: 12px
+			color: #555
+	&__req
+		padding: 10px 0 0 
+	&__bottom
+		clear: both
+		border-top: 1px solid #e5e5e5
+		font-size: 0.1px
+		text-align: justify
+		padding: 10px 105px 
+		position: relative
+		+r1
+			padding: 10px 30px 0 0 
+		+r(500)
+			padding: 10px 0 0 
+		&:after
+			display: inline-block
+			width: 100%
+			content: "" 
+	&__firm, &__place, &__price
+		text-align: left
+		display: inline-block
+		vertical-align: top
+		padding: 0 0 10px
+		span
+			font-size: 16px
+			display: inline-block
+			padding: 0 10px
+			&:before
+				display: inline-block
+				vertical-align: top
+				content: "" 
+				margin: 0 10px 0 0 
+				+r1
+					display: none
+			&.is-firm
+				&:before
+					+s(firm)
+					margin-top: -1px 
+			&.is-place
+				&:before
+					+s(pin-black)
+			&.is-price
+				&:before
+					+s(price)
+					margin-top: 1px  
+	.box__price
+		+r(500)
+			width: 100%	
+			text-align: right	
+	.box__star
+		position: absolute
+		right: 5px
+		bottom: 23px
+		+r1
+			padding: 0
+			bottom: 14px  
+		+r(500)
+			right: auto
+			left: 15px
+	.box__status
+		position: relative
+		padding: 0 
+		display: inline-block
+		vertical-align: top
+		p
+			color: #fff 
+		&.is-ok
+			i
+				+s(ok)
+				display: inline-block
+		&.is-error
+			i
+				+s(error)
+				display: inline-block
+				
+//resume
+.resume
+	&__heading
+		background: url(../img/resume.jpg) no-repeat
+		+cover
+		padding: 40px 0
+		position: relative
+		text-align: center
+		overflow: hidden
+		&:before
+			content: "" 
+			position: absolute
+			top: 0
+			bottom: 0
+			left: 0
+			right: 0
+			background: rgba(15, 43, 113, 0.46) 
+		&:after
+			content: "" 
+			position: absolute
+			bottom: -2px
+			left: 50%
+			margin-left: -21px
+			+s(diamond)
+	.title-h3
+		color: #fff
+		text-transform: uppercase 
+		display: inline-block
+		position: relative
+		padding: 0 10px 
+	&__inner
+		position: relative
+		z-index: 2
+	.filter, .pages
+		display: inline-block
+		margin: 0 10px
+		vertical-align: top
+		padding: 20px 0
+		+r1
+			display: block
+	.pages
+		+r1
+			padding-bottom: 15px
+	.filter
+		+r1
+			padding: 0 
+		ul
+			li
+				+r1
+					display: inline-block
+					vertical-align: middle
+					padding: 6px 7px 4px 
+	&__center
+		text-align: center
+	&__items
+		max-width: 954px
+		margin: 0 auto
+		padding: 5px 14px 25px
+		+r1
+			padding: 20px 14px 25px 
+	&__item
+		+clr
+		border-bottom: 1px solid #31608f
+		padding: 10px 0   
+	&__img
+		width: 55px
+		height: 55px
+		background-color: #E3E6E8
+		border: 1px solid #31608F
+		+border-radius(50%)
+		float: left
+		margin: 5px 25px 10px 0
+	&__text
+		padding: 0 0 0 80px 
+		+r(700)
+			padding: 0 
+		h5
+			+reg
+			color: #31608F
+			font-size: 21px
+			margin-bottom: 5px
+			+r(700)
+				overflow: hidden	
+	&__title
+		+r(700)
+			overflow: hidden
+		a
+			text-transform: uppercase
+			+bold
+			font-size: 16px
+			color: #244567
+			display: inline-block
+			margin-bottom: 5px
+			&:hover
+				text-decoration: underline
+	&__date
+		float: right
+		color: #555
+		+reg
+		+r(700)
+			float: none
+			display: block
+			text-align: right
+	&__info
+		width: 100%
+		line-height: 1.2 
+		clear: both
+		a
+			+reg
+			font-size: 16px
+			text-decoration: underline
+			margin: 0 10px 0 0 
+			color: #555 
+			&:hover
+				text-decoration: none
+		p
+			+light
+			font-size: 12px
+			color: #555 
+	&__links
+		padding: 10px 0 0 
+		+r(700)
+			text-align: center
+		a
+			font-size: 12px
+			text-transform: uppercase
+			color: #244567
+			+reg
+			margin: 0 30px 0 0 
+			+r(700)
+				margin: 0 20px 
+			&:hover
+				text-decoration: underline
