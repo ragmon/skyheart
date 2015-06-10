@@ -3139,15 +3139,12 @@ a
 		display: inline-block
 		vertical-align: middle
 		position: relative
-		padding: 3px 0 2px 
-		&:hover
-			.action__drop
-				+opacity(1)
-				visibility: visible
+		padding: 3px 0 2px 				
 		i
 			display: inline-block
 			vertical-align: top
 			+s(action-icon)
+			cursor: pointer
 	&__drop
 		position: absolute
 		top: 100%
@@ -3161,6 +3158,9 @@ a
 		visibility: hidden
 		+transition(all 0.3s)
 		z-index: 100 
+		&.is-active
+			+opacity(1)
+			visibility: visible
 		a
 			display: block
 			color: #555
@@ -3182,9 +3182,25 @@ a
 	+r1
 		padding: 17px 45px 17px 40px 
 	&:hover
-		background-color: #CEEBEF
+		border: 1px solid #2D4164		
+		padding: 16px 69px 16px 49px 
+		+r1
+			padding: 16px 44px 16px 39px 
+		.checkbox
+			margin-left: -1px
+		.btn-file
+			margin-right: -1px
 	&.is-active
-		border: 1px solid #2D4164
+		background-color: #CEEBEF	
+	&.is-chosen
+		border: 1px solid #76A133		
+		padding: 16px 69px 16px 49px 
+		+r1
+			padding: 16px 44px 16px 39px 
+		.checkbox
+			margin-left: -1px
+		.btn-file
+			margin-right: -1px
 	.checkbox
 		position: absolute
 		top: 50%
@@ -3225,6 +3241,10 @@ a
 		margin: -29px 0 0
 		+r1
 			display: none
+		&.is-green
+			border-color: #76A133
+		img
+			width: 100%
 	&__info
 		color: #555 
 	&__top
@@ -3250,7 +3270,19 @@ a
 		p
 			+light
 			font-size: 11px
-
+		h4
+			+semi
+			font-size: 18px
+			padding: 4px 0 
+	i
+		&.is-mark
+			position: absolute
+			top: -5px
+			right: 0
+			font-size: 30px
+			+reg
+			color: #76A133  
+			line-height: 1
 .partners
 	clear: both
 	padding: 25px 0 0 

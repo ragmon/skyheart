@@ -211,5 +211,36 @@ head.ready(function() {
         $(this).parents('.js-add').addClass('is-active');
         return false;
     });
+
+    //action
+    $('.js-action-btn').on('click', function() {
+        $('.js-action-box').toggleClass('is-active');
+    });
+    $('.js-action').each(function() {
+        $('body').on('click', function() {
+            $('.js-action-box').removeClass('is-active');
+        });
+        $(this).on('click', function(event) {
+            event.stopPropagation();
+        });
+        $('.js-action-box a').on('click', function() {
+            $('.js-action-box a').removeClass('is-active');
+            $(this).addClass('is-active');
+            $('.js-action-box').removeClass('is-active');
+            return false;
+        });
+    });
+
+    //o-messages
+    $('.o-message').each(function() {
+        $('.o-message input').change(function() {
+            if ($(this).is(':checked')) {
+                $(this).parents('.o-message').addClass('is-chosen');
+            }
+            else {
+                $(this).parents('.o-message').removeClass('is-chosen');
+            }
+        });
+    });
 });
 
