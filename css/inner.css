@@ -1147,3 +1147,5 @@ a.is-star.is-active:after, a.is-star:hover:after { visibility: visible; filter: 
 .o-top__window i { position: absolute; background: url('../img/icons-s6f3b1ea494.png') 0 -982px no-repeat; width: 9px; height: 9px; cursor: pointer; top: 3px; right: 3px; }
 .o-top .action__menu { float: right; margin: 9px 18px 0; }
 @media only screen and (max-width: 640px) { .o-top .action__menu { display: none; } }
+
+.s-slider { padding-bottom: 15px; }
