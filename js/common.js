@@ -242,5 +242,23 @@ head.ready(function() {
             }
         });
     });
+
+    //smiles
+    $('.js-smile-btn').on('click', function() {
+        $('.js-smile').toggleClass('is-active');
+        return false;
+    });
+    $('.js-smile').each(function() {
+        $('body').on('click', function() {
+            $('.js-smile').removeClass('is-active');
+        });
+        $(this).on('click', function(event) {
+            event.stopPropagation();
+        });
+        $('.js-smile a').on('click', function() {
+            $('.js-smile').removeClass('is-active');
+            return false;
+        });
+    });
 });
 

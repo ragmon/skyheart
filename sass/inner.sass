@@ -1263,6 +1263,8 @@ body
 .rating
 	display: inline-block
 	margin-bottom: 30px
+	width: 100%
+	max-width: 270px
 	&__row
 		padding: 5px 0 
 		+clr
@@ -3321,3 +3323,257 @@ a
 				position: static
 				display: inline-block
 				margin: 0 0 5px 0
+
+.o-posts
+	border: 1px solid #44709C	
+	padding: 10px 0 15px 
+.o-post
+	padding: 10px 16px
+	position: relative
+	+box
+	min-height: 67px 
+	&.is-my
+		padding-left: 100px
+		+r1
+			padding: 10px 16px
+		.o-post__img
+			left: 16px
+		p
+			padding-right: 30px
+			+r1
+				padding: 0
+	&.is-opponent
+		padding-right: 100px
+		padding-left: 55px
+		+r1
+			padding: 10px 16px
+		.o-post__img
+			right: 16px
+	&.is-active
+		background-color: #CEEBEF
+	&__img
+		position: absolute
+		top: 50%
+		width: 59px
+		height: 59px
+		+border-radius(50%)
+		+box
+		border: 2px solid #2D4164
+		background-color: #E8E8E8
+		margin: -29px 0 0
+		+r1
+			display: none
+		img
+			width: 100%
+	&__top
+		margin: 0 0 5px 
+		font-size: 0
+		+clr
+		span, time
+			line-height: 1
+			color: #555 
+		span
+			+bold
+			font-size: 14px
+			display: inline-block
+			vertical-align: top
+		time
+			padding: 2px 15px 2px
+			+reg
+			font-size: 11px
+			float: right
+	
+	p
+		+light
+		font-size: 11px
+	h4
+		+semi
+		font-size: 18px
+		padding: 4px 0 
+		
+.add
+	&__box
+		position: relative
+		padding: 16px 17px 16px 93px
+		+r1
+			padding: 16px 17px 16px 
+	&__img
+		position: absolute
+		top: 39px
+		left: 20px
+		width: 59px
+		height: 59px
+		+border-radius(50%)
+		+box
+		border: 2px solid #2D4164
+		background-color: #E8E8E8
+		+r1
+			display: none
+		img
+			width: 100%
+	&__message
+		padding: 17px 85px 17px 17px
+		border: 1px solid #44709C
+		height: 100px
+		+box
+		+r(640)
+			padding: 17px 37px 17px 17px 
+		div
+			font-size: 11px
+			+light
+			color: #555
+			line-height: 18px
+			cursor: text 
+			height: 100%
+			overflow: hidden			
+	&__scroll
+		position: absolute
+		top: 16px
+		height: 100px
+		right: 17px
+		width: 69px
+		background: #fff
+		border: 1px solid #2D4164
+		border-left: none
+		+r(640)
+			width: 20px
+		div 
+			width: 20px
+			position: absolute
+			top: 0
+			bottom: 0
+			left: 0
+			border: 1px solid #2D4164
+			a
+				position: absolute
+				width: 20px
+				height: 20px
+				background-color: #2D4164
+				left: -1px
+				&:before
+					content: "" 
+					position: absolute
+					left: 6px
+			span
+				position: absolute
+				top: 35px
+				left: -1px
+				right: -1px
+				height: 16px
+				background-color: #2D4164
+				cursor: pointer
+	&__up
+		top: 0
+		&:before
+			+arr(8, 7, #fff, t)
+			top: 6px
+	&__down
+		bottom: 0
+		&:before
+			+arr(8, 7, #fff, b)
+			top: 7px
+	&__bottom
+		+clr
+		padding: 9px 0 0
+		position: relative
+		text-align: center
+		+r(640)
+			padding: 9px 25px 0 15px 
+	.btn-file
+		position: absolute
+		top: -59px
+		right: 11px
+		+r(640)
+			position: static
+			float: right
+			margin: 5px 0 0 
+	.btn
+		padding: 6px 12px 
+		+border-radius(4px)
+		+r(640)
+			display: inline-block
+	&__send
+		float: right
+		+r(640)
+			float: none
+			clear: both
+			padding: 14px 0 0 
+	&__smile
+		float: left
+		+s(smile)
+		margin: 4px 0 0 3px
+		+r(640)
+			margin: 4px 0 0  
+	&__smiles
+		position: absolute
+		bottom: 100%
+		left: 0
+		font-size: 0
+		background: #fff
+		padding: 10px  
+		border: 1px solid #2D4164
+		max-width: 250px
+		+box-shadow(0 3px 6px rgba(20, 45, 96, 0.75))
+		+opacity(0)
+		visibility: hidden
+		+transition(opacity 0.3s, visibility 0.3s)
+		text-align: left
+		&.is-active
+			+opacity(1)
+			visibility: visible
+		&:before, &:after
+			position: absolute
+			top: 100%
+			content: "" 
+		&:before
+			left: 10px
+			+arr(10, 8, #2D4164, b)
+		&:after
+			left: 11px
+			+arr(8, 7, #fff, b)
+		a
+			display: inline-block
+			vertical-align: middle
+			width: 26px
+			margin: 3px  
+			img
+				width: 100%
+				
+.o-top
+	background-color: #E8E8E8
+	border-bottom: 2px solid #44709c
+	font-size: 0
+	&__back
+		display: inline-block
+		vertical-align: middle
+		text-transform: uppercase
+		font-size: 12px
+		color: #fff
+		background-color: #44709C
+		+light
+		line-height: 43px
+		width: 88px
+		text-align: center
+	&__window
+		color: #44709C
+		+light
+		font-size: 14px
+		line-height: 1
+		border: 1px solid #44709C
+		padding: 7px 19px 7px 10px
+		display: inline-block
+		vertical-align: middle 
+		margin-left: 21px
+		cursor: pointer
+		position: relative
+		i
+			position: absolute
+			+s(o-close)
+			cursor: pointer
+			top: 3px
+			right: 3px
+	.action__menu
+		float: right
+		margin: 9px 18px 0 
+		+r(640)
+			display: none
