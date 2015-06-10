@@ -2323,7 +2323,7 @@ body
 		li
 			display: inline-block
 			vertical-align: middle
-			margin: 0 20px 20px
+			margin: 0 18px 20px
 			a
 				display: inline-block
 				font-size: 0
@@ -3057,3 +3057,235 @@ a
 				margin: 0 20px 
 			&:hover
 				text-decoration: underline
+				
+//NEW PAGES
+
+.action
+	font-size: 0
+	padding: 4px 14px 
+	background: #e8e8e8 
+	margin: 0 0 12px 
+	+r(640)
+		text-align: center
+	&__section
+		display: inline-block
+		vertical-align: middle
+		padding: 4px 0 
+	.checkbox
+		display: inline-block
+		vertical-align: middle
+		width: 16px
+		height: 16px
+		padding: 0 
+		margin: 0 15px 0 0 
+		span
+			&:before
+				width: 16px
+				height: 16px
+				+box-shadow(inset 0 3px 5px rgba(0, 2, 3, 0.46))
+	.n-select
+		vertical-align: middle
+		margin: 0 20px 0 0
+		&.is-action
+			width: 100px
+			+r1
+				width: 150px
+			+r(640)
+				width: 100px
+		&.is-message
+			width: 115px
+			+r1
+				width: 150px
+			+r(640)
+				width: 115px
+	&__label
+		display: inline-block
+		vertical-align: middle
+		color: #555
+		font-size: 12px
+		+light
+		margin: 0 12px 0 0 
+	&__search
+		position: relative
+		display: inline-block
+		vertical-align: middle
+		width: 167px
+		+box
+		padding: 0 33px 0 0
+		margin: 0 20px 0 0
+		+r1
+			width: 182px
+		+r(640)
+			width: 167px
+		input.input-blue
+			+border-radius(3px 0 0 3px)
+		button
+			position: absolute
+			top: 0
+			right: 0
+			bottom: 0
+			width: 33px
+			background-color: #44709C
+			+border-radius(0 3px 3px 0)
+			&:active
+				background-color: darken(#44709C, 10%)
+			&:before
+				content: ""
+				+s(action-search)
+				display: inline-block
+				vertical-align: middle
+				margin-top: 1px
+	&__menu
+		display: inline-block
+		vertical-align: middle
+		position: relative
+		padding: 3px 0 2px 
+		&:hover
+			.action__drop
+				+opacity(1)
+				visibility: visible
+		i
+			display: inline-block
+			vertical-align: top
+			+s(action-icon)
+	&__drop
+		position: absolute
+		top: 100%
+		left: 50%
+		margin: 5px 0 0 -47px 
+		border: 1px solid #44709C
+		background: #fff
+		width: 94px
+		text-align: center
+		+opacity(0)
+		visibility: hidden
+		+transition(all 0.3s)
+		z-index: 100 
+		a
+			display: block
+			color: #555
+			font-size: 14px
+			+light 
+			&.is-active
+				background: #44709C 
+				color: #fff 
+				
+.o-messages
+	+box-shadow(0 3px 6px rgba(20, 45, 96, 0.75))
+	background: #fff
+	margin-bottom: 25px
+.o-message
+	padding: 17px 70px 17px 50px 
+	+box
+	height: 99px
+	position: relative
+	+r1
+		padding: 17px 45px 17px 40px 
+	&:hover
+		background-color: #CEEBEF
+	&.is-active
+		border: 1px solid #2D4164
+	.checkbox
+		position: absolute
+		top: 50%
+		left: 14px
+		margin: -8px 0 0 
+		width: 16px
+		height: 16px
+		padding: 0 
+		+r1
+			left: 11px
+		span
+			&:before
+				width: 16px
+				height: 16px
+				+box-shadow(inset 0 3px 5px rgba(0, 2, 3, 0.46))
+	.btn-file
+		position: absolute
+		top: 50%
+		right: 20px
+		margin: -11px 0 0 
+		+r1
+			right: 15px
+	&__inner
+		position: relative
+		padding: 0 0 0 79px 
+		+r1
+			padding: 0
+	&__img
+		position: absolute
+		top: 50%
+		left: 0
+		width: 59px
+		height: 59px
+		+border-radius(50%)
+		+box
+		border: 2px solid #2D4164
+		background-color: #E8E8E8
+		margin: -29px 0 0
+		+r1
+			display: none
+	&__info
+		color: #555 
+	&__top
+		margin: 0 0 2px 
+		font-size: 0
+		span, time
+			max-width: 190px
+			line-height: 1
+			display: inline-block
+			vertical-align: top
+		span
+			+bold
+			font-size: 14px
+			width: 60%
+		time
+			padding: 2px 0
+			+reg
+			font-size: 11px
+			width: 40%
+	&__text
+		height: 45px
+		overflow: hidden
+		p
+			+light
+			font-size: 11px
+
+.partners
+	clear: both
+	padding: 25px 0 0 
+	.company
+		padding: 10px 0 
+		position: relative
+		+box-shadow(0 3px 6px rgba(20, 45, 96, 0.75))
+		hr
+			width: 56%
+		&__list
+			padding: 15px 0 0  
+		.title-h2
+			font-size: 22px
+			clear: both
+		p
+			font-size: 12px
+		li
+			img
+				&.is-azal
+					width: 86px
+				&.is-armenia
+					width: 192px
+				&.is-armavia
+					width: 192px
+				&.is-india
+					width: 180px
+		&__show
+			position: absolute
+			top: 18px
+			right: 15px
+			+reg
+			font-size: 14px
+			line-height: 1
+			color: #1A3058
+			+r(640)
+				position: static
+				display: inline-block
+				margin: 0 0 5px 0
