@@ -260,5 +260,14 @@ head.ready(function() {
             return false;
         });
     });
+    $('.o-post').on('click', function() {
+        $(this).toggleClass('is-active');
+        if ($('.o-post').hasClass('is-active')) {
+            $('.o-posts-action').addClass('is-active');
+        }
+        else {
+            $('.o-posts-action').removeClass('is-active');
+        };        
+    });
 });
 

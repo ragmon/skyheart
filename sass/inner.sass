@@ -3326,12 +3326,16 @@ a
 
 .o-posts
 	border: 1px solid #44709C	
-	padding: 10px 0 15px 
+	&__inner
+		overflow: auto
+		height: 500px
+		padding: 10px 0 15px 
 .o-post
 	padding: 10px 16px
 	position: relative
 	+box
 	min-height: 67px 
+	cursor: pointer
 	&.is-my
 		padding-left: 100px
 		+r1
@@ -3538,7 +3542,34 @@ a
 			margin: 3px  
 			img
 				width: 100%
-				
+
+.o-posts-action
+	padding: 10px 17px 0
+	font-size: 0
+	border-bottom: 1px solid #44709c
+	display: none
+	&.is-active
+		display: block
+	li
+		display: inline-block
+		vertical-align: top
+		margin: 0 10px 10px 0 
+	a
+		display: inline-block
+		vertical-align: top
+		color: #44709C
+		+light
+		font-size: 14px
+		line-height: 1
+		border: 1px solid #44709C
+		padding: 7px 8px
+		+border-radius(3px)
+		&:hover
+			background: #44709C
+			color: #fff
+			+opacity(0.8)
+		&:active
+			+opacity(1)
 .o-top
 	background-color: #E8E8E8
 	border-bottom: 2px solid #44709c
