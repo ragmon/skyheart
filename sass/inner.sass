@@ -1345,6 +1345,9 @@ body
 	+box-shadow(0 3px 6px rgba(20, 45, 96, 0.75))
 	&__heading
 		background: url(../img/s-advertisement.jpg) no-repeat right top 
+		-webkit-background-size: cover 
+		-o-background-size: cover 
+		background-size: cover 
 		position: relative
 		+reg
 		font-size: 20px
@@ -3416,12 +3419,12 @@ a
 		img
 			width: 100%
 	&__message
-		padding: 17px 85px 17px 17px
+		padding: 14px 85px 14px 17px
 		border: 1px solid #44709C
 		height: 100px
 		+box
 		+r(640)
-			padding: 17px 37px 17px 17px 
+			padding: 14px 37px 14px 17px 
 		div
 			font-size: 11px
 			+light
@@ -3608,3 +3611,131 @@ a
 		margin: 9px 18px 0 
 		+r(640)
 			display: none
+			
+.n-item
+	padding: 0 15px 10px 0 
+	+clr
+	+r1
+		padding: 0 0 10px
+	&__img
+		float: left
+		width: 90px
+		height: 90px
+		background: #1c2e3c
+		margin: 2px 20px 0 0 
+		position: relative
+		z-index: 2  
+		img
+			width: 100%
+	&__text
+		position: relative
+	&__top
+		small
+			float: right
+			font-size: 12px
+			color: #555
+			line-height: 1
+			+reg
+			padding: 0 50px 0 15px
+		span
+			+bold
+			font-size: 16px
+			color: #46778d
+			margin-bottom: 8px
+			display: block
+			line-height: 1
+			a
+				color: #46778d
+		hr
+			width: 50px
+			height: 1px
+			border: none
+			background-color: #4c8299
+			display: block
+			margin: 0 
+	p
+		+semi
+		font-size: 12px
+		color: #555
+		display: inline-block
+		vertical-align: top	
+		padding: 8px 0  	
+	&__hot
+		float: right
+		margin: -5px 0 8px 
+		span
+			display: inline-block
+			vertical-align: middle
+			font-size: 12px
+			+reg
+			color: #555 
+		div
+			display: inline-block
+			vertical-align: middle
+			text-align: center
+			padding: 0 10px 
+			i
+				display: inline-block
+				vertical-align: top
+				+s(hot)
+			span
+				display: block
+		.is-star
+			position: absolute
+			top: -5px
+			right: 0
+	&__bottom
+		+clr
+		clear: right
+	&__btns
+		+clr
+		+r1
+			overflow: visible
+		.trade
+			float: left
+			margin-right: 5px
+			+r1
+				margin: 0 0 10px
+	&__links
+		overflow: hidden
+		border: 1px solid #353535
+		+border-radius(2px)
+		font-size: 0.1px
+		text-align: justify
+		+r1
+			clear: both
+			overflow: visible
+			text-align: center
+			font-size: 0
+		&:after
+			display: inline-block
+			width: 100%
+			content: "" 
+		span
+			font-size: 12px
+			color: #555
+			+semi
+			display: inline-block
+			vertical-align: middle
+			padding: 5px 10px 5px 10px
+			position: relative
+			+r1
+				padding: 5px 10px 5px 0 
+				margin: 0 5px 
+			&.is-place, &.is-date
+				padding: 5px 10px 5px 25px
+				+r1
+					padding: 5px 10px 5px 25px 
+				&:before
+					position: absolute
+					content: "" 
+					margin: 0 7px 0 0 
+					left: 0
+			&.is-place
+				&:before
+					top: 4px 
+					+s(pin)
+			&.is-date
+				&:before
+					top: 5px
+					+s(settings-blue)
