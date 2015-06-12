@@ -281,5 +281,22 @@ head.ready(function() {
             $('.o-posts-action').removeClass('is-active');
         };        
     });
+
+    //ads
+    $('.n-item__img').on('click', function() {
+        if ($(this).find('.n-item__popup').hasClass('is-active')) {  
+            $(this).find('.n-item__popup').removeClass('is-active');
+        }
+        else {            
+            $('.n-item__popup').removeClass('is-active');
+            $(this).find('.n-item__popup').addClass('is-active');
+        }
+    });
+
+    $('.js-cat-btn').on('click', function() {
+        $(this).parents('.js-cat').find('.js-cat-list').slideToggle('600');
+        $(this).toggleClass('is-active');
+        return false;
+    });
 });
 

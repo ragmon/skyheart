@@ -3611,32 +3611,137 @@ a
 		margin: 9px 18px 0 
 		+r(640)
 			display: none
-			
+
+.n-ads
+	.advertisement
+		+box-shadow(none)
+	&__heading
+		padding: 10px 0 0 
+	&__show
+		float: right
+		margin: 17px 10px 0 20px
+		font-size: 12px
+		color: #577DAA
+		text-decoration: underline
+		+reg 	
+	&__title
+		overflow: hidden
+		span
+			background-color: #577DAA
+			padding: 6px 20px 
+			font-size: 20px
+			+reg
+			color: #fff
+			text-transform: uppercase
+			display: block
+			margin: 0 40px 0 0
+			position: relative
+			max-width: 450px
+			+r1
+				padding: 6px 10px 
+			&:before
+				position: absolute
+				top: 0
+				left: 100%
+				+arr(40, 40, #577DAA, tl)
+				content: "" 
+	&__hots
+		background-color: #EDFBD6
+	&__settings
+		display: block
+		background-color: #DBE2F4
+		+clr
+		font-size: 0
+		padding: 0 20px 10px
+		+r1
+			padding: 0 10px 10px
+		+r(500)
+			text-align: center
+		a, span
+			+reg
+			font-size: 12px
+			display: inline-block
+			vertical-align: middle
+			line-height: 15px
+		span
+			color: #555 
+	&__filter
+		float: left
+		padding: 10px 0 0
+		+r(500)
+			float: none
+		li
+			display: inline-block
+			vertical-align: top
+			margin-right: 10px
+		a
+			color: #555 
+			&:hover
+				text-decoration: underline
+			&.is-active
+				color: #577DAA
+				text-decoration: underline
+	&__right
+		float: right
+		padding: 10px 0 0
+		+r(500)
+			float: none
+		ul, li
+			display: inline-block
+			vertical-align: top
+			margin-left: 10px
+		a			
+			color: #555 
+			position: relative
+			padding-right: 16px 
+			&:hover
+				text-decoration: underline
+			&:before
+				position: absolute
+				top: 0
+				right: 0
+				+s(arr-down-black)
+				content: "" 
+				+opacity(0.8)
+			&.is-active
+				color: #577DAA
+				text-decoration: underline
+				&:before
+					+s(arr-down)
 .n-item
-	padding: 0 15px 10px 0 
+	padding: 10px 15px 10px 0 
 	+clr
+	border-bottom: 1px solid #1c2e3c 
 	+r1
-		padding: 0 0 10px
+		padding: 10px 
+	&:hover
+		background-color: rgba(111, 191, 221, 0.25)
+	.trade
+		width: 100px
+		padding-right: 2px
 	&__img
 		float: left
 		width: 90px
 		height: 90px
 		background: #1c2e3c
-		margin: 2px 20px 0 0 
+		margin: 10px 20px 0 0 
 		position: relative
-		z-index: 2  
+		cursor: pointer
+		z-index: 200
 		img
 			width: 100%
 	&__text
 		position: relative
+		overflow: hidden
+		padding: 10px 0 0 
+		+r1
+			overflow: visible
 	&__top
-		small
-			float: right
-			font-size: 12px
-			color: #555
-			line-height: 1
-			+reg
-			padding: 0 50px 0 15px
+		float: left
+		width: 60%
+		+r1
+			width: 100%
+			float: none
 		span
 			+bold
 			font-size: 16px
@@ -3659,10 +3764,32 @@ a
 		color: #555
 		display: inline-block
 		vertical-align: top	
-		padding: 8px 0  	
-	&__hot
+		padding: 8px 0 
+	&__body
+		width: 40%
 		float: right
-		margin: -5px 0 8px 
+		text-align: right
+		+r1
+			float: none
+			clear: both
+			text-align: left
+			width: 100%
+			padding: 10px 0 
+	.is-star
+		float: right	
+		margin: -3px 0 0 20px
+		+r1
+			margin: 0  
+	small
+		font-size: 12px
+		color: #555
+		line-height: 1
+		+reg
+	&__hot
+		display: inline-block
+		padding: 5px 0 5px 	
+		+r1
+			clear: both
 		span
 			display: inline-block
 			vertical-align: middle
@@ -3680,13 +3807,8 @@ a
 				+s(hot)
 			span
 				display: block
-		.is-star
-			position: absolute
-			top: -5px
-			right: 0
 	&__bottom
 		+clr
-		clear: right
 	&__btns
 		+clr
 		+r1
@@ -3707,6 +3829,8 @@ a
 			overflow: visible
 			text-align: center
 			font-size: 0
+		+r1
+			border: none
 		&:after
 			display: inline-block
 			width: 100%
@@ -3717,10 +3841,10 @@ a
 			+semi
 			display: inline-block
 			vertical-align: middle
-			padding: 5px 10px 5px 10px
+			padding: 5px 7px 5px 7px
 			position: relative
 			+r1
-				padding: 5px 10px 5px 0 
+				padding: 5px 8px 5px 0 
 				margin: 0 5px 
 			&.is-place, &.is-date
 				padding: 5px 10px 5px 25px
@@ -3739,8 +3863,34 @@ a
 				&:before
 					top: 5px
 					+s(settings-blue)
-
-
+	&__popup
+		position: absolute
+		top: 0
+		left: 100%
+		width: 400px
+		height: 300px
+		background-color: #1C2E3C
+		+box-shadow(0 3px 6px rgba(20, 45, 96, 0.75))  
+		margin: 0 0 0 20px 
+		+scale(0.7)
+		visibility: hidden
+		+opacity(0)
+		+transition(all 0.4s)
+		+r1
+			width: 300px
+			height: 200px
+		+r(640)
+			left: 0
+			top: 100%
+			margin: 20px 0 0
+			width: 270px
+			height: 170px
+		img
+			width: 100% 
+		&.is-active
+			+scale(1)
+			visibility: visible
+			+opacity(1)
 //feedback
 .p-feedback
 	position: fixed
@@ -3810,3 +3960,138 @@ a
 		bottom: 85px
 		&:hover
 			+opacity(0.9)
+
+//.s-category
+.s-category
+	+box-shadow(0 3px 6px rgba(20, 45, 96, 0.75))
+	background: #fff 
+	margin-bottom: 10px
+	&__heading
+		line-height: 55px
+		+reg
+		font-size: 20px
+		color: #fff
+		padding: 0 20px
+		text-transform: uppercase
+		background-color: #44709C
+		text-align: center
+	&__title
+		font-size: 18px
+		+semi
+		color: #555
+		padding: 3px 10px 3px 30px 
+		position: relative
+		display: block
+		&:hover
+			background-color: #CEEBEF
+		&:before, &:after
+			position: absolute
+			top: 50%
+			background: #555
+			content: "" 
+		&:before
+			left: 10px 
+			width: 10px
+			margin-top: -2px
+			height: 2px 
+		&:after
+			left: 14px 
+			width: 2px
+			height: 10px
+			margin-top: -6px
+			display: none
+		&.is-active
+			&:after
+				display: block
+	ul
+		background: #CEEBEF 
+		display: none
+	li
+		a
+			font-size: 18px
+			color: #555
+			+reg
+			padding: 3px 10px 3px 35px 
+			display: block
+			&:hover
+				text-decoration: underline
+				
+
+.s-search
+	+box-shadow(0 3px 6px rgba(20, 45, 96, 0.75))
+	margin-bottom: 10px
+	.input
+		color: #6587AF
+		+placeholder-color(#6587AF)
+	&__form
+		padding: 25px 65px 25px 25px
+		position: relative
+		max-width: 320px
+		margin: 0 auto 
+	&__icon
+		+s(search-icon)
+		position: absolute
+		top: 25px
+		right: 20px 
+	.input, .select
+		margin-bottom: 15px
+	&__time
+		text-align: justify
+		font-size: 0.1px
+		&:after
+			display: inline-block
+			width: 100%
+			content: ""
+		.input, .select, i
+			display: inline-block
+			vertical-align: middle
+		.input
+			width: 55px
+		.select
+			width: 65px
+		i
+			position: relative
+			width: 15px
+			height: 18px
+			margin-bottom: 15px
+			&:before, &:after
+				content: ""
+				position: absolute
+			&:before
+				left: 0
+				top: 8px
+				width: 5px
+				height: 3px
+				background: #a6b659  
+			&:after
+				top: 0
+				right: 0
+				+arr(10, 18, #a6b659, r)
+	&__days
+		+clr
+	&__label
+		float: left
+		font-size: 12px
+		color: #555
+		+reg
+		margin-right: 20px
+		padding: 11px 0  
+	&__day
+		overflow: hidden
+	&__checks
+		li
+			position: relative
+			padding: 0 0 0 30px
+			margin-bottom: 8px
+			i
+				position: absolute
+				top: 50%
+				left: 0
+				&.is-photo
+					+s(photo)
+					margin-top: -10px
+	&__btn
+		text-align: center
+		padding: 10px 0 0 
+		.btn
+			width: 120px
