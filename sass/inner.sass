@@ -3709,11 +3709,11 @@ a
 				&:before
 					+s(arr-down)
 .n-item
-	padding: 10px 15px 10px 0 
+	padding: 0 15px 10px 0 
 	+clr
 	border-bottom: 1px solid #1c2e3c 
 	+r1
-		padding: 10px 
+		padding: 0 10px 10px 
 	&:hover
 		background-color: rgba(111, 191, 221, 0.25)
 	.trade
@@ -3801,12 +3801,35 @@ a
 			vertical-align: middle
 			text-align: center
 			padding: 0 10px 
+			position: relative
+			&:hover
+				span
+					display: block
 			i
 				display: inline-block
 				vertical-align: top
 				+s(hot)
 			span
 				display: block
+				position: absolute
+				bottom: 100%
+				right: 0
+				background: rgba(45, 94, 143, 0.89)
+				margin-bottom: 10px
+				padding: 2px 4px
+				color: #fff  
+				white-space: nowrap
+				display: none
+				&:after
+					content: ""
+					position: absolute
+					top: 100%
+					right: 13px
+					width: 0px
+					height: 0px
+					border-style: solid
+					border-width: 10px 6.5px 0 6.5px
+					border-color: rgba(45, 94, 143, 0.89) transparent transparent transparent
 	&__bottom
 		+clr
 	&__btns
@@ -3855,6 +3878,9 @@ a
 					content: "" 
 					margin: 0 7px 0 0 
 					left: 0
+			&.is-name
+				+r(500)
+					display: none
 			&.is-place
 				&:before
 					top: 4px 
@@ -4005,7 +4031,6 @@ a
 				display: block
 	ul
 		background: #CEEBEF 
-		display: none
 	li
 		a
 			font-size: 18px
@@ -4015,7 +4040,8 @@ a
 			display: block
 			&:hover
 				text-decoration: underline
-				
+			&.is-active
+				background: #f9a2a8 
 
 .s-search
 	+box-shadow(0 3px 6px rgba(20, 45, 96, 0.75))
