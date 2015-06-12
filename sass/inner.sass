@@ -3739,3 +3739,74 @@ a
 				&:before
 					top: 5px
 					+s(settings-blue)
+
+
+//feedback
+.p-feedback
+	position: fixed
+	bottom: 0
+	left: -320px
+	width: 100%
+	max-width: 300px
+	background: #fff
+	z-index: 1000  
+	padding: 20px 40px 20px 20px
+	+box-shadow(0 4px 10px rgba(0, 1, 2, 0.75))
+	border-top: 1px solid #555
+	border-right: 1px solid #555
+	+border-radius(0 5px 0 0)
+	+box
+	+transition(all 0.5s)
+	+r(680)
+		display: none
+	&.is-active
+		left: 0
+	.textarea
+		height: 120px
+	&__close
+		position: absolute
+		top: 60px
+		right: 15px
+		width: 15px
+		height: 30px
+		background: none
+		&:before, &:after
+			content: "" 
+			position: absolute
+		&:before
+			+arr(15, 30, #2d4164, l)
+			top: 0
+			right: 0
+		&:after
+			+arr(10, 20, #fff, l)
+			top: 5px
+			right: 0
+.p-feedback-btn
+	position: fixed
+	top: 50%
+	left: -40px
+	z-index: 1000 
+	height: 200px
+	width: 30px
+	margin-top: -100px
+	+transition(all 0.3s)
+	+r(680)
+		display: none
+	&.is-active
+		left: 0
+	button
+		+rotate(-90)
+		+reg
+		font-size: 13px
+		color: #fff
+		text-transform: uppercase
+		+border-radius(0 0 5px 5px) 
+		background-color: #2D4164
+		padding: 6px 15px
+		+transition(opacity 0.3s)
+		width: 200px
+		position: absolute
+		left: -85px
+		bottom: 85px
+		&:hover
+			+opacity(0.9)

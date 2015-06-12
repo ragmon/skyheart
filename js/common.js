@@ -120,7 +120,19 @@ head.ready(function() {
     });
     $('.js-beta-close').on('click', function() {
         $('.js-beta').addClass('is-hidden');
+        $('.p-feedback-btn').addClass('is-active');
         return false;
+    });
+
+    $('.js-feedback-btn').on('click', function() {
+        $('.js-feedback').addClass('is-active');
+        $('.p-feedback-btn').removeClass('is-active');
+        return false;
+    });
+    $('.js-feedback-close').on('click', function() {
+        
+        $('.js-feedback').removeClass('is-active');
+        $('.p-feedback-btn').addClass('is-active');
     });
     //header
 
