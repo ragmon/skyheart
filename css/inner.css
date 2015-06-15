@@ -316,6 +316,7 @@ body.is-fixed .header__menu { max-width: 1074px; margin: 0 auto; padding: 10px 1
 .form__box { width: 50%; padding: 18px 18px 0; display: inline-block; vertical-align: top; }
 @media only screen and (max-width: 700px) { .form__box { width: 100%; } }
 .form__box label { position: relative; display: block; }
+.form__box .file { -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; }
 .form__label { color: #555555; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 300; font-size: 12.6px; display: block; margin-bottom: 6px; }
 .form__status { font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 300; font-size: 11px; color: #555555; position: absolute; bottom: 100%; right: 0; width: 80px; padding: 0 0 0 25px; line-height: 1.2; margin-bottom: 6px; }
 .form__status.is-bad:before { background: #be2828; }
@@ -350,6 +351,10 @@ body.is-fixed .header__menu { max-width: 1074px; margin: 0 auto; padding: 10px 1
 .form .table_mod { margin: 0; }
 .form .table_mod tr td { padding: 10px 10px 5px; }
 .form .table td { padding: 5px 0 10px; }
+.form__photo { padding: 5px 0 0; }
+.form__photo input { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; visibility: hidden; }
+.form__photo label { overflow: hidden; width: 70%; height: 0; padding: 0 0 70%; background: url(../img/cabinet.png) no-repeat; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; cursor: pointer; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; }
+@media only screen and (max-width: 700px) { .form__photo label { width: 50%; padding: 0 0 50%; } }
 
 .field_radio { padding: 20px 0 20px; }
 @media only screen and (max-width: 1200px) { .field_radio { text-align: center; } }

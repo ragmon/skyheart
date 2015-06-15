@@ -628,6 +628,8 @@ body
 		label
 			position: relative
 			display: block
+		.file
+			+border-radius(50%)
 	&__label
 		color: #555
 		+light
@@ -757,6 +759,23 @@ body
 					padding: 10px 10px 5px 
 		td
 			padding: 5px 0 10px 
+	&__photo
+		padding: 5px 0 0 
+		input
+			+opacity(0)
+			visibility: hidden
+		label
+			overflow: hidden
+			width: 70%
+			height: 0
+			padding: 0 0 70%
+			background: url(../img/cabinet.png) no-repeat
+			+cover  
+			cursor: pointer
+			+border-radius(50%)
+			+r(700)
+				width: 50%
+				padding: 0 0 50%  
 .field
 	&_radio		
 		padding: 20px 0 20px
