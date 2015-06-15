@@ -3643,6 +3643,9 @@ a
 		color: #577DAA
 		text-decoration: underline
 		+reg 	
+		&.mob-dn
+			+r(500)
+				display: none
 	&__title
 		overflow: hidden
 		span
@@ -4044,12 +4047,17 @@ a
 			width: 2px
 			height: 10px
 			margin-top: -6px
-			display: none
+			display: block
 		&.is-active
 			&:after
-				display: block
+				display: none
 	ul
 		background: #CEEBEF 
+		&.is-mod
+			li
+				a
+					&.is-active
+						background-color: #91CED6
 	li
 		a
 			font-size: 18px
@@ -4140,3 +4148,193 @@ a
 		padding: 10px 0 0 
 		.btn
 			width: 120px
+
+.v-item
+	position: relative
+	padding: 5px 110px 7px 20px 
+	+r1
+		padding-right: 20px
+	+r(500)
+		padding: 5px 10px 7px
+	&:hover
+		background-color: #DBEFF6
+	&__img
+		position: absolute
+		top: 50%
+		right: 20px
+		width: 72px
+		height: 72px
+		+vertical
+		margin-top: -36px 
+		+r1
+			display: none
+		img
+			max-width: 100%
+			max-height: 100%
+			display: inline-block
+			vertical-align: middle 
+	&__title
+		color: #46778D
+		font-size: 16px
+		+reg
+		&:hover
+			text-decoration: underline
+	&__text
+		margin-bottom: 5px
+		p
+			color: #555
+			font-size: 13px
+			+reg
+			b
+				font-weight: normal
+				+semi
+				font-size: 14px
+				margin: 0 10px 0 0 
+	&__info
+		border: 1px solid #353535
+		+border-radius(2px)
+		text-align: justify
+		font-size: 0.01px
+		+r(500)
+			font-size: 0
+			text-align: left
+			border: none
+		&:after
+			display: inline-block
+			width: 100%
+			content: "" 
+	&__date, &__aero, &__place
+		display: inline-block
+		vertical-align: top
+		padding: 5px 10px 
+		font-size: 11px
+		+semi
+		color: #555
+		position: relative 
+		+r(500)
+			padding-left: 0
+			margin-right: 10px
+		span
+			display: inline-block
+			vertical-align: top
+	&__aero
+		padding: 5px 26px  
+		&:before
+			position: absolute
+			top: 4px
+			content: "" 
+			left: 0
+			width: 17px
+			height: 17px
+			background: url(../img/icons/firm.png) no-repeat center center
+			-webkit-background-size: contain 
+			-o-background-size: contain 
+			background-size: contain 
+	&__place
+		padding-left: 20px
+		&:before
+			position: absolute
+			top: 5px
+			left: 0
+			content: "" 
+			width: 13px
+			height: 16px
+			background: url(../img/icons/pin.png) no-repeat center center
+			-webkit-background-size: contain 
+			-o-background-size: contain 
+			background-size: contain 
+	&__popup
+		width: 20px
+		height: 20px
+		+vertical
+		position: absolute
+		top: 3px
+		right: 0
+		&:hover
+			.v-item__popup-block
+				visibility: visible
+				+opacity(1)
+		i
+			display: inline-block
+			vertical-align: middle	
+			&.is-ok		
+				width: 12px
+				height: 11px
+				background: url(../img/icons/ok.png) no-repeat center center
+				-webkit-background-size: contain 
+				-o-background-size: contain 
+				background-size: contain 
+			&.is-error		
+				width: 15px
+				height: 15px
+				background: url(../img/icons/error.png) no-repeat center center
+				-webkit-background-size: contain 
+				-o-background-size: contain 
+				background-size: contain 
+	&__popup-block
+		position: absolute
+		bottom: 100%
+		left: -3px
+		white-space: nowrap
+		font-size: 10px
+		color: #fff
+		background-color: rgba(45, 94, 143, 0.89)
+		margin: 0 0 8px
+		padding: 4px 8px 
+		visibility: hidden
+		+opacity(0)
+		+transition(all 0.3s)
+		+r1
+			left: auto
+			right: -3px
+		&:before
+			position: absolute
+			top: 100%
+			left: 8px
+			+arr(8, 8, rgba(45, 94, 143, 0.89), b)
+			content: "" 
+			+r1
+				left: auto
+				right: 8px
+	&__top
+		padding: 0 10px 
+		+r(500)
+			padding: 0
+	&__text
+		position: relative
+		padding: 0 60px 0 0 
+	&__fire
+		position: absolute
+		top: 0
+		right: 35px
+		+s(fire)
+		+r1
+			right: 20px
+.v-filter
+	float: right
+	text-align: right
+	padding: 13px 0 0 
+	+r1
+		float: none
+		display: block
+		position: absolute
+		bottom: 7px
+		left: 0
+		right: 0
+		text-align: left
+	&__label, .v-select
+		display: inline-block
+		vertical-align: middle
+	&__label
+		font-size: 12px
+		color: #555
+		margin: 0 9px 0 15px 
+		+r1
+			margin: 0 8px 
+.v-heading
+	+r1
+		padding-bottom: 40px
+		position: relative 
+	
+.v-items
+	+box-shadow(0 3px 6px rgba(20, 45, 96, 0.75))
