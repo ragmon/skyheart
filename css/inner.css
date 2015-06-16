@@ -110,8 +110,6 @@ input.input_black { color: #555555; }
 input.input_black:-moz-placeholder, input.input_black::-moz-placeholder { color: #555555; opacity: 1; }
 input.input_black::-webkit-input-placeholder { color: #555555; }
 
-input:disabled.input { background-color: #aec0bb; }
-
 textarea.textarea { background-color: #cbd6d3; width: 100%; padding: 11px; color: #6587af; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 300; font-size: 14px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; border: none; resize: none; height: 225px; }
 textarea.textarea_white { background: white; }
 textarea.textarea_black { color: #555555; }
@@ -153,7 +151,7 @@ input.input-blue { -moz-border-radius: 3px; -webkit-border-radius: 3px; border-r
 .btn-file { display: inline-block; vertical-align: top; background: url('../img/icons-se93c144631.png') 0 -124px no-repeat; width: 25px; height: 23px; overflow: hidden; cursor: pointer; }
 .btn-file input { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; visibility: hidden; }
 
-.ui-datepicker { -moz-box-shadow: 0 3px 6px rgba(20, 45, 96, 0.75); -webkit-box-shadow: 0 3px 6px rgba(20, 45, 96, 0.75); box-shadow: 0 3px 6px rgba(20, 45, 96, 0.75); -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; background: rgba(61, 88, 136, 0.74); padding: 15px 15px 13px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; margin: 10px 0; }
+.ui-datepicker { -moz-box-shadow: 0 3px 6px rgba(20, 45, 96, 0.75); -webkit-box-shadow: 0 3px 6px rgba(20, 45, 96, 0.75); box-shadow: 0 3px 6px rgba(20, 45, 96, 0.75); -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; background: rgba(61, 88, 136, 0.74); padding: 15px 15px 13px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; margin: 10px 0; position: absolute; display: none; z-index: 900 !important; }
 .ui-datepicker-calendar { border: 2px solid #1e2b42; background-color: #4e7fb1; }
 .ui-datepicker-calendar th { background-color: #578ec6; border: 1px solid #1e2b42; width: 31px; line-height: 31px; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 400; font-size: 12px; color: white; text-transform: uppercase; }
 .ui-datepicker-calendar td { border: 1px solid #1e2b42; width: 31px; line-height: 31px; text-align: center; }
@@ -1403,12 +1401,6 @@ a.is-star.is-active:after, a.is-star:hover:after { visibility: visible; filter: 
 .res__choice { padding: 5px 0 15px; }
 .res__choice .creating__label, .res__choice .checkbox, .res__choice p { display: inline-block; vertical-align: middle; margin: 0 20px 0 0; }
 @media only screen and (max-width: 700px) { .res__choice .creating__label, .res__choice p { display: block; margin-bottom: 15px; } }
-.res__hideinfo { padding: 0 0 15px; }
-.res__hideinfo .creating__label, .res__hideinfo .checkbox { display: inline-block; vertical-align: middle; }
-.res__hideinfo .creating__label { margin: 0 20px 0 0; }
-@media only screen and (max-width: 700px) { .res__hideinfo .creating__label { margin: 0 10px 0 0; } }
-@media only screen and (max-width: 450px) { .res__hideinfo .creating__label { font-size: 12px; } }
-.res__hideinfo .checkbox { padding: 0; width: 16px; height: 16px; }
 .res__adds { text-align: center; padding: 5px 0 0; }
 .res__field { margin-bottom: 20px; }
 .res__recommend { padding: 10px 0 30px; }
@@ -1431,9 +1423,9 @@ a.is-star.is-active:after, a.is-star:hover:after { visibility: visible; filter: 
 .res__text p { font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 300; font-size: 13px; color: #555555; max-width: 480px; margin-bottom: 10px; }
 .res__text p a { font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 400; color: #2d4164; text-decoration: underline; }
 .res__text p a:hover { text-decoration: none; }
+.res .js-work.is-hidden .js-add { display: none; }
 
 .r-textarea { background-color: #cbd6d3; border: 1px solid #454545; height: 143px; width: 100%; position: relative; }
-.r-textarea.is-disabled { background-color: #aec0bb; }
 .r-textarea__top { background: white; font-size: 0; padding: 5px 15px; }
 @media only screen and (max-width: 700px) { .r-textarea__top { padding: 5px 10px; } }
 .r-textarea__top span.is-title { font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 300; font-size: 12px; padding: 2px 0 0 15px; }

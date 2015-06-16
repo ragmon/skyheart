@@ -326,12 +326,10 @@ head.ready(function() {
     //work
     $('.js-work-input').on('change', function() {
         if ($(this).is(':checked')) {
-            $(this).parents('.js-work').find('.input').attr('disabled','disabled');
-            $(this).parents('.js-work').find('.r-textarea').addClass('is-disabled');
+            $(this).parents('.js-work').addClass('is-hidden');
         }
         else {
-             $(this).parents('.js-work').find('.input').removeAttr('disabled');
-             $(this).parents('.js-work').find('.r-textarea').removeClass('is-disabled');
+            $(this).parents('.js-work').removeClass('is-hidden');
         }
     });
 });

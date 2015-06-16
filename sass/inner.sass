@@ -4414,21 +4414,6 @@ a
 			+r(700)
 				display: block
 				margin-bottom: 15px 
-	&__hideinfo
-		padding: 0 0 15px 
-		.creating__label, .checkbox
-			display: inline-block
-			vertical-align: middle
-		.creating__label
-			margin: 0 20px 0 0 
-			+r(700)
-				margin: 0 10px 0 0 
-			+r(450)
-				font-size: 12px
-		.checkbox
-			padding: 0
-			width: 16px
-			height: 16px 
 	&__adds
 		text-align: center
 		padding: 5px 0 0 
@@ -4494,14 +4479,16 @@ a
 				text-decoration: underline
 				&:hover
 					text-decoration: none
+	.js-work
+		&.is-hidden
+			.js-add
+				display: none
 .r-textarea
 	background-color: #CBD6D3
 	border: 1px solid #454545
 	height: 143px
 	width: 100%
 	position: relative
-	&.is-disabled
-		background-color: darken(#CBD6D3, 10%)
 	&__top
 		background: #fff
 		font-size: 0

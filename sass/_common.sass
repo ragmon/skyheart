@@ -445,9 +445,6 @@ input.input
 	&_black
 		color: #555
 		+placeholder-color(#555)
-input:disabled
-	&.input
-		background-color: darken(#CBD6D3, 10%)
 textarea.textarea
 	background-color: #CBD6D3
 	width: 100%
@@ -604,6 +601,9 @@ input.input-blue
 	padding: 15px 15px 13px
 	+box 
 	margin: 10px 0 
+	position: absolute
+	display: none
+	z-index: 900 !important 
 	&-calendar
 		border: 2px solid #1e2b42
 		background-color: #4E7FB1
