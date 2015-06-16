@@ -4311,17 +4311,8 @@ a
 		+r1
 			right: 20px
 .v-filter
-	float: right
-	text-align: right
-	padding: 13px 0 0 
-	+r1
-		float: none
-		display: block
-		position: absolute
-		bottom: 7px
-		left: 0
-		right: 0
-		text-align: left
+	padding: 10px 5px
+	background: #dbe2f4 
 	&__label, .v-select
 		display: inline-block
 		vertical-align: middle
@@ -4331,10 +4322,6 @@ a
 		margin: 0 9px 0 15px 
 		+r1
 			margin: 0 8px 
-.v-heading
-	+r1
-		padding-bottom: 40px
-		position: relative 
 	
 .v-items
 	+box-shadow(0 3px 6px rgba(20, 45, 96, 0.75))
@@ -4382,6 +4369,8 @@ a
 				width: 100%
 			+r(700)
 				max-width: 100%
+		.js-add-phone
+			padding: 0 10px 
 	&__number
 		width: 100%
 		text-align: center
@@ -4491,12 +4480,28 @@ a
 				width: 75%
 			+r(700)
 				width: 100%
+	&__text
+		padding: 0 0 20px 
+		p
+			+light
+			font-size: 13px
+			color: #555
+			max-width: 480px
+			margin-bottom: 10px
+			a
+				+reg
+				color: #2D4164
+				text-decoration: underline
+				&:hover
+					text-decoration: none
 .r-textarea
 	background-color: #CBD6D3
 	border: 1px solid #454545
 	height: 143px
 	width: 100%
 	position: relative
+	&.is-disabled
+		background-color: darken(#CBD6D3, 10%)
 	&__top
 		background: #fff
 		font-size: 0

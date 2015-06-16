@@ -110,6 +110,8 @@ input.input_black { color: #555555; }
 input.input_black:-moz-placeholder, input.input_black::-moz-placeholder { color: #555555; opacity: 1; }
 input.input_black::-webkit-input-placeholder { color: #555555; }
 
+input:disabled.input { background-color: #aec0bb; }
+
 textarea.textarea { background-color: #cbd6d3; width: 100%; padding: 11px; color: #6587af; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 300; font-size: 14px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; border: none; resize: none; height: 225px; }
 textarea.textarea_white { background: white; }
 textarea.textarea_black { color: #555555; }

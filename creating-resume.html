@@ -199,23 +199,29 @@
 										</div>
 									</div>		
 									<div class="res__contacts">
-										<div class="res__col">
+										<div class="res__col js-add">
 											<span class="creating__label">Контакты:</span>
 											<div class="res__number">
 												<span class="creating__label">Моб. 0991475654</span>
-												<a href="#" class="add-link">Добавить номер</a>
+												<a href="#" class="add-link js-add-link">Добавить номер</a>												
+												<div class="js-add-phone">
+													<input type="text" class="input">
+												</div>	
 												<div class="res__photo">
 													<img src="img/res-photo.png" alt="">
 													<a href="#" class="add-link">Изменить</a>
 												</div>
 											</div>											
 										</div>
-										<div class="res__col">
+										<div class="res__col js-add">
 											<span class="creating__label">E-mail:</span>
 											<div class="res__number">
 												<span class="creating__label">danila@gmail.com</span>
-												<a href="#" class="add-link">Добавить E-mail</a>
-											</div>											
+												<a href="#" class="add-link js-add-link">Добавить E-mail</a>												
+												<div class="js-add-phone">
+													<input type="text" class="input">
+												</div>	
+											</div>																			
 										</div>
 									</div>							
 									<div class="creating__row">
@@ -320,47 +326,49 @@
 											<span>не полная</span>
 										</label>
 									</div>
-									<div class="res__choice">
-										<p>Опыт роботы</p>
-										<label class="checkbox checkbox_mod">
-											<input type="checkbox">
-											<span>Нет опыта роботы</span>
-										</label>
-									</div>
-									<div class="creating__large">
-										<span class="creating__label">Компания:</span>
-										<input type="text" class="input">
-									</div>
-									<div class="creating__large">
-										<span class="creating__label">Должность:</span>
-										<input type="text" class="input">
-									</div>
-									<div class="res__period">
-										<span class="creating__label">Период роботы:</span>
-										<div class="res__dates">
-											<span class="creating__label">с</span>
-											<input type="text" class="input js-datepick">
+									<div class="js-work">
+										<div class="res__choice">
+											<p>Опыт роботы</p>
+											<label class="checkbox checkbox_mod">
+												<input type="checkbox" class="js-work-input">
+												<span>Нет опыта роботы</span>
+											</label>
 										</div>
-										<div class="res__dates">
-											<span class="creating__label">по</span>
-											<input type="text" class="input js-datepick">
+										<div class="creating__large">
+											<span class="creating__label">Компания:</span>
+											<input type="text" class="input">
 										</div>
-									</div>
-									<div class="res__field">
-										<span class="creating__label">Ваши обязаности и достижения на занимаемой должности</span>
-										<div class="r-textarea">
-											<div class="r-textarea__top">
-												<b>Ж</b>
-												<i>К</i>
-												<u>Ч</u>
-												<span class="is-list"></span>
-												<span class="is-number"></span>
-												<span class="is-title">Заголовок</span>
+										<div class="creating__large">
+											<span class="creating__label">Должность:</span>
+											<input type="text" class="input">
+										</div>
+										<div class="res__period">
+											<span class="creating__label">Период роботы:</span>
+											<div class="res__dates">
+												<span class="creating__label">с</span>
+												<input type="text" class="input js-datepick">
 											</div>
-											<div class="r-textarea__text"></div>
+											<div class="res__dates">
+												<span class="creating__label">по</span>
+												<input type="text" class="input js-datepick">
+											</div>
 										</div>
-										<div class="res__adds">
-											<a href="#" class="add-link">Добавить еще одно место роботы</a>
+										<div class="res__field">
+											<span class="creating__label">Ваши обязаности и достижения на занимаемой должности</span>
+											<div class="r-textarea">
+												<div class="r-textarea__top">
+													<b>Ж</b>
+													<i>К</i>
+													<u>Ч</u>
+													<span class="is-list"></span>
+													<span class="is-number"></span>
+													<span class="is-title">Заголовок</span>
+												</div>
+												<div class="r-textarea__text"></div>
+											</div>
+											<div class="res__adds">
+												<a href="#" class="add-link">Добавить еще одно место роботы</a>
+											</div>
 										</div>
 									</div>
 									<div class="res__education">
@@ -440,6 +448,9 @@
 									<div class="res__recommend">
 										<span class="creating__label">Рекомендации: </span>
 										<a href="#" class="add-link">Прикрепить файл</a>
+									</div>
+									<div class="res__text">
+										<p>Нажимая кнопку «регистрация», вы соглашаетесь с <a href="#">правилами сайта</a> и подтверждаете, что ознакомились с <a href="#">политикой использования данных</a>.</p>
 									</div>
 									<div class="creating__btn">
 										<button class="btn">Разместить</button>
