@@ -4338,3 +4338,201 @@ a
 	
 .v-items
 	+box-shadow(0 3px 6px rgba(20, 45, 96, 0.75))
+	
+//res
+.res
+	&__top
+		font-size: 0
+		padding-bottom: 20px
+	&__info
+		display: inline-block
+		vertical-align: top
+		margin: 0 10px 0 0 
+		+r1
+			margin: 0 10px 10px 
+		.creating__label
+			display: inline-block
+			vertical-align: middle
+			margin: 0 15px 0 0 
+		.res__hide
+			display: inline-block
+			vertical-align: middle
+	.checkbox
+		min-height: 16px 
+		span
+			&:before
+				+box-shadow(inset 0 3px 5px rgba(0, 2, 3, 0.46))
+				background: #FFF 
+	&__contacts
+		+clr
+		font-size: 0
+	&__col
+		float: left
+		width: 50%
+		+r(700)
+			width: 100%
+			margin-bottom: 15px
+		.creating__label, .res__number
+			display: inline-block
+			vertical-align: top
+			max-width: 200px
+			+r1
+				display: block
+				text-align: center
+				width: 100%
+			+r(700)
+				max-width: 100%
+	&__number
+		width: 100%
+		text-align: center
+		.creating__label
+			display: block
+	&__photo
+		padding: 20px 0 0
+		img
+			margin: 0 auto 10px 
+			display: block
+			width: 100%
+			max-width: 128px
+			+border-radius(50%)
+	p
+		+semi
+		font-size: 14px
+		color: #555 
+	&__cat
+		padding: 18px 0 0 
+		p
+			margin-bottom: 20px
+	&__checklist
+		font-size: 0
+		li
+			padding: 0 0 15px 20px
+			display: inline-block
+			vertical-align: top 
+			width: 50%
+			+box
+			max-width: 240px
+			+r1
+				width: 100%
+				max-width: 100%
+	&__choice
+		padding: 5px 0 15px 
+		.creating__label, .checkbox, p
+			display: inline-block
+			vertical-align: middle
+			margin: 0 20px 0 0 
+		.creating__label, p
+			+r(700)
+				display: block
+				margin-bottom: 15px 
+	&__hideinfo
+		padding: 0 0 15px 
+		.creating__label, .checkbox
+			display: inline-block
+			vertical-align: middle
+		.creating__label
+			margin: 0 20px 0 0 
+			+r(700)
+				margin: 0 10px 0 0 
+			+r(450)
+				font-size: 12px
+		.checkbox
+			padding: 0
+			width: 16px
+			height: 16px 
+	&__adds
+		text-align: center
+		padding: 5px 0 0 
+	&__field
+		margin-bottom: 20px
+	&__recommend
+		padding: 10px 0 30px 
+		.creating__label
+			margin: 0 20px 0 0 
+	&__period
+		padding: 30px 0  
+		font-size: 0
+		.creating__label
+			margin: 0 20px 0 0 
+			display: inline-block
+			vertical-align: middle
+			+r1
+				display: block
+	&__dates, .input
+		display: inline-block
+		vertical-align: middle
+	&__dates
+		padding: 0 20px 0 0 
+		+r1
+			padding: 20px 0 0 
+			width: 50%
+		+r(700)
+			width: 100%
+		.input
+			width: 145px
+		.creating__label
+			+r1
+				display: inline-block
+	&__education
+		p
+			margin-bottom: 25px
+		.creating__label
+			margin: 0 20px 0 0 
+			display: inline-block
+			vertical-align: middle
+	&__lvl
+		.select
+			width: 50%
+			display: inline-block
+			vertical-align: middle
+			+r1
+				display: block
+				margin: 5px 0 0 
+				width: 75%
+			+r(700)
+				width: 100%
+.r-textarea
+	background-color: #CBD6D3
+	border: 1px solid #454545
+	height: 143px
+	width: 100%
+	position: relative
+	&__top
+		background: #fff
+		font-size: 0
+		padding: 5px 15px 
+		+r(700)
+			padding: 5px 10px 
+		span
+			&.is-title
+				+light
+				font-size: 12px
+				padding: 2px 0 0 15px 
+		u, i, b, span
+			display: inline-block
+			vertical-align: middle
+			cursor: pointer
+		u, b, i
+			font-size: 14px
+			color: #000
+			margin: 0 15px 0 0  
+			+r(700)
+				margin: 0 10px 0 0 
+		u
+			+light
+			text-transform: uppercase
+		i
+			+litalic
+			position: static
+		b
+			+bold
+		span
+			margin: 0 10px 0 0 
+			&.is-list
+				+s(icon-list)
+			&.is-number
+				+s(icon-list-number)
+	&__text
+		padding: 10px
+		height: 112px
+		+box  

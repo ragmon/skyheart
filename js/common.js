@@ -298,5 +298,29 @@ head.ready(function() {
         $(this).toggleClass('is-active');
         return false;
     });
+
+    $.datepicker.regional['ru'] = { 
+    closeText: 'Закрыть', 
+    prevText: '&#x3c;Пред', 
+    nextText: 'След&#x3e;', 
+    currentText: 'Сегодня', 
+    monthNames: ['Января','Февраля','Марта','Апреля','Мая','Июня', 
+    'Июля','Августа','Сентября','Октября','Ноября','Декабря'], 
+    monthNamesShort: ['Января','Февраля','Марта','Апреля','Мая','Июня', 
+    'Июля','Августа','Сентября','Октября','Ноября','Декабря'],
+    dayNames: ['воскресенье','понедельник','вторник','среда','четверг','пятница','суббота'], 
+    dayNamesShort: ['вск','пнд','втр','срд','чтв','птн','сбт'], 
+    dayNamesMin: ['Вс','Пн','Вт','Ср','Чт','Пт','Сб'], 
+    dateFormat: 'dd.mm.yy', 
+    firstDay: 1, 
+    isRTL: false 
+    }; 
+    $.datepicker.setDefaults($.datepicker.regional['ru']); 
+
+    $('.js-datepick').datepicker({
+        changeYear: true,
+        changeMonth: true,
+        dateFormat: "dd.mm.yy"
+    });
 });
 

@@ -1,0 +1,693 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Template</title>
+	<meta name="viewport" content="initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <meta name="viewport" content="width=1200"> -->
+	<!-- <meta name="viewport" content="initial-scale=1, user-scalable=no"> -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" media="all" href="css/inner.css" >
+	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
+</head>
+<body>
+<!-- BEGIN  out-->
+<div class="out">
+	<div class="beta js-beta">
+		<i class="js-beta-close beta__close"></i>
+		<p>Сайт находится в режиме Beta-тестирования. Он может содержать ошибки, сообщения о которых мы ждем от вас <a href="#">здесь</a>.</p>
+	</div>
+	
+	<!-- begin header  -->
+	<header class="header">
+		<div class="header__inner">	
+			<div class="header__menu">
+				<div class="header__left">
+					<a href="#" class="logo"><img src="img/svg/logo.svg" alt=""></a>
+					<div class="lang">
+						<a href="#" class="is-active">rus</a>
+						<div class="lang__drop">
+							<a href="#">eng</a>
+						</div>
+					</div>
+				</div>	
+				<button class="nav-btn js-nav-btn"><span></span></button>
+				<div class="header__nav js-nav">
+					<nav class="nav">
+						<ul>
+							<li><a href="#">Новости</a></li>
+							<li><a href="#">Объявления</a></li>
+							<li><a href="#">Работа</a></li>
+							<li><a href="#">Блоги</a></li>
+							<li><a href="#">Чат</a></li>
+						</ul>
+					</nav>
+					<div class="profile">
+						<div class="profile__inner">
+							<a href="#" class="profile__link js-cabinet-btn">
+								<div class="profile__img">
+									<img src="img/profile.png" alt="">
+								</div>
+								<span class="profile__name">Имя Фамилия</span>
+							</a>
+							<div class="profile__message">
+								<a href="#">
+									<i></i>
+									<span>1</span>
+								</a>
+							</div>
+						</div>
+						<div class="cabinet js-cabinet-popup">
+							<div class="cabinet__title">Мой кабинет</div>
+							<div class="cabinet__img">
+								<img src="img/cabinet.png" alt="">
+							</div>
+							<div class="cabinet__name">Имя Фамилия</div>
+							<ul class="cabinet__list">
+								<li><a href="#">Мои сообщения <small>+37</small></a></li>
+								<li><a href="#">Мои обьявления <span>16|4</span></a></li>
+								<li><a href="#">Моё резюме</a></li>
+								<li><a href="#">Мой блог</a></li>
+								<li><a href="#">Чат</a></li>
+							</ul>
+							<div class="cabinet__links">
+								<a href="#" class="cabinet__settings"></a>
+								<a href="#" class="cabinet__out">выйти</a>
+							</div>
+						</div>
+					</div>
+				</div>				
+			</div>	
+		</div>
+		<div class="js-scroll-top"></div>
+		<!-- begin slider  -->
+		<div class="slider cycle-slideshow js-slider"
+			data-cycle-fx="fade" 
+			data-cycle-timeout="4000"
+			data-cycle-slides=".slider__item"
+			data-cycle-prev=".slider__prev"
+			data-cycle-next=".slider__next"
+			data-cycle-pager=".slider__pager">
+			<a href="#" class="slider__close js-slider-close">Скрыть рекламу</a>
+			<div class="slider__btns">
+				<div class="slider__btns-in">
+					<a href="#" class="slider__prev"></a>
+					<a href="#" class="slider__next"></a>
+				</div>			
+			</div>
+			<div class="slider__item" style="background-image: url(img/slide.jpg);">
+				<div class="slider__inner">
+					<div class="slider__info">
+						<div class="slider__title">Здесь может быть <small>ваша реклама</small></div>
+						<span>80960000000</span>
+						<span>company@mail.com</span>
+					</div>
+				</div>
+			</div>
+			<div class="slider__item" style="background-image: url(img/slide.jpg);">
+				<div class="slider__inner">
+					<div class="slider__info">
+						<div class="slider__title">Здесь может быть <small>ваша реклама</small></div>
+						<span>80960000000</span>
+						<span>company@mail.com</span>
+					</div>
+				</div>
+			</div>
+			<div class="slider__item" style="background-image: url(img/slide.jpg);">
+				<div class="slider__inner">
+					<div class="slider__info">
+						<div class="slider__title">Здесь может быть <small>ваша реклама</small></div>
+						<span>80960000000</span>
+						<span>company@mail.com</span>
+					</div>
+				</div>
+			</div>
+			<div class="slider__item" style="background-image: url(img/slide.jpg);">
+				<div class="slider__inner">
+					<div class="slider__info">
+						<div class="slider__title">Здесь может быть <small>ваша реклама</small></div>
+						<span>80960000000</span>
+						<span>company@mail.com</span>
+					</div>
+				</div>
+			</div>
+			<div class="slider__pager"></div>
+		</div>
+		<!-- end slider -->
+		<div class="search js-search">
+			<form action="">
+				<div class="search__field">
+					<div class="s-select js-select">
+					    <span class="s-select__text js-select-text">Раздел</span>
+					    <ul class="s-select__list js-select-list">
+					        <li data-val="Главная">Главная</li>
+					        <li data-val="Новости">Новости</li>
+					        <li data-val="Объявления">Объявления</li>
+					        <li data-val="Работа">Работа</li>
+					        <li data-val="Блог">Блог</li>
+					    </ul>
+					    <select>
+					          <option value="Главная">Главная</option>
+					          <option value="Новости">Новости</option>
+					          <option value="Объявления">Объявления</option>
+					          <option value="Работа">Работа</option>
+					          <option value="Блог">Блог</option>
+					    </select>
+					</div>
+					<label>
+						<input type="text" class="search__input" placeholder="Что будем искать?">
+					</label>					
+				</div>				
+				<button class="search__btn"><span>Поиск</span></button>
+			</form>
+		</div>	
+	</header>
+	<!-- end header -->
+	
+	<!-- begin main  -->
+	<main class="main">
+		<div class="main__inner">
+
+			<!-- begin content  -->
+			<section class="content">
+				<div class="heading heading_news">Создание обьявления</div>
+				
+				<!-- begin content__box  -->
+				<div class="content__box">
+					<div class="creating res">
+						<div class="creating__form">
+							<form action="">
+								<div class="creating__section">
+									<div class="res__top">
+										<div class="res__info">
+											<span class="creating__label">Имя:</span>
+											<span class="creating__label">Данила</span>
+										</div>
+										<div class="res__info">
+											<span class="creating__label">Фамилия:</span>
+											<span class="creating__label">Фокин</span>
+										</div>
+										<div class="res__info">
+											<span class="creating__label">28.11.1991 г.</span>
+											<div class="res__hide">
+												<label class="checkbox checkbox_mod">
+													<input type="checkbox">
+													<span>скрыть данные</span>
+												</label>
+											</div>
+										</div>
+									</div>		
+									<div class="res__contacts">
+										<div class="res__col">
+											<span class="creating__label">Контакты:</span>
+											<div class="res__number">
+												<span class="creating__label">Моб. 0991475654</span>
+												<a href="#" class="add-link">Добавить номер</a>
+												<div class="res__photo">
+													<img src="img/res-photo.png" alt="">
+													<a href="#" class="add-link">Изменить</a>
+												</div>
+											</div>											
+										</div>
+										<div class="res__col">
+											<span class="creating__label">E-mail:</span>
+											<div class="res__number">
+												<span class="creating__label">danila@gmail.com</span>
+												<a href="#" class="add-link">Добавить E-mail</a>
+											</div>											
+										</div>
+									</div>							
+									<div class="creating__row">
+										<div class="creating__col">
+											<span class="creating__label">Страна</span>
+											<div class="select js-select">
+											    <span class="select__text js-select-text"></span>
+											    <ul class="select__list js-select-list">
+											        <li data-val="Страна">Страна</li>
+											        <li data-val="Страна2">Страна2</li>
+											    </ul>
+											    <select>
+											          <option value="Страна">Страна</option>
+											          <option value="Страна2">Страна2</option>
+											    </select>
+											</div>
+										</div>
+										<div class="creating__col">
+											<span class="creating__label">Город</span>
+											<div class="select js-select">
+											    <span class="select__text js-select-text"></span>
+											    <ul class="select__list js-select-list">
+											        <li data-val="Город">Город</li>
+											        <li data-val="Город2">Город2</li>
+											    </ul>
+											    <select>
+											          <option value="Город">Город</option>
+											          <option value="Город2">Город2</option>
+											    </select>
+											</div>
+										</div>
+									</div>
+									<div class="creating__field">
+										<span class="creating__label">Заголовок:</span>
+										<input type="text" class="input">
+									</div>
+									<div class="creating__row">
+										<div class="creating__col">
+											<span class="creating__label">Раздел:</span>
+											<div class="select js-select">
+											    <span class="select__text js-select-text"></span>
+											    <ul class="select__list js-select-list">
+											        <li data-val="Транспорт">Транспорт</li>
+											        <li data-val="Транспорт2">Транспорт2</li>
+											    </ul>
+											    <select>
+											          <option value="Транспорт">Транспорт</option>
+											          <option value="Транспорт2">Транспорт2</option>
+											    </select>
+											</div>
+										</div>
+									</div>
+									<div class="res__cat">
+										<p>Категории размещения резюме (выберите не более трёх):</p>
+										<ul class="res__checklist">
+											<li>
+												<label class="checkbox checkbox_mod">
+													<input type="checkbox">
+													<span>Руководители летных служб</span>
+												</label>
+											</li>
+											<li>
+												<label class="checkbox checkbox_mod">
+													<input type="checkbox">
+													<span>Пилоты бизнес-фвиации</span>
+												</label>
+											</li>
+											<li>
+												<label class="checkbox checkbox_mod">
+													<input type="checkbox">
+													<span>Штурманы</span>
+												</label>
+											</li>
+											<li>
+												<label class="checkbox checkbox_mod">
+													<input type="checkbox">
+													<span>Пилоты самолетов</span>
+												</label>
+											</li>
+											<li>
+												<label class="checkbox checkbox_mod">
+													<input type="checkbox">
+													<span>Другое</span>
+												</label>
+											</li>
+											<li>
+												<label class="checkbox checkbox_mod">
+													<input type="checkbox">
+													<span>Пилоты вертолётов</span>
+												</label>
+											</li>
+										</ul>
+									</div>
+									<div class="res__choice">
+										<span class="creating__label">Вид зайнятости:</span>
+										<label class="checkbox checkbox_mod">
+											<input type="checkbox">
+											<span>полная</span>
+										</label>
+										<label class="checkbox checkbox_mod">
+											<input type="checkbox">
+											<span>не полная</span>
+										</label>
+									</div>
+									<div class="res__choice">
+										<p>Опыт роботы</p>
+										<label class="checkbox checkbox_mod">
+											<input type="checkbox">
+											<span>Нет опыта роботы</span>
+										</label>
+									</div>
+									<div class="creating__large">
+										<span class="creating__label">Компания:</span>
+										<input type="text" class="input">
+									</div>
+									<div class="creating__large">
+										<span class="creating__label">Должность:</span>
+										<input type="text" class="input">
+									</div>
+									<div class="res__period">
+										<span class="creating__label">Период роботы:</span>
+										<div class="res__dates">
+											<span class="creating__label">с</span>
+											<input type="text" class="input js-datepick">
+										</div>
+										<div class="res__dates">
+											<span class="creating__label">по</span>
+											<input type="text" class="input js-datepick">
+										</div>
+									</div>
+									<div class="res__field">
+										<span class="creating__label">Ваши обязаности и достижения на занимаемой должности</span>
+										<div class="r-textarea">
+											<div class="r-textarea__top">
+												<b>Ж</b>
+												<i>К</i>
+												<u>Ч</u>
+												<span class="is-list"></span>
+												<span class="is-number"></span>
+												<span class="is-title">Заголовок</span>
+											</div>
+											<div class="r-textarea__text"></div>
+										</div>
+										<div class="res__adds">
+											<a href="#" class="add-link">Добавить еще одно место роботы</a>
+										</div>
+									</div>
+									<div class="res__education">
+										<p>Образование</p>
+										<div class="res__lvl">
+											<span class="creating__label">Ваш уровень образования:</span>
+											<div class="select js-select">
+											    <span class="select__text js-select-text"></span>
+											    <ul class="select__list js-select-list">
+											        <li data-val="Уровень">Уровень</li>
+											        <li data-val="Уровень2">Уровень2</li>
+											    </ul>
+											    <select>
+											          <option value="Уровень">Уровень</option>
+											          <option value="Уровень2">Уровень2</option>
+											    </select>
+											</div>
+										</div>
+									</div>
+									<div class="creating__large">
+										<span class="creating__label">Учебное заведение:</span>
+										<input type="text" class="input">
+									</div>
+									<div class="creating__large">
+										<span class="creating__label">Факультет, специальность:</span>
+										<input type="text" class="input">
+									</div>
+									<div class="res__period">
+										<span class="creating__label">Период роботы:</span>
+										<div class="res__dates">
+											<span class="creating__label">с</span>
+											<input type="text" class="input js-datepick">
+										</div>
+										<div class="res__dates">
+											<span class="creating__label">по</span>
+											<input type="text" class="input js-datepick">
+										</div>
+									</div>
+									<div class="res__field">
+										<span class="creating__label">Дополнительная информация об образовании</span>
+										<div class="r-textarea">
+											<div class="r-textarea__top">
+												<b>Ж</b>
+												<i>К</i>
+												<u>Ч</u>
+												<span class="is-list"></span>
+												<span class="is-number"></span>
+												<span class="is-title">Заголовок</span>
+											</div>
+											<div class="r-textarea__text"></div>
+										</div>
+										<div class="res__adds">
+											<a href="#" class="add-link">Добавить еще одно образование</a>
+										</div>
+									</div>
+									<div class="res__field">
+										<span class="creating__label">Дополнительная информация о вас</span>
+										<div class="r-textarea">
+											<div class="r-textarea__top">
+												<b>Ж</b>
+												<i>К</i>
+												<u>Ч</u>
+												<span class="is-list"></span>
+												<span class="is-number"></span>
+												<span class="is-title">Заголовок</span>
+											</div>
+											<div class="r-textarea__text"></div>
+										</div>
+									</div>
+									<div class="res__hideinfo">
+										<span class="creating__label">Скрить контактною информацию</span>
+										<label class="checkbox checkbox_mod">
+											<input type="checkbox">
+											<span></span>
+										</label>
+									</div>
+									<div class="res__recommend">
+										<span class="creating__label">Рекомендации: </span>
+										<a href="#" class="add-link">Прикрепить файл</a>
+									</div>
+									<div class="creating__btn">
+										<button class="btn">Разместить</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<!-- end content__box -->
+
+			</section>
+			<!-- end content -->
+
+			<!-- begin sidebar  -->
+			<aside class="sidebar">
+				<div class="sidebar__inner">
+					<div class="advertisement">
+						<div class="advertisement__heading"><span>Объявления</span></div>
+						<div class="advertisement__item">
+							<div class="advertisement__top">
+								<a href="#" class="trade trade_sell">Продам</a>
+								<span class="advertisement__price">2,040USD</span>
+							</div>
+							<div class="advertisement__body">
+								<h5><a href="#">Мультиварка Mirta MC-2211</a></h5>
+								<p>Компактная мультиварка Mirta MC-2211, весом 2,83 кг, имеет отличительную особенную....</p>
+							</div>
+							<div class="advertisement__footer">
+								<span class="advertisement__name">Имя Фамилия</span>
+								<span class="advertisement__category">Раздел - категория</span>
+							</div>
+							<div class="advertisement__img"></div>
+						</div>
+						<div class="advertisement__item">
+							<div class="advertisement__top">
+								<a href="#" class="trade trade_buy">Куплю</a>
+								<span class="advertisement__price">2,040USD</span>
+							</div>
+							<div class="advertisement__body">
+								<h5><a href="#">Мультиварка Mirta MC-2211</a></h5>
+								<p>Компактная мультиварка Mirta MC-2211, весом 2,83 кг, имеет отличительную особенную....</p>
+							</div>
+							<div class="advertisement__footer">
+								<span class="advertisement__name">Имя Фамилия</span>
+								<span class="advertisement__category">Раздел - категория</span>
+							</div>
+							<div class="advertisement__img"></div>
+						</div>
+						<div class="advertisement__item">
+							<div class="advertisement__top">
+								<a href="#" class="trade trade_sell">Продам</a>
+								<span class="advertisement__price">2,040USD</span>
+							</div>
+							<div class="advertisement__body">
+								<h5><a href="#">Мультиварка Mirta MC-2211</a></h5>
+								<p>Компактная мультиварка Mirta MC-2211, весом 2,83 кг, имеет отличительную особенную....</p>
+							</div>
+							<div class="advertisement__footer">
+								<span class="advertisement__name">Имя Фамилия</span>
+								<span class="advertisement__category">Раздел - категория</span>
+							</div>
+							<div class="advertisement__img"></div>
+						</div>
+						<div class="advertisement__item">
+							<div class="advertisement__top">
+								<a href="#" class="trade trade_buy">Куплю</a>
+								<span class="advertisement__price">2,040USD</span>
+							</div>
+							<div class="advertisement__body">
+								<h5><a href="#">Мультиварка Mirta MC-2211</a></h5>
+								<p>Компактная мультиварка Mirta MC-2211, весом 2,83 кг, имеет отличительную особенную....</p>
+							</div>
+							<div class="advertisement__footer">
+								<span class="advertisement__name">Имя Фамилия</span>
+								<span class="advertisement__category">Раздел - категория</span>
+							</div>
+							<div class="advertisement__img"></div>
+						</div>
+						<div class="advertisement__item">
+							<div class="advertisement__top">
+								<a href="#" class="trade trade_buy">Куплю</a>
+								<span class="advertisement__price">2,040USD</span>
+							</div>
+							<div class="advertisement__body">
+								<h5><a href="#">Мультиварка Mirta MC-2211</a></h5>
+								<p>Компактная мультиварка Mirta MC-2211, весом 2,83 кг, имеет отличительную особенную....</p>
+							</div>
+							<div class="advertisement__footer">
+								<span class="advertisement__name">Имя Фамилия</span>
+								<span class="advertisement__category">Раздел - категория</span>
+							</div>
+							<div class="advertisement__img"></div>
+						</div>
+					</div>
+					<div class="sidebar__banners">
+						<div class="sidebar__slider cycle-slideshow"
+							data-cycle-fx="fade" 
+							data-cycle-timeout="4000"
+							data-cycle-slides=".banner">
+							<a href="#" class="banner">
+								<img src="img/sidebar-banner.png" alt="">
+							</a>
+							<a href="#" class="banner">
+								<img src="img/sidebar-banner.png" alt="">
+							</a>
+							<a href="#" class="banner">
+								<img src="img/sidebar-banner.png" alt="">
+							</a>
+						</div>	
+					</div>		
+					<div class="hot">
+						<div class="hot__title"><i class="hot__icon"></i>Горячие вакансии</div>
+						<div class="hot__comment">
+							<div class="hot__author">
+								<div class="hot__img"></div>
+								<div class="hot__info">
+									<span class="hot__name">Надежда Жукова</span>
+									<p>Менеджер по работе с клиентами</p>
+									<div class="hot__time">
+										<span>Обновнено</span>
+										<time>21:34 PM</time>
+									</div>
+								</div>
+							</div>
+							<p> - кадровый учёт, кадровое делопроизводство в полном объеме - (приём, увольнение, переводы, оформление всех видовотпусков, .....</p>
+							<div class="hot__links">
+								<a href="#" class="hot__link">Написать</a>
+								<a href="#" class="hot__link">Подробнее</a>
+							</div>
+						</div>
+						<div class="hot__comment">
+							<div class="hot__author">
+								<div class="hot__img"></div>
+								<div class="hot__info">
+									<span class="hot__name">Надежда Жукова</span>
+									<p>Менеджер по работе с клиентами</p>
+									<div class="hot__time">
+										<span>Обновнено</span>
+										<time>21:34 PM</time>
+									</div>
+								</div>
+							</div>
+							<p> - кадровый учёт, кадровое делопроизводство в полном объеме - (приём, увольнение, переводы, оформление всех видовотпусков, .....</p>
+							<div class="hot__links">
+								<a href="#" class="hot__link">Написать</a>
+								<a href="#" class="hot__link">Подробнее</a>
+							</div>
+						</div>
+						<div class="hot__comment">
+							<div class="hot__author">
+								<div class="hot__img"></div>
+								<div class="hot__info">
+									<span class="hot__name">Надежда Жукова</span>
+									<p>Менеджер по работе с клиентами</p>
+									<div class="hot__time">
+										<span>Обновнено</span>
+										<time>21:34 PM</time>
+									</div>
+								</div>
+							</div>
+							<p> - кадровый учёт, кадровое делопроизводство в полном объеме - (приём, увольнение, переводы, оформление всех видовотпусков, .....</p>
+							<div class="hot__links">
+								<a href="#" class="hot__link">Написать</a>
+								<a href="#" class="hot__link">Подробнее</a>
+							</div>
+						</div>
+					</div>
+					<div class="sidebar__banners">
+						<div class="sidebar__slider cycle-slideshow"
+							data-cycle-fx="fade" 
+							data-cycle-timeout="4000"
+							data-cycle-slides=".banner">
+							<a href="#" class="banner">
+								<img src="img/sidebar-banner.png" alt="">
+							</a>
+							<a href="#" class="banner">
+								<img src="img/sidebar-banner.png" alt="">
+							</a>
+							<a href="#" class="banner">
+								<img src="img/sidebar-banner.png" alt="">
+							</a>
+						</div>	
+					</div>					
+					<div class="interesting">
+						<div class="interesting__inner">
+							<div class="interesting__heading">ЭТО МОЖЕТ БЫТЬ ИНТИРЕСНО</div>
+							<div class="interesting__item js-accordion">
+								<a href="#" class="interesting__title js-accordion-open">Технические инновации</a>
+								<div class="interesting__info js-accordion-block">
+									<p>В конце прошлой недели в Киеве прошел первый форум инновационных технологий Innotech.....</p>
+								</div>
+							</div>
+							<div class="interesting__item js-accordion">
+								<a href="#" class="interesting__title js-accordion-open">Технические инновации</a>
+								<div class="interesting__info js-accordion-block">
+									<p>В конце прошлой недели в Киеве прошел первый форум инновационных технологий Innotech.....</p>
+								</div>
+							</div>
+							<div class="interesting__item js-accordion">
+								<a href="#" class="interesting__title js-accordion-open">Технические инновации</a>
+								<div class="interesting__info js-accordion-block">
+									<p>В конце прошлой недели в Киеве прошел первый форум инновационных технологий Innotech.....</p>
+								</div>
+							</div>
+							<div class="interesting__item js-accordion">
+								<a href="#" class="interesting__title js-accordion-open">Технические инновации</a>
+								<div class="interesting__info js-accordion-block">
+									<p>В конце прошлой недели в Киеве прошел первый форум инновационных технологий Innotech.....</p>
+								</div>
+							</div>
+							<div class="interesting__item js-accordion">
+								<a href="#" class="interesting__title js-accordion-open">Технические инновации</a>
+								<div class="interesting__info js-accordion-block">
+									<p>В конце прошлой недели в Киеве прошел первый форум инновационных технологий Innotech.....</p>
+								</div>
+							</div>
+						</div>
+					</div>				
+				</div>
+			</aside>
+			<!-- end sidebar -->
+		</div>
+	</main>
+	<!-- end main -->
+
+	<!-- begin footer  -->
+	<footer class="footer">
+		<div class="footer__bottom">
+			<div class="footer__social">
+				<ul>
+					<li><a href="#" class="is-tw"></a></li>
+					<li><a href="#" class="is-fb"></a></li>
+					<li><a href="#" class="is-gp"></a></li>
+					<li><a href="#" class="is-b"></a></li>
+				</ul>
+			</div>
+			<div class="footer__text">
+				<p>© 2013-2015 www.sky-heart.com</p>
+				<a href="#" class="footer__feedback">Обратная связь</a>
+			</div>			
+		</div>
+	</footer>
+	<!-- end footer -->
+	<button class="btn-up js-btn-up"></button>
+</div>
+<!-- END out-->
+<!-- load scripts -->
+<script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
+</body>
+</html>
