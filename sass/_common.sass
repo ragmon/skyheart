@@ -674,3 +674,73 @@ input.input-blue
 		background-size: contain  
 		right: 0
 	
+.btn-mail
+	font-size: 12px
+	color: #fff
+	+semi
+	text-transform: uppercase
+	background-color: #2D4164
+	line-height: 31px
+	padding: 0 13px 0 42px
+	display: inline-block
+	position: relative 
+	&:before
+		position: absolute
+		top: 50%
+		left: 12px
+		+s(mail)
+		margin-top: -8px
+		content: ""
+	&:active
+		top: 1px
+		
+.p-input
+	+box-shadow(inset 0 2px 4px rgba(79, 102, 124, 0.75))
+	background-color: #CBD6D3
+	font-size: 17px
+	color: #6587AF
+	+light
+	+placeholder-color(#6587AF)
+	padding: 12px 17px 11px
+	width: 100%
+	+box 
+	display: block
+.p-textarea
+	+box-shadow(inset 0 2px 4px rgba(79, 102, 124, 0.75))
+	background-color: #CBD6D3
+	font-size: 17px
+	color: #6587AF
+	+light
+	+placeholder-color(#6587AF)
+	padding: 12px 17px 11px
+	width: 100%
+	+box 
+	height: 180px
+	resize: none
+	
+	display: block
+.p-btn
+	color: #fff
+	font-size: 16px
+	+light
+	text-transform: uppercase
+	+border-radius(6px)
+	background-color: #2D4164
+	line-height: 46px
+	padding: 0 15px
+	display: inline-block
+	vertical-align: top
+	+box
+	min-width: 160px
+	position: relative
+	&:active
+		top: 1px
+	&_mail
+		padding-left: 55px
+		&:before
+			position: absolute
+			top: 50%
+			left: 16px
+			+s(mail-big)
+			margin-top: -10px
+			content: ""

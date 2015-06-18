@@ -4528,3 +4528,284 @@ a
 		padding: 10px
 		height: 112px
 		+box  
+		
+
+.p-ads
+	+box-shadow(0 3px 6px rgba(20, 45, 96, 0.75))
+	padding: 15px 0 
+	position: relative
+	&__section
+		padding: 0 35px 
+		position: relative
+		+r1
+			padding: 0 30px 
+	&__socials
+		padding: 0 35px 5px
+		border-top: 1px solid #85a2bf 
+		+clr	
+		+r1
+			padding: 0 30px 5px
+		ul
+			padding: 20px 0 0 
+			font-size: 0	
+		li
+			display: inline-block
+			vertical-align: middle
+			a
+				color: #555
+				font-size: 13px
+				+reg
+	&__top
+		position: relative
+		font-size: 0
+		+clr
+		.trade
+			display: inline-block
+			vertical-align: top
+			margin: 0 15px 0 0 
+	&__title
+		font-size: 22px
+		+semi
+		color: #44709C
+		display: inline-block
+		vertical-align: top
+		line-height: 1.2
+		+r1
+			display: block
+			padding: 5px 0 
+		a
+			color: #44709C
+	.is-star
+		position: absolute
+		top: 0
+		right: -10px
+	&__price
+		float: right
+		+reg
+		color: #555 
+		+r1
+			float: none
+			text-align: center
+			margin-bottom: 5px
+		small
+			font-size: 15px
+			display: inline-block
+			vertical-align: middle
+		span
+			font-size: 22px
+			text-transform: uppercase
+			display: inline-block
+			vertical-align: middle
+			margin-left: 25px
+	&__block
+		+clr
+		+reg
+		margin-bottom: 30px
+		+r1
+			text-align: center
+	&__place
+		font-size: 15px
+		color: #555
+		position: relative
+		display: block
+		padding: 0 0 0 25px
+		background: url(../img/icons/pin.png) no-repeat center left  
+		margin-bottom: 15px
+		+r1
+			display: inline-block
+	&__photo
+		width: 290px
+		float: left
+		margin-right: 30px
+		text-align: center
+		+r1
+			width: 100%
+			float: none
+			margin-bottom: 10px
+	&__info
+		overflow: hidden
+		+r1
+			max-width: 290px
+			margin: 0 auto 10px 
+			text-align: left
+	&__img
+		background-color: #44709C
+		height: 166px
+		width: 100%
+		margin-bottom: 10px
+		+r1
+			max-width: 290px
+			margin: 0 auto 10px 
+		img
+			max-width: 100%
+			max-height: 100%  
+	&__box
+		+clr
+		margin-bottom: 14px
+		span
+			font-size: 15px
+			color: #555
+			+semi
+			display: block
+			margin-bottom: 5px
+		a
+			color: #44709C
+			font-size: 15px
+			+bold
+	&__left
+		float: left
+	&__right
+		float: right
+	&__hots
+		position: relative
+		&:before
+			position: absolute
+			content: "" 
+			bottom: 100%
+			left: 50%
+			+s(hot)
+			margin-left: -10px
+	&__link
+		color: #44709C
+		+reg
+		font-size: 15px
+		text-decoration: underline
+		&:hover
+			text-decoration: none
+		&.js-add-link
+			&.is-active
+				display: none
+	&__text
+		color: #555
+		h5
+			+semi
+			margin-bottom: 10px
+			font-size: 15px
+		p
+			font-size: 15px
+			+light
+			margin-bottom: 25px
+	&__names
+		span
+			display: inline-block
+			vertical-align: top
+			+semi
+			margin: 0 40px 10px 0
+			font-size: 15px
+			color: #555
+	&__contacts
+		+clr
+		margin-bottom: 27px
+	&__mail
+		float: left
+		width: 200px
+		+r1
+			float: none
+			margin-bottom: 20px
+	&__mail, &__numbers
+		span
+			display: inline-block
+			vertical-align: top
+			+semi
+			margin: 0 0 10px 0
+			font-size: 15px
+			color: #555
+	&__numbers
+		text-align: right
+		overflow: hidden
+		+r1
+			overflow: visible
+			text-align: left
+		&.is-active
+			ul
+				display: inline-block
+		span
+			margin-right: 20px
+		ul
+			text-align: left
+			font-size: 15px
+			color: #555
+			+light
+			vertical-align: top
+			display: none
+	&__input
+		max-width: 310px
+		margin-bottom: 25px
+	&__btns
+		font-size: 0.1px
+		text-align: justify
+		padding: 23px 0 5px
+		+r1
+			text-align: center
+			font-size: 0
+		&:after
+			display: inline-block
+			width: 100%
+			content: "" 
+		.p-btn
+			margin-bottom: 20px
+			+r1
+				margin: 0 10px 20px 
+	&__views
+		float: left
+		li
+			margin-right: 15px
+		a
+			padding: 0 0 0 25px
+			position: relative
+			&:before
+				content: "" 
+				position: absolute
+				top: 50%
+				left: 0
+			&.is-views
+				&:before
+					+s(view-blue)
+					margin-top: -7px
+			&.is-comment
+				&:before
+					+s(comment-blue)
+					margin-top: -8px
+	&__social
+		float: right
+		li
+			margin-left: 10px
+		a
+			display: block
+			&.is-fb
+				+s(fb-blue)
+			&.is-vk
+				+s(vk-blue)
+			&.is-tw
+				+s(tw-blue)
+			&.is-gp
+				+s(gp-blue)
+
+.p-pages
+	+clr
+	padding: 23px 0  
+	a
+		font-size: 15px
+		color: #44709C
+		+reg
+		line-height: 29px
+		position: relative
+		min-height: 29px 
+		+r(600)
+			font-size: 0
+		&:before
+			position: absolute
+			top: 0
+			content: "" 
+		&.p-prev
+			padding-left: 55px
+			float: left
+			&:before
+				+s(arr-left)
+				left: 0
+		&.p-next
+			padding-right: 55px
+			float: right
+			&:before
+				+s(arr-right)
+				right: 0
