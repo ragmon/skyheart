@@ -178,16 +178,16 @@
 							<a href="#" class="trade trade_buy">Куплю</a>
 							<h4 class="p-ads__title"><a href="#">Колесо от ан-158 б/у</a></h4>
 							<a href="#" class="is-star is-active"></a>
-							<div class="p-ads__price">
-								<small>Торг/Аренда</small>
-								<span>2500USD</span>
-							</div>
+						</div>
+						<div class="p-ads__price">
+							<small>Торг/Аренда</small>
+							<span>2500USD</span>
 						</div>
 						<div class="p-ads__block">
 							<span class="p-ads__place">Страна, Город</span>
 							<div class="p-ads__photo">
 								<div class="p-ads__img"></div>
-								<a href="#" class="p-ads__link">Посмотреть всё фото</a>
+								<a href="#" class="p-ads__link js-gallery-btn">Посмотреть всё фото</a>
 							</div>
 							<div class="p-ads__info">
 								<div class="p-ads__box">
@@ -229,7 +229,7 @@
 						<div class="p-ads__contacts">
 							<div class="p-ads__mail">
 								<span>E-mail: </span>
-								<a href="#" class="btn-mail">Написать автору</a>
+								<a href="#" class="btn-mail js-write-link">Написать автору</a>
 							</div>
 							<div class="p-ads__numbers js-add">
 								<span>Контактный номер:</span>
@@ -240,7 +240,7 @@
 								</ul>
 							</div>
 						</div>
-						<div class="p-ads__form">
+						<div class="p-ads__form js-write">
 							<form action="">
 								<div class="p-ads__input">
 									<input type="text" class="p-input" placeholder="Ваш E-mail">
@@ -443,6 +443,77 @@
 	<button class="btn-up js-btn-up"></button>
 </div>
 <!-- END out-->
+
+<!-- begin popup-gallery  -->
+<div class="popup-gallery js-gallery">
+	
+	<!-- begin p-gallery  -->
+	<div class="p-gallery">
+		<div class="p-gallery__inner">
+			<i class="p-gallery__close js-gallery-close"></i>
+
+			<div class="p-gallery__info">
+				<div class="p-gallery__price">
+					<span>2500USD</span>
+					<small>Торг/Аренда</small>
+				</div>
+				<span class="p-gallery__place">Страна, Город</span>
+				<div class="p-gallery__names">
+					<span>Имя</span>
+					<span>Фамилия</span>
+					<span>Ник</span>
+				</div>
+				<div class="p-gallery__numbers">
+					<ul>
+						<li>+380930000000</li>
+						<li>+380930000000</li>
+					</ul>
+				</div>
+				<a href="#" class="p-gallery__banner">
+					<img src="img/p-gallery.png" alt="">
+				</a>
+			</div>
+			
+			<!-- begin photo-gallery  -->
+			<div class="p-gallery__slider">				
+				<div class="photo-gallery">
+					<div class="slider-for">
+						<div class="slide"><div class="slide__inner" style="background-image: url(img/news-img.png);"></div></div>
+						<div class="slide"><div class="slide__inner" style="background-image: url(img/news-img2.png);"></div></div>
+						<div class="slide"><div class="slide__inner" style="background-image: url(img/news-img.png);"></div></div>
+						<div class="slide"><div class="slide__inner" style="background-image: url(img/news-img2.png);"></div></div>
+						<div class="slide"><div class="slide__inner" style="background-image: url(img/news-img.png);"></div></div>
+						<div class="slide"><div class="slide__inner" style="background-image: url(img/news-img2.png);"></div></div>
+						<div class="slide"><div class="slide__inner" style="background-image: url(img/news-img.png);"></div></div>
+						<div class="slide"><div class="slide__inner" style="background-image: url(img/news-img2.png);"></div></div>
+						<div class="slide"><div class="slide__inner" style="background-image: url(img/news-img.png);"></div></div>
+						<div class="slide"><div class="slide__inner" style="background-image: url(img/news-img2.png);"></div></div>
+					</div>
+					<div class="slider-nav">
+						<div class="slide"><div class="slide__inner" style="background-image: url(img/news-img.png);"></div></div>
+						<div class="slide"><div class="slide__inner" style="background-image: url(img/news-img2.png);"></div></div>
+						<div class="slide"><div class="slide__inner" style="background-image: url(img/news-img.png);"></div></div>
+						<div class="slide"><div class="slide__inner" style="background-image: url(img/news-img2.png);"></div></div>
+						<div class="slide"><div class="slide__inner" style="background-image: url(img/news-img.png);"></div></div>
+						<div class="slide"><div class="slide__inner" style="background-image: url(img/news-img2.png);"></div></div>
+						<div class="slide"><div class="slide__inner" style="background-image: url(img/news-img.png);"></div></div>
+						<div class="slide"><div class="slide__inner" style="background-image: url(img/news-img2.png);"></div></div>
+						<div class="slide"><div class="slide__inner" style="background-image: url(img/news-img.png);"></div></div>
+						<div class="slide"><div class="slide__inner" style="background-image: url(img/news-img2.png);"></div></div>
+					</div>
+				</div>
+			</div>
+			<!-- end photo-gallery -->
+			
+			
+
+		</div>
+	</div>
+	<!-- end p-gallery -->
+</div>
+<!-- end popup-gallery -->
+
+
 <!-- load scripts -->
 <script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
 </body>

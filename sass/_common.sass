@@ -476,6 +476,7 @@ textarea.textarea
 	padding: 11px 15px
 	position: relative
 	+transition(opacity 0.3s)
+	display: inline-block
 	&:hover
 		+opacity(0.9)
 	&:active
@@ -744,3 +745,26 @@ input.input-blue
 			+s(mail-big)
 			margin-top: -10px
 			content: ""
+
+
+.btn-add
+	+reg
+	font-size: 13px
+	color: #fff
+	text-transform: uppercase
+	+border-radius(5px)
+	display: inline-block
+	vertical-align: top
+	padding: 10px 10px 10px 37px
+	position: relative
+	overflow: hidden
+	+g(#5A88B7, #1E3C72) 
+	&:active
+		+g(#1E3C72, #5A88B7) 
+	&:before 
+		content: "" 
+		position: absolute
+		left: 0
+		bottom: -3px
+		+s(megaphone)
+		
