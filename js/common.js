@@ -38,6 +38,12 @@ head.ready(function() {
         return false;
         
     });
+    $('.js-select-li').on('click', function() {
+        $(this).parents('.js-select').find('.js-select-text').text($(this).text());
+        $(this).parents(".js-select").removeClass("is-active");
+        $(this).parents(".js-select-list").slideUp(100);
+        return false;
+    });
 
     //nav
     $('.js-nav-btn').on('click', function() {
