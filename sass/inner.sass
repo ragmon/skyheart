@@ -3092,10 +3092,14 @@ a
 	margin: 0 0 12px 
 	+r(640)
 		text-align: center
+	&_mod
+		margin: 0
 	&__section
 		display: inline-block
 		vertical-align: middle
 		padding: 4px 0 
+		.button
+			margin: 0 30px 0 -10px 
 	.checkbox
 		display: inline-block
 		vertical-align: middle
@@ -4978,3 +4982,178 @@ a
 		left: 1px
 		+s(file-close)
 		
+
+.m-item
+	position: relative
+	padding: 11px 18px 7px 60px 
+	font-size: 0
+	+r1
+		padding: 11px 10px 7px 40px 
+	&.is-bg
+		background-color: #DBEFF6
+	.checkbox
+		width: 16px
+		height: 16px
+		padding: 0
+		margin: -8px 0 0
+		position: absolute
+		top: 50%
+		left: 14px
+		+user-select(none) 
+		+r1
+			left: 12px
+		span
+			&:before
+				width: 16px
+				height: 16px
+				+box-shadow(inset 0 3px 5px rgba(0, 2, 3, 0.46))
+	&__img
+		float: left
+		width: 93px
+		height: 71px
+		background-color: #577DAA
+		overflow: hidden
+		margin: 0 25px 5px 0 
+		+r1
+			margin: 0 15px 5px 0 
+		+r(500)
+			width: 100%
+			height: 150px
+			max-width: 300px
+			float: none
+			margin: 0 auto 15px 
+		img
+			width: 100%
+			height: 100%
+	&__text
+		overflow: hidden
+		position: relative
+	&__top
+		+clr
+		margin: -2px 0 0 
+	&__title
+		color: #46778D
+		font-size: 16px
+		+reg
+		float: left
+		line-height: 1
+		&:hover
+			text-decoration: underline
+	&__price
+		float: right
+		text-align: center
+		color: #555
+		+reg
+		margin-left: 10px
+		span
+			font-size: 16px
+			display: block
+			line-height: 1
+		small
+			font-size: 11px
+			display: block
+			line-height: 1
+	&__body
+		margin: -6px 0 0
+		padding-right: 30px
+		.trade
+			display: inline-block
+			vertical-align: middle
+			margin-right: 10px
+			margin-bottom: 5px
+		span
+			display: inline-block
+			vertical-align: middle
+			color: #555
+			+semi
+			font-size: 14px
+			line-height: 1
+			margin-bottom: 5px
+	.m-btn
+		margin: 0 11px 5px 0 
+	&__info
+		border: 1px solid #353535
+		+border-radius(2px)
+		text-align: justify
+		font-size: 0.01px
+		padding: 4px 10px 3px 
+		&:after
+			display: inline-block
+			width: 100%
+			content: "" 
+		div
+			display: inline-block
+			vertical-align: top
+			font-size: 11px
+			color: #555
+			+semi 
+			line-height: 18px
+			margin: 0 5px 
+			&.is-place
+				&:before
+					+s(pin)
+					display: inline-block
+					vertical-align: top
+					content: "" 
+					margin: 0 10px 0 0 
+			&.is-mail
+				padding: 0 35px 0 0 
+				position: relative
+				&:before
+					content: "" 
+					position: absolute
+					top: 3px
+					right: 8px
+					+s(mail-blue)
+					z-index: 1 
+				span
+					position: absolute
+					text-align: center
+					bottom: 0
+					right: 0
+					font-size: 8px
+					+semi
+					color: #FFF
+					line-height: 11px
+					min-width: 11px
+					+border-radius(50%)
+					background-color: #D45313
+					z-index: 2
+			&.is-views
+				&:before
+					+s(view-blue)
+					display: inline-block
+					vertical-align: top
+					content: "" 
+					margin: 2px 10px 0 0 
+	&__icon
+		position: absolute
+		bottom: 5px
+		right: 0
+		&:hover
+			span
+				visibility: visible
+				+opacity(1)
+		i
+			+s(man)
+			display: inline-block
+		span
+			position: absolute
+			bottom: 100%
+			right: 0
+			background: rgba(45, 94, 143, 0.89)
+			padding: 4px 8px
+			margin: 0 0 8px
+			white-space: nowrap
+			+opacity(0)
+			visibility: hidden
+			+transition(all 0.3s)   
+			font-size: 10px
+			color: #fff
+			+reg 
+			&:before
+				position: absolute
+				top: 100%
+				right: 8px
+				+arr(8, 8, rgba(45, 94, 143, 0.89), b)
+				content: "" 

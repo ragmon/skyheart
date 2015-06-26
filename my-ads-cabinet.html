@@ -1,0 +1,1054 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Template</title>
+	<meta name="viewport" content="initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <meta name="viewport" content="width=1200"> -->
+	<!-- <meta name="viewport" content="initial-scale=1, user-scalable=no"> -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" media="all" href="css/inner.css" >
+	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
+</head>
+<body>
+<!-- BEGIN  out-->
+<div class="out">
+	<div class="beta js-beta">
+		<i class="js-beta-close beta__close"></i>
+		<p>Сайт находится в режиме Beta-тестирования. Он может содержать ошибки, сообщения о которых мы ждем от вас <a href="#">здесь</a>.</p>
+	</div>
+	
+	<!-- begin header  -->
+	<header class="header">
+		<div class="header__inner">	
+			<div class="header__menu">
+				<div class="header__left">
+					<a href="#" class="logo"><img src="img/svg/logo.svg" alt=""></a>
+					<div class="lang">
+						<a href="#" class="is-active">rus</a>
+						<div class="lang__drop">
+							<a href="#">eng</a>
+						</div>
+					</div>
+				</div>	
+				<button class="nav-btn js-nav-btn"><span></span></button>
+				<div class="header__nav js-nav">
+					<nav class="nav">
+						<ul>
+							<li><a href="#">Новости</a></li>
+							<li><a href="#">Объявления</a></li>
+							<li><a href="#">Работа</a></li>
+							<li><a href="#">Блоги</a></li>
+							<li><a href="#">Чат</a></li>
+						</ul>
+					</nav>
+					<div class="profile">
+						<div class="profile__inner">
+							<a href="#" class="profile__link js-cabinet-btn">
+								<div class="profile__img">
+									<img src="img/profile.png" alt="">
+								</div>
+								<span class="profile__name">Имя Фамилия</span>
+							</a>
+							<div class="profile__message">
+								<a href="#">
+									<i></i>
+									<span>1</span>
+								</a>
+							</div>
+						</div>
+						<div class="cabinet js-cabinet-popup">
+							<div class="cabinet__title">Мой кабинет</div>
+							<div class="cabinet__img">
+								<img src="img/cabinet.png" alt="">
+							</div>
+							<div class="cabinet__name">Имя Фамилия</div>
+							<ul class="cabinet__list">
+								<li><a href="#">Мои сообщения <small>+37</small></a></li>
+								<li><a href="#">Мои обьявления <span>16|4</span></a></li>
+								<li><a href="#">Моё резюме</a></li>
+								<li><a href="#">Мой блог</a></li>
+								<li><a href="#">Чат</a></li>
+							</ul>
+							<div class="cabinet__links">
+								<a href="#" class="cabinet__settings"></a>
+								<a href="#" class="cabinet__out">выйти</a>
+							</div>
+						</div>
+					</div>
+				</div>				
+			</div>	
+		</div>
+		<div class="js-scroll-top"></div>
+		<!-- begin slider  -->
+		<div class="slider cycle-slideshow js-slider"
+			data-cycle-fx="fade" 
+			data-cycle-timeout="4000"
+			data-cycle-slides=".slider__item"
+			data-cycle-prev=".slider__prev"
+			data-cycle-next=".slider__next"
+			data-cycle-pager=".slider__pager">
+			<a href="#" class="slider__close js-slider-close">Скрыть рекламу</a>
+			<div class="slider__btns">
+				<div class="slider__btns-in">
+					<a href="#" class="slider__prev"></a>
+					<a href="#" class="slider__next"></a>
+				</div>			
+			</div>
+			<div class="slider__item" style="background-image: url(img/slide.jpg);">
+				<div class="slider__inner">
+					<div class="slider__info">
+						<div class="slider__title">Здесь может быть <small>ваша реклама</small></div>
+						<span>80960000000</span>
+						<span>company@mail.com</span>
+					</div>
+				</div>
+			</div>
+			<div class="slider__item" style="background-image: url(img/slide.jpg);">
+				<div class="slider__inner">
+					<div class="slider__info">
+						<div class="slider__title">Здесь может быть <small>ваша реклама</small></div>
+						<span>80960000000</span>
+						<span>company@mail.com</span>
+					</div>
+				</div>
+			</div>
+			<div class="slider__item" style="background-image: url(img/slide.jpg);">
+				<div class="slider__inner">
+					<div class="slider__info">
+						<div class="slider__title">Здесь может быть <small>ваша реклама</small></div>
+						<span>80960000000</span>
+						<span>company@mail.com</span>
+					</div>
+				</div>
+			</div>
+			<div class="slider__item" style="background-image: url(img/slide.jpg);">
+				<div class="slider__inner">
+					<div class="slider__info">
+						<div class="slider__title">Здесь может быть <small>ваша реклама</small></div>
+						<span>80960000000</span>
+						<span>company@mail.com</span>
+					</div>
+				</div>
+			</div>
+			<div class="slider__pager"></div>
+		</div>
+		<!-- end slider -->
+		<div class="search js-search">
+			<form action="">
+				<div class="search__field">
+					<div class="s-select js-select">
+						<span class="s-select__text js-select-text">Раздел</span>
+						<ul class="s-select__list js-select-list">
+							<li data-val="Главная">Главная</li>
+							<li data-val="Новости">Новости</li>
+							<li data-val="Объявления">Объявления</li>
+							<li data-val="Работа">Работа</li>
+							<li data-val="Блог">Блог</li>
+						</ul>
+						<select>
+							  <option value="Главная">Главная</option>
+							  <option value="Новости">Новости</option>
+							  <option value="Объявления">Объявления</option>
+							  <option value="Работа">Работа</option>
+							  <option value="Блог">Блог</option>
+						</select>
+					</div>
+					<label>
+						<input type="text" class="search__input" placeholder="Что будем искать?">
+					</label>					
+				</div>				
+				<button class="search__btn"><span>Поиск</span></button>
+			</form>
+		</div>	
+	</header>
+	<!-- end header -->
+	
+	<!-- begin main  -->
+	<main class="main">
+		<div class="main__inner">
+
+			<!-- begin content  -->
+			<section class="content">
+				
+				<!-- begin action  -->
+				<div class="action action_mod">
+					<div class="action__section">
+						<label class="checkbox"><input type="checkbox"><span></span></label>
+						<div class="n-select js-select is-action">
+							<span class="n-select__text js-select-text">Действие</span>
+							<ul class="n-select__list js-select-list">
+								<li data-val="Удалить">Удалить</li>
+								<li data-val="Важное">Важное</li>
+								<li data-val="Прочитанно">Прочитанно</li>
+								<li data-val="В архив">В архив</li>
+							</ul>
+							<select>
+								<option value="Удалить">Удалить</option>
+								<option value="Важное">Важное</option>
+								<option value="Прочитанно">Прочитанно</option>
+								<option value="В архив">В архив</option>
+							</select>
+						</div>
+						<button class="button">ок</button>
+					</div>
+					<div class="action__section">
+						<div class="n-select js-select is-message">
+							<span class="n-select__text js-select-text">Активные</span>
+							<ul class="n-select__list js-select-list">
+								<li data-val="Активные">Активные</li>
+								<li data-val="Не активные">Не активные</li>
+							</ul>
+							<select>
+								<option value="Активные">Активные</option>
+								<option value="Не активные">Не активные</option>
+							</select>
+						</div>
+					</div>
+					<div class="action__section">
+						<span class="action__label">Категории</span>
+						<div class="m-select js-select is-message">
+							<span class="m-select__text js-select-text">Все</span>
+							<div class="m-select__list js-select-list">
+								<span class="m-select__title js-select-title">Транспорт</span>
+								<ul class="js-select-block">
+									<li data-val="Самолёты">Самолёты</li>
+									<li data-val="Вертолёты">Вертолёты</li>
+									<li data-val="СЛА (Сверхлегкая авиация)">СЛА (Сверхлегкая авиация)</li>
+								</ul>
+								<span class="m-select__title js-select-title">Запчасти</span>
+								<ul class="js-select-block">
+									<li data-val="Запчасти и комплектующие">Запчасти и комплектующие</li>
+									<li data-val="Приборы и оборудование">Приборы и оборудование</li>
+									<li data-val="Двигатели">Двигатели</li>
+									<li data-val="Наземное оборудование">Наземное оборудование</li>
+									<li data-val="ГСМ">ГСМ</li>
+								</ul>
+								<span class="m-select__title js-select-title">Другое</span>
+								<ul class="js-select-block">
+									<li data-val="Самолёты">Самолёты</li>
+									<li data-val="Вертолёты">Вертолёты</li>
+									<li data-val="СЛА (Сверхлегкая авиация)">СЛА (Сверхлегкая авиация)</li>
+								</ul>
+							</div>							
+						</div>
+					</div>					
+				</div>
+				<!-- end action -->
+				
+				<!-- begin my-ads  -->
+				<div class="my-ads">
+					<div class="m-item">
+						<label class="checkbox"><input type="checkbox"><span></span></label>
+						<div class="m-item__inner">
+							<div class="m-item__img"></div>
+							<div class="m-item__text">
+								<div class="m-item__top">
+									<a href="#" class="m-item__title">Колесо от ан-158 б/у</a>
+									<div class="m-item__price">
+										<span>22,500EUR</span>
+										<small>(Торг, аренда)</small>
+									</div>
+								</div>
+								<div class="m-item__body">
+									<div>
+										<a href="#" class="trade trade_buy">Куплю</a>
+										<span>Транспорт-самолеты</span>
+									</div>									
+									<div class="m-item__btns">
+										<button class="m-btn">Редактировать</button>
+										<button class="m-btn">Удалить</button>
+										<button class="m-btn">В архив</button>
+									</div>
+								</div>								
+								<div class="m-item__icon">
+									<i></i>
+									<span>Рекламировать</span>
+								</div>
+							</div>
+							<div class="m-item__info">
+								<div class="is-time">16/04/2015</div>
+								<div class="is-place">Украина/Киев</div>
+								<div class="is-mail">Сообщения<span>7</span></div>
+								<div class="is-views">327</div>
+							</div>
+						</div>
+					</div>
+					<div class="m-item is-bg">
+						<label class="checkbox"><input type="checkbox"><span></span></label>
+						<div class="m-item__inner">
+							<div class="m-item__img"></div>
+							<div class="m-item__text">
+								<div class="m-item__top">
+									<a href="#" class="m-item__title">Колесо от ан-158 б/у</a>
+									<div class="m-item__price">
+										<span>22,500EUR</span>
+										<small>(Торг, аренда)</small>
+									</div>
+								</div>
+								<div class="m-item__body">
+									<div>
+										<a href="#" class="trade trade_sell">Продам</a>
+										<span>Транспорт-самолеты</span>
+									</div>									
+									<div class="m-item__btns">
+										<button class="m-btn">Редактировать</button>
+										<button class="m-btn">Удалить</button>
+										<button class="m-btn">В архив</button>
+									</div>
+								</div>								
+								<div class="m-item__icon">
+									<i></i>
+									<span>Рекламировать</span>
+								</div>
+							</div>
+							<div class="m-item__info">
+								<div class="is-time">16/04/2015</div>
+								<div class="is-place">Украина/Киев</div>
+								<div class="is-mail">Сообщения<span>7</span></div>
+								<div class="is-views">327</div>
+							</div>
+						</div>
+					</div>
+					<div class="m-item">
+						<label class="checkbox"><input type="checkbox"><span></span></label>
+						<div class="m-item__inner">
+							<div class="m-item__img"></div>
+							<div class="m-item__text">
+								<div class="m-item__top">
+									<a href="#" class="m-item__title">Колесо от ан-158 б/у</a>
+									<div class="m-item__price">
+										<span>22,500EUR</span>
+										<small>(Торг, аренда)</small>
+									</div>
+								</div>
+								<div class="m-item__body">
+									<div>
+										<a href="#" class="trade trade_buy">Куплю</a>
+										<span>Транспорт-самолеты</span>
+									</div>									
+									<div class="m-item__btns">
+										<button class="m-btn">Редактировать</button>
+										<button class="m-btn">Удалить</button>
+										<button class="m-btn">В архив</button>
+									</div>
+								</div>								
+								<div class="m-item__icon">
+									<i></i>
+									<span>Рекламировать</span>
+								</div>
+							</div>
+							<div class="m-item__info">
+								<div class="is-time">16/04/2015</div>
+								<div class="is-place">Украина/Киев</div>
+								<div class="is-mail">Сообщения<span>7</span></div>
+								<div class="is-views">327</div>
+							</div>
+						</div>
+					</div>
+					<div class="m-item is-bg">
+						<label class="checkbox"><input type="checkbox"><span></span></label>
+						<div class="m-item__inner">
+							<div class="m-item__img"></div>
+							<div class="m-item__text">
+								<div class="m-item__top">
+									<a href="#" class="m-item__title">Колесо от ан-158 б/у</a>
+									<div class="m-item__price">
+										<span>22,500EUR</span>
+										<small>(Торг, аренда)</small>
+									</div>
+								</div>
+								<div class="m-item__body">
+									<div>
+										<a href="#" class="trade trade_sell">Продам</a>
+										<span>Транспорт-самолеты</span>
+									</div>									
+									<div class="m-item__btns">
+										<button class="m-btn">Редактировать</button>
+										<button class="m-btn">Удалить</button>
+										<button class="m-btn">В архив</button>
+									</div>
+								</div>								
+								<div class="m-item__icon">
+									<i></i>
+									<span>Рекламировать</span>
+								</div>
+							</div>
+							<div class="m-item__info">
+								<div class="is-time">16/04/2015</div>
+								<div class="is-place">Украина/Киев</div>
+								<div class="is-mail">Сообщения<span>7</span></div>
+								<div class="is-views">327</div>
+							</div>
+						</div>
+					</div>
+					<div class="m-item">
+						<label class="checkbox"><input type="checkbox"><span></span></label>
+						<div class="m-item__inner">
+							<div class="m-item__img"></div>
+							<div class="m-item__text">
+								<div class="m-item__top">
+									<a href="#" class="m-item__title">Колесо от ан-158 б/у</a>
+									<div class="m-item__price">
+										<span>22,500EUR</span>
+										<small>(Торг, аренда)</small>
+									</div>
+								</div>
+								<div class="m-item__body">
+									<div>
+										<a href="#" class="trade trade_buy">Куплю</a>
+										<span>Транспорт-самолеты</span>
+									</div>									
+									<div class="m-item__btns">
+										<button class="m-btn">Редактировать</button>
+										<button class="m-btn">Удалить</button>
+										<button class="m-btn">В архив</button>
+									</div>
+								</div>								
+								<div class="m-item__icon">
+									<i></i>
+									<span>Рекламировать</span>
+								</div>
+							</div>
+							<div class="m-item__info">
+								<div class="is-time">16/04/2015</div>
+								<div class="is-place">Украина/Киев</div>
+								<div class="is-mail">Сообщения<span>7</span></div>
+								<div class="is-views">327</div>
+							</div>
+						</div>
+					</div>
+					<div class="m-item is-bg">
+						<label class="checkbox"><input type="checkbox"><span></span></label>
+						<div class="m-item__inner">
+							<div class="m-item__img"></div>
+							<div class="m-item__text">
+								<div class="m-item__top">
+									<a href="#" class="m-item__title">Колесо от ан-158 б/у</a>
+									<div class="m-item__price">
+										<span>22,500EUR</span>
+										<small>(Торг, аренда)</small>
+									</div>
+								</div>
+								<div class="m-item__body">
+									<div>
+										<a href="#" class="trade trade_sell">Продам</a>
+										<span>Транспорт-самолеты</span>
+									</div>									
+									<div class="m-item__btns">
+										<button class="m-btn">Редактировать</button>
+										<button class="m-btn">Удалить</button>
+										<button class="m-btn">В архив</button>
+									</div>
+								</div>								
+								<div class="m-item__icon">
+									<i></i>
+									<span>Рекламировать</span>
+								</div>
+							</div>
+							<div class="m-item__info">
+								<div class="is-time">16/04/2015</div>
+								<div class="is-place">Украина/Киев</div>
+								<div class="is-mail">Сообщения<span>7</span></div>
+								<div class="is-views">327</div>
+							</div>
+						</div>
+					</div>
+					<div class="m-item">
+						<label class="checkbox"><input type="checkbox"><span></span></label>
+						<div class="m-item__inner">
+							<div class="m-item__img"></div>
+							<div class="m-item__text">
+								<div class="m-item__top">
+									<a href="#" class="m-item__title">Колесо от ан-158 б/у</a>
+									<div class="m-item__price">
+										<span>22,500EUR</span>
+										<small>(Торг, аренда)</small>
+									</div>
+								</div>
+								<div class="m-item__body">
+									<div>
+										<a href="#" class="trade trade_buy">Куплю</a>
+										<span>Транспорт-самолеты</span>
+									</div>									
+									<div class="m-item__btns">
+										<button class="m-btn">Редактировать</button>
+										<button class="m-btn">Удалить</button>
+										<button class="m-btn">В архив</button>
+									</div>
+								</div>								
+								<div class="m-item__icon">
+									<i></i>
+									<span>Рекламировать</span>
+								</div>
+							</div>
+							<div class="m-item__info">
+								<div class="is-time">16/04/2015</div>
+								<div class="is-place">Украина/Киев</div>
+								<div class="is-mail">Сообщения<span>7</span></div>
+								<div class="is-views">327</div>
+							</div>
+						</div>
+					</div>
+					<div class="m-item is-bg">
+						<label class="checkbox"><input type="checkbox"><span></span></label>
+						<div class="m-item__inner">
+							<div class="m-item__img"></div>
+							<div class="m-item__text">
+								<div class="m-item__top">
+									<a href="#" class="m-item__title">Колесо от ан-158 б/у</a>
+									<div class="m-item__price">
+										<span>22,500EUR</span>
+										<small>(Торг, аренда)</small>
+									</div>
+								</div>
+								<div class="m-item__body">
+									<div>
+										<a href="#" class="trade trade_sell">Продам</a>
+										<span>Транспорт-самолеты</span>
+									</div>									
+									<div class="m-item__btns">
+										<button class="m-btn">Редактировать</button>
+										<button class="m-btn">Удалить</button>
+										<button class="m-btn">В архив</button>
+									</div>
+								</div>								
+								<div class="m-item__icon">
+									<i></i>
+									<span>Рекламировать</span>
+								</div>
+							</div>
+							<div class="m-item__info">
+								<div class="is-time">16/04/2015</div>
+								<div class="is-place">Украина/Киев</div>
+								<div class="is-mail">Сообщения<span>7</span></div>
+								<div class="is-views">327</div>
+							</div>
+						</div>
+					</div>
+					<div class="m-item">
+						<label class="checkbox"><input type="checkbox"><span></span></label>
+						<div class="m-item__inner">
+							<div class="m-item__img"></div>
+							<div class="m-item__text">
+								<div class="m-item__top">
+									<a href="#" class="m-item__title">Колесо от ан-158 б/у</a>
+									<div class="m-item__price">
+										<span>22,500EUR</span>
+										<small>(Торг, аренда)</small>
+									</div>
+								</div>
+								<div class="m-item__body">
+									<div>
+										<a href="#" class="trade trade_buy">Куплю</a>
+										<span>Транспорт-самолеты</span>
+									</div>									
+									<div class="m-item__btns">
+										<button class="m-btn">Редактировать</button>
+										<button class="m-btn">Удалить</button>
+										<button class="m-btn">В архив</button>
+									</div>
+								</div>								
+								<div class="m-item__icon">
+									<i></i>
+									<span>Рекламировать</span>
+								</div>
+							</div>
+							<div class="m-item__info">
+								<div class="is-time">16/04/2015</div>
+								<div class="is-place">Украина/Киев</div>
+								<div class="is-mail">Сообщения<span>7</span></div>
+								<div class="is-views">327</div>
+							</div>
+						</div>
+					</div>
+					<div class="m-item is-bg">
+						<label class="checkbox"><input type="checkbox"><span></span></label>
+						<div class="m-item__inner">
+							<div class="m-item__img"></div>
+							<div class="m-item__text">
+								<div class="m-item__top">
+									<a href="#" class="m-item__title">Колесо от ан-158 б/у</a>
+									<div class="m-item__price">
+										<span>22,500EUR</span>
+										<small>(Торг, аренда)</small>
+									</div>
+								</div>
+								<div class="m-item__body">
+									<div>
+										<a href="#" class="trade trade_sell">Продам</a>
+										<span>Транспорт-самолеты</span>
+									</div>									
+									<div class="m-item__btns">
+										<button class="m-btn">Редактировать</button>
+										<button class="m-btn">Удалить</button>
+										<button class="m-btn">В архив</button>
+									</div>
+								</div>								
+								<div class="m-item__icon">
+									<i></i>
+									<span>Рекламировать</span>
+								</div>
+							</div>
+							<div class="m-item__info">
+								<div class="is-time">16/04/2015</div>
+								<div class="is-place">Украина/Киев</div>
+								<div class="is-mail">Сообщения<span>7</span></div>
+								<div class="is-views">327</div>
+							</div>
+						</div>
+					</div>
+					<div class="m-item">
+						<label class="checkbox"><input type="checkbox"><span></span></label>
+						<div class="m-item__inner">
+							<div class="m-item__img"></div>
+							<div class="m-item__text">
+								<div class="m-item__top">
+									<a href="#" class="m-item__title">Колесо от ан-158 б/у</a>
+									<div class="m-item__price">
+										<span>22,500EUR</span>
+										<small>(Торг, аренда)</small>
+									</div>
+								</div>
+								<div class="m-item__body">
+									<div>
+										<a href="#" class="trade trade_buy">Куплю</a>
+										<span>Транспорт-самолеты</span>
+									</div>									
+									<div class="m-item__btns">
+										<button class="m-btn">Редактировать</button>
+										<button class="m-btn">Удалить</button>
+										<button class="m-btn">В архив</button>
+									</div>
+								</div>								
+								<div class="m-item__icon">
+									<i></i>
+									<span>Рекламировать</span>
+								</div>
+							</div>
+							<div class="m-item__info">
+								<div class="is-time">16/04/2015</div>
+								<div class="is-place">Украина/Киев</div>
+								<div class="is-mail">Сообщения<span>7</span></div>
+								<div class="is-views">327</div>
+							</div>
+						</div>
+					</div>
+					<div class="m-item is-bg">
+						<label class="checkbox"><input type="checkbox"><span></span></label>
+						<div class="m-item__inner">
+							<div class="m-item__img"></div>
+							<div class="m-item__text">
+								<div class="m-item__top">
+									<a href="#" class="m-item__title">Колесо от ан-158 б/у</a>
+									<div class="m-item__price">
+										<span>22,500EUR</span>
+										<small>(Торг, аренда)</small>
+									</div>
+								</div>
+								<div class="m-item__body">
+									<div>
+										<a href="#" class="trade trade_sell">Продам</a>
+										<span>Транспорт-самолеты</span>
+									</div>									
+									<div class="m-item__btns">
+										<button class="m-btn">Редактировать</button>
+										<button class="m-btn">Удалить</button>
+										<button class="m-btn">В архив</button>
+									</div>
+								</div>								
+								<div class="m-item__icon">
+									<i></i>
+									<span>Рекламировать</span>
+								</div>
+							</div>
+							<div class="m-item__info">
+								<div class="is-time">16/04/2015</div>
+								<div class="is-place">Украина/Киев</div>
+								<div class="is-mail">Сообщения<span>7</span></div>
+								<div class="is-views">327</div>
+							</div>
+						</div>
+					</div>
+					<div class="m-item">
+						<label class="checkbox"><input type="checkbox"><span></span></label>
+						<div class="m-item__inner">
+							<div class="m-item__img"></div>
+							<div class="m-item__text">
+								<div class="m-item__top">
+									<a href="#" class="m-item__title">Колесо от ан-158 б/у</a>
+									<div class="m-item__price">
+										<span>22,500EUR</span>
+										<small>(Торг, аренда)</small>
+									</div>
+								</div>
+								<div class="m-item__body">
+									<div>
+										<a href="#" class="trade trade_buy">Куплю</a>
+										<span>Транспорт-самолеты</span>
+									</div>									
+									<div class="m-item__btns">
+										<button class="m-btn">Редактировать</button>
+										<button class="m-btn">Удалить</button>
+										<button class="m-btn">В архив</button>
+									</div>
+								</div>								
+								<div class="m-item__icon">
+									<i></i>
+									<span>Рекламировать</span>
+								</div>
+							</div>
+							<div class="m-item__info">
+								<div class="is-time">16/04/2015</div>
+								<div class="is-place">Украина/Киев</div>
+								<div class="is-mail">Сообщения<span>7</span></div>
+								<div class="is-views">327</div>
+							</div>
+						</div>
+					</div>
+					<div class="m-item is-bg">
+						<label class="checkbox"><input type="checkbox"><span></span></label>
+						<div class="m-item__inner">
+							<div class="m-item__img"></div>
+							<div class="m-item__text">
+								<div class="m-item__top">
+									<a href="#" class="m-item__title">Колесо от ан-158 б/у</a>
+									<div class="m-item__price">
+										<span>22,500EUR</span>
+										<small>(Торг, аренда)</small>
+									</div>
+								</div>
+								<div class="m-item__body">
+									<div>
+										<a href="#" class="trade trade_sell">Продам</a>
+										<span>Транспорт-самолеты</span>
+									</div>									
+									<div class="m-item__btns">
+										<button class="m-btn">Редактировать</button>
+										<button class="m-btn">Удалить</button>
+										<button class="m-btn">В архив</button>
+									</div>
+								</div>								
+								<div class="m-item__icon">
+									<i></i>
+									<span>Рекламировать</span>
+								</div>
+							</div>
+							<div class="m-item__info">
+								<div class="is-time">16/04/2015</div>
+								<div class="is-place">Украина/Киев</div>
+								<div class="is-mail">Сообщения<span>7</span></div>
+								<div class="is-views">327</div>
+							</div>
+						</div>
+					</div>
+					<div class="m-item">
+						<label class="checkbox"><input type="checkbox"><span></span></label>
+						<div class="m-item__inner">
+							<div class="m-item__img"></div>
+							<div class="m-item__text">
+								<div class="m-item__top">
+									<a href="#" class="m-item__title">Колесо от ан-158 б/у</a>
+									<div class="m-item__price">
+										<span>22,500EUR</span>
+										<small>(Торг, аренда)</small>
+									</div>
+								</div>
+								<div class="m-item__body">
+									<div>
+										<a href="#" class="trade trade_buy">Куплю</a>
+										<span>Транспорт-самолеты</span>
+									</div>									
+									<div class="m-item__btns">
+										<button class="m-btn">Редактировать</button>
+										<button class="m-btn">Удалить</button>
+										<button class="m-btn">В архив</button>
+									</div>
+								</div>								
+								<div class="m-item__icon">
+									<i></i>
+									<span>Рекламировать</span>
+								</div>
+							</div>
+							<div class="m-item__info">
+								<div class="is-time">16/04/2015</div>
+								<div class="is-place">Украина/Киев</div>
+								<div class="is-mail">Сообщения<span>7</span></div>
+								<div class="is-views">327</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- end my-ads -->
+				
+				<!-- begin pages  -->
+				<div class="pages">
+					<div class="pages__text">Страница 1 из 16</div>
+					<ul>
+						<li><a href="#"><i class="is-prev"></i></a></li>
+						<li><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#"><i class="is-next"></i></a></li>
+					</ul>
+				</div>
+				<!-- end pages -->
+			</section>
+			<!-- end content -->
+
+			<!-- begin sidebar  -->
+			<aside class="sidebar">
+				<div class="sidebar__inner">
+					<div class="advertisement">
+						<div class="advertisement__heading"><span>Объявления</span></div>
+						<div class="advertisement__item">
+							<div class="advertisement__top">
+								<a href="#" class="trade trade_sell">Продам</a>
+								<span class="advertisement__price">2,040USD</span>
+							</div>
+							<div class="advertisement__body">
+								<h5><a href="#">Мультиварка Mirta MC-2211</a></h5>
+								<p>Компактная мультиварка Mirta MC-2211, весом 2,83 кг, имеет отличительную особенную....</p>
+							</div>
+							<div class="advertisement__footer">
+								<span class="advertisement__name">Имя Фамилия</span>
+								<span class="advertisement__category">Раздел - категория</span>
+							</div>
+							<div class="advertisement__img"></div>
+						</div>
+						<div class="advertisement__item">
+							<div class="advertisement__top">
+								<a href="#" class="trade trade_buy">Куплю</a>
+								<span class="advertisement__price">2,040USD</span>
+							</div>
+							<div class="advertisement__body">
+								<h5><a href="#">Мультиварка Mirta MC-2211</a></h5>
+								<p>Компактная мультиварка Mirta MC-2211, весом 2,83 кг, имеет отличительную особенную....</p>
+							</div>
+							<div class="advertisement__footer">
+								<span class="advertisement__name">Имя Фамилия</span>
+								<span class="advertisement__category">Раздел - категория</span>
+							</div>
+							<div class="advertisement__img"></div>
+						</div>
+						<div class="advertisement__item">
+							<div class="advertisement__top">
+								<a href="#" class="trade trade_sell">Продам</a>
+								<span class="advertisement__price">2,040USD</span>
+							</div>
+							<div class="advertisement__body">
+								<h5><a href="#">Мультиварка Mirta MC-2211</a></h5>
+								<p>Компактная мультиварка Mirta MC-2211, весом 2,83 кг, имеет отличительную особенную....</p>
+							</div>
+							<div class="advertisement__footer">
+								<span class="advertisement__name">Имя Фамилия</span>
+								<span class="advertisement__category">Раздел - категория</span>
+							</div>
+							<div class="advertisement__img"></div>
+						</div>
+						<div class="advertisement__item">
+							<div class="advertisement__top">
+								<a href="#" class="trade trade_buy">Куплю</a>
+								<span class="advertisement__price">2,040USD</span>
+							</div>
+							<div class="advertisement__body">
+								<h5><a href="#">Мультиварка Mirta MC-2211</a></h5>
+								<p>Компактная мультиварка Mirta MC-2211, весом 2,83 кг, имеет отличительную особенную....</p>
+							</div>
+							<div class="advertisement__footer">
+								<span class="advertisement__name">Имя Фамилия</span>
+								<span class="advertisement__category">Раздел - категория</span>
+							</div>
+							<div class="advertisement__img"></div>
+						</div>
+						<div class="advertisement__item">
+							<div class="advertisement__top">
+								<a href="#" class="trade trade_buy">Куплю</a>
+								<span class="advertisement__price">2,040USD</span>
+							</div>
+							<div class="advertisement__body">
+								<h5><a href="#">Мультиварка Mirta MC-2211</a></h5>
+								<p>Компактная мультиварка Mirta MC-2211, весом 2,83 кг, имеет отличительную особенную....</p>
+							</div>
+							<div class="advertisement__footer">
+								<span class="advertisement__name">Имя Фамилия</span>
+								<span class="advertisement__category">Раздел - категория</span>
+							</div>
+							<div class="advertisement__img"></div>
+						</div>
+					</div>
+					<div class="sidebar__banners">
+						<div class="sidebar__slider cycle-slideshow"
+							data-cycle-fx="fade" 
+							data-cycle-timeout="4000"
+							data-cycle-slides=".banner">
+							<a href="#" class="banner">
+								<img src="img/sidebar-banner.png" alt="">
+							</a>
+							<a href="#" class="banner">
+								<img src="img/sidebar-banner.png" alt="">
+							</a>
+							<a href="#" class="banner">
+								<img src="img/sidebar-banner.png" alt="">
+							</a>
+						</div>	
+					</div>		
+					<div class="hot">
+						<div class="hot__title"><i class="hot__icon"></i>Горячие вакансии</div>
+						<div class="hot__comment">
+							<div class="hot__author">
+								<div class="hot__img"></div>
+								<div class="hot__info">
+									<span class="hot__name">Надежда Жукова</span>
+									<p>Менеджер по работе с клиентами</p>
+									<div class="hot__time">
+										<span>Обновнено</span>
+										<time>21:34 PM</time>
+									</div>
+								</div>
+							</div>
+							<p> - кадровый учёт, кадровое делопроизводство в полном объеме - (приём, увольнение, переводы, оформление всех видовотпусков, .....</p>
+							<div class="hot__links">
+								<a href="#" class="hot__link">Написать</a>
+								<a href="#" class="hot__link">Подробнее</a>
+							</div>
+						</div>
+						<div class="hot__comment">
+							<div class="hot__author">
+								<div class="hot__img"></div>
+								<div class="hot__info">
+									<span class="hot__name">Надежда Жукова</span>
+									<p>Менеджер по работе с клиентами</p>
+									<div class="hot__time">
+										<span>Обновнено</span>
+										<time>21:34 PM</time>
+									</div>
+								</div>
+							</div>
+							<p> - кадровый учёт, кадровое делопроизводство в полном объеме - (приём, увольнение, переводы, оформление всех видовотпусков, .....</p>
+							<div class="hot__links">
+								<a href="#" class="hot__link">Написать</a>
+								<a href="#" class="hot__link">Подробнее</a>
+							</div>
+						</div>
+						<div class="hot__comment">
+							<div class="hot__author">
+								<div class="hot__img"></div>
+								<div class="hot__info">
+									<span class="hot__name">Надежда Жукова</span>
+									<p>Менеджер по работе с клиентами</p>
+									<div class="hot__time">
+										<span>Обновнено</span>
+										<time>21:34 PM</time>
+									</div>
+								</div>
+							</div>
+							<p> - кадровый учёт, кадровое делопроизводство в полном объеме - (приём, увольнение, переводы, оформление всех видовотпусков, .....</p>
+							<div class="hot__links">
+								<a href="#" class="hot__link">Написать</a>
+								<a href="#" class="hot__link">Подробнее</a>
+							</div>
+						</div>
+					</div>
+					<div class="sidebar__banners">
+						<div class="sidebar__slider cycle-slideshow"
+							data-cycle-fx="fade" 
+							data-cycle-timeout="4000"
+							data-cycle-slides=".banner">
+							<a href="#" class="banner">
+								<img src="img/sidebar-banner.png" alt="">
+							</a>
+							<a href="#" class="banner">
+								<img src="img/sidebar-banner.png" alt="">
+							</a>
+							<a href="#" class="banner">
+								<img src="img/sidebar-banner.png" alt="">
+							</a>
+						</div>	
+					</div>					
+					<div class="interesting">
+						<div class="interesting__inner">
+							<div class="interesting__heading">ЭТО МОЖЕТ БЫТЬ ИНТИРЕСНО</div>
+							<div class="interesting__item js-accordion">
+								<a href="#" class="interesting__title js-accordion-open">Технические инновации</a>
+								<div class="interesting__info js-accordion-block">
+									<p>В конце прошлой недели в Киеве прошел первый форум инновационных технологий Innotech.....</p>
+								</div>
+							</div>
+							<div class="interesting__item js-accordion">
+								<a href="#" class="interesting__title js-accordion-open">Технические инновации</a>
+								<div class="interesting__info js-accordion-block">
+									<p>В конце прошлой недели в Киеве прошел первый форум инновационных технологий Innotech.....</p>
+								</div>
+							</div>
+							<div class="interesting__item js-accordion">
+								<a href="#" class="interesting__title js-accordion-open">Технические инновации</a>
+								<div class="interesting__info js-accordion-block">
+									<p>В конце прошлой недели в Киеве прошел первый форум инновационных технологий Innotech.....</p>
+								</div>
+							</div>
+							<div class="interesting__item js-accordion">
+								<a href="#" class="interesting__title js-accordion-open">Технические инновации</a>
+								<div class="interesting__info js-accordion-block">
+									<p>В конце прошлой недели в Киеве прошел первый форум инновационных технологий Innotech.....</p>
+								</div>
+							</div>
+							<div class="interesting__item js-accordion">
+								<a href="#" class="interesting__title js-accordion-open">Технические инновации</a>
+								<div class="interesting__info js-accordion-block">
+									<p>В конце прошлой недели в Киеве прошел первый форум инновационных технологий Innotech.....</p>
+								</div>
+							</div>
+						</div>
+					</div>				
+				</div>
+			</aside>
+			<!-- end sidebar -->
+
+			<!-- begin partners  -->
+			<div class="partners">
+				<section class="company">
+					<div class="title-h2">Компании</div>
+					<hr>
+					<p>Наши основные партнеры</p>
+					<ul class="company__list">
+						<li><a href="#"><img src="img/l-azal.png" alt="" class="is-azal"></a></li>
+						<li><a href="#"><img src="img/l-armenia.png" alt="" class="is-armenia"></a></li>
+						<li><a href="#"><img src="img/l-armavia.png" alt="" class="is-armavia"></a></li>
+						<li><a href="#"><img src="img/l-india.png" alt="" class="is-india"></a></li>
+					</ul>
+					<a href="#" class="company__show">Посмотреть все</a>
+				</section>
+			</div>
+			<!-- end partners -->
+		</div>
+	</main>
+	<!-- end main -->
+
+	<!-- begin footer  -->
+	<footer class="footer">
+		<div class="footer__bottom">
+			<div class="footer__social">
+				<ul>
+					<li><a href="#" class="is-tw"></a></li>
+					<li><a href="#" class="is-fb"></a></li>
+					<li><a href="#" class="is-gp"></a></li>
+					<li><a href="#" class="is-b"></a></li>
+				</ul>
+			</div>
+			<div class="footer__text">
+				<p>© 2013-2015 www.sky-heart.com</p>
+				<a href="#" class="footer__feedback">Обратная связь</a>
+			</div>			
+		</div>
+	</footer>
+	<!-- end footer -->
+	<button class="btn-up js-btn-up"></button>
+</div>
+<!-- END out-->
+<!-- load scripts -->
+<script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
+</body>
+</html>
