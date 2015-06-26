@@ -1703,17 +1703,21 @@ a.is-star.is-active:after, a.is-star:hover:after { visibility: visible; filter: 
 
 .r-resume { -moz-box-shadow: 0 3px 6px rgba(20, 45, 96, 0.75); -webkit-box-shadow: 0 3px 6px rgba(20, 45, 96, 0.75); box-shadow: 0 3px 6px rgba(20, 45, 96, 0.75); background: white; }
 .r-resume__heading { padding: 5px 15px 25px; clear: both; }
+@media only screen and (max-width: 980px) { .r-resume__heading { padding: 5px 0 25px; } }
 .r-resume__heading p { color: #555555; font-size: 15px; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 600; }
 .r-resume__heading p a { color: #2d4164; }
 .r-resume__heading p a:hover { text-decoration: underline; }
 .r-resume__top { *zoom: 1; color: #555555; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 300; padding: 30px 20px 0 30px; }
 .r-resume__top:after { content: " "; display: table; clear: both; }
+@media only screen and (max-width: 980px) { .r-resume__top { padding: 30px 20px 0; } }
 .r-resume__price { float: right; margin: -2px 0 0 20px; position: relative; }
 .r-resume__price a, .r-resume__price span { display: inline-block; vertical-align: middle; }
 .r-resume__price span { font-size: 14px; }
 .r-resume__img { float: left; width: 202px; height: 202px; margin: 4px 30px 20px 0; }
+@media only screen and (max-width: 980px) { .r-resume__img { float: none; margin: 0 auto 20px; } }
 .r-resume__img img { width: 100%; height: 100%; }
 .r-resume__info { overflow: hidden; font-size: 12px; line-height: 18px; margin-bottom: 20px; }
+@media only screen and (max-width: 980px) { .r-resume__info { overflow: visible; clear: both; } }
 .r-resume__topper span { margin: 0 20px 15px 0; display: inline-block; vertical-align: top; }
 .r-resume__place { margin-bottom: 15px; display: block; }
 .r-resume__contacts.is-active .r-resume__hide { display: block; }
@@ -1726,17 +1730,20 @@ a.is-star.is-active:after, a.is-star:hover:after { visibility: visible; filter: 
 .r-resume__block { color: #555555; padding: 0 0 25px; }
 .r-resume__title { background-color: #ceebef; *zoom: 1; padding: 7px 45px 9px; }
 .r-resume__title:after { content: " "; display: table; clear: both; }
+@media only screen and (max-width: 980px) { .r-resume__title { padding: 7px 20px 9px; } }
 .r-resume__title i { float: left; width: 21px; height: 21px; background-repeat: no-repeat; background-position: center center; margin: 0 10px 0 0; }
 .r-resume__title i.is-experience { background-image: url(../img/icons/experience.png); }
 .r-resume__title i.is-education { background-image: url(../img/icons/education.png); }
 .r-resume__title i.is-info { background-image: url(../img/icons/file.png); }
 .r-resume__title span { display: block; overflow: hidden; font-size: 16px; padding: 4px 0 0; line-height: 1; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 700; }
 .r-resume__box { padding: 10px 45px 15px; }
+@media only screen and (max-width: 980px) { .r-resume__box { padding: 10px 20px 15px; } }
 .r-resume__box p { font-size: 14px; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 300; line-height: 20px; }
 .r-resume__box span { font-size: 13px; line-height: 20px; margin-right: 20px; padding: 5px 0; display: inline-block; vertical-align: top; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 300; }
 .r-resume h5 { font-size: 15px; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 600; line-height: 20px; padding: 5px 0; }
 .r-resume__text { padding: 5px 0; }
 .r-resume__btn { padding: 5px 45px; }
+@media only screen and (max-width: 980px) { .r-resume__btn { padding: 5px 20px; } }
 .r-resume__btn h5 { margin-bottom: 15px; }
 .r-resume__hide { display: none; }
 .r-resume__show { margin: 10px 0 0; color: #44709c; text-decoration: underline; display: inline-block; }
