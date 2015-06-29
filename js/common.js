@@ -4,7 +4,7 @@ head.ready(function() {
         $(".js-select").removeClass("is-active");
 	      $(".js-select-list").slideUp(100);
     });
-    
+
 	// select list
     $("body").on("click",".js-select",function(event) {
         event.stopPropagation();
@@ -20,7 +20,7 @@ head.ready(function() {
             $(".js-select-list").slideUp(100);
             select.toggleClass("is-active").find(".js-select-list").slideToggle(100);
         }
-       
+
     });
 
     $("body").on("click",".js-select-list li",function() {
@@ -36,7 +36,7 @@ head.ready(function() {
         select.removeClass("is-active");
         selectList.slideUp(100);
         return false;
-        
+
     });
     $('.js-select-li').on('click', function() {
         $(this).parents('.js-select').find('.js-select-text').text($(this).text());
@@ -73,7 +73,7 @@ head.ready(function() {
     });
 
     //btn up
-    $(window).scroll(function() {    
+    $(window).scroll(function() {
         var scroll = $(window).scrollTop();
         if ($('.js-scroll-top').length>0) {
             if (scroll >= $('.js-scroll-top').offset().top) {
@@ -83,7 +83,7 @@ head.ready(function() {
             };
         };
     });
-    $(window).load(function() {    
+    $(window).load(function() {
         var scroll = $(window).scrollTop();
         if ($('.js-scroll-top').length>0) {
             if (scroll >= $('.js-scroll-top').offset().top) {
@@ -136,14 +136,14 @@ head.ready(function() {
         return false;
     });
     $('.js-feedback-close').on('click', function() {
-        
+
         $('.js-feedback').removeClass('is-active');
         $('.p-feedback-btn').addClass('is-active');
     });
     //header
 
     //nav scroll
-    $(window).scroll(function() {    
+    $(window).scroll(function() {
         var scroll = $(window).scrollTop();
         if ($('.js-scroll-top').length>0) {
             if (scroll > $('.js-scroll-top').offset().top) {
@@ -153,7 +153,7 @@ head.ready(function() {
             };
         };
     });
-    $(window).load(function() {    
+    $(window).load(function() {
         var scroll = $(window).scrollTop();
         if ($('.js-scroll-top').length>0) {
             if (scroll > $('.js-scroll-top').offset().top) {
@@ -163,7 +163,7 @@ head.ready(function() {
             };
         };
     });
-    $(window).scroll(function() {    
+    $(window).scroll(function() {
         var scroll = $(window).scrollTop();
         if ($('.js-search').length>0) {
             if (scroll >= $('.js-search').offset().top) {
@@ -173,7 +173,7 @@ head.ready(function() {
             };
         };
     });
-    $(window).load(function() {    
+    $(window).load(function() {
         var scroll = $(window).scrollTop();
         if ($('.js-search').length>0) {
             if (scroll >= $('.js-search').offset().top) {
@@ -184,7 +184,7 @@ head.ready(function() {
         };
     });
     //index menu
-    $(window).scroll(function() {    
+    $(window).scroll(function() {
         var scroll = $(window).scrollTop();
         if ($('.index__menu').length>0) {
             if (scroll >= $('.index__menu-in').offset().top) {
@@ -194,7 +194,7 @@ head.ready(function() {
             };
         };
     });
-    $(window).load(function() {    
+    $(window).load(function() {
         var scroll = $(window).scrollTop();
         if ($('.index__menu').length>0) {
             if (scroll >= $('.index__menu-in').offset().top) {
@@ -212,10 +212,10 @@ head.ready(function() {
     });
     $('.js-theme').each(function() {
         $('body').on('click', function () {
-            $('.js-theme-block').removeClass('is-active');            
+            $('.js-theme-block').removeClass('is-active');
         });
         $(this).on('click', function (event) {
-            event.stopPropagation();        
+            event.stopPropagation();
         });
     });
 
@@ -290,15 +290,15 @@ head.ready(function() {
         }
         else {
             $('.o-posts-action').removeClass('is-active');
-        };        
+        };
     });
 
     //ads
     $('.n-item__img').on('click', function() {
-        if ($(this).find('.n-item__popup').hasClass('is-active')) {  
+        if ($(this).find('.n-item__popup').hasClass('is-active')) {
             $(this).find('.n-item__popup').removeClass('is-active');
         }
-        else {            
+        else {
             $('.n-item__popup').removeClass('is-active');
             $(this).find('.n-item__popup').addClass('is-active');
         }
@@ -310,23 +310,23 @@ head.ready(function() {
         return false;
     });
 
-    $.datepicker.regional['ru'] = { 
-    closeText: 'Закрыть', 
-    prevText: '&#x3c;Пред', 
-    nextText: 'След&#x3e;', 
-    currentText: 'Сегодня', 
-    monthNames: ['Января','Февраля','Марта','Апреля','Мая','Июня', 
-    'Июля','Августа','Сентября','Октября','Ноября','Декабря'], 
-    monthNamesShort: ['Января','Февраля','Марта','Апреля','Мая','Июня', 
+    $.datepicker.regional['ru'] = {
+    closeText: 'Закрыть',
+    prevText: '&#x3c;Пред',
+    nextText: 'След&#x3e;',
+    currentText: 'Сегодня',
+    monthNames: ['Января','Февраля','Марта','Апреля','Мая','Июня',
     'Июля','Августа','Сентября','Октября','Ноября','Декабря'],
-    dayNames: ['воскресенье','понедельник','вторник','среда','четверг','пятница','суббота'], 
-    dayNamesShort: ['вск','пнд','втр','срд','чтв','птн','сбт'], 
-    dayNamesMin: ['Вс','Пн','Вт','Ср','Чт','Пт','Сб'], 
-    dateFormat: 'dd.mm.yy', 
-    firstDay: 1, 
-    isRTL: false 
-    }; 
-    $.datepicker.setDefaults($.datepicker.regional['ru']); 
+    monthNamesShort: ['Января','Февраля','Марта','Апреля','Мая','Июня',
+    'Июля','Августа','Сентября','Октября','Ноября','Декабря'],
+    dayNames: ['воскресенье','понедельник','вторник','среда','четверг','пятница','суббота'],
+    dayNamesShort: ['вск','пнд','втр','срд','чтв','птн','сбт'],
+    dayNamesMin: ['Вс','Пн','Вт','Ср','Чт','Пт','Сб'],
+    dateFormat: 'dd.mm.yy',
+    firstDay: 1,
+    isRTL: false
+    };
+    $.datepicker.setDefaults($.datepicker.regional['ru']);
 
     $('.js-datepick').datepicker({
         changeYear: true,
@@ -383,6 +383,23 @@ head.ready(function() {
             $('.js-gallery').removeClass('is-active');
         });
         $('.p-gallery__inner').on('click', function(event) {
+            event.stopPropagation();
+        });
+    });
+    //popup resume
+    $('.js-popup-btn').on('click', function() {
+        $('.js-popup').addClass('is-active');
+        return false;
+    });
+    $('.js-popup-close').on('click', function() {
+        $('.js-popup').removeClass('is-active');
+        return false;
+    });
+    $('.js-popup').each(function() {
+        $('body').on('click', function() {
+            $('.js-popup').removeClass('is-active');
+        });
+        $('.r-form').on('click', function(event) {
             event.stopPropagation();
         });
     });
