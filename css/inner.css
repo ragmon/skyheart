@@ -1790,6 +1790,6 @@ a.is-star.is-active:after, a.is-star:hover:after { visibility: visible; filter: 
 @media only screen and (max-width: 600px) { .search-box { display: none; } }
 
 .search-field { float: right; position: relative; max-width: 216px; width: 100%; }
-.search-field input { width: 100%; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 5px 9px; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 300; color: #555555; font-size: 12px; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; background: white; }
+.search-field input { width: 100%; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 5px 35px 5px 9px; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 300; color: #555555; font-size: 12px; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; background: white; }
 .search-field button { width: 25px; height: 27px; position: absolute; top: 0; right: 0; background: none; }
 .search-field button:before { position: absolute; top: 4px; right: 3px; background: url('../img/icons-sb06aab985c.png') 0 -1997px no-repeat; width: 19px; height: 19px; content: ""; }
