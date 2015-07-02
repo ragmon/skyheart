@@ -5399,3 +5399,87 @@ a
 		right: 10px
 		+s(o-close)
 		cursor: pointer
+		
+.search-item
+	border-bottom: 2px solid #B6BECE 
+	margin-bottom: 11px
+	&:last-child
+		border-bottom: none
+		margin-bottom: 0
+	.item
+		+box-shadow(none)
+		padding-bottom: 11px
+		border-bottom: 2px solid #B6BECE 
+		+r1
+			padding-bottom: 0
+		&__img
+			bottom: 11px
+	.n-item
+		border-bottom: 2px solid #B6BECE 
+
+.search-filter
+	font-size: 0
+	background-color: #E8E8E8
+	padding: 6px 15px 6px 15px
+	+clr
+	+r1
+		text-align: center
+	span
+		+reg
+		font-size: 14px
+		text-decoration: underline
+		color: #555 
+		float: left
+		padding: 6px 0 
+		+r1
+			float: none
+			display: block
+	ul
+		float: right
+		padding: 4px 0 
+		+r1
+			float: none
+		li
+			display: inline-block
+			vertical-align: top
+			padding: 2px 13px 
+		a
+			+semi
+			font-size: 14px
+			color: #4C8299
+			&:hover
+				text-decoration: underline
+
+.search-box
+	padding: 8px 19px
+	+clr
+	background-color: #44709C
+	+r(600)
+		display: none
+.search-field
+	float: right
+	position: relative
+	max-width: 216px
+	width: 100%
+	input
+		width: 100%
+		+box
+		padding: 5px 9px
+		+light
+		color: #555
+		font-size: 12px
+		+border-radius(3px)
+		background: #fff
+	button
+		width: 25px
+		height: 27px
+		position: absolute
+		top: 0
+		right: 0
+		background: none
+		&:before
+			position: absolute
+			top: 4px
+			right: 3px			
+			+s(search-btn)
+			content: "" 
