@@ -1414,7 +1414,9 @@ a.is-star.is-active:after, a.is-star:hover:after { visibility: visible; filter: 
 .s-search__days { *zoom: 1; }
 .s-search__days:after { content: " "; display: table; clear: both; }
 .s-search__label { float: left; font-size: 12px; color: #555555; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 400; margin-right: 20px; padding: 11px 0; }
-.s-search__day { overflow: hidden; }
+@media only screen and (max-width: 400px) { .s-search__label { margin-right: 0; } }
+.s-search__day { width: 80px; float: right; }
+@media only screen and (max-width: 400px) { .s-search__day { width: 70px; } }
 .s-search__checks li { position: relative; padding: 0 0 0 30px; margin-bottom: 8px; }
 .s-search__checks li i { position: absolute; top: 50%; left: 0; }
 .s-search__checks li i.is-photo { background: url('../img/icons-s5cb1c6fe6f.png') 0 -1720px no-repeat; width: 20px; height: 17px; margin-top: -10px; }
