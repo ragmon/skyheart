@@ -60,6 +60,14 @@ body
 
 // fonts
 
++font("BookAntiqua", book_antiqua_regular)
++font("BookAntiqua Bold", book_antiqua_bold)
+
+=ba
+	font-family: "BookAntiqua", Arial, sans-serif
+=bab
+	font-family: "BookAntiqua", Arial, sans-serif
+
 =ff
 	font-family: 'Open Sans', sans-serif
 	font-style: normal
@@ -205,10 +213,14 @@ a
 	right: 0
 	top: 100%
 	z-index: 200
-	overflow: hidden
+	-ms-overflow-x: hidden
+	overflow-x: hidden
+	-ms-overflow-y: auto
+	overflow-y: auto
 	+box-shadow(0 4px 6px rgba(0, 1, 2, 0.75))
 	+border-radius(0 0 5px 5px)
 	background: #CBD6D3 
+	max-height: 300px 
 	li
 		padding: 6px 10px
 		cursor: pointer
