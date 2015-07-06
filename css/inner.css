@@ -328,7 +328,7 @@ body.is-fixed .header__menu { max-width: 1074px; margin: 0 auto; padding: 10px 1
 .search__list li a { font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 300; font-size: 12px; line-height: 1.7; color: white; text-transform: uppercase; }
 .search__list li a:hover { text-decoration: underline; }
 
-.logo { max-width: 140px; display: inline-block; vertical-align: top; margin: 11px 35px 0 0; }
+.logo { width: 140px; display: inline-block; vertical-align: top; margin: 11px 35px 0 0; }
 .logo img { width: 100%; }
 
 .lang { display: inline-block; vertical-align: top; position: relative; padding: 0 10px 0 0; margin: 9px 18px 0 0; }
