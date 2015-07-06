@@ -1826,3 +1826,10 @@ body.is-error:before { content: ""; display: inline-block; vertical-align: middl
 
 .p-error-paragraph { display: inline-block; vertical-align: middle; max-width: 890px; }
 .p-error-paragraph p { font-family: "BookAntiqua", Arial, sans-serif; font-size: 18px; color: #66747f; line-height: 1.2; }
+
+.notice { position: fixed; top: 0; left: 0; bottom: 0; right: 0; background: rgba(0, 0, 0, 0.5); z-index: 9999; }
+.notice__block { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); -moz-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); -o-transform: translate(-50%, -50%); transform: translate(-50%, -50%); background: white; -moz-border-radius: 7px; -webkit-border-radius: 7px; border-radius: 7px; padding: 50px; max-width: 300px; text-align: center; width: 100%; }
+.notice__block.is-ok p { color: green; }
+.notice__block.is-error p { color: red; }
+.notice__close { background: url('../img/icons-s5cb1c6fe6f.png') 0 -1622px no-repeat; width: 13px; height: 13px; position: absolute; top: 15px; right: 15px; }
+.notice p { font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 300; font-size: 20px; }

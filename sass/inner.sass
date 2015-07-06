@@ -5596,3 +5596,43 @@ body
 		font-size: 18px
 		color: #66747F
 		line-height: 1.2
+		
+.notice
+	position: fixed
+	top: 0
+	left: 0
+	bottom: 0
+	right: 0
+	background: rgba(0, 0, 0, 0.5)
+	z-index: 9999 
+	&__block
+		position: absolute
+		top: 50%
+		left: 50%
+		-webkit-transform: translate(-50%, -50%) 
+		-moz-transform: translate(-50%, -50%) 
+		-ms-transform: translate(-50%, -50%) 
+		-o-transform: translate(-50%, -50%) 
+		transform: translate(-50%, -50%) 
+		background: #fff
+		+border-radius(7px)
+		padding: 50px
+		max-width: 300px 
+		text-align: center
+		width: 100%
+		&.is-ok
+			p
+				color: green  
+		&.is-error
+			p
+				color: red
+	&__close 
+		+s(p-close)
+		position: absolute
+		top: 15px
+		right: 15px
+	p
+		+light
+		font-size: 20px
+		
+		
