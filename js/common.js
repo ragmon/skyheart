@@ -229,6 +229,10 @@ head.ready(function() {
         $(this).parents('.js-add').addClass('is-active');
         return false;
     });
+    $('.js-contact-link').on('click', function() {
+        $(this).parents('.js-contact').addClass('is-active');
+        return false;
+    });
     $('.js-write-link').on('click', function() {
         $('.js-write').addClass('is-active');
         $(this).addClass('is-active');

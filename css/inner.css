@@ -1859,3 +1859,7 @@ body.is-error:before { content: ""; display: inline-block; vertical-align: middl
 
 .js-company-box, .js-person-box { display: none; }
 .js-company-box.is-active, .js-person-box.is-active { display: block; }
+
+.js-contact .js-contact-block { display: none; }
+.js-contact.is-active .js-contact-link { display: none; }
+.js-contact.is-active .js-contact-block { display: block; }
