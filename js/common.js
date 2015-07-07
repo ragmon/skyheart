@@ -424,5 +424,22 @@ head.ready(function() {
             event.stopPropagation();
         });
     });
+    //radio
+    $('.js-radio-block').each(function() {
+        $('.js-radio').change(function() {
+            if ($('.js-person-radio').is(':checked')) {
+                $('.js-person-box').addClass('is-active');
+            }
+            else {
+                $('.js-person-box').removeClass('is-active');
+            };
+            if ($('.js-company-radio').is(':checked')) {
+                $('.js-company-box').addClass('is-active');
+            }
+            else {
+                $('.js-company-box').removeClass('is-active');
+            };
+        });
+    });
 });
 
