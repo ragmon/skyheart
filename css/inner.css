@@ -1858,3 +1858,6 @@ body.is-error:before { content: ""; display: inline-block; vertical-align: middl
 .js-contact .js-contact-block { display: none; }
 .js-contact.is-active .js-contact-link { display: none; }
 .js-contact.is-active .js-contact-block { display: block; }
+
+.error__lines { color: red; padding: 0 0 10px; }
+.error__lines p { color: red; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 300; font-size: 13px; max-width: 480px; margin-bottom: 10px; }
