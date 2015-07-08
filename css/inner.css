@@ -1646,6 +1646,9 @@ a.is-star.is-active:after, a.is-star:hover:after { visibility: visible; filter: 
 @media only screen and (max-width: 980px) { .p-gallery__place { display: inline-block; } }
 .p-gallery__names span { display: inline-block; vertical-align: top; margin: 0 15px 10px 0; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 600; }
 .p-gallery__numbers li { margin-bottom: 2px; }
+.p-gallery__numbers ul { display: none; }
+.p-gallery__numbers.is-active ul { display: block; }
+.p-gallery__numbers.is-active .p-ads__link { display: none; }
 .p-gallery__banner { position: absolute; width: 195px; bottom: 25px; right: 25px; font-size: 0; }
 .p-gallery__banner img { width: 100%; }
 .p-gallery__slider { overflow: hidden; padding: 0 15px 0 0; }
