@@ -129,6 +129,10 @@ head.ready(function() {
         $('.p-feedback-btn').addClass('is-active');
         return false;
     });
+    $('.js-adblock-close').on('click', function() {
+        $('.js-adblock').addClass('is-hidden');
+        return false;
+    });
 
     $('.js-feedback-btn').on('click', function() {
         $('.js-feedback').addClass('is-active');

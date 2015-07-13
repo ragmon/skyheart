@@ -5729,3 +5729,46 @@ body
 		font-size: 13px
 		max-width: 480px
 		margin-bottom: 10px
+		
+.adblock
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	padding: 10px 40px 10px 20px
+	background: #28282A
+	z-index: 700
+	text-align: center
+	&.is-hidden
+		display: none
+	&__close
+		+opacity(0.4)
+		+s(close)
+		position: absolute
+		top: 20px
+		right: 20px
+		+transition(all 0.3s)
+		cursor: pointer
+		&:hover
+			+opacity(0.6)
+	p
+		+reg
+		font-size: 14px
+		color: #fff
+		line-height: 1.2
+		display: inline-block
+		padding: 10px 0 10px 50px 
+		position: relative
+		a
+			color: #fff
+			text-decoration: underline
+	.icon-adblock
+		position: absolute
+		top: 50%
+		left: 0
+		margin-top: -17px
+		background: url(../img/adblock.png) no-repeat
+		+cover
+		width: 35px
+		height: 35px 
+		 
