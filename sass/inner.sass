@@ -1915,6 +1915,7 @@ body
 				margin: 0
 		label
 			width: 100%
+			position: relative
 	&__center
 		width: 50%
 		margin: 0 auto
@@ -5772,3 +5773,75 @@ body
 		width: 35px
 		height: 35px 
 		 
+
+.comp__name
+	padding: 5px 0 
+	.creating__label
+		margin: 0
+		padding: 6px 10px
+		+r(700)
+			display: block
+	.set-btn
+		float: right
+		+r(700)
+			float: none
+		
+.comp__category
+	.creating__label
+		float: left
+		width: 140px
+.comp__cat
+	overflow: hidden
+	font-size: 0
+	+r(700)
+		overflow: visible
+		clear: both
+		padding: 5px 0 0 
+	li
+		display: inline-block
+		vertical-align: top
+		width: 33.3%
+		padding: 0 0 14px 
+		+r1
+			width: 50%
+.comp__file
+	width: 244px
+	margin: 0 auto
+	padding: 10px 0
+	text-align: center
+	.file
+		margin-bottom: 10px
+		
+.comp__description
+	width: 85%
+	margin: 0 auto 
+	+r(700)
+		width: 100%
+	.textarea
+		+border-radius(5px)
+
+.comp__title
+	font-size: 20px
+	color: #577DAA
+	+semi
+	line-height: 1.2
+	padding: 15px 0 0 
+	
+.comp__adds
+	padding: 20px 0 0 
+	
+.comp__cancel, .comp__submit
+	padding: 10px 0 0 
+	.btn
+		padding: 9px 15px
+		width: 117px
+		text-align: center
+.comp__cancel
+	text-align: right
+	+r(700)
+		text-align: center
+		margin: 0 0 -18px 
+.comp__submit
+	text-align: left
+	+r(700)
+		text-align: center

@@ -216,6 +216,10 @@ input.input-blue { -moz-border-radius: 3px; -webkit-border-radius: 3px; border-r
 .m-select__list li:first-child { border-top: none; }
 .m-select__list li:hover { background: #44709c; color: white; }
 
+.set-btn { font-size: 13px; color: white; text-transform: uppercase; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 400; background: #578ec6; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; padding: 5px 11px; display: inline-block; vertical-align: top; }
+.set-btn:hover { background: #6a9bcc; }
+.set-btn:active { background: #3b74af; }
+
 .l { *zoom: 1; }
 .l:after { content: " "; display: table; clear: both; }
 .l .l-col1 { float: left; width: 20%; }
