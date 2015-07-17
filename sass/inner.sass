@@ -5845,3 +5845,98 @@ body
 	text-align: left
 	+r(700)
 		text-align: center
+		
+.comp-popup
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	background: rgba(0, 0, 0, 0.5) 
+	padding: 10px 
+	z-index: 2000 
+	visibility: hidden
+	+opacity(0)
+	will-change: opacity
+	+transition(visibility 0.3s, opacity 0.3s)
+	&.is-active
+		visibility: visible
+		+opacity(1)
+	&__inner
+		+border-radius(7px)
+		padding: 20px
+		background: #fff
+		max-width: 500px  
+		position: absolute
+		top: 50%
+		left: 50%
+		-webkit-transform: translate(-50%, -50%) 
+		-moz-transform: translate(-50%, -50%) 
+		-ms-transform: translate(-50%, -50%) 
+		-o-transform: translate(-50%, -50%) 
+		transform: translate(-50%, -50%) 
+		width: 96%
+	&__text
+		padding: 15px 0 
+	h4
+		color: #555
+		font-size: 20px
+		text-align: center 
+		line-height: 1.2
+		margin-bottom: 10px
+	p
+		font-size: 14px
+		padding: 5px 0 
+		+light
+		color: #555 
+		line-height: 1.3
+	&__download
+		+clr
+		padding: 0 0 10px 
+		.btn
+			float: right
+	&__file
+		float: left
+		overflow: hidden
+		position: relative
+		font-size: 13px
+		color: #FFF
+		text-transform: uppercase
+		+reg
+		background: #578EC6
+		+border-radius(3px)
+		padding: 5px 11px
+		display: inline-block
+		vertical-align: top 
+		cursor: pointer
+		margin: 5px 0  
+		&:hover
+			background: lighten(#578EC6, 5%)
+		&:active
+			background: darken(#578EC6, 10%)
+		input
+			+opacity(0)
+			visibility: hidden
+			position: absolute
+			top: 0
+			bottom: 0
+			left: 0
+			right: 0
+	&__names
+		max-width: 80%
+		font-size: 0
+		span
+			display: block
+			font-size: 13px
+			color: #555
+			+light
+			padding: 2px 0 
+	&__close
+		+s(p-close)
+		position: absolute
+		top: 15px
+		right: 15px
+		+transition(all 0.3s)
+		cursor: pointer
+		&:hover
+			+opacity(0.8)

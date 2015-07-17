@@ -183,7 +183,7 @@
 										<span class="creating__label">Название компании:</span>
 										<div class="comp__name">
 											<span class="creating__label">ООО ЮАЭИР</span>
-											<button class="set-btn">Подтвердить подлинность</button>
+											<button class="set-btn js-comp-open">Подтвердить подлинность</button>
 										</div>
 									</div>		
 									<div class="res__contacts">
@@ -495,23 +495,7 @@
 								<img src="img/sidebar-banner.png" alt="">
 							</a>
 						</div>	
-					</div>		
-					<div class="sidebar__banners">
-						<div class="sidebar__slider cycle-slideshow"
-							data-cycle-fx="fade" 
-							data-cycle-timeout="4000"
-							data-cycle-slides=".banner">
-							<a href="#" class="banner">
-								<img src="img/sidebar-banner.png" alt="">
-							</a>
-							<a href="#" class="banner">
-								<img src="img/sidebar-banner.png" alt="">
-							</a>
-							<a href="#" class="banner">
-								<img src="img/sidebar-banner.png" alt="">
-							</a>
-						</div>	
-					</div>					
+					</div>				
 					<div class="interesting">
 						<div class="interesting__inner">
 							<div class="interesting__heading">ЭТО МОЖЕТ БЫТЬ ИНТИРЕСНО</div>
@@ -575,6 +559,33 @@
 	<button class="btn-up js-btn-up"></button>
 </div>
 <!-- END out-->
+
+<!-- begin comp-popup  -->
+<div class="comp-popup js-comp">
+	<div class="comp-popup__inner">
+		<i class="comp-popup__close js-comp-close"></i>
+		<div class="comp-popup__text">
+			<h4>Подтверждение регистрации дает множество преимуществ:</h4>
+			<p>1. Вакансии подтвержденных компаний помечаются значком.</p>
+			<p>2. Подтвержденным компаниям соискатели верят больше, а значит Вы получите больше резюме;</p>
+			<p>3. После того, как регистрация подтверждена, никто не сможет «подделать» вашу компанию и выдать себя за вас.</p>
+			<p>4. Получение дополнительных скидок на платные услуги.</p>
+		</div>
+		<div class="comp-popup__download">
+			<label class="comp-popup__file"><input type="file"><span>Загрузить файл</span></label>
+			<button class="btn">Отправить</button>
+		</div>
+		<div class="comp-popup__names">
+			<span>Название файла</span>
+			<span>Название файла</span>
+			<span>Название файла</span>
+			<span>Название файла</span>
+			<span>Название файла</span>
+		</div>
+	</div>
+</div>
+<!-- end comp-popup -->
+
 <!-- load scripts -->
 <script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
 </body>

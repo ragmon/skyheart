@@ -449,5 +449,22 @@ head.ready(function() {
             };
         });
     });
+    //comp resume
+    $('.js-comp-open').on('click', function() {
+        $('.js-comp').addClass('is-active');
+        return false;
+    });
+    $('.js-comp-close').on('click', function() {
+        $('.js-comp').removeClass('is-active');
+        return false;
+    });
+    $('.js-comp').each(function() {
+        $('body').on('click', function() {
+            $('.js-comp').removeClass('is-active');
+        });
+        $('.comp-popup__inner').on('click', function(event) {
+            event.stopPropagation();
+        });
+    });
 });
 
