@@ -1927,3 +1927,13 @@ body.is-error:before { content: ""; display: inline-block; vertical-align: middl
 .comp-popup__names span { display: block; font-size: 13px; color: #555555; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 300; padding: 2px 0; }
 .comp-popup__close { background: url('../img/icons-s5cb1c6fe6f.png') 0 -1622px no-repeat; width: 13px; height: 13px; position: absolute; top: 15px; right: 15px; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; cursor: pointer; }
 .comp-popup__close:hover { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80); opacity: 0.8; }
+
+.terms { padding: 40px 15px; *zoom: 1; max-width: 954px; margin: 0 auto; }
+.terms:after { content: " "; display: table; clear: both; }
+.terms__section { padding: 10px 0; }
+.terms h2 { font-size: 16px; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 400; margin: 0 0 15px; text-align: center; }
+.terms h3 { font-size: 14px; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 600; margin: 0 0 15px; text-align: center; }
+.terms p { font-size: 14px; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 400; margin: 0 0 15px; }
+.terms a { color: #0000ee; text-decoration: underline; }
+.terms a:hover { text-decoration: none; }
+.terms span { color: red; }
