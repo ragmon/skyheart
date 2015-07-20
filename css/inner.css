@@ -266,9 +266,9 @@ input.input-blue { -moz-border-radius: 3px; -webkit-border-radius: 3px; border-r
 .l .l-col1 { float: left; width: 20%; }
 .l .l-col2 { float: right; width: 70%; }
 
-body.is-transition .header__inner { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; visibility: hidden; -moz-transition: opacity 0.4s, visibility 0.4s; -o-transition: opacity 0.4s, visibility 0.4s; -webkit-transition: opacity 0.4s, visibility 0.4s; transition: opacity 0.4s, visibility 0.4s; }
+body.is-transition .header__inner { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; visibility: hidden; }
 body.is-fixed { padding: 100px 0 0; }
-body.is-fixed .header__inner { position: fixed; top: 0; left: 0; right: 0; z-index: 650; background: rgba(19, 40, 88, 0.83); max-width: 100%; padding: 0; filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false); opacity: 1; visibility: visible; }
+body.is-fixed .header__inner { position: fixed; top: 0; left: 0; right: 0; z-index: 650; background: rgba(19, 40, 88, 0.83); max-width: 100%; padding: 0; filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false); opacity: 1; visibility: visible; -moz-transition: opacity 0.4s, visibility 0.4s; -o-transition: opacity 0.4s, visibility 0.4s; -webkit-transition: opacity 0.4s, visibility 0.4s; transition: opacity 0.4s, visibility 0.4s; }
 body.is-fixed .profile__message span { color: white; }
 body.is-fixed .header__menu { max-width: 1074px; margin: 0 auto; padding: 10px 14px 10px; }
 

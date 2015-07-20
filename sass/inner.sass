@@ -9,7 +9,6 @@ body
 		.header__inner
 			+opacity(0)
 			visibility: hidden
-			+transition(opacity 0.4s, visibility 0.4s)
 	&.is-fixed
 		padding: 100px 0 0
 		.header__inner
@@ -23,6 +22,7 @@ body
 			padding: 0
 			+opacity(1)
 			visibility: visible
+			+transition(opacity 0.4s, visibility 0.4s)
 		.profile__message
 			span
 				color: #fff
