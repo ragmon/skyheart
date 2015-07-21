@@ -292,7 +292,7 @@ body.is-fixed .header__menu { max-width: 1074px; margin: 0 auto; padding: 10px 1
 
 .js-wrap { min-height: 100px; }
 
-.slider { padding: 0 64px; }
+.slider { padding: 0 64px; display: none; }
 .slider.is-hidden { display: none; }
 .slider__inner { max-width: 1395px; margin: 0 auto; }
 .slider__item { width: 100%; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat; background-position: center top; height: 510px; }
