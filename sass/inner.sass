@@ -3814,7 +3814,7 @@ a
 		line-height: 1
 		+reg
 	&__hot
-		display: inline-block
+		display: block
 		padding: 5px 0 5px
 		+r1
 			clear: both
@@ -3898,8 +3898,9 @@ a
 			-ms-text-overflow: ellipsis
 			text-overflow: ellipsis
 			white-space: nowrap
+			width: 33%
 			+r1
-				padding: 5px 8px 5px 0
+				padding: 5px 8px 5px 8px
 			&.is-place, &.is-date
 				// padding: 5px 10px 5px 25px
 				// +r1
@@ -3911,15 +3912,33 @@ a
 				// 	left: 0
 			&.is-name
 				max-width: 100px
+				text-align: left
+				+r1
+					text-align: center
+					max-width: 33%
 				+r(500)
 					display: none
 			&.is-place
 				max-width: 127px
+				text-align: center
+				+r1
+					text-align: center
+					max-width: 33%
+				+r(500)
+					min-width: 50%
+					width: 50%
 				// &:before
 				// 	top: 4px
 				// 	+s(pin)
 			&.is-date
 				max-width: 141px
+				text-align: right
+				+r1
+					text-align: center
+					max-width: 33%
+				+r(500)
+					min-width: 50%
+					width: 50%
 				// &:before
 				// 	top: 5px
 				// 	+s(settings-blue)
@@ -5055,6 +5074,7 @@ a
 	&__top
 		+clr
 		margin: -2px 0 0
+		min-height: 27px 
 	&__title
 		color: #46778D
 		font-size: 16px
