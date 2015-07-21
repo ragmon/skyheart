@@ -403,9 +403,10 @@ body.is-fixed .header__menu { max-width: 1074px; margin: 0 auto; padding: 10px 1
 .footer__text:after { content: " "; display: table; clear: both; }
 .footer p { font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 400; font-size: 12.6px; color: white; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=35); opacity: 0.35; float: left; }
 @media only screen and (max-width: 600px) { .footer p { float: none; margin-bottom: 10px; } }
-.footer__feedback { float: right; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 400; font-size: 12.6px; color: white; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=35); opacity: 0.35; }
-@media only screen and (max-width: 600px) { .footer__feedback { float: none; display: inline-block; } }
-.footer__feedback:hover { text-decoration: underline; }
+.footer__feedback, .footer__rules { float: right; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 400; font-size: 12.6px; color: white; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=35); opacity: 0.35; }
+@media only screen and (max-width: 600px) { .footer__feedback, .footer__rules { float: none; display: inline-block; } }
+.footer__feedback:hover, .footer__rules:hover { text-decoration: underline; }
+.footer__rules { margin: 0 10px; }
 
 .btn-up { background: url('../img/icons-s5cb1c6fe6f.png') 0 -266px no-repeat; width: 76px; height: 77px; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; position: fixed; bottom: 0; left: 20px; z-index: 200; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; }
 .btn-up.is-active { visibility: visible; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=73); opacity: 0.73; bottom: 30px; }
