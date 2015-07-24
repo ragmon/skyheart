@@ -952,9 +952,12 @@ body.is-fixed .header__menu { max-width: 1074px; margin: 0 auto; padding: 10px 1
 .info__text h5 { font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 700; }
 .info__text p { font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 300; }
 .info__text h5, .info__text p { font-size: 13px; line-height: 1.33; color: #555555; margin-bottom: 5px; }
+.info h5 { font-size: 13px; line-height: 1.33; color: #555555; margin-bottom: 5px; }
+.info h5 a { color: #555555; }
+.info h5 a:hover { text-decoration: underline; }
 .info__comments { position: relative; padding: 0 20px 0 15px; }
 @media only screen and (max-width: 980px) { .info__comments { padding: 0 20px 0 0; } }
-.info__btns { position: absolute; top: 0; bottom: 0; right: 0; width: 20px; }
+.info__btns { position: absolute; top: 0; bottom: 0; right: 0; width: 20px; display: none; }
 .info__btn { position: absolute; left: 0; background: #4c8299; width: 20px; height: 20px; }
 .info__btn:before { content: ""; position: absolute; left: 50%; margin-left: -4px; }
 .info__btn.is-up { top: 0; }
