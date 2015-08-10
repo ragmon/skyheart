@@ -4631,8 +4631,9 @@ a
 	&__section
 		padding: 0 35px
 		position: relative
+		+clr
 		+r1
-			padding: 0 30px
+			padding: 0 20px
 	&__socials
 		padding: 0 35px 5px
 		border-top: 1px solid #85a2bf
@@ -4646,7 +4647,7 @@ a
 			display: inline-block
 			vertical-align: middle
 			a
-				color: #555
+				color: #44709c
 				font-size: 13px
 				+reg
 	&__top
@@ -4654,13 +4655,15 @@ a
 		font-size: 0
 		+clr
 		margin-bottom: 15px
+		+r1
+			margin-bottom: 0
 		.trade
 			display: inline-block
 			vertical-align: top
 			margin: 0 15px 0 0
 	&__title
-		font-size: 18px
-		padding: 3px 0
+		font-size: 22px
+		padding: 1px 0
 		+semi
 		color: #44709C
 		display: inline-block
@@ -4668,7 +4671,7 @@ a
 		line-height: 1.2
 		+r1
 			display: block
-			padding: 5px 0
+			padding: 10px 0
 		a
 			color: #44709C
 	.is-star
@@ -4700,6 +4703,7 @@ a
 		padding: 4px 0 0
 		+r1
 			text-align: center
+			margin-bottom: 0
 	&__place
 		font-size: 15px
 		color: #555
@@ -4709,7 +4713,7 @@ a
 		background: url(../img/icons/pin.png) no-repeat center left
 		margin-bottom: 15px
 		+r1
-			display: inline-block
+			text-align: left
 	&__photo
 		width: 290px
 		float: left
@@ -4875,6 +4879,9 @@ a
 		float: left
 		+r1
 			float: none
+	&__form
+		+r(700)
+			padding: 15px 0 0
 .p-pages
 	+clr
 	padding: 23px 0
@@ -5680,6 +5687,8 @@ body
 	right: 0
 	background: rgba(0, 0, 0, 0.5)
 	z-index: 9999
+	&.is-hidden
+		display: none
 	&__block
 		position: absolute
 		top: 50%
@@ -5706,6 +5715,7 @@ body
 		position: absolute
 		top: 15px
 		right: 15px
+		cursor: pointer
 	p
 		+light
 		font-size: 20px
@@ -6035,3 +6045,144 @@ body
 			text-decoration: none
 	span
 		color: red
+
+.ads-new
+	&__header
+		padding: 8px 65px 10px 25px
+		background: #44709c
+		position: relative
+		+r1
+			padding: 8px 55px 10px 20px
+		h3
+			font-size: 22px
+			+semi
+			color: #fff
+			line-height: 1.2
+		.is-star
+			position: absolute
+			top: 12px
+			right: 24px
+	&__price
+		float: right
+		+reg
+		color: #555
+		+clr
+		+r1
+			float: none
+		small
+			font-size: 15px
+			display: inline-block
+			vertical-align: middle
+			+r1
+				float: left
+				max-width: 50%
+		span
+			font-size: 22px
+			text-transform: uppercase
+			display: inline-block
+			vertical-align: middle
+			margin-left: 35px
+			+r1
+				float: right
+				max-width: 50%
+	&__heading
+		font-size: 18px
+		color: #fff
+		+semi
+		display: block
+		padding: 5px 35px 5px 70px
+		background: #44709c
+		position: relative
+		margin-bottom: 15px
+		+r1
+			font-size: 15px
+			padding: 7px 15px 7px 50px
+		i
+			position: absolute
+			top: 0
+			height: 35px
+			left: 35px
+			width: 35px
+			+vertical
+			text-align: left
+			+r1
+				left: 20px
+
+			&:after
+				display: inline-block
+				vertical-align: middle
+				content: ""
+			&.is-descript
+				&:after
+					+s(ads-descript)
+			&.is-contacts
+				&:after
+					+s(ads-contacts)
+	&__info
+		float: left
+		max-width: 235px
+		width: 100%
+		padding: 0 0 15px
+		+r(700)
+			float: none
+			margin: 0 auto
+			max-width: 180px
+			padding: 0
+		span
+			display: block
+			font-size: 12px
+			color: #555
+			line-height: 20px
+		div
+			padding: 5px 0 5px 28px
+			position: relative
+			&:before
+				position: absolute
+				content: ""
+			&.is-name
+				&:before
+					+s(ads-name)
+					left: 1px
+					top: 7px
+			&.is-mail
+				&:before
+					+s(ads-mail)
+					left: 2px
+					top: 11px
+			&.is-skype
+				&:before
+					+s(ads-skype)
+					left: 1px
+					top: 7px
+			&.is-phone
+				&:before
+					+s(ads-phone)
+					left: 2px
+					top: 7px
+	&__contacts
+		float: right
+		max-width: 180px
+		padding: 0 0 30px
+		+r(700)
+			float: none
+			margin: 0 auto
+			max-width: 180px
+		&.is-active
+			display: none
+	&__mail
+		span
+			display: block
+			position: relative
+			font-size: 12px
+			color: #555
+			line-height: 20px
+			margin-bottom: 5px
+			&:before
+				position: absolute
+				content: ""
+			&.is-company
+				padding: 5px 0 5px 33px
+				&:before
+					top: 6px
+					left: 0
+					+s(ads-company)

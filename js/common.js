@@ -243,6 +243,7 @@ head.ready(function() {
     });
     $('.js-write-link').on('click', function() {
         $('.js-write').addClass('is-active');
+        $(this).parents('.js-write-parent').addClass('is-active');
         $(this).addClass('is-active');
         return false;
     });
@@ -470,5 +471,6 @@ head.ready(function() {
             event.stopPropagation();
         });
     });
+
 });
 
