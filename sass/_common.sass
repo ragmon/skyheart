@@ -34,11 +34,11 @@
 //     @each $s in a,b,c
 // 	    	#{$s}
 //				display: none
-// ## fonts 
+// ## fonts
 // Save fonts to /css/fonts, after that write (eot, woff, ttf):
-// +font(book, cytiapro-black-webfont)  
+// +font(book, cytiapro-black-webfont)
 // =book
-// 	font-family: "book", Arial, sans-serif 
+// 	font-family: "book", Arial, sans-serif
 // insert pics into css
 // div
 // 	+pic("blabla.png")
@@ -51,12 +51,14 @@
 		@content
 
 body
-	font-family: Arial, sans-serif 
-	font-size: 12px 
+	font-family: Arial, sans-serif
+	font-size: 12px
 	line-height: 1.4
+	min-width: 320px
+	position: relative
 
 .out
-	min-width: 320px 
+	min-width: 320px
 
 // fonts
 
@@ -90,20 +92,20 @@ body
 =exbold
 	+ff
 	font-weight: 800
-	
+
 
 //reset
 h1, h2, h3, h4, h5 ,h6
 	font-weight: normal
 a
 	text-decoration: none
-	
+
 .title-h2
 	+reg
 	font-size: 26px
 	line-height: 1
 	color: #000
-		
+
 .title-h3
 	+reg
 	font-size: 20px
@@ -128,7 +130,7 @@ a
 	display: block
 	padding: 0 29px 0 15px
 	height: 41px
-	z-index: 2 
+	z-index: 2
 	line-height: 41px
 	white-space: nowrap
 	overflow: hidden
@@ -157,20 +159,20 @@ a
 		right: 0
 		width: auto
 	li
-		border-top: 1px solid #365a7d 
+		border-top: 1px solid #365a7d
 		padding: 7px 24px
 		cursor: pointer
 		+light
 		font-size: 12.55px
 		text-align: left
 		+r1
-			text-align: center 
-			padding: 7px 0 
+			text-align: center
+			padding: 7px 0
 		&:first-child
 			border-top: none
 		&:hover
 			background: #365a7d
-			color: #fff 
+			color: #fff
 .select
 	position: relative
 	cursor: pointer
@@ -194,11 +196,11 @@ a
 	text-overflow: ellipsis
 	background-color: #CBD6D3
 	padding: 0 10px
-	+box 
+	+box
 	+border-radius(5px)
 	height: 39px
 	line-height: 39px
-	z-index: 2 
+	z-index: 2
 	&:after
 		content: ""
 		position: absolute
@@ -219,8 +221,8 @@ a
 	overflow-y: auto
 	+box-shadow(0 4px 6px rgba(0, 1, 2, 0.75))
 	+border-radius(0 0 5px 5px)
-	background: #CBD6D3 
-	max-height: 300px 
+	background: #CBD6D3
+	max-height: 300px
 	li
 		padding: 6px 10px
 		cursor: pointer
@@ -230,7 +232,7 @@ a
 			border-top: none
 		&:hover
 			background: #365a7d
-			color: #fff 
+			color: #fff
 //n-select
 .n-select
 	position: relative
@@ -258,21 +260,21 @@ a
 	text-overflow: ellipsis
 	background-color: #fff
 	padding: 0 32px 0 10px
-	+box 
+	+box
 	+border-radius(3px)
 	border: 1px solid #44709C
 	height: 27px
 	line-height: 25px
-	z-index: 2 
+	z-index: 2
 	&:before, &:after
-		content: "" 
+		content: ""
 		position: absolute
 	&:before
 		top: 0
 		right: 0
 		bottom: 0
 		width: 23px
-		background: #44709C 
+		background: #44709C
 	&:after
 		right: 7px
 		top: 50%
@@ -289,19 +291,19 @@ a
 	border: 1px solid #44709C
 	border-top: none
 	+border-radius(0 0 3px 3px)
-	background: #fff 
+	background: #fff
 	li
 		padding: 6px 10px
 		cursor: pointer
 		line-height: 1
 		text-align: left
-		color: #000 
+		color: #000
 		&:first-child
 			border-top: none
 		&:hover
 			background: #44709C
-			color: #fff 
-//n-select end	
+			color: #fff
+//n-select end
 //v-select
 .v-select
 	position: relative
@@ -326,13 +328,13 @@ a
 	text-overflow: ellipsis
 	background-color: #fff
 	padding: 0 24px 0 7px
-	+box 
+	+box
 	border: 1px solid #577DAA
 	height: 20px
 	line-height: 18px
-	z-index: 2 
+	z-index: 2
 	&:after
-		content: "" 
+		content: ""
 		position: absolute
 		right: 7px
 		top: 50%
@@ -348,22 +350,22 @@ a
 	overflow: hidden
 	border: 1px solid #577DAA
 	border-top: none
-	background: #fff 
+	background: #fff
 	li
 		padding: 3px 10px
 		cursor: pointer
 		line-height: 1
 		text-align: left
-		color: #000 
+		color: #000
 		&:first-child
 			border-top: none
 		&:hover
 			background: #577DAA
-			color: #fff 
-//v-select end			
+			color: #fff
+//v-select end
 .radio
 	padding: 0 0 0 28px
-	display: inline-block 
+	display: inline-block
 	vertical-align: top
 	position: relative
 	cursor: pointer
@@ -381,9 +383,9 @@ a
 	span
 		+reg
 		font-size: 12.54px
-		color: #555 
+		color: #555
 		&:before, &:after
-			content: "" 
+			content: ""
 			position: absolute
 			+border-radius(50%)
 		&:before
@@ -404,7 +406,7 @@ a
 			+transition(all 0.3s)
 .checkbox
 	padding: 0 0 0 25px
-	display: inline-block 
+	display: inline-block
 	vertical-align: top
 	position: relative
 	cursor: pointer
@@ -421,9 +423,9 @@ a
 	span
 		+reg
 		font-size: 12.54px
-		color: #555 
+		color: #555
 		&:before, &:after
-			content: "" 
+			content: ""
 			position: absolute
 		&:before
 			top: 0
@@ -446,11 +448,11 @@ a
 input.input
 	background-color: #CBD6D3
 	width: 100%
-	padding: 10px 
+	padding: 10px
 	color: #6587AF
 	+light
 	font-size: 14px
-	+box 
+	+box
 	+border-radius(5px)
 	&_white
 		background: #fff
@@ -460,16 +462,16 @@ input.input
 textarea.textarea
 	background-color: #CBD6D3
 	width: 100%
-	padding: 11px 
+	padding: 11px
 	color: #6587AF
 	+light
 	font-size: 14px
-	+box 
+	+box
 	border: none
 	resize: none
 	height: 225px
 	&_white
-		background: #fff 
+		background: #fff
 	&_black
 		color: #555
 		+placeholder-color(#555)
@@ -477,13 +479,13 @@ textarea.textarea
 	+s(btn-repeat)
 	display: inline-block
 	vertical-align: top
-	
+
 .btn
 	+reg
 	font-size: 13px
 	color: #fff
 	text-transform: uppercase
-	+border-radius(5px) 
+	+border-radius(5px)
 	background-color: #2D4164
 	padding: 11px 15px
 	position: relative
@@ -496,20 +498,20 @@ textarea.textarea
 		+opacity(1)
 	&_blue
 		background-color: #578EC6
-		
+
 .tooltip
 	position: absolute
 	bottom: 100%
 	right: 100%
 	margin: 0 -26px 10px 0
 	width: 260px
-	padding: 10px 12px 
-	background: rgba(45, 94, 143, 0.89)	
+	padding: 10px 12px
+	background: rgba(45, 94, 143, 0.89)
 	+opacity(0)
 	visibility: hidden
 	+transition(all 0.4s)
 	&:after
-		content: "" 
+		content: ""
 		position: absolute
 		top: 100%
 		right: 13px
@@ -527,30 +529,30 @@ textarea.textarea
 .stars
 	font-size: 0
 	a
-		+s(star) 
+		+s(star)
 		display: inline-block
 		vertical-align: top
 		margin: 0 2px
 		+r(700)
-			margin: 0 0 0 1px 
+			margin: 0 0 0 1px
 
 .trade
 	display: inline-block
 	vertical-align: top
 	+semi
 	font-size: 12px
-	padding: 5px 12px 5px 42px 
+	padding: 5px 12px 5px 42px
 	+border-radius(3px)
 	position: relative
 	&:before
-		content: "" 
+		content: ""
 		position: absolute
 		top: 4px
 		+transition(all 0.2s)
 	&:active
 		top: 1px
 	&_sell
-		color: #581c2c 
+		color: #581c2c
 		border: 1px solid #581C2C
 		&:hover, &:active
 			&:before
@@ -567,25 +569,25 @@ textarea.textarea
 		&:before
 			+s(buy)
 			left: 15px
-		
+
 .btn-answer
 	+reg
 	border: 1px solid #224271
-	color: #224271 
+	color: #224271
 	font-size: 12px
 	text-transform: uppercase
 	padding: 10px 20px
-	background: none 
+	background: none
 	text-align: center
 	+transition(all 0.3s)
 	position: relative
 	+box
 	&:hover, &:active
-		background: #224271 
+		background: #224271
 		color: #fff
 	&:active
 		top: 1px
-	
+
 
 //NEW
 input.input-blue
@@ -595,9 +597,9 @@ input.input-blue
 	border: 1px solid #44709C
 	color: #555
 	font-size: 12px
-	+light 
-	padding: 4px 10px 
-	
+	+light
+	padding: 4px 10px
+
 .btn-file
 	display: inline-block
 	vertical-align: top
@@ -607,18 +609,18 @@ input.input-blue
 	input
 		+opacity(0)
 		visibility: hidden
-		
+
 //datepick
 .ui-datepicker
 	+box-shadow(0 3px 6px rgba(20, 45, 96, 0.75))
 	+border-radius(5px)
-	background: rgba(61, 88, 136, 0.74) 
+	background: rgba(61, 88, 136, 0.74)
 	padding: 15px 15px 13px
-	+box 
-	margin: 10px 0 
+	+box
+	margin: 10px 0
 	position: absolute
 	display: none
-	z-index: 900 !important 
+	z-index: 900 !important
 	&-calendar
 		border: 2px solid #1e2b42
 		background-color: #4E7FB1
@@ -630,24 +632,24 @@ input.input-blue
 			+reg
 			font-size: 12px
 			color: #fff
-			text-transform: uppercase 
+			text-transform: uppercase
 		td
 			border: 1px solid #1e2b42
 			width: 31px
 			line-height: 31px
-			text-align: center 
+			text-align: center
 			a
 				width: 31px
 				line-height: 31px
-				text-align: center 
+				text-align: center
 				+reg
 				font-size: 12px
 				color: #fff
 				display: block
 				&:hover, &.ui-state-active
 					background: #fff
-					color: #44709C 
-			&.ui-datepicker-week-end 
+					color: #44709C
+			&.ui-datepicker-week-end
 				a
 					color: #EB7D29
 	&-header
@@ -659,12 +661,12 @@ input.input-blue
 	select
 		background-color: #fff
 		padding: 0 8px
-		+box 
+		+box
 		// +border-radius(3px)
 		border: 1px solid #44709C
 		height: 27px
 		line-height: 25px
-		margin: 0 5px 
+		margin: 0 5px
 		&.ui-datepicker-month
 			width: 87px
 		&.ui-datepicker-year
@@ -678,17 +680,17 @@ input.input-blue
 		margin-top: -9px
 	&-prev
 		background: url(../img/icons/s-prev.png) no-repeat center center
-		-webkit-background-size: contain 
-		-o-background-size: contain 
-		background-size: contain  
+		-webkit-background-size: contain
+		-o-background-size: contain
+		background-size: contain
 		left: 0
 	&-next
 		background: url(../img/icons/s-next.png) no-repeat center center
-		-webkit-background-size: contain 
-		-o-background-size: contain 
-		background-size: contain  
+		-webkit-background-size: contain
+		-o-background-size: contain
+		background-size: contain
 		right: 0
-	
+
 .btn-mail
 	font-size: 12px
 	color: #fff
@@ -698,7 +700,7 @@ input.input-blue
 	line-height: 31px
 	padding: 0 13px 0 42px
 	display: inline-block
-	position: relative 
+	position: relative
 	&:before
 		position: absolute
 		top: 50%
@@ -708,7 +710,7 @@ input.input-blue
 		content: ""
 	&:active
 		top: 1px
-		
+
 .p-input
 	+box-shadow(inset 0 2px 4px rgba(79, 102, 124, 0.75))
 	background-color: #CBD6D3
@@ -718,7 +720,7 @@ input.input-blue
 	+placeholder-color(#6587AF)
 	padding: 12px 17px 11px
 	width: 100%
-	+box 
+	+box
 	display: block
 .p-textarea
 	+box-shadow(inset 0 2px 4px rgba(79, 102, 124, 0.75))
@@ -729,10 +731,10 @@ input.input-blue
 	+placeholder-color(#6587AF)
 	padding: 12px 17px 11px
 	width: 100%
-	+box 
+	+box
 	height: 180px
 	resize: none
-	
+
 	display: block
 .p-btn
 	color: #fff
@@ -772,16 +774,16 @@ input.input-blue
 	padding: 10px 10px 10px 37px
 	position: relative
 	overflow: hidden
-	+g(#5A88B7, #1E3C72) 
+	+g(#5A88B7, #1E3C72)
 	&:active
-		+g(#1E3C72, #5A88B7) 
-	&:before 
-		content: "" 
+		+g(#1E3C72, #5A88B7)
+	&:before
+		content: ""
 		position: absolute
 		left: 0
 		bottom: -3px
 		+s(megaphone)
-		
+
 .button
 	display: inline-block
 	vertical-align: middle
@@ -791,7 +793,7 @@ input.input-blue
 	padding: 7px 9px 8px
 	color: #fff
 	background-color: #44709C
-	+border-radius(3px)  
+	+border-radius(3px)
 	position: relative
 	&:hover
 		+opacity(0.8)
@@ -808,7 +810,7 @@ input.input-blue
 	+border-radius(3px)
 	background-color: #44709C
 	line-height: 20px
-	padding: 0 6px  
+	padding: 0 6px
 	position: relative
 	&:hover
 		+opacity(0.8)
@@ -832,24 +834,24 @@ input.input-blue
 	text-overflow: ellipsis
 	background-color: #fff
 	padding: 0 32px 0 10px
-	+box 
+	+box
 	+border-radius(3px)
 	border: 1px solid #44709C
 	height: 27px
 	line-height: 25px
-	z-index: 2 
+	z-index: 2
 	width: 115px
 	text-align: center
 	cursor: pointer
 	&:before, &:after
-		content: "" 
+		content: ""
 		position: absolute
 	&:before
 		top: 0
 		right: 0
 		bottom: 0
 		width: 23px
-		background: #44709C 
+		background: #44709C
 	&:after
 		right: 7px
 		top: 50%
@@ -859,7 +861,7 @@ input.input-blue
 	padding: 6px 25px
 	line-height: 1
 	text-align: left
-	color: #555 
+	color: #555
 	display: block
 	+semi
 	font-size: 10px
@@ -869,13 +871,13 @@ input.input-blue
 		top: 50%
 		left: 7px
 		height: 1px
-		content: "" 
+		content: ""
 		background: #555
-		width: 5px 
+		width: 5px
 	&.js-select-li
 		cursor: pointer
 		&:hover
-			background: #fff 
+			background: #fff
 .m-select__list
 	position: absolute
 	display: none
@@ -885,7 +887,7 @@ input.input-blue
 	top: 100%
 	z-index: 200
 	overflow: auto
-	max-height: 250px 
+	max-height: 250px
 	margin-top: 10px
 	+box-shadow(0 3px 6px rgba(20, 45, 96, 0.75))
 	background-color: #fff
@@ -894,14 +896,14 @@ input.input-blue
 		cursor: pointer
 		line-height: 1
 		text-align: left
-		color: #555 
+		color: #555
 		font-size: 10px
 		cursor: pointer
 		&:first-child
 			border-top: none
 		&:hover
 			background: #44709C
-			color: #fff 
+			color: #fff
 
 
 .set-btn
@@ -913,7 +915,7 @@ input.input-blue
 	+border-radius(3px)
 	padding: 5px 11px
 	display: inline-block
-	vertical-align: top 
+	vertical-align: top
 	position: relative
 	cursor: pointer
 	&:hover
