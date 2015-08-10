@@ -233,6 +233,10 @@ head.ready(function() {
         $(this).parents('.js-add').addClass('is-active');
         return false;
     });
+    $('.js-add-delete').on('click', function() {
+        $(this).parents('.js-add').removeClass('is-active');
+        return false;
+    });
     $('.js-contact-link').on('click', function() {
         $(this).parents('.js-contact').addClass('is-active');
         return false;
