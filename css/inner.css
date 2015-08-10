@@ -1392,7 +1392,7 @@ a.is-star.is-active:after, a.is-star:hover:after { visibility: visible; filter: 
 
 .s-category { -moz-box-shadow: 0 3px 6px rgba(20, 45, 96, 0.75); -webkit-box-shadow: 0 3px 6px rgba(20, 45, 96, 0.75); box-shadow: 0 3px 6px rgba(20, 45, 96, 0.75); background: #fff; margin-bottom: 10px; }
 .s-category__heading { line-height: 55px; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 400; font-size: 20px; color: #fff; padding: 0 20px; text-transform: uppercase; background-color: #44709C; text-align: center; }
-.s-category__title { font-size: 18px; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 600; color: #555; padding: 3px 10px 3px 30px; position: relative; display: block; }
+.s-category__title { font-size: 16px; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 600; color: #555; padding: 3px 10px 3px 30px; position: relative; display: block; }
 .s-category__title:hover { background-color: #CEEBEF; }
 .s-category__title:before, .s-category__title:after { position: absolute; top: 50%; background: #555; content: ""; }
 .s-category__title:before { left: 10px; width: 10px; margin-top: -2px; height: 2px; }
@@ -1400,7 +1400,7 @@ a.is-star.is-active:after, a.is-star:hover:after { visibility: visible; filter: 
 .s-category__title.is-active:after { display: none; }
 .s-category ul { background: #CEEBEF; }
 .s-category ul.is-mod li a.is-active { background-color: #91CED6; }
-.s-category li a { font-size: 18px; color: #555; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 400; padding: 3px 10px 3px 35px; display: block; }
+.s-category li a { font-size: 14px; color: #555; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 400; padding: 3px 10px 3px 35px; display: block; }
 .s-category li a:hover { text-decoration: underline; }
 .s-category li a.is-active { background: #f9a2a8; }
 
