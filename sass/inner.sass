@@ -4880,6 +4880,7 @@ a
 		+r1
 			float: none
 	&__form
+		clear: both
 		+r(700)
 			padding: 15px 0 0
 .p-pages
@@ -6128,10 +6129,13 @@ body
 			margin: 0 auto
 			max-width: 180px
 			padding: 0
-		span
+		span, li
 			display: block
 			font-size: 12px
 			color: #555
+			line-height: 20px
+		a
+			font-size: 12px
 			line-height: 20px
 		div
 			padding: 5px 0 5px 28px
@@ -6159,6 +6163,11 @@ body
 					+s(ads-phone)
 					left: 2px
 					top: 7px
+				ul
+					display: none
+				&.is-active
+					ul
+						display: block
 	&__contacts
 		float: right
 		max-width: 180px
