@@ -6246,6 +6246,7 @@ body
 .chat-block
 	padding: 11px
 	background: #e8e8e8
+	+box-shadow(0 3px 6px rgba(20, 45, 96, 0.75))
 
 .cr
 	&__heading
@@ -6673,12 +6674,13 @@ body
 	transform: translateX(-50%)
 	width: 90%
 	max-width: 480px
-	+border-radius(5px)
+	+border-radius(6px)
 	overflow: hidden
 	z-index: 100
 	visibility: hidden
 	+opacity(0)
 	+transition(opacity 0.4s, visibility 0.4s)
+	+box-shadow(0 3px 6px rgba(20, 45, 96, 0.75))
 	&.is-active
 		visibility: visible
 		+opacity(1)
