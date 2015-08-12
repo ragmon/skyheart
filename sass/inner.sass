@@ -1377,8 +1377,8 @@ body
 		font-size: 20px
 		color: #fff
 		text-transform: uppercase
-		height: 55px
-		line-height: 55px
+		height: 44px
+		line-height: 44px
 		padding: 0 20px
 		text-align: center
 		&:before
@@ -4377,6 +4377,7 @@ a
 .v-filter
 	padding: 10px 5px
 	background: #dbe2f4
+	font-size: 0
 	&__label, .v-select
 		display: inline-block
 		vertical-align: middle
@@ -6857,3 +6858,272 @@ body
 			right: 10px
 		&.is-active
 			+s(chat-room-star-active)
+
+//resume
+.r-create
+	+box-shadow(0 3px 6px rgba(20, 45, 96, 0.75))
+	&__header
+		position: relative
+		padding: 0 35px 0 75px
+		font-size: 18px
+		+semi
+		color: #FEFEFE
+		line-height: 38px
+		background-color: #44709C
+		+r1
+			padding: 0 10px 0 50px 
+		i
+			position: absolute
+			top: 50%
+			left: 35px
+			margin-top: -10px
+			+s(resume-header)
+			+r1
+				left: 15px
+		span
+			display: block
+			overflow: hidden
+	&__body
+		text-align: center
+		padding: 60px 35px 41px 
+		p
+			font-size: 15px
+			color: #44709C
+			+semi
+			line-height: 22px
+			margin-bottom: 27px
+			+r1
+				margin-bottom: 10px
+		i
+			+s(resume-body)
+			display: block
+			margin: 0 auto 34px
+	&__list
+		padding: 8px 0 0 
+	&__btn
+		font-size: 12px
+		color: #FFF
+		text-transform: uppercase
+		+semi
+		border: 2px solid #375B7E
+		background-color: #577DAA		
+		padding: 6px 9px 5px
+		float: right
+		margin: 3px 0 
+		&:hover
+			background: lighten(#577DAA, 5%) 
+		&:active
+			background: darken(#577DAA, 5%) 
+
+
+.resume-item
+	padding: 10px 35px 0 
+	border: 1px solid #577DAA
+	+r1
+		padding: 10px 30px 0 
+	&__top
+		position: relative
+		padding: 0 35px 0 0
+	&__icon
+		position: absolute
+		+s(resume-item-icon)
+		top: 2px
+		right: 0
+	&__title
+		font-size: 16px
+		color: #46778D
+		+reg
+		line-height: 1
+		a
+			color: #46778D
+			&:hover
+				text-decoration: underline
+	&__body
+		+clr
+		font-size: 0
+		padding: 15px 0 0 
+		p
+			font-size: 14px
+			color: #555
+			+semi
+			line-height: 1.2
+			margin-bottom: 12px
+	&__btns
+		float: left
+		+r1
+			float: none
+	&__button
+		font-size: 12px
+		text-transform: uppercase
+		color: #FFF
+		+semi
+		background-color: #44709C
+		padding: 6px 9px 5px
+		display: inline-block
+		vertical-align: top 
+		margin: 0 16px 12px 0 
+		&:hover
+			background: lighten(#44709C, 5%) 
+		&:active
+			background: darken(#44709C, 5%) 
+	&__refresh
+		font-size: 12px
+		text-transform: uppercase
+		color: #FFF
+		+semi
+		background-color: #578EC6
+		padding: 6px 9px 5px 39px
+		display: inline-block
+		vertical-align: top 
+		position: relative
+		margin: 0 16px 12px 0 
+		&:hover
+			background: lighten(#578EC6, 5%) 
+		&:active
+			background: darken(#578EC6, 5%) 
+		&:before
+			position: absolute
+			top: 50%
+			left: 13px
+			margin-top: -7px
+			+s(resume-refresh)
+			content: "" 
+			+transition(all 0.4s)
+	&__date
+		float: right
+		text-align: right
+		+r1
+			float: none
+			text-align: left
+	&__info
+		padding: 14px 0 0 
+		+r1
+			padding: 0
+		a
+			font-size: 13px
+			color: #44709C
+			+reg
+			line-height: 14px
+			position: relative
+			display: inline-block
+			vertical-align: top
+			padding: 0 0 0 27px 
+			margin: 0 0 12px 14px 
+			+r1
+				margin: 0 14px 12px 0 
+			&:before
+				content: "" 
+				position: absolute
+				top: 0
+				left: 0
+			&.is-export
+				&:before
+					+s(resume-export)
+			&.is-views
+				&:before
+					+s(resume-views)
+
+.resume-list
+	&__header
+		font-size: 18px
+		color: #FFF
+		text-transform: uppercase
+		+reg
+		background-color: #577DAA
+		line-height: 44px
+		margin: 0 44px 0 0
+		max-width: 450px
+		position: relative 
+		+box
+		padding: 0 18px 
+		&:after
+			content: "" 
+			position: absolute
+			top: 0
+			left: 100%
+			+arr(44, 44, #577DAA, tl)
+	&__hot
+		+box-shadow(0 3px 6px rgba(20, 45, 96, 0.75))
+		background-color: #EDFBD6
+		border-top: 1px solid #577DAA
+		margin-bottom: 35px
+	&__block
+		+box-shadow(0 3px 6px rgba(20, 45, 96, 0.75))
+		background-color: #fff
+		border-top: 1px solid #577DAA
+		margin-bottom: 15px
+		
+.resume-block
+	border: 1px solid #577DAA
+	border-top: none
+	padding: 10px 12px 15px 25px 
+	&:hover
+		background-color: #DBEFF6
+	&__top
+		+clr
+		padding: 0 0 10px 
+	&__price
+		float: right
+		font-size: 14px
+		color: #555
+		+semi
+		margin: 0 0 0 10px 
+	&__title
+		font-size: 16px
+		color: #46778D
+		+reg
+		overflow: hidden
+		line-height: 1.2
+		a
+			color: #46778D
+			&:hover
+				text-decoration: underline
+	p
+		font-size: 14px
+		color: #555
+		+semi
+		line-height: 1.2
+	&__bottom
+		margin: 0 -10px
+		font-size: 0 
+		span
+			overflow: hidden
+			-ms-text-overflow: ellipsis
+			text-overflow: ellipsis
+			white-space: nowrap
+			font-size: 14px
+			color: #555
+			line-height: 16px
+			+reg
+			display: inline-block
+			vertical-align: top
+			+box
+			margin: 10px 0 0 
+	&__place
+		text-align: left
+		position: relative
+		padding: 0 10px 0 31px
+		width: 34%
+		+r1
+			width: 50%
+		&:before
+			content: "" 
+			position: absolute
+			top: 50%
+			left: 10px
+			margin-top: -8px
+			+s(resume-pin)
+	&__name
+		text-align: center
+		padding: 0 10px 
+		width: 33%
+		+r1
+			width: 50%
+			text-align: right
+	&__date
+		text-align: right
+		padding: 0 10px 
+		width: 33%
+		+r1
+			width: 100%
+			text-align: left
