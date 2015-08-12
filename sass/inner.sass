@@ -4114,8 +4114,18 @@ a
 			+reg
 			padding: 3px 10px 3px 35px
 			display: block
+			position: relative
 			&:hover
 				text-decoration: underline
+			&:before
+				content: ""
+				position: absolute
+				top: 11px
+				left: 15px
+				width: 4px
+				height: 4px
+				+border-radius(50%)
+				background: #555 
 			&.is-active
 				background: #f9a2a8
 
@@ -4133,8 +4143,8 @@ a
 	&__icon
 		+s(search-icon)
 		position: absolute
-		top: 25px
-		right: 20px
+		top: 31px
+		right: 27px
 	.input, .select
 		margin-bottom: 15px
 	&__time
