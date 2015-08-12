@@ -508,5 +508,10 @@ head.ready(function() {
         $('.js-tooltip-box').removeClass('is-active');
     });
 
+    $('.js-rooms-btn').on('click', function() {
+        $('.js-rooms').slideToggle('fast');
+        return false;
+    });
+
 });
 

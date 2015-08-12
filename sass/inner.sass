@@ -6784,3 +6784,76 @@ body
 				border-left: none
 		&:active
 			padding: 14px 15px 12px
+
+
+.chat-dropdown
+	background-color: #FFF
+	position: absolute
+	top: 100%
+	left: 0
+	right: 0
+	z-index: 10
+	+box-shadow(0 3px 6px rgba(20, 45, 96, 0.5))
+	display: none
+	text-align: left
+
+.chat-rooms
+	padding: 9px 
+	&__inner
+		border: 1px solid #CBCBCB
+		height: 320px
+
+.chat-room
+	padding: 0 135px 0 15px 
+	position: relative
+	+r1
+		padding: 0 55px 0 10px 
+	&:hover
+		background-color: #E8E8E8
+		&:before
+			display: block
+	&:before
+		position: absolute
+		top: 0
+		left: 0
+		bottom: 0
+		width: 2px
+		background-color: #185D87
+		content: "" 
+		display: none
+	&__numbers
+		float: right
+		text-align: right
+		width: 50px
+		font-size: 12px
+		color: #353434
+	p
+		white-space: nowrap
+		overflow: hidden
+		-ms-text-overflow: ellipsis
+		text-overflow: ellipsis
+		font-size: 13px
+		color: #555
+	&__numbers, p
+		+reg
+		line-height: 21px
+	&__lock, &__star
+		position: absolute
+		top: 50%
+	&__lock
+		right: 60px
+		margin-top: -5px
+		+r1
+			right: 35px
+		&.is-red
+			+s(chat-lock-red)
+		&.is-green
+			+s(chat-lock-green)
+	&__star
+		right: 28px
+		margin-top: -6px
+		+s(chat-room-star)
+		+r1
+			right: 10px
+		&.is-active
+			+s(chat-room-star-active)
