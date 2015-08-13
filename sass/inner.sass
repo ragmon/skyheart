@@ -3756,11 +3756,13 @@ a
 				+s(arr-down-black)
 				content: ""
 				+opacity(0.8)
+				+rotate(-180)
 			&.is-active
 				color: #577DAA
 				text-decoration: underline
 				&:before
 					+s(arr-down)
+					+rotate(0)
 	&__choice
 		float: left
 		padding: 8px 0 0
@@ -4917,6 +4919,18 @@ a
 		clear: both
 		+r(700)
 			padding: 15px 0 0
+		.p-input, .p-textarea
+			padding: 8px 10px 7px
+			font-size: 12px
+		.p-textarea
+			height: 120px
+		.p-btn
+			padding-left: 40px
+			max-width: 140px
+			line-height: 37px
+			font-size: 12px
+			&:before
+				left: 12px 
 .p-pages
 	+clr
 	padding: 23px 0
@@ -7149,3 +7163,78 @@ body
 		+r1
 			width: 100%
 			text-align: left
+			
+.resume-popup
+	position: fixed
+	top: 50%
+	left: 50%
+	width: 300px
+	+box
+	padding: 20px 0 0
+	+border-radius(6px) 
+	+box-shadow(0 3px 6px rgba(20, 45, 96, 0.75))
+	background: #fff
+	z-index: 700 
+	-webkit-transform: translate(-50%, -50%) 
+	-moz-transform: translate(-50%, -50%) 
+	-ms-transform: translate(-50%, -50%) 
+	-o-transform: translate(-50%, -50%) 
+	transform: translate(-50%, -50%) 
+	font-size: 0
+	overflow: hidden
+	text-align: center
+	visibility: hidden
+	+opacity(0)
+	+transition(visibility 0.4s, opacity 0.4s)
+	&.is-active
+		visibility: visible
+		+opacity(1)
+	p
+		font-size: 16px
+		+reg
+		line-height: 1.2
+		padding: 0 10px 15px
+		color: #555  
+		min-height: 55px
+		b
+			+semi
+			font-size: 18px
+	&__cancel, &__submit
+		font-size: 15px
+		text-transform: uppercase
+		color: #FFF
+		+semi
+		padding: 8px 9px 7px
+		display: inline-block
+		vertical-align: top 
+		+box
+		width: 50%
+		text-align: center
+	&__cancel
+		background-color: #44709C
+		&:hover
+			background: lighten(#44709C, 5%) 
+		&:active
+			background: darken(#44709C, 5%) 
+
+	&__submit
+		background-color: #578EC6
+		&:hover
+			background: lighten(#578EC6, 5%) 
+		&:active
+			background: darken(#578EC6, 5%) 
+
+.resume-overlay
+	position: fixed
+	top: 0
+	bottom: 0
+	left: 0
+	right: 0
+	background: #000 
+	visibility: hidden
+	+opacity(0)
+	+transition(visibility 0.2s, opacity 0.2s)
+	z-index: 690
+	&.is-active
+		visibility: visible
+		+opacity(0.3)

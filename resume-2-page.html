@@ -190,8 +190,8 @@
 									<div class="resume-item__btns">
 										<p>Раздел - категория</p>
 										<button class="resume-item__button">Редактировать</button>
-										<button class="resume-item__button">Удалить</button>
-										<button class="resume-item__refresh">Обновить</button>
+										<button class="resume-item__button js-resume-delete-btn">Удалить</button>
+										<button class="resume-item__refresh js-resume-refresh-btn">Обновить</button>
 									</div>
 									<div class="resume-item__date">
 										<p>Дата публикации</p>
@@ -398,6 +398,19 @@
 	</div>
 </div>
 
+<div class="resume-popup js-resume-refresh">
+	<p>Обновить дату публикации?</p>
+	<button class="resume-popup__cancel">Отменить</button>
+	<button class="resume-popup__submit">Подтвердить</button>
+</div>
+
+<div class="resume-popup js-resume-delete">
+	<p>Вы действительно хотите удалить резюме "<b>Назание заголовка</b>"</p>
+	<button class="resume-popup__cancel">Отменить</button>
+	<button class="resume-popup__submit">Подтвердить</button>
+</div>
+
+<div class="resume-overlay"></div>
 <!-- load scripts -->
 <script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
 </body>

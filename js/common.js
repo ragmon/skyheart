@@ -513,5 +513,34 @@ head.ready(function() {
         return false;
     });
 
+    $('.js-resume-refresh-btn').on('click', function() {
+        $('.js-resume-refresh').addClass('is-active');
+        $('.resume-overlay').addClass('is-active');
+        return false;
+    });
+    $('.js-resume-refresh').each(function() {
+        $('body').on('click', function() {
+            $('.js-resume-refresh').removeClass('is-active');
+            $('.resume-overlay').removeClass('is-active');
+        });
+        $(this).on('click', function(event) {
+            event.stopPropagation();
+        });
+    });
+    $('.js-resume-delete-btn').on('click', function() {
+        $('.js-resume-delete').addClass('is-active');
+        $('.resume-overlay').addClass('is-active');
+        return false;
+    });
+    $('.js-resume-delete').each(function() {
+        $('body').on('click', function() {
+            $('.js-resume-delete').removeClass('is-active');
+            $('.resume-overlay').removeClass('is-active');
+        });
+        $(this).on('click', function(event) {
+            event.stopPropagation();
+        });
+    });
+
 });
 
