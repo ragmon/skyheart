@@ -487,12 +487,41 @@
 						</div>
 						<div class="n-ads__heading">
 							<div class="n-ads__title"><span>Свежие обьявления</span></div>
-							<div class="n-ads__settings">
-								<ul class="n-ads__filter">
+							<div class="n-ads__settings is-mod">
+								<!-- <ul class="n-ads__filter">
 									<li><a href="#" class="is-active">Все</a></li>
 									<li><a href="#">Частные</a></li>
 									<li><a href="#">Компании</a></li>
-								</ul>
+								</ul> -->
+								<div class="n-ads__choice">
+									<div class="v-select js-select is-action">
+										<span class="v-select__text js-select-text">Все</span>
+										<ul class="v-select__list js-select-list">
+											<li data-val="Все">Все</li>
+											<li data-val="Частные">Частные</li>
+											<li data-val="Компании">Компании</li>
+										</ul>
+										<select>
+											<option value="Все">Все</option>
+											<option value="Частные">Частные</option>
+											<option value="Компании">Компании</option>
+										</select>
+									</div>
+									<span class="v-filter__label">Тип</span>
+									<div class="v-select js-select is-type">
+										<span class="v-select__text js-select-text">Все</span>
+										<ul class="v-select__list js-select-list">
+											<li data-val="Все">Все</li>
+											<li data-val="Куплю">Куплю</li>
+											<li data-val="Продам">Продам</li>
+										</ul>
+										<select>
+											<option value="Все">Все</option>
+											<option value="Куплю">Куплю</option>
+											<option value="Продам">Продам</option>
+										</select>
+									</div>
+								</div>								
 								<div class="n-ads__right">
 									<span>Сортировка</span>
 									<ul>

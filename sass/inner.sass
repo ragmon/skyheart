@@ -3703,6 +3703,13 @@ a
 			padding: 0 10px 10px
 		+r(500)
 			text-align: center
+		&.is-mod
+			+r(600)
+				text-align: center
+			.n-ads__choice, .n-ads__right
+				+r(600)
+					display: block
+					float: none
 		a, span
 			+reg
 			font-size: 12px
@@ -3754,6 +3761,21 @@ a
 				text-decoration: underline
 				&:before
 					+s(arr-down)
+	&__choice
+		float: left
+		padding: 8px 0 0
+		margin: 0 0 -2px
+		.v-filter__label
+			padding: 1px 0
+		a, span
+			line-height: 17px
+			font-size: 11px
+		.v-select
+			width: 100px
+			&.is-type
+				width: 80px
+			.v-select__text 
+				display: block
 .n-item
 	padding: 0 15px 10px 0
 	+clr
