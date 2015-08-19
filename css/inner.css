@@ -1580,6 +1580,7 @@ a.is-star.is-active:after, a.is-star:hover:after { visibility: visible; filter: 
 .res__number .creating__label { display: block; }
 .res__photo { padding: 20px 0 0; }
 .res__photo img { margin: 0 auto 10px; display: block; width: 100%; max-width: 128px; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; }
+.res__photo img.is-radius { -moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0; }
 .res p { font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 600; font-size: 14px; color: #555555; }
 .res__cat { padding: 18px 0 0; }
 .res__cat p { margin-bottom: 20px; }
