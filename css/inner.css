@@ -2382,3 +2382,9 @@ body.is-error:before { content: ""; display: inline-block; vertical-align: middl
 
 .resume-overlay { position: fixed; top: 0; bottom: 0; left: 0; right: 0; background: black; visibility: hidden; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; -moz-transition: visibility 0.2s, opacity 0.2s; -o-transition: visibility 0.2s, opacity 0.2s; -webkit-transition: visibility 0.2s, opacity 0.2s; transition: visibility 0.2s, opacity 0.2s; z-index: 690; }
 .resume-overlay.is-active { visibility: visible; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30); opacity: 0.3; }
+
+.my-favorites-icon { background: url("../img/svg/my-favorites.svg") no-repeat 0 0; -moz-background-size: 88px 100px 100%; -webkit-background-size: 88px 100px 100%; background-size: 88px 100px 100%; width: 88px; height: 100px; display: inline-block; }
+
+.favorites-body { padding: 100px 50px; text-align: center; }
+
+.favorites-text { font-size: 20px; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 700; color: #577daa; display: block; }
