@@ -1498,6 +1498,7 @@ body
 			line-height: 1.3
 			color: #44709c
 			margin-bottom: 10px
+			padding: 0 20px 0 0 
 			a
 				color: #44709c
 		p
@@ -1572,6 +1573,10 @@ body
 					+s(c-gp-dark)
 				&.is-tw
 					+s(c-tw-dark)
+	.is-star
+		position: absolute
+		top: 10px
+		right: 10px
 
 .filter
 	font-size: 0
@@ -1671,6 +1676,7 @@ body
 	&__block
 		+clr
 		+box-shadow(0 3px 6px rgba(20, 45, 96, 0.75))
+		position: relative
 	&__info
 		position: relative
 	&__img
@@ -1705,7 +1711,7 @@ body
 		img
 			width: 100%
 	h4
-		padding: 15px
+		padding: 15px 20px 15px 15px
 		+reg
 		font-size: 18px
 		line-height: 1.3
@@ -1720,6 +1726,10 @@ body
 		padding: 0 15px 15px
 	.item__bottom
 		padding: 15px
+	.is-active
+		position: absolute
+		top: 10px
+		right: 10px
 
 .comment
 	padding: 25px 40px
