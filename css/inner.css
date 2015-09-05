@@ -2393,3 +2393,9 @@ body.is-error:before { content: ""; display: inline-block; vertical-align: middl
 .favorites-body { padding: 100px 50px; text-align: center; }
 
 .favorites-text { font-size: 20px; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 700; color: #577daa; display: block; }
+
+.was-delete { height: 100px; text-align: center; font-size: 0; padding: 20px; border-bottom: 2px solid #b6bece; }
+.was-delete:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
+.was-delete p { display: inline-block; vertical-align: middle; font-size: 20px; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 400; color: #555555; line-height: 1; }
+.was-delete p a { color: #44709c; display: inline-block; }
+.was-delete p a:hover { border-bottom: 1px solid #a2bcd7; }
