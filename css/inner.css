@@ -2283,7 +2283,7 @@ body.is-error:before { content: ""; display: inline-block; vertical-align: middl
 .report__btn:active { padding: 14px 15px 12px; }
 
 .chat-dropdown { background-color: white; position: absolute; top: 100%; left: 0; right: 0; z-index: 199; -moz-box-shadow: 0 3px 6px rgba(20, 45, 96, 0.5); -webkit-box-shadow: 0 3px 6px rgba(20, 45, 96, 0.5); box-shadow: 0 3px 6px rgba(20, 45, 96, 0.5); display: none; text-align: left; }
-.chat-dropdown_relative { position: relative; clear: both; }
+.chat-dropdown_relative { position: relative; clear: both; z-index: 210; }
 
 .chat-rooms { padding: 9px; }
 .chat-rooms__inner { border: 1px solid #cbcbcb; height: 320px; }
