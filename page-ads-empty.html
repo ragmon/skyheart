@@ -171,19 +171,75 @@
 
 			<!-- begin content  -->
 			<section class="content">
-				<!-- begin p-ads  -->
-				<div class="ads-new__header">
-					<h3>Раздел - категория</h3>
-					<div class="block-star is-tooltip">
-						<a href="#" class="is-star"></a>
-						<div class="tooltip">Добавить в избранное</div>
-					</div>	
-				</div>
-				<div class="p-ads">
-					<div class="ads-empty">
-						<i class="ads-empty__icon"></i>
-						<span class="ads-empty__text">У вас нету объявлений</span>
-						<button class="btn">добавить объявление</button>
+				<div class="my-ads">
+					<!-- begin action  -->
+					<div class="action action_mod">
+						<div class="action__section">
+							<label class="checkbox"><input type="checkbox"><span></span></label>
+							<div class="n-select js-select is-action">
+								<span class="n-select__text js-select-text">Действие</span>
+								<ul class="n-select__list js-select-list">
+									<li data-val="Удалить">Удалить</li>
+									<li data-val="Важное">Важное</li>
+									<li data-val="Прочитанно">Прочитанно</li>
+									<li data-val="В архив">В архив</li>
+								</ul>
+								<select>
+									<option value="Удалить">Удалить</option>
+									<option value="Важное">Важное</option>
+									<option value="Прочитанно">Прочитанно</option>
+									<option value="В архив">В архив</option>
+								</select>
+							</div>
+							<button class="button">ок</button>
+						</div>
+						<div class="action__section">
+							<div class="n-select js-select is-message">
+								<span class="n-select__text js-select-text">Активные</span>
+								<ul class="n-select__list js-select-list">
+									<li data-val="Активные">Активные</li>
+									<li data-val="Не активные">Не активные</li>
+								</ul>
+								<select>
+									<option value="Активные">Активные</option>
+									<option value="Не активные">Не активные</option>
+								</select>
+							</div>
+						</div>
+						<div class="action__section">
+							<span class="action__label">Категории</span>
+							<div class="m-select js-select is-message">
+								<span class="m-select__text js-select-text">Все</span>
+								<div class="m-select__list js-select-list">
+									<span class="m-select__title js-select-title">Транспорт</span>
+									<ul class="js-select-block">
+										<li data-val="Самолёты">Самолёты</li>
+										<li data-val="Вертолёты">Вертолёты</li>
+										<li data-val="СЛА (Сверхлегкая авиация)">СЛА (Сверхлегкая авиация)</li>
+										<li data-val="Другое">Другое</li>
+									</ul>
+									<span class="m-select__title js-select-title">Запчасти</span>
+									<ul class="js-select-block">
+										<li data-val="Запчасти и комплектующие">Запчасти и комплектующие</li>
+										<li data-val="Приборы и оборудование">Приборы и оборудование</li>
+										<li data-val="Двигатели">Двигатели</li>
+										<li data-val="Наземное оборудование">Наземное оборудование</li>
+										<li data-val="ГСМ">ГСМ</li>
+									</ul>
+									<span class="m-select__title js-select-li">Другое</span>
+								</div>							
+							</div>
+						</div>					
+					</div>
+					<!-- end action -->
+					
+					<!-- begin my-ads__inner  -->
+					<div class="my-ads__inner">
+						<div class="ads-empty">
+							<i class="ads-empty__icon"></i>
+							<span class="ads-empty__text">У вас нету объявлений</span>
+							<button class="btn">добавить объявление</button>
+						</div>
 					</div>
 				</div>
 			</section>
