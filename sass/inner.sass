@@ -1577,6 +1577,7 @@ body
 	position: absolute
 	top: 10px
 	right: 10px
+	z-index: 3
 	.tooltip
 		white-space: nowrap
 		width: auto
@@ -3812,10 +3813,13 @@ a
 	padding: 0 15px 10px 0
 	+clr
 	border-bottom: 1px solid #1c2e3c
+	position: relative
 	+r1
 		padding: 0 10px 10px
 	&:hover
 		background-color: rgba(111, 191, 221, 0.25)
+	.block-star
+		right: 15px
 	.trade
 		width: 100px
 		padding-right: 2px
@@ -3875,16 +3879,18 @@ a
 			text-align: left
 			width: 100%
 			padding: 10px 0
-	.is-star
-		float: right
-		margin: -3px 0 0 20px
-		+r1
-			margin: 0
+	// .is-star
+	// 	float: right
+	// 	margin: -3px 0 0 20px
+	// 	+r1
+	// 		margin: 0
 	small
 		font-size: 12px
 		color: #555
 		line-height: 1
 		+reg
+		padding: 5px 30px 5px 0
+		display: inline-block 
 	&__hot
 		display: block
 		padding: 5px 0 5px
@@ -6172,10 +6178,10 @@ body
 			+semi
 			color: #fff
 			line-height: 1.2
-		.is-star
-			position: absolute
-			top: 12px
-			right: 24px
+		// .is-star
+		// 	position: absolute
+		// 	top: 12px
+		// 	right: 24px
 	&__price
 		float: right
 		+reg
