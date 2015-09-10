@@ -2679,6 +2679,10 @@ body
 		+r1
 			margin: 0 0 0 10px
 			padding: 0 10px 0 0
+		.block-star
+			position: relative
+			top: 0
+			right: 0
 	&__social
 		float: left
 		font-size: 0
@@ -2960,6 +2964,10 @@ a
 		+r(500)
 			right: auto
 			left: 15px
+		.block-star
+			position: relative
+			top: 0
+			right: 0
 	.box__status
 		position: relative
 		padding: 0
@@ -5368,6 +5376,9 @@ a
 .r-resume
 	+box-shadow(0 3px 6px rgba(20, 45, 96, 0.75))
 	background: #fff
+	.block-star
+		top: 26px
+		right: 15px
 	&__heading
 		padding: 5px 15px 25px
 		clear: both
@@ -5386,11 +5397,12 @@ a
 		color: #555
 		+light
 		padding: 30px 20px 0 30px
+		position: relative
 		+r1
 			padding: 30px 20px 0
 	&__price
 		float: right
-		margin: -2px 0 0 20px
+		margin: -2px 20px 0 20px
 		position: relative
 		a, span
 			display: inline-block

@@ -1095,6 +1095,7 @@ body.is-fixed .header__menu { max-width: 1074px; margin: 0 auto; padding: 10px 1
 .product__bottom:after { content: " "; display: table; clear: both; }
 .product__star { float: right; padding: 6px 30px 0; }
 @media only screen and (max-width: 980px) { .product__star { margin: 0 0 0 10px; padding: 0 10px 0 0; } }
+.product__star .block-star { position: relative; top: 0; right: 0; }
 .product__social { float: left; font-size: 0; width: 80px; text-align: right; padding: 10px 0; margin: 0 25px 0 0; }
 @media only screen and (max-width: 980px) { .product__social { float: right; margin: 0; padding: 3px 0 0; } }
 .product__social li { display: inline-block; vertical-align: middle; margin: 0 0 0 10px; }
@@ -1173,6 +1174,7 @@ a.is-star.is-active:after, a.is-star:hover:after { visibility: visible; filter: 
 .box .box__star { position: absolute; right: 5px; bottom: 23px; }
 @media only screen and (max-width: 980px) { .box .box__star { padding: 0; bottom: 14px; } }
 @media only screen and (max-width: 500px) { .box .box__star { right: auto; left: 15px; } }
+.box .box__star .block-star { position: relative; top: 0; right: 0; }
 .box .box__status { position: relative; padding: 0; display: inline-block; vertical-align: top; }
 .box .box__status p { color: white; }
 .box .box__status.is-ok i { background: url('../img/icons-s0c7de07087.png') 0 -2197px no-repeat; width: 20px; height: 18px; display: inline-block; }
@@ -1828,15 +1830,16 @@ a.is-star.is-active:after, a.is-star:hover:after { visibility: visible; filter: 
 .m-item__icon span:before { position: absolute; top: 100%; right: 8px; width: 0px; height: 0px; border-style: solid; border-width: 8px 4px 0 4px; border-color: rgba(45, 94, 143, 0.89) transparent transparent transparent; content: ""; }
 
 .r-resume { -moz-box-shadow: 0 3px 6px rgba(20, 45, 96, 0.75); -webkit-box-shadow: 0 3px 6px rgba(20, 45, 96, 0.75); box-shadow: 0 3px 6px rgba(20, 45, 96, 0.75); background: white; }
+.r-resume .block-star { top: 26px; right: 15px; }
 .r-resume__heading { padding: 5px 15px 25px; clear: both; }
 @media only screen and (max-width: 980px) { .r-resume__heading { padding: 5px 0 25px; } }
 .r-resume__heading p { color: #555555; font-size: 15px; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 600; }
 .r-resume__heading p a { color: #2d4164; }
 .r-resume__heading p a:hover { text-decoration: underline; }
-.r-resume__top { *zoom: 1; color: #555555; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 300; padding: 30px 20px 0 30px; }
+.r-resume__top { *zoom: 1; color: #555555; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 300; padding: 30px 20px 0 30px; position: relative; }
 .r-resume__top:after { content: " "; display: table; clear: both; }
 @media only screen and (max-width: 980px) { .r-resume__top { padding: 30px 20px 0; } }
-.r-resume__price { float: right; margin: -2px 0 0 20px; position: relative; }
+.r-resume__price { float: right; margin: -2px 20px 0 20px; position: relative; }
 .r-resume__price a, .r-resume__price span { display: inline-block; vertical-align: middle; }
 .r-resume__price span { font-size: 14px; }
 .r-resume__img { float: left; width: 202px; height: 202px; margin: 4px 30px 20px 0; }
