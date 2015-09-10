@@ -1083,14 +1083,14 @@ body
 	top: 100%
 	right: 0
 	margin: 10px 0 0
-	background: #4f75a4
-	width: 250px
-	padding: 15px 17px
+	background-color: #5076a4
+	width: 268px
+	padding: 15px 0 0
 	color: #fff
 	+opacity(0)
 	visibility: hidden
 	+transition(all 0.4s)
-	+box-shadow(0 4px 7px rgba(0, 1, 2, 0.75))
+	+box-shadow(2px 3.5px 7px rgba(0, 1, 2, 0.75))
 	text-align: center
 	+r1
 		top: 0
@@ -1111,8 +1111,8 @@ body
 		+semi
 		letter-spacing: 0.01em
 	&__img
-		width: 125px
-		height: 125px
+		width: 121px
+		height: 121px
 		margin: 0 auto 20px
 		img
 			width: 100%
@@ -1123,16 +1123,89 @@ body
 		margin-bottom: 30px
 		+reg
 	&__list
+		text-align: left
 		a
-			display: inline-block
+			display: block
 			position: relative
 			font-size: 12px
 			color: #fff
 			text-transform: uppercase
 			+reg
 			letter-spacing: 0.16em
-			&:hover
-				text-decoration: underline
+			padding: 2px 10px 0 60px  
+			line-height: 26px
+			+transition(all 0.2s)
+			&.is-message
+				&:before, &:after
+					margin-top: -9px
+					left: 31px
+				&:before
+					+s(c-plane)
+				&:after
+					+s(c-plane-active)
+			&.is-ads
+				&:before, &:after
+					margin-top: -8px
+					left: 29px
+				&:before
+					+s(c-mega)
+				&:after
+					+s(c-mega-active)
+			&.is-resume
+				&:before, &:after
+					margin-top: -7px
+					left: 30px
+				&:before
+					+s(c-card)
+				&:after
+					+s(c-card-active)
+			&.is-blog
+				&:before, &:after
+					margin-top: -9px
+					left: 30px
+				&:before
+					+s(c-quote)
+				&:after
+					+s(c-quote-active)
+			&.is-chat
+				&:before, &:after
+					margin-top: -7px
+					left: 29px
+				&:before
+					+s(c-bubble)
+				&:after
+					+s(c-bubble-active)
+			&.is-favorite
+				&:before, &:after
+					margin-top: -7px
+					left: 31px
+				&:before
+					+s(c-star)
+				&:after
+					+s(c-star-active)
+			&:before, &:after
+				content: ""
+				position: absolute
+				top: 50%
+				+transition(all 0.2s)
+			&:after
+				visibility: hidden
+				opacity: 0
+			span
+				display: inline-block
+				position: relative
+			&:hover, &.is-active
+				background-color: white
+				color: #5076a4
+				&:before
+					opacity: 0
+					visibility: hidden
+				&:after
+					opacity: 1
+					visibility: visible
+				small
+					color: #fff
+					background: rgb(26, 42, 75) 
 			small
 				position: absolute
 				bottom: 70%
@@ -1144,11 +1217,10 @@ body
 				+bold
 				+border-radius(50%)
 				background: rgba(26, 42, 75, 0.75)
-		li
-			padding: 0 0 5px
+				+transition(all 0.2s)
 	&__links
 		+clr
-		padding: 5px 15px
+		padding: 15px 29px
 	&__settings
 		float: left
 		+s(settings)
@@ -7456,3 +7528,17 @@ body
 					margin: 0 25px
 					width: 117px
 
+.ads-empty
+	padding: 60px 35px 41px
+	text-align: center
+	&__icon
+		+s(mega-not)
+		display: inline-block
+		margin: 0 0 10px 
+	&__text
+		display: block
+		font-size: 21px
+		line-height: 1
+		color: #9db4ce
+		+bold
+		margin-bottom: 20px
