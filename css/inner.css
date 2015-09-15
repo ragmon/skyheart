@@ -1671,7 +1671,7 @@ a.is-star.is-active:after { visibility: visible; filter: progid:DXImageTransform
 .r-textarea__text ol { list-style-type: decimal; }
 .r-textarea__text ul, .r-textarea__text ol { padding: 0 0 10px 20px; }
 
-.s-add { text-align: center; padding: 7px 20px 6px; margin-bottom: 14px; }
+.s-add { text-align: center; padding: 3px 20px; margin-bottom: 10px; }
 .s-add span { font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 400; font-size: 20px; color: #555555; margin: 0 0 15px; text-transform: uppercase; display: inline-block; }
 
 .p-ads { -moz-box-shadow: 0 3px 6px rgba(20, 45, 96, 0.75); -webkit-box-shadow: 0 3px 6px rgba(20, 45, 96, 0.75); box-shadow: 0 3px 6px rgba(20, 45, 96, 0.75); padding: 15px 0; position: relative; }
