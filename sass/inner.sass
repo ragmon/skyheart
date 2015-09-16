@@ -1470,6 +1470,11 @@ body
 		span
 			position: relative
 			z-index: 2
+		&.is-cabinet
+			background: url(../img/cabinet1.png) no-repeat
+			+cover
+			&:before
+				display: none
 	&__item
 		padding: 10px 15px 7px
 		+transition(background 0.3s)
@@ -7521,6 +7526,13 @@ body
 						+s(inbox)
 					&.is-checkbox
 						+s(cr-check)
+					&.is-adbook
+						+s(adbook)
+					&.is-case
+						+s(case)
+					&.is-graduate
+						+s(graduate)
+						left: 40px
 			&__section
 				padding: 20px 35px 30px
 				&.is-pn
@@ -7529,6 +7541,7 @@ body
 				+r(700)
 					max-width: 360px
 					margin: 0 auto
+					padding: 20px 20px 30px 
 			&__btns
 				text-align: center
 				font-size: 0
