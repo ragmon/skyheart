@@ -887,6 +887,7 @@ body.is-fixed .header__menu { max-width: 1074px; margin: 0 auto; padding: 10px 1
 .creating__heading { font-size: 16px; color: #577daa; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 600; margin-bottom: 5px; }
 .creating .form__title { margin-bottom: 10px; }
 .creating__label { color: #555555; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 400; font-size: 12.6px; display: inline-block; vertical-align: top; margin-bottom: 6px; }
+.creating__label b { font-weight: normal; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 700; }
 .creating__name { *zoom: 1; }
 .creating__name:after { content: " "; display: table; clear: both; }
 .creating__name .creating__label { display: block; }
@@ -1609,7 +1610,7 @@ a.is-star.is-active:after { visibility: visible; filter: progid:DXImageTransform
 .res__contacts:after { content: " "; display: table; clear: both; }
 .res__col { float: left; width: 50%; }
 @media only screen and (max-width: 700px) { .res__col { width: 100%; margin-bottom: 15px; } }
-.res__col .creating__label, .res__col .res__number { display: inline-block; vertical-align: top; max-width: 200px; }
+.res__col .creating__label, .res__col .res__number { display: inline-block; vertical-align: top; max-width: 195px; }
 @media only screen and (max-width: 980px) { .res__col .creating__label, .res__col .res__number { display: block; text-align: center; width: 100%; } }
 @media only screen and (max-width: 700px) { .res__col .creating__label, .res__col .res__number { max-width: 100%; } }
 .res__col .js-add-phone { padding: 0 10px; }
