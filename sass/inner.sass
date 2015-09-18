@@ -1206,6 +1206,9 @@ body
 				small
 					color: #fff
 					background: rgb(26, 42, 75) 
+				.is-tooltip
+					&:after
+						color: #5076a4 
 			small
 				position: absolute
 				bottom: 70%
@@ -1218,6 +1221,24 @@ body
 				+border-radius(50%)
 				background: rgba(26, 42, 75, 0.75)
 				+transition(all 0.2s)
+		.is-tooltip
+			display: inline-block
+			vertical-align: top
+			position: relative
+			text-transform: none
+			.tooltip
+				width: auto
+				white-space: nowrap
+				padding: 0 10px 
+			&.is-green
+				&:after
+					+transition(all 0.2s)
+					content: "/"
+					font-size: 14px
+					color: #fff
+					+bold
+					display: inline-block
+					vertical-align: top  
 	&__links
 		+clr
 		padding: 15px 9px
