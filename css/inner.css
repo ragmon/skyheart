@@ -135,7 +135,7 @@ textarea.textarea_black::-webkit-input-placeholder { color: #555555; }
 .stars a { background: url('../img/icons-s0c712c3fcc.png') 0 -3626px no-repeat; width: 19px; height: 18px; display: inline-block; vertical-align: top; margin: 0 2px; }
 @media only screen and (max-width: 700px) { .stars a { margin: 0 0 0 1px; } }
 
-.trade { display: inline-block; vertical-align: top; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 600; font-size: 12px; padding: 5px 12px 5px 42px; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; position: relative; }
+.trade { display: inline-block; vertical-align: top; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 600; font-size: 12px; padding: 5px 12px 5px 42px; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; position: relative; cursor: pointer; }
 .trade:before { content: ""; position: absolute; top: 4px; -moz-transition: all 0.2s; -o-transition: all 0.2s; -webkit-transition: all 0.2s; transition: all 0.2s; }
 .trade:active { top: 1px; }
 .trade_sell { color: #581c2c; border: 1px solid #581c2c; }
@@ -145,7 +145,7 @@ textarea.textarea_black::-webkit-input-placeholder { color: #555555; }
 .trade_buy:hover:before, .trade_buy:active:before { left: 10px; }
 .trade_buy:before { background: url('../img/icons-s0c712c3fcc.png') 0 -556px no-repeat; width: 20px; height: 19px; left: 15px; }
 
-.btn-answer { font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 400; border: 1px solid #224271; color: #224271; font-size: 12px; text-transform: uppercase; padding: 10px 20px; background: none; text-align: center; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; position: relative; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.btn-answer { font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 400; border: 1px solid #224271; color: #224271; font-size: 12px; text-transform: uppercase; padding: 10px 20px; background: none; text-align: center; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; position: relative; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; cursor: pointer; }
 .btn-answer:hover, .btn-answer:active { background: #224271; color: white; }
 .btn-answer:active { top: 1px; }
 
@@ -1714,7 +1714,7 @@ a.is-star.is-active:after { visibility: visible; filter: progid:DXImageTransform
 .p-ads__box { *zoom: 1; margin-bottom: 14px; }
 .p-ads__box:after { content: " "; display: table; clear: both; }
 .p-ads__box span { font-size: 15px; color: #555555; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 600; display: block; margin-bottom: 5px; }
-.p-ads__box a { color: #44709c; font-size: 15px; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 700; }
+.p-ads__box small { color: #44709c; font-size: 15px; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 700; }
 .p-ads__left { float: left; }
 .p-ads__right { float: right; }
 .p-ads__hots { position: relative; }
