@@ -1999,7 +1999,7 @@ body
 		margin-bottom: 5px
 	.form__title
 		margin-bottom: 10px
-	&__label
+	&__label, &__label-info
 		color: #555555
 		+reg
 		font-size: 12.6px
@@ -4575,20 +4575,33 @@ a
 .res
 	&__top
 		font-size: 0
-		padding-bottom: 20px
+		padding-bottom: 10px
 	&__info
 		display: inline-block
 		vertical-align: top
-		margin: 0 10px 0 0
-		+r1
-			margin: 0 10px 10px
-		.creating__label
-			display: inline-block
-			vertical-align: middle
-			margin: 0 15px 0 0
+		padding: 0 0 10px 
+		&.is-name
+			width: 140px
+		&.is-surname
+			width: 150px
+		&.is-date
+			width: 240px 
+		&.is-date, &.is-surname, &.is-name
+			+r1
+				width: 100%
+			.creating__label
+				margin: 0
+		.creating__label, .creating__label-info
+			display: block
+			overflow: hidden
 		.res__hide
-			display: inline-block
-			vertical-align: middle
+			float: right
+			padding: 10px 0 10px 10px 
+			position: relative
+			.tooltip
+				right: 20px
+				white-space: nowrap
+				width: auto			
 	.checkbox
 		min-height: 16px
 		span

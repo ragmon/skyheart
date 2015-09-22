@@ -893,8 +893,8 @@ body.is-fixed .header__menu { max-width: 1074px; margin: 0 auto; padding: 10px 1
 .creating__section { padding-bottom: 30px; }
 .creating__heading { font-size: 16px; color: #577daa; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 600; margin-bottom: 5px; }
 .creating .form__title { margin-bottom: 10px; }
-.creating__label { color: #555555; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 400; font-size: 12.6px; display: inline-block; vertical-align: top; margin-bottom: 6px; }
-.creating__label b { font-weight: normal; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 700; }
+.creating__label, .creating__label-info { color: #555555; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 400; font-size: 12.6px; display: inline-block; vertical-align: top; margin-bottom: 6px; }
+.creating__label b, .creating__label-info b { font-weight: normal; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 700; }
 .creating__name { *zoom: 1; }
 .creating__name:after { content: " "; display: table; clear: both; }
 .creating__name .creating__label { display: block; }
@@ -1606,11 +1606,16 @@ a.is-star.is-active:after { visibility: visible; filter: progid:DXImageTransform
 
 .v-items { -moz-box-shadow: 0 3px 6px rgba(20, 45, 96, 0.75); -webkit-box-shadow: 0 3px 6px rgba(20, 45, 96, 0.75); box-shadow: 0 3px 6px rgba(20, 45, 96, 0.75); }
 
-.res__top { font-size: 0; padding-bottom: 20px; }
-.res__info { display: inline-block; vertical-align: top; margin: 0 10px 0 0; }
-@media only screen and (max-width: 980px) { .res__info { margin: 0 10px 10px; } }
-.res__info .creating__label { display: inline-block; vertical-align: middle; margin: 0 15px 0 0; }
-.res__info .res__hide { display: inline-block; vertical-align: middle; }
+.res__top { font-size: 0; padding-bottom: 10px; }
+.res__info { display: inline-block; vertical-align: top; padding: 0 0 10px; }
+.res__info.is-name { width: 140px; }
+.res__info.is-surname { width: 150px; }
+.res__info.is-date { width: 240px; }
+@media only screen and (max-width: 980px) { .res__info.is-date, .res__info.is-surname, .res__info.is-name { width: 100%; } }
+.res__info.is-date .creating__label, .res__info.is-surname .creating__label, .res__info.is-name .creating__label { margin: 0; }
+.res__info .creating__label, .res__info .creating__label-info { display: block; overflow: hidden; }
+.res__info .res__hide { float: right; padding: 10px 0 10px 10px; position: relative; }
+.res__info .res__hide .tooltip { right: 20px; white-space: nowrap; width: auto; }
 .res .checkbox { min-height: 16px; }
 .res .checkbox span:before { -moz-box-shadow: inset 0 3px 5px rgba(0, 2, 3, 0.46); -webkit-box-shadow: inset 0 3px 5px rgba(0, 2, 3, 0.46); box-shadow: inset 0 3px 5px rgba(0, 2, 3, 0.46); background: white; }
 .res__contacts { *zoom: 1; font-size: 0; }
