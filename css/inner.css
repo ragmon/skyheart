@@ -673,7 +673,7 @@ body.is-fixed .header__menu { max-width: 1074px; margin: 0 auto; padding: 10px 1
 .cabinet__list a:hover .is-tooltip:after, .cabinet__list a.is-active .is-tooltip:after { color: #5076a4; }
 .cabinet__list a small { position: absolute; bottom: 70%; left: 100%; margin-left: -5px; font-size: 10px; line-height: 22px; width: 22px; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 700; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; background: rgba(26, 42, 75, 0.75); -moz-transition: all 0.2s; -o-transition: all 0.2s; -webkit-transition: all 0.2s; transition: all 0.2s; }
 .cabinet__list .is-tooltip { display: inline-block; vertical-align: top; position: relative; text-transform: none; }
-.cabinet__list .is-tooltip .tooltip { width: auto; white-space: nowrap; padding: 0 10px; }
+.cabinet__list .is-tooltip .tooltip { width: auto; white-space: nowrap; padding: 0 10px; letter-spacing: 0; }
 .cabinet__list .is-tooltip.is-green:after { -moz-transition: all 0.2s; -o-transition: all 0.2s; -webkit-transition: all 0.2s; transition: all 0.2s; content: "/"; font-size: 14px; color: white; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 700; display: inline-block; vertical-align: top; }
 .cabinet__links { *zoom: 1; padding: 15px 9px; }
 .cabinet__links:after { content: " "; display: table; clear: both; }
@@ -1857,12 +1857,12 @@ a.is-star.is-active:after { visibility: visible; filter: progid:DXImageTransform
 .m-item__info div.is-views { position: relative; }
 .m-item__info div.is-views:before { background: url('../img/icons-s0c712c3fcc.png') 0 -3758px no-repeat; width: 20px; height: 14px; display: inline-block; vertical-align: top; content: ""; margin: 2px 10px 0 0; }
 .m-item__info div.is-views:hover span { visibility: visible; filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false); opacity: 1; }
-.m-item__info div.is-views span { position: absolute; bottom: 100%; right: 0; background: rgba(45, 94, 143, 0.89); padding: 4px 8px; margin: 0 0 8px; white-space: nowrap; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; visibility: hidden; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; font-size: 10px; color: white; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 400; }
+.m-item__info div.is-views span { position: absolute; bottom: 100%; right: 0; background: rgba(45, 94, 143, 0.89); padding: 4px 8px; margin: 0 0 8px; white-space: nowrap; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; visibility: hidden; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; font-size: 12px; color: white; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 400; }
 .m-item__info div.is-views span:before { position: absolute; top: 100%; right: 8px; width: 0px; height: 0px; border-style: solid; border-width: 8px 4px 0 4px; border-color: rgba(45, 94, 143, 0.89) transparent transparent transparent; content: ""; }
 .m-item__icon { position: absolute; bottom: 5px; right: 0; }
 .m-item__icon:hover span { visibility: visible; filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false); opacity: 1; }
 .m-item__icon i { background: url('../img/icons-s0c712c3fcc.png') 0 -2399px no-repeat; width: 29px; height: 32px; display: inline-block; }
-.m-item__icon span { position: absolute; bottom: 100%; right: 0; background: rgba(45, 94, 143, 0.89); padding: 4px 8px; margin: 0 0 8px; white-space: nowrap; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; visibility: hidden; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; font-size: 10px; color: white; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 400; }
+.m-item__icon span { position: absolute; bottom: 100%; right: 0; background: rgba(45, 94, 143, 0.89); padding: 4px 8px; margin: 0 0 8px; white-space: nowrap; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; visibility: hidden; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; font-size: 12px; color: white; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 400; }
 .m-item__icon span:before { position: absolute; top: 100%; right: 8px; width: 0px; height: 0px; border-style: solid; border-width: 8px 4px 0 4px; border-color: rgba(45, 94, 143, 0.89) transparent transparent transparent; content: ""; }
 
 .r-resume { -moz-box-shadow: 0 3px 6px rgba(20, 45, 96, 0.75); -webkit-box-shadow: 0 3px 6px rgba(20, 45, 96, 0.75); box-shadow: 0 3px 6px rgba(20, 45, 96, 0.75); background: white; }
@@ -2227,7 +2227,7 @@ body.is-error:before { content: ""; display: inline-block; vertical-align: middl
 
 .chat-tooltip { position: absolute; top: 0; left: 0; margin: 0 13px; width: auto; white-space: nowrap; padding: 8px 12px; background: rgba(45, 94, 143, 0.89); filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; visibility: hidden; -moz-transition: opacity 0.4s, visibility 0.4s; -o-transition: opacity 0.4s, visibility 0.4s; -webkit-transition: opacity 0.4s, visibility 0.4s; transition: opacity 0.4s, visibility 0.4s; z-index: 20; }
 .chat-tooltip:after { content: ""; position: absolute; top: 100%; right: 13px; width: 0px; height: 0px; border-style: solid; border-width: 10px 6.5px 0 6.5px; border-color: rgba(45, 94, 143, 0.89) transparent transparent transparent; }
-.chat-tooltip p { font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 400; font-size: 11px; color: white; }
+.chat-tooltip p { font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 400; font-size: 12px; color: white; }
 .chat-tooltip.is-active { filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false); opacity: 1; visibility: visible; }
 
 .cl__heading { background: #185d87; font-size: 12px; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 600; line-height: 1.2; color: white; padding: 9px 75px 7px 17px; position: relative; }
