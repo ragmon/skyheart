@@ -1608,13 +1608,15 @@ a.is-star.is-active:after { visibility: visible; filter: progid:DXImageTransform
 
 .res__top { font-size: 0; padding-bottom: 10px; }
 .res__info { display: inline-block; vertical-align: top; padding: 0 0 10px; }
-.res__info.is-name { width: 140px; }
-.res__info.is-surname { width: 150px; }
-.res__info.is-date { width: 240px; }
+.res__info.is-name { width: 30%; }
+.res__info.is-name .creating__label-info { padding: 0 10px 0 0; }
+.res__info.is-surname { width: 35%; }
+.res__info.is-surname .creating__label-info { padding: 0 10px 0 0; }
+.res__info.is-date { width: 35%; }
 @media only screen and (max-width: 980px) { .res__info.is-date, .res__info.is-surname, .res__info.is-name { width: 100%; } }
 .res__info.is-date .creating__label, .res__info.is-surname .creating__label, .res__info.is-name .creating__label { margin: 0; }
-.res__info .creating__label, .res__info .creating__label-info { display: block; overflow: hidden; }
-.res__info .res__hide { float: right; padding: 10px 0 10px 10px; position: relative; }
+.res__info .creating__label, .res__info .creating__label-info { display: block; overflow: hidden; white-space: nowrap; -ms-text-overflow: ellipsis; text-overflow: ellipsis; }
+.res__info .res__hide { float: right; padding: 0 0 10px 10px; position: relative; }
 .res__info .res__hide .tooltip { right: 20px; white-space: nowrap; width: auto; }
 .res .checkbox { min-height: 16px; }
 .res .checkbox span:before { -moz-box-shadow: inset 0 3px 5px rgba(0, 2, 3, 0.46); -webkit-box-shadow: inset 0 3px 5px rgba(0, 2, 3, 0.46); box-shadow: inset 0 3px 5px rgba(0, 2, 3, 0.46); background: white; }

@@ -4581,11 +4581,15 @@ a
 		vertical-align: top
 		padding: 0 0 10px 
 		&.is-name
-			width: 140px
+			width: 30%
+			.creating__label-info
+				padding: 0 10px 0 0
 		&.is-surname
-			width: 150px
+			width: 35%
+			.creating__label-info
+				padding: 0 10px 0 0
 		&.is-date
-			width: 240px 
+			width: 35% 
 		&.is-date, &.is-surname, &.is-name
 			+r1
 				width: 100%
@@ -4594,9 +4598,12 @@ a
 		.creating__label, .creating__label-info
 			display: block
 			overflow: hidden
+			white-space: nowrap
+			-ms-text-overflow: ellipsis
+			text-overflow: ellipsis
 		.res__hide
 			float: right
-			padding: 10px 0 10px 10px 
+			padding: 0 0 10px 10px 
 			position: relative
 			.tooltip
 				right: 20px
