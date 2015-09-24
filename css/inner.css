@@ -2463,9 +2463,10 @@ body.is-error:before { content: ""; display: inline-block; vertical-align: middl
 .resume-list__hot { -moz-box-shadow: 0 3px 6px rgba(20, 45, 96, 0.75); -webkit-box-shadow: 0 3px 6px rgba(20, 45, 96, 0.75); box-shadow: 0 3px 6px rgba(20, 45, 96, 0.75); background-color: #edfbd6; border-top: 1px solid #577daa; margin-bottom: 35px; }
 .resume-list__block { -moz-box-shadow: 0 3px 6px rgba(20, 45, 96, 0.75); -webkit-box-shadow: 0 3px 6px rgba(20, 45, 96, 0.75); box-shadow: 0 3px 6px rgba(20, 45, 96, 0.75); background-color: white; border-top: 1px solid #577daa; margin-bottom: 15px; }
 
-.resume-block { border: 1px solid #577daa; border-top: none; padding: 10px 12px 15px 25px; }
+.resume-block { border: 1px solid #577daa; border-top: none; padding: 10px 12px 15px 25px; position: relative; }
 .resume-block:hover { background-color: #dbeff6; }
-.resume-block__top { *zoom: 1; padding: 0 0 10px; }
+.resume-block .is-star { position: absolute; top: 10px; right: 10px; }
+.resume-block__top { *zoom: 1; padding: 0 25px 10px 0; }
 .resume-block__top:after { content: " "; display: table; clear: both; }
 .resume-block__price { float: right; font-size: 14px; color: #555555; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 600; margin: 0 0 0 10px; }
 .resume-block__title { font-size: 16px; color: #46778d; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 400; overflow: hidden; line-height: 1.2; }
