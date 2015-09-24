@@ -1791,10 +1791,8 @@ a.is-star.is-active:after { visibility: visible; filter: progid:DXImageTransform
 .p-ads__box { *zoom: 1; margin-bottom: 14px; }
 .p-ads__box:after { content: " "; display: table; clear: both; }
 .p-ads__box span { font-size: 15px; color: #555555; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 600; display: block; margin-bottom: 5px; }
-.p-ads__box small, .p-ads__box a { color: #44709c; font-size: 15px; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 700; cursor: pointer; }
-.p-ads__box .is-tooltip { position: relative; }
-.p-ads__box .is-tooltip .tooltip { color: white; right: auto; left: 0; max-width: 200px; width: auto; }
-.p-ads__box .is-tooltip .tooltip:after { right: 0; left: 13px; }
+.p-ads__box small, .p-ads__box a { color: #44709c; font-size: 15px; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 700; }
+.p-ads__box a { cursor: pointer; }
 .p-ads__left { float: left; }
 .p-ads__right { float: right; }
 .p-ads__hots { position: relative; }
