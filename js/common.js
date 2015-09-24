@@ -542,5 +542,11 @@ head.ready(function() {
         });
     });
 
+    //tooltips
+    $('.js-tooltip').tooltipster({
+        contentAsHTML: true,
+        hideOnClick: true,
+    });
+
 });
 

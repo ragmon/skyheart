@@ -3,6 +3,7 @@
 @import common
 @import slick
 @import scrolls
+@import tooltipster
 
 @import layouts
 body
@@ -1206,7 +1207,7 @@ body
 				small
 					color: #fff
 					background: rgb(26, 42, 75) 
-				.is-tooltip
+				.cabinet__active
 					&:after
 						color: #5076a4 
 			small
@@ -1221,25 +1222,24 @@ body
 				+border-radius(50%)
 				background: rgba(26, 42, 75, 0.75)
 				+transition(all 0.2s)
-		.is-tooltip
+	&__active, &__not-active
+		display: inline-block
+		vertical-align: top
+		letter-spacing: 0 
+	&__active
+		color: #0ff81c
+		&:after
+			+transition(all 0.2s)
+			content: "/"
+			font-size: 14px
+			color: #fff
+			+bold
 			display: inline-block
-			vertical-align: top
-			position: relative
-			text-transform: none
-			.tooltip
-				width: auto
-				white-space: nowrap
-				padding: 0 10px 
-				letter-spacing: 0 
-			&.is-green
-				&:after
-					+transition(all 0.2s)
-					content: "/"
-					font-size: 14px
-					color: #fff
-					+bold
-					display: inline-block
-					vertical-align: top  
+			vertical-align: top  
+			margin: 0 0 0 4px
+			
+	&__not-active
+		color: #d30e14
 	&__links
 		+clr
 		padding: 15px 9px
@@ -3973,6 +3973,7 @@ a
 			margin-bottom: 8px
 			display: block
 			line-height: 1
+			padding: 0 25px 0 0 
 			a
 				color: #46778d
 		hr
@@ -4872,8 +4873,6 @@ a
 		+r1
 			margin-bottom: 0
 		.trade
-			display: inline-block
-			vertical-align: top
 			margin: 0 15px 0 0
 	&__title
 		font-size: 18px
@@ -4938,11 +4937,15 @@ a
 			float: none
 			margin-bottom: 10px
 	&__info
-		overflow: hidden
+		// overflow: hidden
+		width: 210px
+		float: right
 		+r1
 			max-width: 290px
 			margin: 0 auto 10px
 			text-align: left
+			float: none
+			width: auto
 	&__img
 		background-color: #44709C
 		height: 166px
@@ -4963,10 +4966,22 @@ a
 			+semi
 			display: block
 			margin-bottom: 5px
-		small
+		small, a
 			color: #44709C
 			font-size: 15px
 			+bold
+			cursor: pointer
+		.is-tooltip
+			position: relative
+			.tooltip
+				color: #fff
+				right: auto
+				left: 0
+				max-width: 200px
+				width: auto 
+				&:after
+					right: 0
+					left: 13px
 	&__left
 		float: left
 	&__right

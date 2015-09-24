@@ -68,18 +68,8 @@
 								<li><a href="#" class="is-message"><span>Мои сообщения <small>+37</small></span></a></li>
 								<li><a href="#" class="is-ads">
 									<span>Мои объявления</span>
-									<div class="is-tooltip is-green">
-										<span>16</span>
-										<div class="tooltip">
-											<b>Активные</b>
-										</div>
-									</div>
-									<div class="is-tooltip is-red">
-										<span>4</span>
-										<div class="tooltip">
-											<b>Не активные</b>
-										</div>
-									</div>
+									<span class="js-tooltip cabinet__active" title="Активные">16</span>
+									<span class="js-tooltip cabinet__not-active" title="Не активные">4</span>
 								</a></li>
 								<li><a href="#" class="is-resume"><span>Моё резюме</span></a></li>
 								<li><a href="#" class="is-blog"><span>Мой блог</span></a></li>
@@ -199,9 +189,8 @@
 						<div class="n-ads__hots">
 							<div class="n-ads__items">
 								<div class="n-item">
-									<div class="block-star is-tooltip">
-										<a href="#" class="is-star"></a>
-										<div class="tooltip">Добавить в избранное</div>
+									<div class="block-star">
+										<a href="#" class="is-star js-tooltip" title="Добавить в избранное"></a>
 									</div>	
 									<div class="n-item__img">
 										<div class="n-item__popup"></div>
@@ -530,14 +519,11 @@
 											<option value="Продам">Продам</option>
 										</select>
 									</div>
-									<div class="n-ads__check is-tooltip">
-										<label class="checkbox">
+									<div class="n-ads__check">
+										<label class="checkbox js-tooltip" title='Показывать только объявления "Срочно"'>
 											<input type="checkbox">
 											<span>Срочно</span>
 										</label>
-										<div class="tooltip">
-											<p>Показывать только объявления "Срочно"</p>
-										</div>
 									</div>									
 								</div>								
 								<div class="n-ads__right">
