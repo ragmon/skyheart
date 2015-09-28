@@ -548,5 +548,19 @@ head.ready(function() {
         hideOnClick: true,
     });
 
+    //price tooltip
+    $('.js-price').each(function() {
+        var price = $(this),
+            priceInput = price.find('.js-price-input'),            
+            priceDrop = price.find('.js-price-help');
+ 
+            priceInput.focusin(function() {             
+                priceDrop.fadeOut(400);
+            });
+            // priceInput.focusout(function() {
+            //     priceDrop.fadeIn(400);
+            // });    
+    });
+
 });
 
