@@ -2595,7 +2595,7 @@ body.is-error:before { content: ""; display: inline-block; vertical-align: middl
 .ads-edit__text { display: block; color: #9db4ce; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 700; font-size: 17px; line-height: 25px; max-width: 360px; margin: 0 auto; }
 .ads-edit .btn { margin: 20px 0 0; }
 
-.ads-not { text-align: center; padding: 150px 20px 20px; }
+.ads-not { text-align: center; padding: 150px 20px 20px; border-bottom: 1px solid #1c2e3c; }
 .ads-not__icon { background: url('../img/icons-secde731619.png') 0 -283px no-repeat; width: 66px; height: 69px; display: inline-block; }
 .ads-not__text { display: block; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 700; color: #ce9d9d; font-size: 21px; line-height: 30px; max-width: 380px; margin: 0 auto 60px; }
 .ads-not__link { display: inline-block; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 700; color: #44709c; font-size: 14px; line-height: 30px; }
