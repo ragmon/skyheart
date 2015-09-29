@@ -3824,6 +3824,9 @@ a
 				left: 100%
 				+arr(40, 40, #577DAA, tl)
 				content: ""
+		a
+			color: #fff
+			text-decoration: none 
 	&__hots
 		background-color: #EDFBD6
 	&__settings
@@ -3929,6 +3932,10 @@ a
 			color: #fff
 			font-size: 14px
 			margin: 0
+	&__new
+		&.not-active
+			background-color: white
+			+box-shadow(0 3px 6px rgba(20, 45, 96, 0.75))
 .n-item
 	padding: 0 15px 10px 0
 	+clr
@@ -7642,3 +7649,149 @@ body
 		left: 50%
 		margin-left: -6px
 		+arr(12, 8, rgba(#28282a, 0.9), b)
+		
+//services items
+.item-services
+	border: 1px solid #426e82
+	padding: 15px 20px 10px 25px 
+	background: #fff 
+	position: relative
+	margin-bottom: 10px
+	.is-star
+		position: absolute
+		bottom: 10px
+		right: 20px
+	&__right
+		float: right
+		font-size: 0
+		+r(600)
+			float: none
+			text-align: center
+			padding: 0 0 10px 
+	&__price, .btn-services
+		display: inline-block
+		vertical-align: middle
+		margin-left: 10px
+	h5
+		color: #46778d
+		+bold
+		font-size: 14px
+		line-height: 1
+		margin-bottom: 12px
+		a
+			color: #46778d
+			text-decoration: none
+			display: inline-block
+	p, li, &__price
+		font-size: 11px
+		+semi
+		color: #555
+	&__text
+		padding: 0 0 15px 
+		overflow: hidden
+		+r(600)
+			padding: 0 0 10px 
+			text-align: center
+	&__info
+		font-size: 0
+		padding: 0 30px 0 0 
+		li
+			display: inline-block
+			vertical-align: top
+			width: 33.3%
+			padding: 0 0 2px 19px 
+			position: relative
+			white-space: nowrap
+			overflow: hidden
+			-ms-text-overflow: ellipsis
+			text-overflow: ellipsis
+			+r(600)
+				width: 100%
+				margin: 5px 0 0 
+			&:before
+				content: "" 
+				position: absolute
+				top: 0
+				left: 0
+			&.is-user
+				&:before
+					+s(ser-user)
+			&.is-place
+				&:before
+					+s(ser-pin)
+			&.is-date
+				&:before
+					+s(ser-calendar)
+
+.ads-edit
+	text-align: center
+	padding: 50px 20px 
+	&.is-success
+		.ads-edit
+			&__icon
+				+s(ads-success)
+			&__text
+				+opacity(0.75)
+				color: #3aa773
+	&__icon
+		+s(ads-edit)
+		display: inline-block
+		margin: 0 0 20px 
+	&__text
+		display: block
+		color: #9db4ce
+		+bold
+		font-size: 17px
+		line-height: 25px
+		max-width: 360px
+		margin: 0 auto 
+	.btn
+		margin: 20px 0 0 
+		
+.ads-not
+	text-align: center
+	padding: 150px 20px 20px 
+	&__icon
+		+s(ads-not)
+		display: inline-block
+	&__text
+		display: block
+		+bold
+		color: #ce9d9d
+		font-size: 21px
+		line-height: 30px
+		max-width: 380px
+		margin: 0 auto 60px 
+	&__link
+		display: inline-block
+		+bold
+		color: #44709c
+		font-size: 14px
+		line-height: 30px
+		
+.view-more
+	text-align: center
+	padding: 25px 
+	&__link
+		display: inline-block
+		+bold
+		color: #44709c
+		font-size: 14px
+		line-height: 30px
+		text-decoration: underline
+		&:hover
+			text-decoration: none
+
+.not-exist
+	padding: 50px 20px
+	text-align: center 
+	&__icon
+		+s(not-exist)
+		display: inline-block
+		margin: 0 0 10px 
+	&__text
+		display: block
+		+bold
+		color: #9db4ce
+		font-size: 21px
+		line-height: 30px
