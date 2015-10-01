@@ -141,12 +141,12 @@ textarea.textarea_black::-webkit-input-placeholder { color: #555555; }
 .trade { display: inline-block; vertical-align: top; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 600; font-size: 12px; padding: 5px 12px 5px 42px; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; position: relative; cursor: pointer; }
 .trade:before { content: ""; position: absolute; top: 4px; -moz-transition: all 0.2s; -o-transition: all 0.2s; -webkit-transition: all 0.2s; transition: all 0.2s; }
 .trade:active { top: 1px; }
-.trade_sell { color: #581c2c; border: 1px solid #581c2c; }
-.trade_sell:hover:before, .trade_sell:active:before { left: 15px; }
-.trade_sell:before { background: url('../img/icons-secde731619.png') 0 -3784px no-repeat; width: 20px; height: 19px; left: 10px; }
-.trade_buy { color: #76a133; border: 1px solid #76a133; }
-.trade_buy:hover:before, .trade_buy:active:before { left: 10px; }
-.trade_buy:before { background: url('../img/icons-secde731619.png') 0 -846px no-repeat; width: 20px; height: 19px; left: 15px; }
+.trade.trade_sell { color: #581c2c; border: 1px solid #581c2c; }
+.trade.trade_sell:hover:before, .trade.trade_sell:active:before { left: 15px; }
+.trade.trade_sell:before { background: url('../img/icons-secde731619.png') 0 -3784px no-repeat; width: 20px; height: 19px; left: 10px; }
+.trade.trade_buy { color: #76a133; border: 1px solid #76a133; }
+.trade.trade_buy:hover:before, .trade.trade_buy:active:before { left: 10px; }
+.trade.trade_buy:before { background: url('../img/icons-secde731619.png') 0 -846px no-repeat; width: 20px; height: 19px; left: 15px; }
 
 .btn-answer { font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 400; border: 1px solid #224271; color: #224271; font-size: 12px; text-transform: uppercase; padding: 10px 20px; background: none; text-align: center; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; position: relative; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; cursor: pointer; }
 .btn-answer:hover, .btn-answer:active { background: #224271; color: white; }
@@ -229,9 +229,9 @@ input.input-blue { -moz-border-radius: 3px; -webkit-border-radius: 3px; border-r
 .btn-services:before, .btn-services:after { position: absolute; top: 7px; left: 7px; content: ""; -moz-transition: all 0.25s; -o-transition: all 0.25s; -webkit-transition: all 0.25s; transition: all 0.25s; }
 .btn-services:before { background: url('../img/icons-secde731619.png') 0 -629px no-repeat; width: 13px; height: 12px; }
 .btn-services:after { background: url('../img/icons-secde731619.png') 0 -673px no-repeat; width: 13px; height: 12px; visibility: hidden; opacity: 0; }
-.btn-services.is-red { color: #581c2c; border-color: #581c2c; }
-.btn-services.is-red:before { background: url('../img/icons-secde731619.png') 0 -651px no-repeat; width: 13px; height: 12px; }
-.btn-services.is-red:hover { background: #581c2c; color: white; }
+.btn-services.trade_sell { color: #581c2c; border-color: #581c2c; }
+.btn-services.trade_sell:before { background: url('../img/icons-secde731619.png') 0 -651px no-repeat; width: 13px; height: 12px; }
+.btn-services.trade_sell:hover { background: #581c2c; color: white; }
 
 .slick-slider { position: relative; display: block; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; -ms-touch-action: pan-y; touch-action: pan-y; -webkit-tap-highlight-color: transparent; }
 

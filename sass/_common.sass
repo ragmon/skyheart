@@ -572,7 +572,7 @@ textarea.textarea
 		+transition(all 0.2s)
 	&:active
 		top: 1px
-	&_sell
+	&.trade_sell
 		color: #581c2c
 		border: 1px solid #581C2C
 		&:hover, &:active
@@ -581,7 +581,7 @@ textarea.textarea
 		&:before
 			+s(sell)
 			left: 10px
-	&_buy
+	&.trade_buy
 		color: #76A133
 		border: 1px solid #76A133
 		&:hover, &:active
@@ -979,7 +979,7 @@ input.input-blue
 		+s(bs-white)
 		visibility: hidden
 		opacity: 0
-	&.is-red
+	&.trade_sell
 		color: #581c2c 
 		border-color: #581c2c 
 		&:before
