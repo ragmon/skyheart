@@ -5,4 +5,5 @@ head.load("js/lib/jquery.js",
 					"js/lib/jquery.mCustomScrollbar.min.js",
 					"js/lib/slick.min.js",
 					"js/lib/jquery.tooltipster.min.js",
+					"js/lib/cropper.min.js",
 					"js/common.js");

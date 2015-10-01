@@ -411,6 +411,64 @@ input.input-blue { -moz-border-radius: 3px; -webkit-border-radius: 3px; border-r
 
 .tooltipster-content-changing { opacity: 0.5; -webkit-transform: scale(1.1, 1.1); -moz-transform: scale(1.1, 1.1); -o-transform: scale(1.1, 1.1); -ms-transform: scale(1.1, 1.1); transform: scale(1.1, 1.1); }
 
+.cropper-container { position: relative; overflow: hidden; font-size: 0; line-height: 0; -ms-touch-action: none; touch-action: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; direction: ltr !important; -webkit-tap-highlight-color: transparent; -webkit-touch-callout: none; }
+.cropper-container img { display: block; width: 100%; min-width: 0 !important; max-width: none !important; height: 100%; min-height: 0 !important; max-height: none !important; image-orientation: 0deg !important; }
+
+.cropper-canvas, .cropper-drag-box, .cropper-crop-box, .cropper-modal { position: absolute; top: 0; right: 0; bottom: 0; left: 0; }
+
+.cropper-drag-box { background-color: white; filter: alpha(opacity=0); opacity: 0; }
+
+.cropper-modal { background-color: black; filter: alpha(opacity=50); opacity: 0.5; }
+
+.cropper-view-box { display: block; width: 100%; height: 100%; overflow: hidden; outline: 1px solid #6699ff; outline-color: rgba(102, 153, 255, 0.75); }
+
+.cropper-dashed { position: absolute; display: block; filter: alpha(opacity=50); border: 0 dashed #eeeeee; opacity: 0.5; }
+.cropper-dashed.dashed-h { top: 33.33333%; left: 0; width: 100%; height: 33.33333%; border-top-width: 1px; border-bottom-width: 1px; }
+.cropper-dashed.dashed-v { top: 0; left: 33.33333%; width: 33.33333%; height: 100%; border-right-width: 1px; border-left-width: 1px; }
+
+.cropper-center { position: absolute; top: 50%; left: 50%; display: block; width: 0; height: 0; filter: alpha(opacity=75); opacity: 0.75; }
+.cropper-center:before, .cropper-center:after { position: absolute; display: block; content: " "; background-color: #eeeeee; }
+.cropper-center:before { top: 0; left: -3px; width: 7px; height: 1px; }
+.cropper-center:after { top: -3px; left: 0; width: 1px; height: 7px; }
+
+.cropper-face, .cropper-line, .cropper-point { position: absolute; display: block; width: 100%; height: 100%; filter: alpha(opacity=10); opacity: 0.1; }
+
+.cropper-face { top: 0; left: 0; background-color: white; }
+
+.cropper-line { background-color: #6699ff; }
+.cropper-line.line-e { top: 0; right: -3px; width: 5px; cursor: e-resize; }
+.cropper-line.line-n { top: -3px; left: 0; height: 5px; cursor: n-resize; }
+.cropper-line.line-w { top: 0; left: -3px; width: 5px; cursor: w-resize; }
+.cropper-line.line-s { bottom: -3px; left: 0; height: 5px; cursor: s-resize; }
+
+.cropper-point { width: 5px; height: 5px; background-color: #6699ff; filter: alpha(opacity=75); opacity: 0.75; }
+.cropper-point.point-e { top: 50%; right: -3px; margin-top: -3px; cursor: e-resize; }
+.cropper-point.point-n { top: -3px; left: 50%; margin-left: -3px; cursor: n-resize; }
+.cropper-point.point-w { top: 50%; left: -3px; margin-top: -3px; cursor: w-resize; }
+.cropper-point.point-s { bottom: -3px; left: 50%; margin-left: -3px; cursor: s-resize; }
+.cropper-point.point-ne { top: -3px; right: -3px; cursor: ne-resize; }
+.cropper-point.point-nw { top: -3px; left: -3px; cursor: nw-resize; }
+.cropper-point.point-sw { bottom: -3px; left: -3px; cursor: sw-resize; }
+.cropper-point.point-se { right: -3px; bottom: -3px; width: 20px; height: 20px; cursor: se-resize; filter: alpha(opacity=100); opacity: 1; }
+.cropper-point.point-se:before { position: absolute; right: -50%; bottom: -50%; display: block; width: 200%; height: 200%; content: " "; background-color: #6699ff; filter: alpha(opacity=0); opacity: 0; }
+
+@media (min-width: 768px) { .cropper-point.point-se { width: 15px; height: 15px; } }
+@media (min-width: 992px) { .cropper-point.point-se { width: 10px; height: 10px; } }
+@media (min-width: 1200px) { .cropper-point.point-se { width: 5px; height: 5px; filter: alpha(opacity=75); opacity: 0.75; } }
+.cropper-bg { background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAQMAAAAlPW0iAAAAA3NCSVQICAjb4U/gAAAABlBMVEXMzMz////TjRV2AAAACXBIWXMAAArrAAAK6wGCiw1aAAAAHHRFWHRTb2Z0d2FyZQBBZG9iZSBGaXJld29ya3MgQ1M26LyyjAAAABFJREFUCJlj+M/AgBVhF/0PAH6/D/HkDxOGAAAAAElFTkSuQmCC"); }
+
+.cropper-invisible { filter: alpha(opacity=0); opacity: 0; }
+
+.cropper-hide { position: absolute; display: block; width: 0; height: 0; }
+
+.cropper-hidden { display: none !important; }
+
+.cropper-move { cursor: move; }
+
+.cropper-crop { cursor: crosshair; }
+
+.cropper-disabled .cropper-drag-box, .cropper-disabled .cropper-face, .cropper-disabled .cropper-line, .cropper-disabled .cropper-point { cursor: not-allowed; }
+
 .l { *zoom: 1; }
 .l:after { content: " "; display: table; clear: both; }
 .l .l-col1 { float: left; width: 20%; }
@@ -2607,3 +2665,21 @@ body.is-error:before { content: ""; display: inline-block; vertical-align: middl
 .not-exist { padding: 50px 20px; text-align: center; }
 .not-exist__icon { background: url('../img/icons-secde731619.png') 0 -2943px no-repeat; width: 66px; height: 69px; display: inline-block; margin: 0 0 10px; }
 .not-exist__text { display: block; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 700; color: #9db4ce; font-size: 21px; line-height: 30px; }
+
+.crop-wrap { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.7); padding: 20px; text-align: center; font-size: 0; z-index: 3000; overflow: auto; -moz-transition: all 0.3s ease; -o-transition: all 0.3s ease; -webkit-transition: all 0.3s ease; transition: all 0.3s ease; will-change: opacity; visibility: hidden; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; }
+.crop-wrap:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
+@media only screen and (max-width: 980px) { .crop-wrap { display: none; } }
+.crop-wrap.is-active { visibility: visible; filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false); opacity: 1; }
+
+.crop { display: inline-block; vertical-align: middle; max-width: 600px; background: white; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; width: 100%; padding: 20px; position: relative; text-align: left; }
+@media only screen and (max-width: 980px) { .crop { display: none; } }
+.crop__img { float: left; width: 300px; }
+.crop__img img { width: 100%; }
+.crop__info { overflow: hidden; padding: 20px; }
+.crop__preview { width: 100px; height: 100px; margin: 0 auto; }
+.crop__row { padding: 20px 0 0; *zoom: 1; }
+.crop__row:after { content: " "; display: table; clear: both; }
+.crop__title { font-size: 24px; line-height: 1.2; color: #555555; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 600; padding: 0 0 15px; }
+.crop p { font-size: 16px; color: #555555; line-height: 1.2; padding: 5px 0; }
+.crop__btn { text-align: center; padding: 20px 0 0; }
+.crop__close { background: url('../img/icons-secde731619.png') 0 -3069px no-repeat; width: 13px; height: 13px; position: absolute; top: 8px; right: 7px; cursor: pointer; }
