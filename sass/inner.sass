@@ -7885,3 +7885,233 @@ body
 		right: 7px
 		cursor: pointer
 	
+//news update
+.news-items
+	border-bottom: 1px solid #577daa
+	+box-shadow(0 3px 6px rgba(20, 45, 96, 0.75))
+
+.news-item
+	+clr
+	padding: 20px 13px 10px 23px 
+	background-color: white
+	border: 1px solid #577daa
+	border-bottom: none
+	+transition(all 0.25s)
+	&:hover
+		background-color: #577daa
+		h4, h4 a, p
+			color: #fff 
+		time, li a
+			color: #456386
+		.news-item__bottom
+			border-color: #456386 
+		li
+			a, a i
+				&:before
+					opacity: 1
+					visibility: visible
+	&__img
+		width: 126px
+		height: 126px
+		background-color: whitesmoke
+		position: relative
+		float: left
+		margin: 0 24px 0 0 
+		+r(600)
+			width: 200px
+			height: 200px
+			margin: 0 auto 24px
+			float: none 
+		.is-polaroid
+			position: absolute
+			top: 50%
+			left: 50%
+			+s(news-polaroid)
+			margin: -14px 0 0 -17px 
+		img
+			width: 100%
+			height: 100%
+	&__block
+		overflow: hidden
+		+r(600)
+			overflow: visible
+	h4
+		+semi
+		color: #417ab5
+		font-size: 15px
+		line-height: 19px
+		text-transform: uppercase
+		margin-bottom: 7px
+		+transition(all 0.25s)
+		a
+			color: #417ab5
+			+transition(all 0.25s)
+	p
+		+reg
+		color: #555
+		font-size: 11px
+		line-height: 15px
+		margin-bottom: 10px
+		+transition(all 0.25s)
+	&__bottom
+		border-top: 2px solid #e8e8e8
+		padding: 10px 0 0 
+		font-size: 0
+		text-align: center
+		+transition(all 0.25s)
+		+clr
+	&__list, &__social
+		li
+			display: inline-block
+			vertical-align: middle
+		a
+			display: inline-block
+			position: relative
+	&__list
+		float: left
+		+r(400)
+			float: none
+			display: inline-block
+			vertical-align: middle
+			padding: 0 10px 10px
+		li
+			padding: 0 12px 0 0 
+		a
+			+semi
+			color: #a7a7a7
+			font-size: 11px
+			line-height: 16px
+			padding: 0 0 0 22px 
+			+transition(color 0.25s)
+			&.is-view
+				i
+					+s(news-view)
+					margin-top: -7px
+					&:before
+						+s(news-view-active)
+			&.is-comments
+				i
+					+s(news-comments)
+					margin-top: -8px
+					&:before
+						+s(news-comments-active)
+			i
+				position: absolute
+				top: 50%
+				left: 0
+				&:before
+					content: "" 
+					position: absolute
+					top: 0
+					left: 0
+					opacity: 0
+					+transition(all 0.25s)
+	&__social
+		float: right
+		+r(400)
+			float: none
+			display: inline-block
+			vertical-align: middle
+			padding: 0 10px 10px
+		li
+			padding: 0 0 0 12px
+		a
+			&:before
+				content: "" 
+				position: absolute
+				top: 0
+				left: 0
+				opacity: 0
+				+transition(all 0.25s)
+			&.is-vk
+				+s(news-vk)
+				&:before
+					+s(news-vk-active)
+			&.is-fb
+				+s(news-fb)
+				&:before
+					+s(news-fb-active)
+			&.is-twitter
+				+s(news-twitter)
+				&:before
+					+s(news-twitter-active)
+			&.is-gp
+				+s(news-gp)
+				&:before
+					+s(news-gp-active)
+	time
+		+semi
+		color: #555
+		font-size: 11px
+		line-height: 15px
+		display: block
+		overflow: hidden
+
+.news-category
+	margin-bottom: 10px
+	&__title
+		+reg
+		font-size: 20px
+		color: white
+		text-transform: uppercase
+		height: 44px
+		position: relative
+		background-color: #44709c
+		line-height: 44px
+		padding: 0 20px
+		text-align: center
+	&__list
+		background-color: #deeefd
+		border: 1px solid #44709c
+		+box-shadow(1.5px 2.6px 6px rgba(20, 45, 96, 0.75))
+		a
+			+reg
+			color: #555
+			font-size: 16px
+			line-height: 33px
+			+transition(all 0.25s)
+			padding: 0 40px
+			display: block
+			position: relative 
+			&:hover
+				text-decoration: underline
+			&.is-active
+				background-color: white
+				&:before
+					width: 5px
+			&:before
+				content: "" 
+				position: absolute
+				top: 0
+				bottom: 0
+				left: 0
+				width: 0
+				background-color: #44709c
+				+transition(all 0.25s)
+
+.news-popup
+	width: 300px
+	height: 300px
+	position: fixed
+	top: 50%
+	left: 50%
+	margin: -150px 0 0 -150px
+	visibility: hidden
+	opacity: 0
+	+scale(0.7)
+	+transition(all 0.4s) 
+	background: whitesmoke 
+	&.is-active
+		opacity: 1
+		visibility: visible
+		+scale(1)
+	img
+		width: 100%
+		height: 100%
+	&__close
+		+s(p-close)
+		position: absolute
+		top: 8px
+		right: 7px
+		cursor: pointer
+	
