@@ -7898,19 +7898,6 @@ body
 	border: 1px solid #577daa
 	border-bottom: none
 	+transition(all 0.25s)
-	&:hover
-		background-color: #577daa
-		h4, h4 a, p
-			color: #fff 
-		time, li a
-			color: #456386
-		.news-item__bottom
-			border-color: #456386 
-		li
-			a, a i
-				&:before
-					opacity: 1
-					visibility: visible
 	&__img
 		width: 126px
 		height: 126px
@@ -7948,6 +7935,9 @@ body
 		a
 			color: #417ab5
 			+transition(all 0.25s)
+			cursor: pointer
+			&:hover
+				text-decoration: underline
 	p
 		+reg
 		color: #555
@@ -7985,6 +7975,11 @@ body
 			line-height: 16px
 			padding: 0 0 0 22px 
 			+transition(color 0.25s)
+			&:hover				
+				color: #456386
+				i
+					&:before
+						opacity: 1
 			&.is-view
 				i
 					+s(news-view)
@@ -8018,6 +8013,9 @@ body
 		li
 			padding: 0 0 0 12px
 		a
+			&:hover
+				&:before
+					opacity: 1
 			&:before
 				content: "" 
 				position: absolute
