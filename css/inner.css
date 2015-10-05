@@ -2629,7 +2629,7 @@ body.is-error:before { content: ""; display: inline-block; vertical-align: middl
 .ads-empty__icon { background: url('../img/icons-sada5f060ad.png') 0 -2761px no-repeat; width: 73px; height: 73px; display: inline-block; margin: 0 0 10px; }
 .ads-empty__text { display: block; font-size: 21px; line-height: 1; color: #9db4ce; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 700; margin-bottom: 20px; }
 
-.creating__price-help { position: absolute; bottom: 100%; left: 50%; margin: 0 0 10px -100px; width: 200px; background: rgba(40, 40, 42, 0.9); color: white; font-size: 12px; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 400; padding: 10px 12px; line-height: 1.2; }
+.creating__price-help { position: absolute; bottom: 100%; left: 50%; margin: 0 0 10px -100px; width: 200px; background: rgba(40, 40, 42, 0.9); color: white; font-size: 12px; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 400; padding: 10px 12px; line-height: 1.2; display: none; }
 .creating__price-help:before { content: ""; position: absolute; top: 100%; left: 50%; margin-left: -6px; width: 0px; height: 0px; border-style: solid; border-width: 8px 6px 0 6px; border-color: rgba(40, 40, 42, 0.9) transparent transparent transparent; }
 
 .item-services { border: 1px solid #426e82; padding: 15px 20px 10px 25px; background: white; position: relative; margin-bottom: 10px; }

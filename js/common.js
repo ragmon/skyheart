@@ -551,15 +551,15 @@ head.ready(function() {
 		//price tooltip
 		$('.js-price').each(function() {
 				var price = $(this),
-						priceInput = price.find('.js-price-input'),   
-						priceDrop = price.find('.js-price-help');
- 
-						priceInput.focusin(function() {    
-								priceDrop.fadeOut(400);
-						});
-						// priceInput.focusout(function() {
-						//   priceDrop.fadeIn(400);
-						// });  
+					priceInput = price.find('.js-price-input'),   
+					priceDrop = price.find('.js-price-help');
+
+					priceInput.focusin(function() {    
+							priceDrop.fadeIn(200);
+					});
+					priceInput.focusout(function() {
+					  priceDrop.fadeOut(200);
+					});  
 		});
 
 		//crop
