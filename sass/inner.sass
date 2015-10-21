@@ -8114,4 +8114,109 @@ body
 		top: 8px
 		right: 7px
 		cursor: pointer
-	
+		
+.f-person-company
+	display: none
+
+.f-person__title
+	color: #555
+	font-size: 17px
+	line-height: 19px
+	+semi
+	text-align: center
+	padding: 25px 0  
+
+.f-person__list
+	font-size: 0
+	max-width: 400px
+	margin: 0 auto 
+	li
+		display: inline-block
+		vertical-align: top
+		width: 33.33%
+		padding: 0 0 2px 0 
+		+r1
+			width: 50%
+		+r(700)
+			width: 100%
+.checkbox-reg
+	display: inline-block
+	vertical-align: top
+	position: relative
+	padding: 0 0 0 34px
+	cursor: pointer
+	input
+		position: absolute
+		visibility: hidden
+		opacity: 0
+		&:checked + span
+			&:before
+				background: #2d4164
+			&:after
+				display: block
+	span
+		color: #555
+		font-size: 13px
+		line-height: 28px
+		&:before, &:after
+			content: "" 
+			position: absolute
+		&:before
+			top: 1px
+			left: 0 
+			width: 23px
+			height: 23px
+			background-color: white
+			border: 1px solid #2d4164
+			border-radius: 6px
+			background-position: center center
+			background-repeat: no-repeat
+		&:after
+			+s(check-check)
+			top: 6px
+			left: 4px
+			display: none
+	&.is-set
+		span:before
+			background-image: url(../img/icons/check-set.png)
+	&.is-tools
+		span:before
+			background-image: url(../img/icons/check-tools.png)
+	&.is-money
+		span:before
+			background-image: url(../img/icons/check-money.png)
+	&.is-plane
+		span:before
+			background-image: url(../img/icons/check-plane.png)
+	&.is-user
+		span:before
+			background-image: url(../img/icons/check-user.png)
+	&.is-tag
+		span:before
+			background-image: url(../img/icons/check-tag.png)
+
+.form__center
+	text-align: center
+	padding: 35px 0 0 
+			
+
+.warning-success
+	background-color: #e6f7de
+	border: 1px solid #7cab7c
+	padding: 10px 50px 10px 15px 
+	position: relative
+	margin-top: 25px
+	&:before
+		position: absolute
+		content: "" 
+		top: 20px
+		right: 19px
+		+s(warning-success)
+		opacity: 0.58 
+	p
+		+reg
+		color: #4c6e4c
+		font-size: 13px
+		line-height: 21px
+		max-width: 550px
+		margin: 0

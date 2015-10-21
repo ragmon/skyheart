@@ -188,145 +188,211 @@
 						</div>
 						<form action="">
 							<div class="f-person js-person-box is-active">
-								<div class="form__row">
-									<div class="form__box">
-										<span class="form__label">Ваше имя</span>
-										<label>
-											<input type="text" class="input">
-										</label>
-									</div>
-									<div class="form__box">
-										<span class="form__label">Фамилия</span>
-										<label>
-											<input type="text" class="input">
-										</label>
-									</div>
-									<div class="form__box">
-										<span class="form__label">Логин</span>
-										<label>
-											<input type="text" class="input">
-											<span class="form__status is-bad">Занят</span>
-										</label>
-									</div>
-								</div>
-								<div class="field field_radio field_radio_mod">
-									<span class="form__label">Пол</span>
-									<div class="field__radios">
-										<div class="field__radio">
-											<label class="radio">
-												<input type="radio" name="radio2">
-												<span>Мужской</span>
+								<div class="f-person-section">
+									<div class="form__row">
+										<div class="form__box">
+											<span class="form__label">Ваше имя</span>
+											<label>
+												<input type="text" class="input">
 											</label>
 										</div>
-										<div class="field__radio">
-											<label class="radio">
-												<input type="radio" name="radio2">
-												<span>Женский</span>
+										<div class="form__box">
+											<span class="form__label">Фамилия</span>
+											<label>
+												<input type="text" class="input">
 											</label>
 										</div>
-									</div>								
+										<div class="form__box">
+											<span class="form__label">Логин</span>
+											<label>
+												<input type="text" class="input">
+												<span class="form__status is-bad">Занят</span>
+											</label>
+										</div>
+									</div>
+									<div class="field field_radio field_radio_mod">
+										<span class="form__label">Пол</span>
+										<div class="field__radios">
+											<div class="field__radio">
+												<label class="radio">
+													<input type="radio" name="radio2">
+													<span>Мужской</span>
+												</label>
+											</div>
+											<div class="field__radio">
+												<label class="radio">
+													<input type="radio" name="radio2">
+													<span>Женский</span>
+												</label>
+											</div>
+										</div>								
+									</div>
+									<div class="form__selects">
+										<span class="form__label">Дата рождения</span>
+										<div class="form__select is-big">
+											<div class="select js-select">
+											    <span class="select__text js-select-text">Month</span>
+											    <ul class="select__list js-select-list">
+											        <li data-val="Month1">Month1</li>
+											        <li data-val="Month2">Month2</li>
+											    </ul>
+											    <select>
+											          <option value="Month1">Month1</option>
+											          <option value="Month2">Month2</option>
+											    </select>
+											</div>
+										</div>
+										<div class="form__select is-small">
+											<div class="select js-select">
+											    <span class="select__text js-select-text">Day</span>
+											    <ul class="select__list js-select-list">
+											        <li data-val="Day1">Day1</li>
+											        <li data-val="Day2">Day2</li>
+											    </ul>
+											    <select>
+											          <option value="Day1">Day1</option>
+											          <option value="Day2">Day2</option>
+											    </select>
+											</div>
+										</div>
+										<div class="form__select is-small">
+											<div class="select js-select">
+											    <span class="select__text js-select-text">Year</span>
+											    <ul class="select__list js-select-list">
+											        <li data-val="Year1">Year1</li>
+											        <li data-val="Year2">Year2</li>
+											    </ul>
+											    <select>
+											          <option value="Year1">Year1</option>
+											          <option value="Year2">Year2</option>
+											    </select>
+											</div>
+										</div>
+									</div>
+									<div class="form__row">
+										<div class="form__box">	
+											<span class="form__label">Страна</span>	
+											<div class="select js-select">
+											    <span class="select__text js-select-text"></span>
+											    <ul class="select__list js-select-list">
+											        <li data-val="Страна1">Страна1</li>
+											        <li data-val="Страна2">Страна2</li>
+											    </ul>
+											    <select>
+											          <option value="Страна1">Страна1</option>
+											          <option value="Страна2">Страна2</option>
+											    </select>
+											</div>
+										</div>
+										<div class="form__box">	
+											<span class="form__label">Город</span>
+											<div class="select js-select">
+											    <span class="select__text js-select-text"></span>
+											    <ul class="select__list js-select-list">
+											        <li data-val="Город1">Город1</li>
+											        <li data-val="Город2">Город2</li>
+											    </ul>
+											    <select>
+											          <option value="Город1">Город1</option>
+											          <option value="Город2">Город2</option>
+											    </select>
+											</div>
+										</div>
+									</div>
+									<div class="form__row">
+										<div class="form__box">
+											<span class="form__label">E-mail</span>
+											<label>
+												<input type="text" class="input">
+												<span class="form__status is-good">Свободен</span>
+											</label>
+										</div>
+										<div class="form__box">
+											<span class="form__label">Телефон</span>
+											<label>
+												<input type="text" class="input" value="+">
+											</label>
+										</div>
+									</div>
+									<div class="form__row">
+										<div class="form__box">
+											<span class="form__label">Пароль</span>
+											<label>
+												<input type="text" class="input">
+												<span class="form__status is-bad">Пароль не надёжный</span>
+											</label>
+										</div>
+										<div class="form__box">
+											<span class="form__label">Повторите пароль</span>
+											<label>
+												<input type="text" class="input">
+												<span class="form__status is-good">Пароли совпадают</span>
+											</label>
+										</div>
+									</div>
+									<div class="form__center">
+										<button class="btn btn_blue js-reg-open">У Вас есть компания?</button>
+									</div>
 								</div>
-								<div class="form__selects">
-									<span class="form__label">Дата рождения</span>
-									<div class="form__select is-big">
-										<div class="select js-select">
-										    <span class="select__text js-select-text">Month</span>
-										    <ul class="select__list js-select-list">
-										        <li data-val="Month1">Month1</li>
-										        <li data-val="Month2">Month2</li>
-										    </ul>
-										    <select>
-										          <option value="Month1">Month1</option>
-										          <option value="Month2">Month2</option>
-										    </select>
+								<div class="f-person-section f-person-company js-reg-company">
+									<div class="creating__field">
+										<span class="form__label">Название компании:</span>
+										<input type="text" class="input">
+									</div>
+									<div class="f-person__title">Выбирите категории к которым относится ваша компания:</div>
+									<ul class="f-person__list">
+										<li><label class="checkbox-reg is-set"><input type="checkbox"><span>Производство</span></label></li>
+										<li><label class="checkbox-reg is-tools"><input type="checkbox"><span>Ремонт</span></label></li>
+										<li><label class="checkbox-reg is-money"><input type="checkbox"><span>Торговля</span></label></li>
+										<li><label class="checkbox-reg is-plane"><input type="checkbox"><span>Перевозки</span></label></li>
+										<li><label class="checkbox-reg is-user"><input type="checkbox"><span>Аэроклуб</span></label></li>
+										<li><label class="checkbox-reg is-tag"><input type="checkbox"><span>Другое</span></label></li>
+									</ul>
+									<div class="f-company__logo">
+										<div class="f-company__file">
+											<label class="file">
+												<input type="file">
+												<span><i></i></span>
+											</label>
+										</div>
+										<span class="form__label">Добавить логотип</span>
+									</div>
+									<div class="form__row">
+										<div class="form__box">	
+											<span class="form__label">Страна</span>	
+											<div class="select js-select">
+											    <span class="select__text js-select-text"></span>
+											    <ul class="select__list js-select-list" style="">
+											        <li data-val="Страна1">Страна1</li>
+											        <li data-val="Страна2">Страна2</li>
+											    </ul>
+											    <select>
+											          <option value="Страна1">Страна1</option>
+											          <option value="Страна2">Страна2</option>
+											    </select>
+											</div>
+										</div>
+										<div class="form__box">	
+											<span class="form__label">Город</span>
+											<div class="select js-select">
+											    <span class="select__text js-select-text"></span>
+											    <ul class="select__list js-select-list" style="">
+											        <li data-val="Город1">Город1</li>
+											        <li data-val="Город2">Город2</li>
+											    </ul>
+											    <select>
+											          <option value="Город1">Город1</option>
+											          <option value="Город2">Город2</option>
+											    </select>
+											</div>
 										</div>
 									</div>
-									<div class="form__select is-small">
-										<div class="select js-select">
-										    <span class="select__text js-select-text">Day</span>
-										    <ul class="select__list js-select-list">
-										        <li data-val="Day1">Day1</li>
-										        <li data-val="Day2">Day2</li>
-										    </ul>
-										    <select>
-										          <option value="Day1">Day1</option>
-										          <option value="Day2">Day2</option>
-										    </select>
-										</div>
+									<div class="creating__field">			
+										<span class="form__label">Краткое описание:</span>
+										<textarea name="" id="" cols="30" rows="10" class="textarea"></textarea>
 									</div>
-									<div class="form__select is-small">
-										<div class="select js-select">
-										    <span class="select__text js-select-text">Year</span>
-										    <ul class="select__list js-select-list">
-										        <li data-val="Year1">Year1</li>
-										        <li data-val="Year2">Year2</li>
-										    </ul>
-										    <select>
-										          <option value="Year1">Year1</option>
-										          <option value="Year2">Year2</option>
-										    </select>
-										</div>
-									</div>
-								</div>
-								<div class="form__row">
-									<div class="form__box">	
-										<span class="form__label">Страна</span>	
-										<div class="select js-select">
-										    <span class="select__text js-select-text"></span>
-										    <ul class="select__list js-select-list">
-										        <li data-val="Страна1">Страна1</li>
-										        <li data-val="Страна2">Страна2</li>
-										    </ul>
-										    <select>
-										          <option value="Страна1">Страна1</option>
-										          <option value="Страна2">Страна2</option>
-										    </select>
-										</div>
-									</div>
-									<div class="form__box">	
-										<span class="form__label">Город</span>
-										<div class="select js-select">
-										    <span class="select__text js-select-text"></span>
-										    <ul class="select__list js-select-list">
-										        <li data-val="Город1">Город1</li>
-										        <li data-val="Город2">Город2</li>
-										    </ul>
-										    <select>
-										          <option value="Город1">Город1</option>
-										          <option value="Город2">Город2</option>
-										    </select>
-										</div>
-									</div>
-								</div>
-								<div class="form__row">
-									<div class="form__box">
-										<span class="form__label">E-mail</span>
-										<label>
-											<input type="text" class="input">
-											<span class="form__status is-good">Свободен</span>
-										</label>
-									</div>
-									<div class="form__box">
-										<span class="form__label">Телефон</span>
-										<label>
-											<input type="text" class="input" value="+">
-										</label>
-									</div>
-								</div>
-								<div class="form__row">
-									<div class="form__box">
-										<span class="form__label">Пароль</span>
-										<label>
-											<input type="text" class="input">
-											<span class="form__status is-bad">Пароль не надёжный</span>
-										</label>
-									</div>
-									<div class="form__box">
-										<span class="form__label">Повторите пароль</span>
-										<label>
-											<input type="text" class="input">
-											<span class="form__status is-good">Пароли совпадают</span>
-										</label>
+									<div class="warning-success">
+										<p>Вы можете отредактировать (ввести дополнительную информацию) о компании в разделе: "Моя компания" в любое время.</p>
 									</div>
 								</div>
 								<div class="form__code">

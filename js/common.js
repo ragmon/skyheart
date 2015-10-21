@@ -659,5 +659,10 @@ head.ready(function() {
 			});
 		});
 
+	$('.js-reg-open').click(function() {
+		$('.js-reg-company').slideToggle(500);
+		return false;
+	});
+
 });
 
