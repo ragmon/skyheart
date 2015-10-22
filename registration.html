@@ -171,21 +171,6 @@
 				<div class="content__box">
 					<div class="form js-radio-block">
 						<div class="form__title">Все поля обязательны для заполнения</div>
-						<div class="field field_radio">
-							<span class="form__label dl-mb"></span>
-							<div class="field__radio">
-								<label class="radio">
-									<input type="radio" name="radio1" class="js-person-radio js-radio" checked>
-									<span>Частное лицо</span>
-								</label>
-							</div>
-							<div class="field__radio">
-								<label class="radio">
-									<input type="radio" name="radio1" class="js-company-radio js-radio">
-									<span>Компания</span>
-								</label>
-							</div>
-						</div>
 						<form action="">
 							<div class="f-person js-person-box is-active">
 								<div class="f-person-section">
@@ -336,10 +321,10 @@
 								</div>
 								<div class="f-person-section f-person-company js-reg-company">
 									<div class="creating__field">
-										<span class="form__label">Название компании:</span>
+										<span class="form__label">Название компании (например: ООО "Авиасервис"):</span>
 										<input type="text" class="input">
 									</div>
-									<div class="f-person__title">Выбирите категории к которым относится ваша компания:</div>
+									<div class="f-person__title">Что предлагает ваша компания?</div>
 									<ul class="f-person__list">
 										<li><label class="checkbox-reg is-set"><input type="checkbox"><span>Производство</span></label></li>
 										<li><label class="checkbox-reg is-tools"><input type="checkbox"><span>Ремонт</span></label></li>
@@ -388,7 +373,7 @@
 										</div>
 									</div>
 									<div class="creating__field">			
-										<span class="form__label">Краткое описание:</span>
+										<span class="form__label">Краткое описание компании:</span>
 										<textarea name="" id="" cols="30" rows="10" class="textarea"></textarea>
 									</div>
 									<div class="warning-success">
@@ -408,205 +393,6 @@
 									<button class="btn">Регистрация</button>
 								</div>		
 							</div>
-						</form>
-						<form action="">
-							<div class="f-company js-company-box">
-								<div class="creating__field">
-									<span class="form__label">Название компании:</span>
-									<input type="text" class="input">
-								</div>
-								<div class="f-company__category">
-									<span class="form__label">Категория:</span>
-									<ul>
-										<li><label class="checkbox"><input type="checkbox"><span>Производство</span></label></li>
-										<li><label class="checkbox"><input type="checkbox"><span>Ремонт</span></label></li>
-										<li><label class="checkbox"><input type="checkbox"><span>Торговля</span></label></li>
-										<li><label class="checkbox"><input type="checkbox"><span>Перевозки</span></label></li>
-										<li><label class="checkbox"><input type="checkbox"><span>Аэроклуб</span></label></li>
-										<li><label class="checkbox"><input type="checkbox"><span>Другое</span></label></li>
-									</ul>
-								</div>
-								<div class="f-company__logo">
-									<div class="f-company__file">
-										<label class="file">
-											<input type="file">
-											<span><i></i></span>
-										</label>
-									</div>
-									<span class="form__label">Добавить логотип</span>
-								</div>
-								<div class="f-company__discription">									
-									<span class="form__label">Краткое описание:</span>
-									<textarea name="" id="" cols="30" rows="10" class="textarea"></textarea>
-								</div>
-								<div class="form__row">
-									<div class="form__box">	
-										<span class="form__label">Страна</span>	
-										<div class="select js-select">
-										    <span class="select__text js-select-text"></span>
-										    <ul class="select__list js-select-list">
-										        <li data-val="Страна1">Страна1</li>
-										        <li data-val="Страна2">Страна2</li>
-										    </ul>
-										    <select>
-										          <option value="Страна1">Страна1</option>
-										          <option value="Страна2">Страна2</option>
-										    </select>
-										</div>
-									</div>
-									<div class="form__box">	
-										<span class="form__label">Город</span>
-										<div class="select js-select">
-										    <span class="select__text js-select-text"></span>
-										    <ul class="select__list js-select-list">
-										        <li data-val="Город1">Город1</li>
-										        <li data-val="Город2">Город2</li>
-										    </ul>
-										    <select>
-										          <option value="Город1">Город1</option>
-										          <option value="Город2">Город2</option>
-										    </select>
-										</div>
-									</div>
-								</div>
-								<div class="f-company__contact">
-									<span class="f-company__contact-title">Контактное лицо</span>									
-									<div class="creating__field">
-										<input type="text" class="input" placeholder="Должность">
-									</div>
-									<div class="form__row">
-										<div class="form__box">
-											<span class="form__label">Имя</span>
-											<label>
-												<input type="text" class="input">
-											</label>
-										</div>
-										<div class="form__box">
-											<span class="form__label">Фамилия</span>
-											<label>
-												<input type="text" class="input">
-											</label>
-										</div>
-									</div>
-									<div class="form__row">
-										<div class="form__box">
-											<span class="form__label">E-mail</span>
-											<label>
-												<input type="text" class="input">
-												<span class="form__status is-good">Свободен</span>
-											</label>
-										</div>
-										<div class="form__box">
-											<span class="form__label">Skype</span>
-											<label>
-												<input type="text" class="input">
-											</label>
-										</div>
-									</div>
-									<div class="form__row">
-										<div class="form__box">
-											<span class="form__label">Телефон</span>
-											<label>
-												<input type="text" class="input" value="+">
-											</label>
-										</div>
-										<div class="form__box">
-											<div class=" js-add">
-												<a href="#" class="add-link js-add-link">Добавить номер</a>
-												<div class="js-add-phone">
-													<label>
-														<input type="text" class="input">
-													</label>
-												</div>											
-											</div>
-										</div>
-									</div>
-									<div class="js-contact f-company__add">
-										<a href="#" class="add-link js-contact-link">Добавить контактное лицо</a>
-										<div class="js-contact-block">
-											<span class="f-company__contact-title">Контактное лицо</span>									
-											<div class="creating__field">
-												<input type="text" class="input" placeholder="Должность">
-											</div>
-											<div class="form__row">
-												<div class="form__box">
-													<span class="form__label">Имя</span>
-													<label>
-														<input type="text" class="input">
-													</label>
-												</div>
-												<div class="form__box">
-													<span class="form__label">Фамилия</span>
-													<label>
-														<input type="text" class="input">
-													</label>
-												</div>
-											</div>
-											<div class="form__row">
-												<div class="form__box">
-													<span class="form__label">E-mail</span>
-													<label>
-														<input type="text" class="input">
-														<span class="form__status is-good">Свободен</span>
-													</label>
-												</div>
-												<div class="form__box">
-													<span class="form__label">Skype</span>
-													<label>
-														<input type="text" class="input">
-													</label>
-												</div>
-											</div>
-											<div class="form__row">
-												<div class="form__box">
-													<span class="form__label">Телефон</span>
-													<label>
-														<input type="text" class="input" value="+">
-													</label>
-												</div>
-												<div class="form__box">
-													<div class=" js-add">
-														<a href="#" class="add-link js-add-link">Добавить номер</a>
-														<div class="js-add-phone">
-															<label>
-																<input type="text" class="input">
-															</label>
-														</div>											
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="form__row">
-										<div class="form__box">
-											<span class="form__label">Пароль</span>
-											<label>
-												<input type="password" class="input">
-												<span class="form__status is-bad">Пароль не надёжный</span>
-											</label>
-										</div>
-										<div class="form__box">
-											<span class="form__label">Повторите пароль</span>
-											<label>
-												<input type="password" class="input">
-												<span class="form__status is-good">Пароли совпадают</span>
-											</label>
-										</div>
-									</div>
-									<div class="form__code">
-										<span class="form__label">Введите указанный ниже код</span>
-										<button class="btn-repeat"></button>
-										<div class="form__img">
-											<img src="img/kapcha.png" alt="">
-										</div>
-										<input type="text" class="input">
-									</div>
-									<p>Нажимая кнопку «зарегистрироваться», вы соглашаетесь с <a href="#">правилами сайта</a> и подтверждаете, что ознакомились с <a href="#">политикой использования данных</a>.</p>
-									<div class="form__btn">
-										<button class="btn btn_blue">Зарегистрироваться</button>
-									</div>	
-								</div>
-							</div>			
 						</form>
 					</div>
 				</div>

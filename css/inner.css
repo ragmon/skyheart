@@ -2158,7 +2158,7 @@ body.is-error:before { content: ""; display: inline-block; vertical-align: middl
 .f-company__category ul { overflow: hidden; font-size: 0; }
 .f-company__category ul li { display: inline-block; width: 33.3%; vertical-align: top; padding: 0 0 10px; }
 @media only screen and (max-width: 700px) { .f-company__category ul li { width: 50%; } }
-.f-company__logo { width: 243px; margin: 0 auto; padding: 20px 0 10px; text-align: center; }
+.f-company__logo { width: 200px; margin: 0 auto; padding: 20px 0 10px; text-align: center; }
 .f-company__file { margin-bottom: 6px; }
 .f-company .form__box .js-add { padding: 34px 0 0; }
 @media only screen and (max-width: 700px) { .f-company .form__box .js-add { padding: 10px 0; } }
