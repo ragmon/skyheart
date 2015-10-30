@@ -8228,3 +8228,250 @@ body
 		line-height: 21px
 		max-width: 550px
 		margin: 0
+		
+//company
+.breadcrumbs
+	font-size: 0
+	background-color: gainsboro
+	max-width: 450px
+	margin: 0 40px 0 0 
+	padding: 11px 0 
+	li
+		display: inline-block
+		vertical-align: top
+		padding: 5px 13px
+		a
+			color: #44709c
+			font-size: 15px
+			line-height: 1
+			+bold
+			&.is-active
+				text-decoration: underline
+
+.my-company
+	margin-top: 18px
+	background-color: white
+	box-shadow: 0 3px 6px rgba(20, 45, 96, 0.75)
+	&__head
+		padding: 6px 14px 6px 50px 
+		+clr
+		&.is-red
+			background-color: #ed5565
+			padding-left: 28px
+			div
+				+semi
+				font-size: 14px
+				padding: 9px 0 
+		&.is-blue
+			background-color: #577daa
+			div
+				+bold
+				font-size: 16px
+				padding: 10px 0 
+		div
+			color: white
+			line-height: 1
+			float: left
+			a
+				text-decoration: underline
+				color: white 
+		.button-blue, .button-white
+			float: right
+			margin-left: 9px
+	&__title
+		background-color: #d6ecfe
+		padding: 6px 14px 6px 40px 
+		+clr
+		div
+			color: #555
+			font-size: 16px
+			line-height: 1
+			+bold
+			padding: 9px 10px 8px 40px
+			float: left
+			position: relative
+			i
+				position: absolute
+				top: 50%
+				&.is-vip
+					+s(company-vip)
+					margin-top: -11px
+					left: 2px
+		.button-blue
+			float: right
+	&__info
+		padding: 25px 28px
+		+clr
+	&__logo
+		width: 100px
+		height: 100px
+		float: left
+		margin-right: 35px
+		img
+			width: 100%
+			height: 100%
+	&__settings
+		overflow: hidden
+		padding: 11px 0 0
+		.f-person__list
+			margin: 0
+	&__label
+		color: #555
+		font-size: 15px
+		line-height: 1
+		+semi
+		margin-bottom: 20px
+	&__vacancy
+		color: #555
+		font-size: 16px
+		line-height: 1
+		+bold
+		padding: 10px 80px 9px
+		background-color: #d6ecfe 
+		position: relative
+		i
+			position: absolute
+			top: 50%
+			&.is-vacancy
+				+s(comapny-vacancy)
+				margin-top: -12px
+				left: 50px
+			&.is-dollar
+				+s(company-dollar)
+				margin-top: -8px
+				left: 40px
+	&__empty
+		text-align: center
+		font-size: 0
+		p
+			color: #555
+			font-size: 15px
+			line-height: 1
+			+semi
+			margin-bottom: 15px
+	&__add
+		display: inline-block
+		margin-bottom: 10px
+		&:hover
+			i
+				background: #44709c
+				&:before
+					opacity: 0
+					visibility: hidden
+				&:after
+					visibility: visible
+					opacity: 1
+			p
+				text-decoration: underline
+		i			
+			width: 81px
+			height: 61px
+			background: white
+			border: 1px solid #44709c
+			display: block
+			margin: 0 auto 10px
+			position: relative
+			+transition(background 0.25s)
+			&:before, &:after
+				position: absolute
+				top: 50%
+				left: 50%
+				margin: -21px 0 0 -21px
+				content: ""  
+				+transition(visibility 0.25s, opacity 0.25s)
+			&:before
+				+s(company-add)
+			&:after
+				+s(company-add-white)
+				visibility: hidden
+				opacity: 0
+		p
+			margin-bottom: 0
+	&__status
+		background-color: #a0d468
+		font-size: 0
+		padding: 11px 0
+		text-align: center 
+		li
+			display: inline-block
+			vertical-align: top
+			width: 33.33%
+			color: white
+			font-size: 15px
+			line-height: 1
+			+bold
+			padding: 5px 0
+	&__items
+		min-height: 246px
+		
+.company-services
+	min-height: 140px
+
+.company-item
+	+clr
+	padding: 15px 18px 10px 
+	background-color: white
+	border: 1px solid #426e82
+	&__col
+		width: 33.33%
+		float: left
+		&.is-left
+			text-align: left
+		&.is-center
+			text-align: center
+		&.is-right
+			text-align: right
+	&__list
+		text-align: left
+		display: inline-block
+		li
+			color: #555
+			font-size: 12px
+			line-height: 1
+			+semi
+			margin-bottom: 10px
+	p
+		font-size: 14px
+		line-height: 1
+		+bold
+		color: #555
+		margin-bottom: 25px 
+		a
+			color: #46778d
+	&__status
+		font-size: 13px
+		line-height: 1
+		+semi
+		color: #555
+	&__btns
+		clear: both
+		.resume-item__button
+			margin: 0 7px 7px 0
+			&.is-right
+				margin: 0 0 7px 7px 
+				float: right
+
+
+.button-blue
+	color: white
+	font-size: 13px
+	line-height: 1
+	text-transform: uppercase
+	+reg
+	background: #577daa
+	padding: 10px 10px 
+	display: inline-block
+	vertical-align: top
+	&:hover
+		background: darken(#577daa, 10%) 
+	
+.button-white
+	color: white
+	font-size: 15px
+	line-height: 1
+	+semi
+	border: 1px solid white
+	padding: 10px 13px 9px
+	background: none
+	
+	
