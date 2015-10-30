@@ -2788,30 +2788,41 @@ body.is-error:before { content: ""; display: inline-block; vertical-align: middl
 .my-company { margin-top: 18px; background-color: white; box-shadow: 0 3px 6px rgba(20, 45, 96, 0.75); }
 .my-company__head { padding: 6px 14px 6px 50px; *zoom: 1; }
 .my-company__head:after { content: " "; display: table; clear: both; }
+@media only screen and (max-width: 700px) { .my-company__head { padding-left: 25px; } }
 .my-company__head.is-red { background-color: #ed5565; padding-left: 28px; }
 .my-company__head.is-red div { font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 600; font-size: 14px; padding: 9px 0; }
 .my-company__head.is-blue { background-color: #577daa; }
 .my-company__head.is-blue div { font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 700; font-size: 16px; padding: 10px 0; }
 .my-company__head div { color: white; line-height: 1; float: left; }
+@media only screen and (max-width: 980px) { .my-company__head div { float: none; } }
 .my-company__head div a { text-decoration: underline; color: white; }
 .my-company__head .button-blue, .my-company__head .button-white { float: right; margin-left: 9px; }
+@media only screen and (max-width: 980px) { .my-company__head .button-blue, .my-company__head .button-white { float: none; margin: 10px 10px 0 0; } }
 .my-company__title { background-color: #d6ecfe; padding: 6px 14px 6px 40px; *zoom: 1; }
 .my-company__title:after { content: " "; display: table; clear: both; }
+@media only screen and (max-width: 700px) { .my-company__title { padding-left: 25px; } }
 .my-company__title div { color: #555555; font-size: 16px; line-height: 1; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 700; padding: 9px 10px 8px 40px; float: left; position: relative; }
+@media only screen and (max-width: 980px) { .my-company__title div { float: none; } }
 .my-company__title div i { position: absolute; top: 50%; }
 .my-company__title div i.is-vip { background: url('../img/icons-s0ae43c2dc2.png') 0 -2267px no-repeat; width: 21px; height: 21px; margin-top: -11px; left: 2px; }
 .my-company__title .button-blue { float: right; }
+@media only screen and (max-width: 980px) { .my-company__title .button-blue { float: none; margin: 10px 0 0; } }
 .my-company__info { padding: 25px 28px; *zoom: 1; }
 .my-company__info:after { content: " "; display: table; clear: both; }
 .my-company__logo { width: 100px; height: 100px; float: left; margin-right: 35px; }
+@media only screen and (max-width: 700px) { .my-company__logo { margin: 0 auto; float: none; } }
 .my-company__logo img { width: 100%; height: 100%; }
 .my-company__settings { overflow: hidden; padding: 11px 0 0; }
+@media only screen and (max-width: 700px) { .my-company__settings { width: 100%; clear: both; } }
 .my-company__settings .f-person__list { margin: 0; }
 .my-company__label { color: #555555; font-size: 15px; line-height: 1; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 600; margin-bottom: 20px; }
-.my-company__vacancy { color: #555555; font-size: 16px; line-height: 1; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 700; padding: 10px 80px 9px; background-color: #d6ecfe; position: relative; }
+.my-company__vacancy { color: #555555; font-size: 16px; line-height: 1; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 700; padding: 10px 20px 9px 80px; background-color: #d6ecfe; position: relative; }
+@media only screen and (max-width: 700px) { .my-company__vacancy { padding-left: 50px; } }
 .my-company__vacancy i { position: absolute; top: 50%; }
 .my-company__vacancy i.is-vacancy { background: url('../img/icons-s0ae43c2dc2.png') 0 -2051px no-repeat; width: 13px; height: 23px; margin-top: -12px; left: 50px; }
+@media only screen and (max-width: 700px) { .my-company__vacancy i.is-vacancy { left: 20px; } }
 .my-company__vacancy i.is-dollar { background: url('../img/icons-s0ae43c2dc2.png') 0 -2241px no-repeat; width: 28px; height: 16px; margin-top: -8px; left: 40px; }
+@media only screen and (max-width: 700px) { .my-company__vacancy i.is-dollar { left: 15px; } }
 .my-company__empty { text-align: center; font-size: 0; }
 .my-company__empty p { color: #555555; font-size: 15px; line-height: 1; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 600; margin-bottom: 15px; }
 .my-company__add { display: inline-block; margin-bottom: 10px; }
@@ -2825,6 +2836,7 @@ body.is-error:before { content: ""; display: inline-block; vertical-align: middl
 .my-company__add i:after { background: url('../img/icons-s0ae43c2dc2.png') 0 -2137px no-repeat; width: 41px; height: 42px; visibility: hidden; opacity: 0; }
 .my-company__add p { margin-bottom: 0; }
 .my-company__status { background-color: #a0d468; font-size: 0; padding: 11px 0; text-align: center; }
+@media only screen and (max-width: 980px) { .my-company__status { display: none; } }
 .my-company__status li { display: inline-block; vertical-align: top; width: 33.33%; color: white; font-size: 15px; line-height: 1; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 700; padding: 5px 0; }
 .my-company__items { min-height: 246px; }
 
@@ -2833,17 +2845,23 @@ body.is-error:before { content: ""; display: inline-block; vertical-align: middl
 .company-item { *zoom: 1; padding: 15px 18px 10px; background-color: white; border: 1px solid #426e82; }
 .company-item:after { content: " "; display: table; clear: both; }
 .company-item__col { width: 33.33%; float: left; }
+@media only screen and (max-width: 980px) { .company-item__col { width: 100%; } }
 .company-item__col.is-left { text-align: left; }
 .company-item__col.is-center { text-align: center; }
+@media only screen and (max-width: 980px) { .company-item__col.is-center { text-align: left; } }
 .company-item__col.is-right { text-align: right; }
+@media only screen and (max-width: 980px) { .company-item__col.is-right { text-align: left; } }
 .company-item__list { text-align: left; display: inline-block; }
 .company-item__list li { color: #555555; font-size: 12px; line-height: 1; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 600; margin-bottom: 10px; }
 .company-item p { font-size: 14px; line-height: 1; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 700; color: #555555; margin-bottom: 25px; }
+@media only screen and (max-width: 980px) { .company-item p { margin-bottom: 15px; } }
 .company-item p a { color: #46778d; }
-.company-item__status { font-size: 13px; line-height: 1; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 600; color: #555555; }
-.company-item__btns { clear: both; }
-.company-item__btns .resume-item__button { margin: 0 7px 7px 0; }
+.company-item__status { font-size: 13px; line-height: 1; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 600; color: #555555; margin-bottom: 9px; }
+.company-item__btns { clear: both; *zoom: 1; }
+.company-item__btns:after { content: " "; display: table; clear: both; }
+.company-item__btns .resume-item__button { margin: 0 7px 7px 0; float: left; }
 .company-item__btns .resume-item__button.is-right { margin: 0 0 7px 7px; float: right; }
+@media only screen and (max-width: 980px) { .company-item__btns .resume-item__button.is-right { float: left; margin: 0 7px 7px 0; } }
 
 .button-blue { color: white; font-size: 13px; line-height: 1; text-transform: uppercase; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 400; background: #577daa; padding: 10px 10px; display: inline-block; vertical-align: top; }
 .button-blue:hover { background: #456489; }
