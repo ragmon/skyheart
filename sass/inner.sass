@@ -208,13 +208,15 @@ body
 			right: 0
 			margin-top: -9px
 .search
-	max-width: 601px
 	padding: 27px 14px
 	margin: 0 auto
 	text-align: center
 	position: relative
 	+r1
 		padding: 27px 18px
+	form
+		width: 600px
+		margin: 0 auto
 	&__input
 		border: 2px solid #fff
 		border-right: none
@@ -2813,10 +2815,13 @@ body
 			float: right
 			margin: 0
 			padding: 3px 0 0
+			width: 100px
 		li
 			display: inline-block
 			vertical-align: middle
-			margin: 0 0 0 10px
+			margin: 0 0 0 5px
+			+r1
+				margin: 0 0 0 10px
 			a
 				display: inline-block
 				+opacity(0.48)
@@ -2829,6 +2834,8 @@ body
 					+s(c-gp-dark)
 				&.is-tw
 					+s(c-tw-dark)
+				&.is-vk
+					+s(c-vk-dark)
 	&__btns
 		+clr
 		padding: 0 0 10px
