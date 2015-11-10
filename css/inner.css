@@ -2793,10 +2793,8 @@ body.is-error:before { content: ""; display: inline-block; vertical-align: middl
 .my-company__head:after { content: " "; display: table; clear: both; }
 @media only screen and (max-width: 700px) { .my-company__head { padding-left: 25px; } }
 .my-company__head.is-red { background-color: #ed5565; padding-left: 28px; }
-.my-company__head.is-red div { font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 600; font-size: 14px; padding: 5px 0 6px; }
 .my-company__head.is-blue { background-color: #577daa; }
-.my-company__head.is-blue div { font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 700; font-size: 16px; padding: 4px 0; }
-.my-company__head div { color: white; line-height: 1; float: left; }
+.my-company__head div { color: white; line-height: 1; float: left; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 600; font-size: 14px; padding: 5px 0 6px; }
 @media only screen and (max-width: 980px) { .my-company__head div { float: none; } }
 .my-company__head div a { text-decoration: underline; color: white; }
 .my-company__head .button-blue, .my-company__head .button-white { float: right; margin-left: 9px; }
