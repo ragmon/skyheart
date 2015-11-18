@@ -2057,6 +2057,9 @@ body
 		label
 			width: 100%
 			position: relative
+	&__label
+		.add-link
+			margin: 0
 	&__center
 		width: 50%
 		margin: 0 auto
@@ -6269,6 +6272,11 @@ body
 
 .comp__adds
 	padding: 20px 0 0
+	&-mod
+		padding: 0 35px 0
+		text-align: center
+		+r(700)
+			padding: 0 20px 0 
 
 .comp__cancel, .comp__submit
 	padding: 10px 0 0
@@ -8194,6 +8202,12 @@ body
 	+semi
 	text-align: center
 	padding: 25px 0  
+	small, span
+		display: block
+		text-align: left
+	small
+		font-size: 15px
+		margin-bottom: 15px
 
 .f-person__list
 	font-size: 0

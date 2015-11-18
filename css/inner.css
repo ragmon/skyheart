@@ -1047,6 +1047,7 @@ body.is-fixed .header__menu { max-width: 1074px; margin: 0 auto; padding: 10px 1
 .creating__col .add-link { margin: 35px 0 0; }
 @media only screen and (max-width: 700px) { .creating__col .add-link { margin: 0; } }
 .creating__col label { width: 100%; position: relative; }
+.creating__label .add-link { margin: 0; }
 .creating__center { width: 50%; margin: 0 auto; position: relative; padding: 9px 0; }
 @media only screen and (max-width: 700px) { .creating__center { width: 100%; } }
 .creating__center .creating__label { position: absolute; top: 50%; right: 100%; margin: -9px 10px 0 0; white-space: nowrap; }
@@ -2232,6 +2233,8 @@ body.is-error:before { content: ""; display: inline-block; vertical-align: middl
 .comp__title { font-size: 20px; color: #577daa; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 600; line-height: 1.2; padding: 15px 0 0; }
 
 .comp__adds { padding: 20px 0 0; }
+.comp__adds-mod { padding: 0 35px 0; text-align: center; }
+@media only screen and (max-width: 700px) { .comp__adds-mod { padding: 0 20px 0; } }
 
 .comp__cancel, .comp__submit { padding: 10px 0 0; }
 .comp__cancel .btn, .comp__submit .btn { padding: 9px 15px; width: 117px; text-align: center; }
@@ -2769,6 +2772,8 @@ body.is-error:before { content: ""; display: inline-block; vertical-align: middl
 .f-person-company { display: none; }
 
 .f-person__title { color: #555555; font-size: 17px; line-height: 19px; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 600; text-align: center; padding: 25px 0; }
+.f-person__title small, .f-person__title span { display: block; text-align: left; }
+.f-person__title small { font-size: 15px; margin-bottom: 15px; }
 
 .f-person__list { font-size: 0; max-width: 400px; margin: 0 auto; }
 .f-person__list li { display: inline-block; vertical-align: top; width: 33.33%; padding: 0 0 2px 0; }
