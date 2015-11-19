@@ -2649,6 +2649,7 @@ body.is-error:before { content: ""; display: inline-block; vertical-align: middl
 
 .ads-empty { padding: 60px 35px 41px; text-align: center; }
 .ads-empty__icon { background: url('../img/icons-se743d04c27.png') 0 -3217px no-repeat; width: 73px; height: 73px; display: inline-block; margin: 0 0 10px; }
+.ads-empty__icon-company { background: url('../img/icons-se743d04c27.png') 0 -2241px no-repeat; width: 61px; height: 21px; display: block; margin: 0 auto 15px; }
 .ads-empty__text { display: block; font-size: 21px; line-height: 1; color: #9db4ce; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 700; margin-bottom: 20px; }
 
 .creating__price-help { position: absolute; bottom: 100%; left: 50%; margin: 0 0 10px -100px; width: 200px; background: rgba(40, 40, 42, 0.9); color: white; font-size: 12px; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 400; padding: 10px 12px; line-height: 1.2; display: none; }
