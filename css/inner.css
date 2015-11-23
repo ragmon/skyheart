@@ -2294,6 +2294,7 @@ body.is-error:before { content: ""; display: inline-block; vertical-align: middl
 .ads-new__header { padding: 13px 65px 13px 25px; background: #44709c; position: relative; }
 @media only screen and (max-width: 980px) { .ads-new__header { padding: 13px 55px 13px 20px; } }
 .ads-new__header h3 { font-size: 14px; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 600; color: white; line-height: 1.2; }
+.ads-new__header h3 a { color: white; }
 .ads-new__price { float: right; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 400; color: #555555; *zoom: 1; }
 .ads-new__price:after { content: " "; display: table; clear: both; }
 @media only screen and (max-width: 980px) { .ads-new__price { float: none; } }
