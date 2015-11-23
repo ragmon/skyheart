@@ -5051,12 +5051,22 @@ a
 			font-size: 15px
 			display: inline-block
 			vertical-align: middle
+			color: #ff7f27 
 		span
 			font-size: 22px
 			text-transform: uppercase
 			display: inline-block
 			vertical-align: middle
 			margin-left: 25px
+			+bold
+			b
+				margin: 0 10px 0 0 
+			&.is-green
+				b
+					color: #76a133
+			&.is-red
+				b
+					color: #581c2c
 	&__block
 		+clr
 		+reg
@@ -5073,6 +5083,7 @@ a
 		padding: 0 0 0 25px
 		background: url(../img/icons/pin.png) no-repeat center left
 		margin-bottom: 15px
+		overflow: hidden
 		+r1
 			text-align: left
 	&__photo

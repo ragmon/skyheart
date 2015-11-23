@@ -1881,12 +1881,15 @@ a.is-star.is-active:after { visibility: visible; filter: progid:DXImageTransform
 .p-ads .is-star { position: absolute; top: 0; right: -10px; }
 .p-ads__price { float: right; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 400; color: #555555; }
 @media only screen and (max-width: 980px) { .p-ads__price { float: none; text-align: center; margin-bottom: 5px; } }
-.p-ads__price small { font-size: 15px; display: inline-block; vertical-align: middle; }
-.p-ads__price span { font-size: 22px; text-transform: uppercase; display: inline-block; vertical-align: middle; margin-left: 25px; }
+.p-ads__price small { font-size: 15px; display: inline-block; vertical-align: middle; color: #ff7f27; }
+.p-ads__price span { font-size: 22px; text-transform: uppercase; display: inline-block; vertical-align: middle; margin-left: 25px; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 700; }
+.p-ads__price span b { margin: 0 10px 0 0; }
+.p-ads__price span.is-green b { color: #76a133; }
+.p-ads__price span.is-red b { color: #581c2c; }
 .p-ads__block { *zoom: 1; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 400; margin-bottom: 30px; padding: 4px 0 0; }
 .p-ads__block:after { content: " "; display: table; clear: both; }
 @media only screen and (max-width: 980px) { .p-ads__block { text-align: center; margin-bottom: 0; } }
-.p-ads__place { font-size: 15px; color: #555555; position: relative; display: block; padding: 0 0 0 25px; background: url(../img/icons/pin.png) no-repeat center left; margin-bottom: 15px; }
+.p-ads__place { font-size: 15px; color: #555555; position: relative; display: block; padding: 0 0 0 25px; background: url(../img/icons/pin.png) no-repeat center left; margin-bottom: 15px; overflow: hidden; }
 @media only screen and (max-width: 980px) { .p-ads__place { text-align: left; } }
 .p-ads__photo { width: 290px; float: left; margin-right: 30px; text-align: center; }
 @media only screen and (max-width: 980px) { .p-ads__photo { width: 100%; float: none; margin-bottom: 10px; } }
