@@ -1881,8 +1881,9 @@ a.is-star.is-active:after { visibility: visible; filter: progid:DXImageTransform
 .p-ads .is-star { position: absolute; top: 0; right: -10px; }
 .p-ads__price { float: right; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 400; color: #555555; }
 @media only screen and (max-width: 980px) { .p-ads__price { float: none; text-align: center; margin-bottom: 5px; } }
-.p-ads__price small { font-size: 15px; display: inline-block; vertical-align: middle; color: #ff7f27; }
-.p-ads__price span { font-size: 22px; text-transform: uppercase; display: inline-block; vertical-align: middle; margin-left: 25px; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 700; }
+.p-ads__price span, .p-ads__price small { font-size: 15px; display: inline-block; vertical-align: top; }
+.p-ads__price small { color: #ff7f27; }
+.p-ads__price span { text-transform: uppercase; margin-left: 25px; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 700; }
 .p-ads__price span b { margin: 0 10px 0 0; }
 .p-ads__price span.is-green b { color: #76a133; }
 .p-ads__price span.is-red b { color: #581c2c; }
