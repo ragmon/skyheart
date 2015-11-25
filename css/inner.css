@@ -2026,8 +2026,11 @@ a.is-star.is-active:after { visibility: visible; filter: progid:DXImageTransform
 .m-item__title { color: #46778d; font-size: 16px; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 400; float: left; line-height: 1; }
 .m-item__title:hover { text-decoration: underline; }
 .m-item__price { float: right; text-align: center; color: #555555; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 400; margin-left: 10px; }
-.m-item__price span { font-size: 16px; display: block; line-height: 1; }
-.m-item__price small { font-size: 11px; display: block; line-height: 1; }
+.m-item__price span { font-size: 16px; display: block; line-height: 1; display: block; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 700; }
+.m-item__price span.is-green b { color: #76a133; }
+.m-item__price span.is-red b { color: #581c2c; }
+.m-item__price span b { margin-right: 10px; }
+.m-item__price small { font-size: 11px; display: block; line-height: 1; color: #ff7f27; }
 .m-item__body { margin: -6px 0 0; padding-right: 30px; }
 .m-item__body .trade { display: inline-block; vertical-align: middle; margin-right: 10px; margin-bottom: 5px; }
 .m-item__body span { display: inline-block; vertical-align: middle; color: #555555; font-family: "Open Sans", sans-serif; font-style: normal; font-weight: 600; font-size: 14px; line-height: 1; margin-bottom: 5px; }
