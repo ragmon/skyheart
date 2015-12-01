@@ -6062,11 +6062,26 @@ body
 		line-height: 23px
 	span, p
 		font-family: Arial, sans-serif
-	p
+	p, ul
 		font-size: 13px
 		line-height: 1.2
 		color: #757575
+		a
+			color: #008efe
+			&:hover
+				text-decoration: underline
+	p
 		max-width: 470px
+		&.is-full
+			max-width: 100%
+			text-align: center
+	ul
+		text-align: center
+		padding: 10px 0 0   
+	li
+		display: inline-block
+		vertical-align: top
+		padding: 0 5px 
 	&__body
 		padding: 5px 10px 25px
 		background: #fff

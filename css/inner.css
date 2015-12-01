@@ -2168,7 +2168,13 @@ body.is-error:before { content: ""; display: inline-block; vertical-align: middl
 .warning__top i { background: url('../img/icons-se743d04c27.png') 0 -5074px no-repeat; width: 21px; height: 19px; position: absolute; top: 9px; right: 9px; }
 .warning span { font-size: 16px; line-height: 23px; }
 .warning span, .warning p { font-family: Arial, sans-serif; }
-.warning p { font-size: 13px; line-height: 1.2; color: #757575; max-width: 470px; }
+.warning p, .warning ul { font-size: 13px; line-height: 1.2; color: #757575; }
+.warning p a, .warning ul a { color: #008efe; }
+.warning p a:hover, .warning ul a:hover { text-decoration: underline; }
+.warning p { max-width: 470px; }
+.warning p.is-full { max-width: 100%; text-align: center; }
+.warning ul { text-align: center; padding: 10px 0 0; }
+.warning li { display: inline-block; vertical-align: top; padding: 0 5px; }
 .warning__body { padding: 5px 10px 25px; background: white; }
 .warning__body span { color: #393939; margin-bottom: 1px; text-shadow: 0 1px 0 white; }
 
