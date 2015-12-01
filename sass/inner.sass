@@ -2025,8 +2025,10 @@ body
 		+clr
 		.creating__label
 			display: block
+			margin: 0
 		div
 			width: 50%
+			padding: 15px 0 0 
 			+r1
 				width: 100%
 			&.is-left
@@ -6656,17 +6658,25 @@ body
 			font-size: 12px
 			color: #555
 			line-height: 20px
-			margin-bottom: 5px
-			&:before
-				position: absolute
-				content: ""
+			// margin-bottom: 5px
+			text-align: center
+			padding: 5px 0
+			+r(700)
+				text-align: left
 			&.is-company
 				padding: 5px 0 5px 33px
 				&:before
 					top: 6px
 					left: 0
 					+s(ads-company)
-
+					position: absolute
+					content: ""
+	&__company-logo
+		width: 120px
+		height: 120px
+		overflow: hidden
+		img
+			width: 100%
 //chat
 .chat-right
 	float: right
@@ -7740,6 +7750,12 @@ body
 	&__box
 		.add-link
 			margin-top: 35px
+		&-phone
+			.add-link
+				display: block
+				text-align: center
+				margin-top: 0
+				line-height: 1
 .creating
 	&_mod
 		.creating
@@ -7766,6 +7782,8 @@ body
 					+translateY(-50%)
 					&.is-contacts
 						+s(v-card)
+					&.is-contacts-mod
+						+s(ads-contacts-blue)
 					&.is-marker
 						+s(tag)
 					&.is-info
