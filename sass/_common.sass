@@ -59,7 +59,19 @@ body
 
 .out
 	min-width: 320px
-
+	min-height: 100%
+	margin-bottom: -140px
+	+r1
+		margin-bottom: 0
+		min-height: 1px
+	&:after
+		display: block
+		content: ''
+		height: 140px
+		width: 100%
+		+r1
+			display: none
+			
 // fonts
 
 +font("BookAntiqua", book_antiqua_regular)
