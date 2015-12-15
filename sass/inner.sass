@@ -1025,19 +1025,38 @@ body
 .profile
 	float: right
 	position: relative
-	width: 175px
+	width: 173px
 	+r1
 		float: none
 		display: inline-block
 		position: static
+		width: 100%
 	&__inner
 		position: relative
+		+r1
+			width: 100%
 	&__link
-		padding: 6px 10px
 		display: block
-		background: rgba(50, 98, 146, 0.5)
+		background-color: rgba(#006295, 0.73)
+		padding: 0 40px
+		width: 173px
+		text-align: center
+		position: relative
+		&:before, &:after
+			content: ''
+			position: absolute
+			top: 50%
+		&:before
+			+s(login-icon)
+			margin-top: -7px
+			left: 20px
+		&:after
+			+s(login-bottom)
+			margin-top: -5px
+			right: 20px
 		+r1
 			background: none
+			width: 100%
 	&__img
 		float: left
 		width: 38px
@@ -1051,65 +1070,60 @@ body
 		font-size: 14px
 		color: #fff
 		line-height: 1
-		padding: 12px 0
+		padding: 17px 0 16px
 		display: block
 		overflow: hidden
 	&__message
 		position: absolute
-		top: -6px
-		left: 100%
-		margin-left: -10px
-		+r(1200)
-			left: auto
-			right: 0
-			margin: 0
-		+r1
-			top: -6px
-			left: 100%
-			right: auto
-			margin-left: -10px
-	&__message
-		white-space: nowrap
-		i
-			float: left
-			position: relative
-			width: 22px
-			height: 22px
-			background: url(../img/icons/message.png) no-repeat center center rgba(26, 42, 75, 0.75)
-			+border-radius(50%)
-		span
-			font-size: 12px
-			+semi
-			color: #244367
-			padding: 4px 5px
-			display: inline-block
-			+r1
-				color: #fff
+		top: 3px
+		left: 3px
+		font-size: 10px
+		line-height: 1
+		color: #377aa9
+		+semi
+		background-color: white
+		border-radius: 2px
+		text-align: center
+		padding: 1px 3px 2px
+		min-width: 13px
 
 .cabinet
 	position: absolute
 	top: 100%
 	right: 0
-	margin: 10px 0 0
-	background-color: #5076a4
-	width: 250px
-	padding: 10px 0 0
+	margin: 14px 0 0
+	background-color: rgba(#3377a7, 0.98)
+	width: 413px
+	padding: 15px 25px 20px
 	color: #fff
 	+opacity(0)
 	visibility: hidden
 	+transition(all 0.4s)
-	+box-shadow(2px 3.5px 7px rgba(0, 1, 2, 0.75))
 	text-align: center
+	border-bottom: 4px solid #2c658e
 	+r1
 		top: 0
 		right: 100%
 		margin: 0 5px
-	+r(600)
+	+r(700)
 		right: 0
-		top: 5px
+		top: -5px
+	&:before
+		content: ''
+		position: absolute
+		bottom: 100%
+		right: 0
+		+arr(18, 12, #3377a7, t)
+		opacity: 0.98
+		+r1
+			display: none
 	&.is-active
 		+opacity(1)
 		visibility: visible
+	&__left
+		float: left
+		width: 143px
+
 	&__title
 		font-size: 15px
 		color: #fff
@@ -1119,124 +1133,98 @@ body
 		+semi
 		letter-spacing: 0.01em
 	&__img
-		width: 121px
-		height: 121px
-		margin: 0 auto 10px
+		width: 115px
+		height: 115px
+		margin: 5px 0 10px
 		img
 			width: 100%
 			height: 100%
 	&__name
-		font-size: 21px
+		font-size: 15px
 		color: #fff
-		margin-bottom: 20px
-		+reg
+		margin-bottom: 10px
+		+bold
+		text-align: left
 	&__list
 		text-align: left
+		width: 220px
+		float: left
+		margin-bottom: 5px
+		li
+			&:last-child
+				a
+					border: none
 		a
 			display: block
 			position: relative
 			font-size: 12px
 			color: #fff
 			text-transform: uppercase
-			+reg
-			letter-spacing: 0.16em
-			padding: 2px 10px 0 40px  
+			+bold
+			padding: 2px 0 0 33px  
 			line-height: 26px
 			+transition(all 0.2s)
+			border-bottom: 1px solid rgba(#fff, 0.11)
+			max-width: 200px
 			&.is-message
-				&:before, &:after
-					margin-top: -9px
-					left: 11px
 				&:before
+					margin-top: -7px
 					+s(c-plane)
-				&:after
-					+s(c-plane-active)
 			&.is-ads
-				&:before, &:after
-					margin-top: -8px
-					left: 9px
 				&:before
+					margin-top: -6px
 					+s(c-mega)
-				&:after
-					+s(c-mega-active)
 			&.is-resume
-				&:before, &:after
-					margin-top: -7px
-					left: 10px
 				&:before
+					margin-top: -6px
 					+s(c-card)
-				&:after
-					+s(c-card-active)
 			&.is-blog
-				&:before, &:after
-					margin-top: -9px
-					left: 10px
 				&:before
+					margin-top: -7px
 					+s(c-quote)
-				&:after
-					+s(c-quote-active)
 			&.is-chat
-				&:before, &:after
-					margin-top: -7px
-					left: 9px
 				&:before
+					margin-top: -6px
 					+s(c-bubble)
-				&:after
-					+s(c-bubble-active)
 			&.is-favorite
-				&:before, &:after
-					margin-top: -7px
-					left: 11px
 				&:before
+					margin-top: -6px
+					left: 8px
 					+s(c-star)
-				&:after
-					+s(c-star-active)
 			&.is-company
-				&:before, &:after
-					margin-top: -8px
-					left: 11px
 				&:before
+					margin-top: -7px
 					+s(c-case)
-				&:after
-					+s(c-case-active)
-			&:before, &:after
+			&:before
 				content: ""
 				position: absolute
 				top: 50%
 				+transition(all 0.2s)
-			&:after
-				visibility: hidden
-				opacity: 0
+				opacity: 0.58
+				left: 6px
 			span
 				display: inline-block
 				position: relative
 			&:hover, &.is-active
-				background-color: white
-				color: #5076a4
 				&:before
-					opacity: 0
-					visibility: hidden
-				&:after
 					opacity: 1
-					visibility: visible
-				small
-					color: #fff
-					background: rgb(26, 42, 75) 
 				.cabinet__active
 					&:after
 						color: #5076a4 
 			small
 				position: absolute
-				bottom: 70%
+				top: 5px
 				left: 100%
 				margin-left: -5px
 				font-size: 10px
-				line-height: 22px
-				width: 22px
-				+bold
-				+border-radius(50%)
-				background: rgba(26, 42, 75, 0.75)
-				+transition(all 0.2s)
+				line-height: 1
+				color: #377aa9
+				+semi
+				background-color: white
+				border-radius: 2px
+				text-align: center
+				padding: 1px 3px 2px
+				min-width: 13px
 	&__active, &__not-active
 		display: inline-block
 		vertical-align: top
@@ -1244,20 +1232,20 @@ body
 	&__active
 		color: #0ff81c
 		&:after
-			+transition(all 0.2s)
-			content: "/"
-			font-size: 14px
-			color: #fff
-			+bold
+			content: ""
+			height: 12px
+			width: 1px
+			background: #fff
 			display: inline-block
 			vertical-align: top  
-			margin: 0 0 0 4px
+			margin: 7px 0px 0 4px
 			
 	&__not-active
 		color: #d30e14
 	&__links
 		+clr
-		padding: 15px 9px
+		// padding: 15px 9px
+		clear: both
 	&__settings
 		float: left
 		+s(settings)
@@ -8741,4 +8729,157 @@ body
 	padding: 4px 10px 4px
 	background: none
 	
-	
+
+.popup-login
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	background-color: rgba(13, 50, 112, 0.95)
+	z-index: 5000
+	+vertical
+	overflow: auto
+	&__inner
+		max-width: 750px
+		width: 100%
+		display: inline-block
+		vertical-align: middle
+		position: relative
+		padding: 10px
+	&__close
+		+s(login-close)
+		position: absolute
+		top: 10px
+		right: 10px
+		cursor: pointer
+	&__form
+		width: 250px
+		margin: 0 auto
+		color: #fff
+	&__label, &__title
+		display: block
+		font-size: 15px
+		text-transform: uppercase
+		line-height: 1
+		letter-spacing: 0.025em
+	&__title
+		+bold
+		margin-bottom: 30px
+	&__label
+		+reg
+		margin-bottom: 9px
+	&__field
+		text-align: left
+		margin-bottom: 10px
+		&.is-disabled
+			opacity: 0.3
+	&__box
+		position: relative
+	&__input
+		border: 1px solid #fff
+		color: #fff
+		+reg
+		background: none
+		width: 100%
+		font-size: 15px
+		line-height: 45px
+		padding: 0 15px 0 65px
+		position: relative
+		z-index: 1
+		letter-spacing: -0.025em
+	&__icon
+		position: absolute
+		top: 50%
+		&.is-user
+			left: 16px
+			+s(login-user)
+			margin-top: -8px
+		&.is-password
+			left: 17px
+			+s(login-password)
+			margin-top: -9px
+	&__check
+		text-align: left
+		padding: 10px 0 16px
+	&__checkbox
+		display: inline-block
+		vertical-align: top
+		position: relative
+		line-height: 1
+		color: white
+		font-size: 9px
+		line-height: 14px
+		text-transform: uppercase
+		text-align: left
+		padding: 1px 0 0 25px
+		cursor: pointer
+		letter-spacing: 0.025em
+		input
+			position: absolute
+			top: 0
+			left: 0
+			opacity: 0
+			visibility: hidden
+			&:checked + span
+				&:after
+					opacity: 1
+		span
+			display: block
+			&:before, &:after
+				content: ''
+				position: absolute
+			&:before
+				width: 14px
+				height: 14px
+				background-color: rgba(255, 255, 255, 0.3)
+				border-radius: 3px
+				left: 0
+				top: 0
+			&:after
+				+s(login-check)
+				left: 3px
+				top: 2px
+				opacity: 0
+				transition: opacity 0.2s
+	&__btn
+		width: 150px
+		height: 40px
+		line-height: 40px
+		background-color: #288fca
+		display: inline-block
+		vertical-align: top
+		text-align: center
+		color: white
+		+reg
+		font-size: 15px
+		text-transform: uppercase
+		letter-spacing: 0.01em
+		margin-bottom: 8px
+		&:hover
+			background: lighten(#288fca, 10%)
+		&:active
+			background: darken(#288fca, 10%)
+		span
+			position: relative
+			padding-right: 17px
+			&:before
+				content: ''
+				position: absolute
+				top: 50%
+				right: 0
+				+arr(5, 8, #fff, r)
+				margin-top: -3px
+	&__links
+		text-align: center
+		li
+			padding: 12px 0 0
+		a
+			color: white
+			font-size: 12px
+			line-height: 1
+			+bold
+			text-decoration: underline
+			letter-spacing: -0.05em
+			&:hover
+				text-decoration: none
