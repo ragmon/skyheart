@@ -1200,13 +1200,14 @@ body
 				position: absolute
 				top: 50%
 				+transition(all 0.2s)
-				opacity: 0.58
 				left: 6px
+				opacity: 0.58 
 			span
 				display: inline-block
 				position: relative
-			&:hover, &.is-active
-				&:before
+				opacity: 0.58
+			&:hover, &.is-active				
+				&:before, span
 					opacity: 1
 				.cabinet__active
 					&:after
@@ -2271,7 +2272,8 @@ body
 		+opacity(0)
 		visibility: hidden
 	span
-		background: url(../img/file.png) no-repeat
+		// background: url(../img/file.png) no-repeat
+		background: #19729e
 		+cover
 		position: absolute
 		top: 0
@@ -2279,30 +2281,32 @@ body
 		left: 0
 		right: 0
 		i
-			width: 30px
-			height: 30px
+			// width: 30px
+			// height: 30px
 			position: absolute
 			top: 50%
 			left: 50%
-			margin: -15px 0 0 -15px
-			background: #fff
-			+border-radius(50%)
-			&:before, &:after
-				content: ""
-				position: absolute
-				background: #35496a
-			&:before
-				top: 5px
-				bottom: 5px
-				width: 2px
-				left: 50%
-				margin-left: -1px
-			&:after
-				left: 5px
-				right: 5px
-				height: 2px
-				top: 50%
-				margin-top: -1px
+			+svg(add-photo, 75, 43)
+			margin: -22px 0 0 -31px 
+			// margin: -15px 0 0 -15px
+			// background: #fff
+			// +border-radius(50%)
+			// &:before, &:after
+			// 	content: ""
+			// 	position: absolute
+			// 	background: #35496a
+			// &:before
+			// 	top: 5px
+			// 	bottom: 5px
+			// 	width: 2px
+			// 	left: 50%
+			// 	margin-left: -1px
+			// &:after
+			// 	left: 5px
+			// 	right: 5px
+			// 	height: 2px
+			// 	top: 50%
+			// 	margin-top: -1px
 
 .item-color
 	position: relative
