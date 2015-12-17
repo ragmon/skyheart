@@ -1586,7 +1586,7 @@ body
 		height: 210px
 		font-size: 0
 		overflow: hidden
-		background: #417ab5
+		background: #19729e
 		+r1
 			display: none
 		&:after
@@ -2830,12 +2830,13 @@ body
 	&__img
 		float: left
 		width: 80px
-		margin-right: 25px
-		padding: 3px 0 0
-		height: 83px
+		margin: 3px 25px 0 0
+		height: 80px
 		font-size: 0
+		position: relative
+		background: #19729e
 		+r1
-			margin: 0 15px 0 0
+			margin: 3px 15px 0 0
 		img
 			width: 100%
 			height: 100%
@@ -3106,8 +3107,9 @@ a
 		height: 90px
 		float: left
 		margin: 0 25px 10px 0
-		background-color: #3E6372
+		background-color: #19729e
 		+border-radius(6px)
+		position: relative
 		+r1
 			margin: 0 15px 5px 0
 		img
@@ -3290,9 +3292,9 @@ a
 	&__img
 		width: 55px
 		height: 55px
-		background-color: #E3E6E8
+		background-color: #19729e
 		border: 1px solid #31608F
-		+border-radius(50%)
+		position: relative
 		float: left
 		margin: 5px 25px 10px 0
 		img
@@ -3540,15 +3542,14 @@ a
 		left: 0
 		width: 59px
 		height: 59px
-		+border-radius(50%)
 		+box
-		border: 2px solid #2D4164
-		background-color: #E8E8E8
+		// border: 2px solid #2D4164
+		background-color: #19729e 
 		margin: -29px 0 0
 		+r1
 			display: none
 		&.is-green
-			border-color: #76A133
+			// border-color: #76A133
 		img
 			width: 100%
 			height: 100%
@@ -3665,10 +3666,9 @@ a
 		top: 50%
 		width: 59px
 		height: 59px
-		+border-radius(50%)
 		+box
-		border: 2px solid #2D4164
-		background-color: #E8E8E8
+		// border: 2px solid #2D4164
+		background-color: #19729e 
 		margin: -29px 0 0
 		+r1
 			display: none
@@ -3713,10 +3713,10 @@ a
 		left: 20px
 		width: 59px
 		height: 59px
-		+border-radius(50%)
+		// +border-radius(50%)
 		+box
-		border: 2px solid #2D4164
-		background-color: #E8E8E8
+		// border: 2px solid #2D4164
+		background-color: #19729e 
 		+r1
 			display: none
 		img
@@ -4082,13 +4082,21 @@ a
 		float: left
 		width: 90px
 		height: 90px
-		background: #1c2e3c
+		background: #19729e
 		margin: 10px 20px 0 0
 		position: relative
 		cursor: pointer
 		z-index: 200
 		img
 			width: 100%
+	&__icon
+		position: absolute
+		top: 25%
+		left: 25%
+		width: 50%
+		height: 50%
+		background: url(../img/svg/no-photo.svg) no-repeat center center
+		background-size: contain
 	&__text
 		position: relative
 		overflow: hidden
@@ -4555,12 +4563,13 @@ a
 		width: 72px
 		height: 72px
 		+vertical
-		margin-top: -36px
+		margin-top: -36px 
+		background: #19729e
 		+r1
 			display: none
 		img
-			max-width: 100%
-			max-height: 100%
+			width: 100%
+			height: 100%
 			display: inline-block
 			vertical-align: middle
 	&__title
@@ -4789,14 +4798,24 @@ a
 			display: block
 	&__photo
 		padding: 20px 0 0
-		img
+		&-in
 			margin: 0 auto 10px
 			display: block
+			width: 128px
+			height: 128px
+			position: relative
+			background: #19729e
+		img
 			width: 100%
-			max-width: 128px
-			+border-radius(50%)
-			&.is-radius
-				+border-radius(0)
+			height: 100%
+	&__icon
+		position: absolute
+		top: 25%
+		left: 25%
+		width: 50%
+		height: 50%
+		background: url(../img/svg/no-photo.svg) no-repeat center center 
+		background-size: contain
 	p
 		+semi
 		font-size: 14px
@@ -5101,11 +5120,12 @@ a
 			float: none
 			width: auto
 	&__img
-		background-color: #44709C
 		height: 166px
 		width: 100%
 		margin-bottom: 10px
 		+vertical
+		background: #19729e
+		position: relative
 		+r1
 			max-width: 290px
 			margin: 0 auto 10px
@@ -5475,6 +5495,9 @@ a
 
 .my-ads
 	+box-shadow(0 3px 6px rgba(20, 45, 96, 0.75))
+	// display: block !important
+	// visibility: visible
+	
 .m-item
 	position: relative
 	padding: 11px 18px 7px 60px
@@ -5503,9 +5526,10 @@ a
 		float: left
 		width: 71px
 		height: 71px
-		background-color: #577DAA
+		background-color: #19729e
 		overflow: hidden
 		margin: 0 25px 5px 0
+		position: relative
 		+r1
 			margin: 0 15px 5px 0
 		+r(500)
@@ -5726,6 +5750,8 @@ a
 		width: 202px
 		height: 202px
 		margin: 4px 30px 20px 0
+		position: relative
+		background: #19729e
 		+r1
 			float: none
 			margin: 0 auto 20px
@@ -6672,8 +6698,11 @@ body
 		width: 120px
 		height: 120px
 		overflow: hidden
+		background: #19729e
+		position: relative
 		img
 			width: 100%
+			height: 100%
 //chat
 .chat-right
 	float: right
@@ -7737,8 +7766,20 @@ body
 	&__ava
 		width: 36%
 		float: right
+		.form-avatar
+			width: 100%
+			padding-bottom: 100%
+			height: 0
+			position: relative
+			background: #19729e
 		img
-			max-width: 100%
+			width: 100%
+			height: 100%
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
 	&__box
 		width: 64%
 		float: left
@@ -8503,6 +8544,8 @@ body
 		height: 100px
 		float: left
 		margin-right: 35px
+		background: #19729e
+		position: relative
 		+r(700)
 			margin: 0 auto
 			float: none
@@ -8889,3 +8932,12 @@ body
 			letter-spacing: -0.05em
 			&:hover
 				text-decoration: none
+
+.icon-picture
+	position: absolute
+	top: 25%
+	left: 25%
+	width: 50%
+	height: 50%
+	background: url(../img/svg/no-photo.svg) no-repeat center center 
+	background-size: contain
