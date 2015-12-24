@@ -1154,7 +1154,7 @@ body
 		width: 220px
 		float: left
 		margin-bottom: 5px
-		+r2
+		+r(700)
 			width: 100%
 		li
 			&:last-child
@@ -8542,9 +8542,34 @@ body
 			+r1
 				float: none
 				margin: 10px 0 0 
+	.p-btn
+		+r1
+			clear: both
+	.ads-new__info
+		width: 50%
+		float: left
+		+r(700)
+			float: none
+			width: 100%
 	&__info
 		padding: 25px 28px
 		+clr
+		p
+			font-size: 15px
+			+light
+			color: #555
+		.form__code
+			float: left 
+			+r1
+				float: none
+				margin: 0 0 0
+	&__btn
+		clear: both
+		+r(700)
+			clear: both
+			float: none
+			text-align: center
+			padding: 15px 0 0
 	&__logo
 		width: 100px
 		height: 100px
@@ -8597,6 +8622,18 @@ body
 				left: 40px
 				+r(700)
 					left: 15px
+			&.is-contacts
+				+s(v-card)
+				left: 45px
+				margin-top: -8px
+				+r(700)
+					left: 20px
+			&.is-descript
+				+s(ads-descript-blue)
+				margin-top: -10px
+				left: 48px
+				+r(700)
+					left: 20px
 	&__empty
 		text-align: center
 		font-size: 0
